@@ -39,7 +39,7 @@ export default function Index() {
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             {/* Cyber Security Dashboard Animation */}
-            <div className="absolute inset-0 opacity-30">
+            <div className="absolute inset-0">
               <div className="w-full h-full bg-gradient-to-br from-secure-blue-100 to-secure-slate-100">
                 {/* Animated Network Grid */}
                 <svg

@@ -318,7 +318,7 @@ export default function Index() {
               </div>
 
               {/* Real-time Monitoring */}
-              <div className="absolute bottom-32 left-32 opacity-35">
+              <div className="absolute bottom-32 left-32">
                 <div className="bg-blue-100 px-3 py-2 rounded-lg">
                   <div className="text-xs text-blue-700 font-medium mb-2">
                     Live Monitor

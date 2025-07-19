@@ -296,7 +296,7 @@ export default function Index() {
               </div>
 
               {/* Security Status Panel */}
-              <div className="absolute top-32 right-20 opacity-20">
+              <div className="absolute top-32 right-20 opacity-40">
                 <div className="bg-green-100 px-4 py-3 rounded-lg">
                   <div className="flex items-center space-x-2 mb-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>

@@ -35,7 +35,313 @@ export default function Index() {
     <div className="min-h-screen bg-white font-sans">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-secure-blue-50 to-white min-h-screen flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-secure-blue-900/5 to-transparent"></div>
+        {/* Video Background */}
+        <div className="absolute inset-0 z-0">
+          <div className="relative w-full h-full">
+            {/* Cyber Security Dashboard Animation */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="w-full h-full bg-gradient-to-br from-secure-blue-100 to-secure-slate-100">
+                {/* Animated Network Grid */}
+                <svg
+                  className="absolute inset-0 w-full h-full"
+                  viewBox="0 0 1200 800"
+                >
+                  <defs>
+                    <pattern
+                      id="grid"
+                      width="40"
+                      height="40"
+                      patternUnits="userSpaceOnUse"
+                    >
+                      <path
+                        d="M 40 0 L 0 0 0 40"
+                        fill="none"
+                        stroke="rgb(29, 78, 216)"
+                        strokeWidth="0.5"
+                        opacity="0.3"
+                      />
+                    </pattern>
+                    <filter id="glow">
+                      <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+                      <feMerge>
+                        <feMergeNode in="coloredBlur" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
+                    </filter>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid)" />
+
+                  {/* Animated Security Nodes */}
+                  <g className="animate-pulse">
+                    <circle
+                      cx="200"
+                      cy="150"
+                      r="4"
+                      fill="rgb(34, 197, 94)"
+                      filter="url(#glow)"
+                    >
+                      <animate
+                        attributeName="r"
+                        values="4;8;4"
+                        dur="2s"
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                    <circle
+                      cx="400"
+                      cy="200"
+                      r="4"
+                      fill="rgb(59, 130, 246)"
+                      filter="url(#glow)"
+                    >
+                      <animate
+                        attributeName="r"
+                        values="4;6;4"
+                        dur="1.5s"
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                    <circle
+                      cx="800"
+                      cy="180"
+                      r="4"
+                      fill="rgb(168, 85, 247)"
+                      filter="url(#glow)"
+                    >
+                      <animate
+                        attributeName="r"
+                        values="4;7;4"
+                        dur="1.8s"
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                    <circle
+                      cx="600"
+                      cy="300"
+                      r="4"
+                      fill="rgb(34, 197, 94)"
+                      filter="url(#glow)"
+                    >
+                      <animate
+                        attributeName="r"
+                        values="4;9;4"
+                        dur="2.2s"
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                    <circle
+                      cx="1000"
+                      cy="250"
+                      r="4"
+                      fill="rgb(59, 130, 246)"
+                      filter="url(#glow)"
+                    >
+                      <animate
+                        attributeName="r"
+                        values="4;6;4"
+                        dur="1.7s"
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                  </g>
+
+                  {/* Animated Connection Lines */}
+                  <g stroke="rgb(29, 78, 216)" strokeWidth="1" opacity="0.4">
+                    <line x1="200" y1="150" x2="400" y2="200">
+                      <animate
+                        attributeName="stroke-dasharray"
+                        values="0,300;150,150;300,0;0,300"
+                        dur="3s"
+                        repeatCount="indefinite"
+                      />
+                    </line>
+                    <line x1="400" y1="200" x2="800" y2="180">
+                      <animate
+                        attributeName="stroke-dasharray"
+                        values="0,400;200,200;400,0;0,400"
+                        dur="2.5s"
+                        repeatCount="indefinite"
+                      />
+                    </line>
+                    <line x1="800" y1="180" x2="600" y2="300">
+                      <animate
+                        attributeName="stroke-dasharray"
+                        values="0,250;125,125;250,0;0,250"
+                        dur="2.8s"
+                        repeatCount="indefinite"
+                      />
+                    </line>
+                    <line x1="600" y1="300" x2="1000" y2="250">
+                      <animate
+                        attributeName="stroke-dasharray"
+                        values="0,400;200,200;400,0;0,400"
+                        dur="3.2s"
+                        repeatCount="indefinite"
+                      />
+                    </line>
+                  </g>
+
+                  {/* Floating Data Particles */}
+                  <g>
+                    <rect
+                      x="150"
+                      y="100"
+                      width="2"
+                      height="2"
+                      fill="rgb(34, 197, 94)"
+                      opacity="0.6"
+                    >
+                      <animateTransform
+                        attributeName="transform"
+                        type="translate"
+                        values="0,0;50,-20;100,10;150,-30"
+                        dur="4s"
+                        repeatCount="indefinite"
+                      />
+                      <animate
+                        attributeName="opacity"
+                        values="0;0.8;0.6;0"
+                        dur="4s"
+                        repeatCount="indefinite"
+                      />
+                    </rect>
+                    <rect
+                      x="350"
+                      y="150"
+                      width="2"
+                      height="2"
+                      fill="rgb(59, 130, 246)"
+                      opacity="0.6"
+                    >
+                      <animateTransform
+                        attributeName="transform"
+                        type="translate"
+                        values="0,0;-30,40;-60,20;-90,60"
+                        dur="3.5s"
+                        repeatCount="indefinite"
+                      />
+                      <animate
+                        attributeName="opacity"
+                        values="0;0.9;0.7;0"
+                        dur="3.5s"
+                        repeatCount="indefinite"
+                      />
+                    </rect>
+                    <rect
+                      x="750"
+                      y="130"
+                      width="2"
+                      height="2"
+                      fill="rgb(168, 85, 247)"
+                      opacity="0.6"
+                    >
+                      <animateTransform
+                        attributeName="transform"
+                        type="translate"
+                        values="0,0;-40,-30;-80,10;-120,-50"
+                        dur="3.8s"
+                        repeatCount="indefinite"
+                      />
+                      <animate
+                        attributeName="opacity"
+                        values="0;0.8;0.5;0"
+                        dur="3.8s"
+                        repeatCount="indefinite"
+                      />
+                    </rect>
+                  </g>
+
+                  {/* Security Shield Animation */}
+                  <g transform="translate(1000, 100)">
+                    <path
+                      d="M0,0 L10,0 L15,5 L10,20 L5,25 L0,20 L-5,25 L-10,20 L-15,5 L-10,0 Z"
+                      fill="none"
+                      stroke="rgb(34, 197, 94)"
+                      strokeWidth="1.5"
+                      opacity="0.6"
+                    >
+                      <animate
+                        attributeName="stroke-dasharray"
+                        values="0,60;30,30;60,0;0,60"
+                        dur="2s"
+                        repeatCount="indefinite"
+                      />
+                    </path>
+                    <animateTransform
+                      attributeName="transform"
+                      type="scale"
+                      values="1;1.1;1"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            {/* Floating Security Elements */}
+            <div className="absolute inset-0 pointer-events-none">
+              {/* Threat Detection Indicators */}
+              <div className="absolute top-20 left-20 opacity-20">
+                <div className="flex items-center space-x-2 bg-red-100 px-3 py-2 rounded-lg">
+                  <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                  <span className="text-xs text-red-700">Threat Detected</span>
+                </div>
+                <div className="mt-2 w-24 h-1 bg-red-200 rounded">
+                  <div
+                    className="h-full bg-red-500 rounded animate-pulse"
+                    style={{ width: "60%" }}
+                  ></div>
+                </div>
+              </div>
+
+              {/* Security Status Panel */}
+              <div className="absolute top-32 right-20 opacity-20">
+                <div className="bg-green-100 px-4 py-3 rounded-lg">
+                  <div className="flex items-center space-x-2 mb-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-xs text-green-700 font-medium">
+                      System Secure
+                    </span>
+                  </div>
+                  <div className="space-y-1">
+                    <div className="flex justify-between text-xs">
+                      <span className="text-green-600">Firewall</span>
+                      <span className="text-green-700">Active</span>
+                    </div>
+                    <div className="flex justify-between text-xs">
+                      <span className="text-green-600">Encryption</span>
+                      <span className="text-green-700">256-bit</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Real-time Monitoring */}
+              <div className="absolute bottom-32 left-32 opacity-15">
+                <div className="bg-blue-100 px-3 py-2 rounded-lg">
+                  <div className="text-xs text-blue-700 font-medium mb-2">
+                    Live Monitor
+                  </div>
+                  <div className="flex space-x-1">
+                    {[...Array(8)].map((_, i) => (
+                      <div
+                        key={i}
+                        className="w-1 bg-blue-300 rounded animate-pulse"
+                        style={{
+                          height: `${Math.random() * 20 + 5}px`,
+                          animationDelay: `${i * 0.2}s`,
+                        }}
+                      ></div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="absolute inset-0 bg-gradient-to-r from-secure-blue-900/5 to-transparent z-5"></div>
         <div className="container mx-auto px-6 py-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div

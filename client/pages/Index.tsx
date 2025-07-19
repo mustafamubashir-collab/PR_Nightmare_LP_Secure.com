@@ -84,16 +84,16 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Central Logo/Icon with Glow */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        {/* Central Logo/Icon with Glow - Right Side Only */}
+        <div className="absolute top-0 right-0 w-1/2 h-full flex items-center justify-center pointer-events-none">
           <div className="relative">
             {/* Outer Glow Ring */}
-            <div className="absolute inset-0 w-32 h-32 rounded-full bg-secure-blue-500/20 animate-ping"></div>
-            <div className="absolute inset-2 w-28 h-28 rounded-full bg-secure-blue-400/30 animate-pulse"></div>
+            <div className="absolute inset-0 w-40 h-40 rounded-full bg-secure-blue-500/20 animate-ping"></div>
+            <div className="absolute inset-2 w-36 h-36 rounded-full bg-secure-blue-400/30 animate-pulse"></div>
 
             {/* Central Shield Icon */}
-            <div className="relative w-24 h-24 bg-gradient-to-br from-secure-blue-400 to-secure-blue-600 rounded-xl flex items-center justify-center shadow-2xl animate-glow">
-              <Shield className="w-12 h-12 text-white" />
+            <div className="relative w-32 h-32 bg-gradient-to-br from-secure-blue-400 to-secure-blue-600 rounded-xl flex items-center justify-center shadow-2xl animate-glow">
+              <Shield className="w-16 h-16 text-white" />
               <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/20 rounded-xl"></div>
             </div>
           </div>

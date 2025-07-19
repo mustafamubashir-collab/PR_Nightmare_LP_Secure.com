@@ -227,34 +227,36 @@ export default function Index() {
             />
           </div>
         </div>
-        {/* Content positioned to avoid animations */}
-        <div className="container mx-auto px-6 py-20 relative z-10">
-          <div className="flex items-center justify-between min-h-screen">
-            {/* Left side content area - clear of floating panels */}
-            <div className="w-full max-w-2xl text-left pt-8">
+        {/* Content Grid for 1920x1080 Layout */}
+        <div className="relative z-10 w-full h-screen grid grid-cols-2">
+          {/* Left Side - Content Area */}
+          <div className="flex items-center justify-start pl-16 xl:pl-24">
+            <div className="max-w-xl">
               <div
                 className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               >
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white mb-8 leading-tight">
                   One Cyber Breach Away from a{" "}
                   <span className="text-secure-blue-400">PR Nightmare</span>
                 </h1>
-                <p className="text-lg md:text-xl text-secure-slate-300 mb-8 leading-relaxed max-w-lg">
+                <p className="text-xl xl:text-2xl text-secure-slate-300 mb-10 leading-relaxed">
                   Reduce breach risk with 40% fewer blind spots and AI-led
                   response — before it turns into reputational damage.
                 </p>
                 <Button
                   onClick={() => scrollToSection("final-cta")}
-                  className="bg-secure-blue-600 hover:bg-secure-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                  className="bg-secure-blue-600 hover:bg-secure-blue-700 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 >
                   Sign-up for Beta Partner
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  <ArrowRight className="ml-3 w-6 h-6" />
                 </Button>
               </div>
             </div>
+          </div>
 
-            {/* Right side reserved for central animation - keeps space clear */}
-            <div className="hidden lg:block w-full max-w-md"></div>
+          {/* Right Side - Animation Area */}
+          <div className="relative flex items-center justify-center">
+            {/* This space is reserved for animations */}
           </div>
         </div>
 

@@ -99,14 +99,14 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Floating Security Panels */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Investigation Report Panel - Top Right */}
+        {/* Floating Security Panels - Right Side Only */}
+        <div className="absolute top-0 right-0 w-1/2 h-full pointer-events-none">
+          {/* Investigation Report Panel - Top Right Area */}
           <div
-            className="absolute top-24 right-16 animate-float"
+            className="absolute top-16 right-12 animate-float"
             style={{ animationDelay: "0s" }}
           >
-            <div className="bg-secure-slate-800/90 backdrop-blur-sm border border-secure-blue-500/30 rounded-lg p-4 shadow-2xl">
+            <div className="bg-secure-slate-800/90 backdrop-blur-sm border border-secure-blue-500/30 rounded-lg p-5 shadow-2xl">
               <div className="flex items-center space-x-2 mb-3">
                 <div className="w-2 h-2 bg-secure-blue-400 rounded-full animate-pulse"></div>
                 <span className="text-secure-blue-300 text-sm font-medium">
@@ -129,12 +129,12 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Threat Alert Panel - Top Left */}
+          {/* Threat Alert Panel - Top Left of Right Area */}
           <div
-            className="absolute top-32 left-16 animate-float"
+            className="absolute top-28 left-12 animate-float"
             style={{ animationDelay: "1s" }}
           >
-            <div className="bg-secure-slate-800/90 backdrop-blur-sm border border-red-500/30 rounded-lg p-4 shadow-2xl">
+            <div className="bg-secure-slate-800/90 backdrop-blur-sm border border-red-500/30 rounded-lg p-5 shadow-2xl">
               <div className="flex items-center space-x-2 mb-3">
                 <AlertTriangle className="w-4 h-4 text-red-400" />
                 <span className="text-red-300 text-sm font-medium">
@@ -155,12 +155,12 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Live Monitoring Panel - Bottom Left */}
+          {/* Live Monitoring Panel - Bottom Left of Right Area */}
           <div
-            className="absolute bottom-24 left-20 animate-float"
+            className="absolute bottom-20 left-16 animate-float"
             style={{ animationDelay: "2s" }}
           >
-            <div className="bg-secure-slate-800/90 backdrop-blur-sm border border-green-500/30 rounded-lg p-4 shadow-2xl">
+            <div className="bg-secure-slate-800/90 backdrop-blur-sm border border-green-500/30 rounded-lg p-5 shadow-2xl">
               <div className="flex items-center space-x-2 mb-3">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                 <span className="text-green-300 text-sm font-medium">
@@ -182,12 +182,12 @@ export default function Index() {
             </div>
           </div>
 
-          {/* System Status Panel - Bottom Right */}
+          {/* System Status Panel - Bottom Right of Right Area */}
           <div
-            className="absolute bottom-32 right-20 animate-float"
+            className="absolute bottom-24 right-16 animate-float"
             style={{ animationDelay: "1.5s" }}
           >
-            <div className="bg-secure-slate-800/90 backdrop-blur-sm border border-secure-blue-500/30 rounded-lg p-4 shadow-2xl">
+            <div className="bg-secure-slate-800/90 backdrop-blur-sm border border-secure-blue-500/30 rounded-lg p-5 shadow-2xl">
               <div className="flex items-center space-x-2 mb-3">
                 <CheckCircle className="w-4 h-4 text-secure-blue-400" />
                 <span className="text-secure-blue-300 text-sm font-medium">
@@ -207,14 +207,14 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Alert Triangles - Floating */}
-          <div className="absolute top-1/3 left-1/4">
+          {/* Alert Triangles - Floating in Right Area */}
+          <div className="absolute top-1/4 left-1/4">
             <AlertTriangle
               className="w-6 h-6 text-red-400 animate-bounce"
               style={{ animationDelay: "0.5s" }}
             />
           </div>
-          <div className="absolute top-1/2 right-1/3">
+          <div className="absolute top-3/4 right-1/4">
             <AlertTriangle
               className="w-5 h-5 text-orange-400 animate-bounce"
               style={{ animationDelay: "1.2s" }}

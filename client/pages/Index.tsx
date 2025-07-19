@@ -39,7 +39,7 @@ export default function Index() {
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             {/* Cyber Security Dashboard Animation */}
-            <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0 opacity-30">
               <div className="w-full h-full bg-gradient-to-br from-secure-blue-100 to-secure-slate-100">
                 {/* Animated Network Grid */}
                 <svg
@@ -646,7 +646,7 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Let your team focus on growth — not grunt work.
+              Let your team focus on growth ��� not grunt work.
             </h2>
             <p className="text-xl text-secure-blue-100 mb-12">
               Secure.com gives you the firepower of a full security team —

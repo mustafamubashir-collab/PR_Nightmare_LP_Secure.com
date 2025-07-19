@@ -282,7 +282,7 @@ export default function Index() {
             {/* Floating Security Elements */}
             <div className="absolute inset-0 pointer-events-none">
               {/* Threat Detection Indicators */}
-              <div className="absolute top-20 left-20 opacity-40">
+              <div className="absolute top-20 left-20">
                 <div className="flex items-center space-x-2 bg-red-100 px-3 py-2 rounded-lg">
                   <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
                   <span className="text-xs text-red-700">Threat Detected</span>

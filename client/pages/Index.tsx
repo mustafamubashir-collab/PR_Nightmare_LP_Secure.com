@@ -282,7 +282,7 @@ export default function Index() {
             {/* Floating Security Elements */}
             <div className="absolute inset-0 pointer-events-none">
               {/* Threat Detection Indicators */}
-              <div className="absolute top-20 left-20 opacity-20">
+              <div className="absolute top-20 left-20 opacity-40">
                 <div className="flex items-center space-x-2 bg-red-100 px-3 py-2 rounded-lg">
                   <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
                   <span className="text-xs text-red-700">Threat Detected</span>
@@ -646,7 +646,7 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Let your team focus on growth ��� not grunt work.
+              Let your team focus on growth — not grunt work.
             </h2>
             <p className="text-xl text-secure-blue-100 mb-12">
               Secure.com gives you the firepower of a full security team —

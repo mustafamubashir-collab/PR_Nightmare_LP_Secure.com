@@ -86,13 +86,13 @@ export default function Index() {
 
         {/* Central Logo/Icon with Glow - Right Side Only */}
         <div className="absolute top-0 right-0 w-1/2 h-full flex items-center justify-center pointer-events-none">
-          <div className="relative">
-            {/* Outer Glow Ring */}
-            <div className="absolute inset-0 w-40 h-40 rounded-full bg-secure-blue-500/20 animate-ping"></div>
-            <div className="absolute inset-2 w-36 h-36 rounded-full bg-secure-blue-400/30 animate-pulse"></div>
+          <div className="relative flex items-center justify-center">
+            {/* Outer Glow Ring - Centered */}
+            <div className="absolute w-40 h-40 rounded-full bg-secure-blue-500/20 animate-ping"></div>
+            <div className="absolute w-36 h-36 rounded-full bg-secure-blue-400/30 animate-pulse"></div>
 
-            {/* Central Shield Icon */}
-            <div className="relative w-32 h-32 bg-gradient-to-br from-secure-blue-400 to-secure-blue-600 rounded-xl flex items-center justify-center shadow-2xl animate-glow">
+            {/* Central Shield Icon - Perfectly Centered */}
+            <div className="w-32 h-32 bg-gradient-to-br from-secure-blue-400 to-secure-blue-600 rounded-xl flex items-center justify-center shadow-2xl animate-glow">
               <Shield className="w-16 h-16 text-white" />
               <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/20 rounded-xl"></div>
             </div>
@@ -235,22 +235,27 @@ export default function Index() {
               <div
                 className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               >
-                <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mb-8 leading-tight whitespace-nowrap">
-                  One Cyber Breach Away from a{" "}
-                  <span className="text-secure-blue-400">PR Nightmare</span>
+                <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mb-8 leading-tight text-left">
+                  <div>One Cyber Breach</div>
+                  <div>Away from a</div>
+                  <div className="text-secure-blue-400">PR Nightmare</div>
                 </h1>
                 <p className="text-xl xl:text-2xl text-secure-slate-300 mb-10 leading-relaxed">
                   Reduce breach risk with 40% fewer blind spots and AI-led
                   response — before it turns into reputational damage.
                 </p>
-                <Button
-                  onClick={() => scrollToSection("final-cta")}
-                  className="bg-secure-blue-600 hover:bg-secure-blue-700 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse hover:animate-none relative overflow-hidden group"
-                >
-                  <span className="relative z-10">Sign-up for Beta Partner</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                  <ArrowRight className="ml-3 w-6 h-6 relative z-10" />
-                </Button>
+                <div className="relative">
+                  {/* Subtle glowing background */}
+                  <div className="absolute inset-0 bg-secure-blue-600/30 rounded-lg blur-xl animate-pulse" style={{animationDuration: '4s'}}></div>
+                  <Button
+                    onClick={() => scrollToSection("final-cta")}
+                    className="bg-secure-blue-600 hover:bg-secure-blue-700 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden group"
+                  >
+                    <span className="relative z-10">Sign-up for Beta Partner</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/8 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-2000"></div>
+                    <ArrowRight className="ml-3 w-6 h-6 relative z-10" />
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

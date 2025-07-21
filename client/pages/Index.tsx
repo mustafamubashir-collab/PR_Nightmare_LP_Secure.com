@@ -207,20 +207,20 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Alert Triangles - Floating in Right Area */}
-          <div className="absolute top-1/4 left-1/4">
+          {/* Alert Triangles - Floating in Right Area (repositioned to avoid overlaps) */}
+          <div className="absolute top-1/3 left-1/2">
             <AlertTriangle
               className="w-6 h-6 text-red-400 animate-bounce"
               style={{ animationDelay: "0.5s" }}
             />
           </div>
-          <div className="absolute top-3/4 right-1/4">
+          <div className="absolute top-1/2 right-1/3">
             <AlertTriangle
               className="w-5 h-5 text-orange-400 animate-bounce"
               style={{ animationDelay: "1.2s" }}
             />
           </div>
-          <div className="absolute bottom-1/3 left-1/3">
+          <div className="absolute bottom-1/4 left-1/4">
             <AlertTriangle
               className="w-4 h-4 text-red-500 animate-bounce"
               style={{ animationDelay: "2.1s" }}
@@ -235,7 +235,7 @@ export default function Index() {
               <div
                 className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               >
-                <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white mb-8 leading-tight">
+                <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mb-8 leading-tight whitespace-nowrap">
                   One Cyber Breach Away from a{" "}
                   <span className="text-secure-blue-400">PR Nightmare</span>
                 </h1>
@@ -245,10 +245,11 @@ export default function Index() {
                 </p>
                 <Button
                   onClick={() => scrollToSection("final-cta")}
-                  className="bg-secure-blue-600 hover:bg-secure-blue-700 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                  className="bg-secure-blue-600 hover:bg-secure-blue-700 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse hover:animate-none relative overflow-hidden group"
                 >
-                  Sign-up for Beta Partner
-                  <ArrowRight className="ml-3 w-6 h-6" />
+                  <span className="relative z-10">Sign-up for Beta Partner</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                  <ArrowRight className="ml-3 w-6 h-6 relative z-10" />
                 </Button>
               </div>
             </div>

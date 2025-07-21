@@ -79,7 +79,6 @@ export default function Index() {
                 </radialGradient>
               </defs>
               <rect width="100%" height="100%" fill="url(#heroGrid)" />
-              <circle cx="500" cy="300" r="200" fill="url(#centerGlow)" />
             </svg>
           </div>
         </div>
@@ -220,7 +219,7 @@ export default function Index() {
               style={{ animationDelay: "1.2s" }}
             />
           </div>
-          <div className="absolute bottom-1/4 left-1/4">
+          <div className="absolute bottom-1/5 left-1/5">
             <AlertTriangle
               className="w-4 h-4 text-red-500 animate-bounce"
               style={{ animationDelay: "2.1s" }}
@@ -252,7 +251,10 @@ export default function Index() {
                     className="bg-secure-blue-600 hover:bg-secure-blue-700 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden group"
                   >
                     <span className="relative z-10">Sign-up for Beta Partner</span>
+                    {/* Hover shimmer */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/8 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-2000"></div>
+                    {/* 5-second repeating shine animation */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/12 to-transparent transform -skew-x-12 -translate-x-full animate-shine"></div>
                     <ArrowRight className="ml-3 w-6 h-6 relative z-10" />
                   </Button>
                 </div>

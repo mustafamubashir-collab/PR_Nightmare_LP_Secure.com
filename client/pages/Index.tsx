@@ -231,7 +231,13 @@ export default function Index() {
                 <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mb-8 leading-tight text-left drop-shadow-lg">
                   <div>One Cyber Breach</div>
                   <div>Away from a</div>
-                  <div className="text-gray-400 font-extrabold">PR Nightmare</div>
+                  <div className="text-gray-400 font-extrabold">
+                    <p>
+                      <span style={{color: 'rgb(10, 19, 46)'}}>
+                        PR Nightmare
+                      </span>
+                    </p>
+                  </div>
                 </h1>
                 <p className="text-xl xl:text-2xl text-white/90 mb-10 leading-relaxed drop-shadow-md">
                   Reduce breach risk with 40% fewer blind spots and AI-led
@@ -242,7 +248,8 @@ export default function Index() {
                   <div className="absolute inset-0 bg-blue-700/30 rounded-lg blur-xl animate-pulse" style={{animationDuration: '4s'}}></div>
                   <Button
                     onClick={() => scrollToSection("final-cta")}
-                    className="bg-blue-700 hover:bg-blue-800 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden group"
+                    className="text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden group"
+                    style={{backgroundColor: '#2e2f3e'}}
                   >
                     <span className="relative z-10">Sign-up for Beta Partner</span>
                     {/* Hover shimmer */}
@@ -257,7 +264,12 @@ export default function Index() {
           </div>
 
           {/* Right Side - Animation Area */}
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex items-center justify-center" style={{
+            backgroundImage: 'url(https://cdn.builder.io/o/assets%2F48c32e83d1314890b4d6a107b41a061a%2F127535bdd5094d29b5accb2e40fb5083?alt=media&token=0e811cdb-964a-4fcd-8025-556937daa9d1&apiKey=48c32e83d1314890b4d6a107b41a061a)',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover'
+          }}>
             {/* This space is reserved for animations */}
           </div>
         </div>

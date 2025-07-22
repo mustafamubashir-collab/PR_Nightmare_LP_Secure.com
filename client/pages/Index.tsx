@@ -114,14 +114,14 @@ export default function Index() {
               </div>
               <div className="space-y-2">
                 <div className="text-xs text-gray-300">
-                  Conclusion: Benign
+                  Conclusion: Threat Neutralized
                 </div>
                 <div className="flex space-x-2">
                   <div className="px-2 py-1 bg-blue-600/40 text-blue-200 text-xs rounded">
-                    Finding 1
+                    Shadow Assets
                   </div>
                   <div className="px-2 py-1 bg-blue-600/40 text-blue-200 text-xs rounded">
-                    Finding 2
+                    Compliance Drift
                   </div>
                 </div>
               </div>
@@ -231,7 +231,7 @@ export default function Index() {
                 <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mb-8 leading-tight text-left drop-shadow-lg">
                   <div>One Cyber Breach</div>
                   <div>Away from a</div>
-                  <div className="bg-black/80 backdrop-blur-sm border border-white/30 text-white font-extrabold px-4 py-2 rounded-lg inline-block">PR Nightmare</div>
+                  <div className="text-gray-400 font-extrabold">PR Nightmare</div>
                 </h1>
                 <p className="text-xl xl:text-2xl text-white/90 mb-10 leading-relaxed drop-shadow-md">
                   Reduce breach risk with 40% fewer blind spots and AI-led
@@ -239,10 +239,10 @@ export default function Index() {
                 </p>
                 <div className="relative">
                   {/* Subtle glowing background */}
-                  <div className="absolute inset-0 bg-black/30 rounded-lg blur-xl animate-pulse" style={{animationDuration: '4s'}}></div>
+                  <div className="absolute inset-0 bg-blue-700/30 rounded-lg blur-xl animate-pulse" style={{animationDuration: '4s'}}></div>
                   <Button
                     onClick={() => scrollToSection("final-cta")}
-                    className="bg-black/80 backdrop-blur-sm border border-white/30 hover:bg-black/70 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden group"
+                    className="bg-blue-700 hover:bg-blue-800 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden group"
                   >
                     <span className="relative z-10">Sign-up for Beta Partner</span>
                     {/* Hover shimmer */}

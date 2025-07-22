@@ -34,7 +34,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Hero Section - Dropzone.ai Style */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-secure-slate-900 via-secure-slate-800 to-secure-blue-900 min-h-screen flex items-center">
+      <section className="relative overflow-hidden min-h-screen flex items-center" style={{background: 'linear-gradient(to bottom right, #00CBC9, #5F00FF)'}}>
         {/* Animated Background Grid */}
         <div className="absolute inset-0">
           <div className="w-full h-full opacity-20">
@@ -207,12 +207,6 @@ export default function Index() {
           </div>
 
           {/* Alert Triangles - Floating in Right Area (repositioned to avoid overlaps) */}
-          <div className="absolute top-1/3 left-1/2">
-            <AlertTriangle
-              className="w-6 h-6 text-red-400 animate-bounce"
-              style={{ animationDelay: "0.5s" }}
-            />
-          </div>
           <div className="absolute top-1/2 right-1/3">
             <AlertTriangle
               className="w-5 h-5 text-orange-400 animate-bounce"

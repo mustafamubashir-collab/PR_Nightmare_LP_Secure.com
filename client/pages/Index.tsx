@@ -228,21 +228,21 @@ export default function Index() {
               <div
                 className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               >
-                <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mb-8 leading-tight text-left">
+                <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mb-8 leading-tight text-left drop-shadow-lg">
                   <div>One Cyber Breach</div>
                   <div>Away from a</div>
-                  <div className="text-secure-blue-400">PR Nightmare</div>
+                  <div className="text-red-500 font-extrabold">PR Nightmare</div>
                 </h1>
-                <p className="text-xl xl:text-2xl text-secure-slate-300 mb-10 leading-relaxed">
+                <p className="text-xl xl:text-2xl text-white/90 mb-10 leading-relaxed drop-shadow-md">
                   Reduce breach risk with 40% fewer blind spots and AI-led
-                  response — before it turns into reputational damage.
+                  response before it turns into reputational damage.
                 </p>
                 <div className="relative">
                   {/* Subtle glowing background */}
-                  <div className="absolute inset-0 bg-secure-blue-600/30 rounded-lg blur-xl animate-pulse" style={{animationDuration: '4s'}}></div>
+                  <div className="absolute inset-0 bg-white/20 rounded-lg blur-xl animate-pulse" style={{animationDuration: '4s'}}></div>
                   <Button
                     onClick={() => scrollToSection("final-cta")}
-                    className="bg-secure-blue-600 hover:bg-secure-blue-700 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden group"
+                    className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden group"
                   >
                     <span className="relative z-10">Sign-up for Beta Partner</span>
                     {/* Hover shimmer */}

@@ -105,22 +105,22 @@ export default function Index() {
             className="absolute top-16 right-12 animate-float"
             style={{ animationDelay: "0s" }}
           >
-            <div className="bg-secure-slate-800/90 backdrop-blur-sm border border-secure-blue-500/30 rounded-lg p-5 shadow-2xl">
+            <div className="bg-black/80 backdrop-blur-sm border border-white/30 rounded-lg p-5 shadow-2xl">
               <div className="flex items-center space-x-2 mb-3">
                 <div className="w-2 h-2 bg-secure-blue-400 rounded-full animate-pulse"></div>
-                <span className="text-secure-blue-300 text-sm font-medium">
+                <span className="text-blue-300 text-sm font-medium">
                   Investigation Report
                 </span>
               </div>
               <div className="space-y-2">
-                <div className="text-xs text-secure-slate-300">
+                <div className="text-xs text-gray-300">
                   Conclusion: Benign
                 </div>
                 <div className="flex space-x-2">
-                  <div className="px-2 py-1 bg-secure-blue-600/30 text-secure-blue-300 text-xs rounded">
+                  <div className="px-2 py-1 bg-blue-600/40 text-blue-200 text-xs rounded">
                     Finding 1
                   </div>
-                  <div className="px-2 py-1 bg-secure-blue-600/30 text-secure-blue-300 text-xs rounded">
+                  <div className="px-2 py-1 bg-blue-600/40 text-blue-200 text-xs rounded">
                     Finding 2
                   </div>
                 </div>
@@ -133,7 +133,7 @@ export default function Index() {
             className="absolute top-28 left-12 animate-float"
             style={{ animationDelay: "1s" }}
           >
-            <div className="bg-secure-slate-800/90 backdrop-blur-sm border border-red-500/30 rounded-lg p-5 shadow-2xl">
+            <div className="bg-black/80 backdrop-blur-sm border border-red-400/50 rounded-lg p-5 shadow-2xl">
               <div className="flex items-center space-x-2 mb-3">
                 <AlertTriangle className="w-4 h-4 text-red-400" />
                 <span className="text-red-300 text-sm font-medium">
@@ -141,7 +141,7 @@ export default function Index() {
                 </span>
               </div>
               <div className="space-y-2">
-                <div className="text-xs text-secure-slate-300">
+                <div className="text-xs text-gray-300">
                   Threat Level: Medium
                 </div>
                 <div className="w-24 h-1 bg-secure-slate-700 rounded">
@@ -159,7 +159,7 @@ export default function Index() {
             className="absolute bottom-20 left-16 animate-float"
             style={{ animationDelay: "2s" }}
           >
-            <div className="bg-secure-slate-800/90 backdrop-blur-sm border border-green-500/30 rounded-lg p-5 shadow-2xl">
+            <div className="bg-black/80 backdrop-blur-sm border border-green-400/50 rounded-lg p-5 shadow-2xl">
               <div className="flex items-center space-x-2 mb-3">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                 <span className="text-green-300 text-sm font-medium">
@@ -186,10 +186,10 @@ export default function Index() {
             className="absolute bottom-24 right-16 animate-float"
             style={{ animationDelay: "1.5s" }}
           >
-            <div className="bg-secure-slate-800/90 backdrop-blur-sm border border-secure-blue-500/30 rounded-lg p-5 shadow-2xl">
+            <div className="bg-black/80 backdrop-blur-sm border border-white/30 rounded-lg p-5 shadow-2xl">
               <div className="flex items-center space-x-2 mb-3">
                 <CheckCircle className="w-4 h-4 text-secure-blue-400" />
-                <span className="text-secure-blue-300 text-sm font-medium">
+                <span className="text-blue-300 text-sm font-medium">
                   System Status
                 </span>
               </div>

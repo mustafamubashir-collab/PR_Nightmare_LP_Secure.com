@@ -87,8 +87,8 @@ export default function Index() {
         <div className="absolute top-0 right-0 w-1/2 h-full flex items-center justify-center pointer-events-none">
           <div className="relative flex items-center justify-center">
             {/* Outer Glow Ring - Centered */}
-            <div className="absolute w-40 h-40 rounded-full bg-secure-blue-500/20 animate-ping"></div>
-            <div className="absolute w-36 h-36 rounded-full bg-secure-blue-400/30 animate-pulse"></div>
+            <div className="absolute w-40 h-40 rounded-full bg-black/20 animate-ping"></div>
+            <div className="absolute w-36 h-36 rounded-full bg-black/30 animate-pulse"></div>
 
             {/* Central Shield Icon - Perfectly Centered */}
             <div className="w-32 h-32 bg-black/80 backdrop-blur-sm border border-white/30 rounded-xl flex items-center justify-center shadow-2xl animate-glow">
@@ -231,7 +231,7 @@ export default function Index() {
                 <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mb-8 leading-tight text-left drop-shadow-lg">
                   <div>One Cyber Breach</div>
                   <div>Away from a</div>
-                  <div className="text-red-500 font-extrabold">PR Nightmare</div>
+                  <div className="bg-black/80 backdrop-blur-sm border border-white/30 text-white font-extrabold px-4 py-2 rounded-lg inline-block">PR Nightmare</div>
                 </h1>
                 <p className="text-xl xl:text-2xl text-white/90 mb-10 leading-relaxed drop-shadow-md">
                   Reduce breach risk with 40% fewer blind spots and AI-led

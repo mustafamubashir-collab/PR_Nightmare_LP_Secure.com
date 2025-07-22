@@ -34,7 +34,12 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Hero Section - Dropzone.ai Style */}
-      <section className="relative overflow-hidden min-h-screen flex items-center" style={{background: 'linear-gradient(to bottom right, #00CBC9, #5F00FF)'}}>
+      <section
+        className="relative overflow-hidden min-h-screen flex items-center"
+        style={{
+          background: "linear-gradient(to bottom right, #00CBC9, #5F00FF)",
+        }}
+      >
         {/* Animated Background Grid */}
         <div className="absolute inset-0">
           <div className="w-full h-full opacity-20">
@@ -233,7 +238,7 @@ export default function Index() {
                   <div>Away from a</div>
                   <div className="text-gray-400 font-extrabold">
                     <p>
-                      <span style={{color: 'rgb(10, 19, 46)'}}>
+                      <span style={{ color: "rgb(10, 19, 46)" }}>
                         PR Nightmare
                       </span>
                     </p>
@@ -245,13 +250,18 @@ export default function Index() {
                 </p>
                 <div className="relative">
                   {/* Subtle glowing background */}
-                  <div className="absolute inset-0 bg-blue-700/30 rounded-lg blur-xl animate-pulse" style={{animationDuration: '4s'}}></div>
+                  <div
+                    className="absolute inset-0 bg-blue-700/30 rounded-lg blur-xl animate-pulse"
+                    style={{ animationDuration: "4s" }}
+                  ></div>
                   <Button
                     onClick={() => scrollToSection("final-cta")}
                     className="text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden group"
-                    style={{backgroundColor: '#2e2f3e'}}
+                    style={{ backgroundColor: "#2e2f3e" }}
                   >
-                    <span className="relative z-10">Sign-up for Beta Partner</span>
+                    <span className="relative z-10">
+                      Sign-up for Beta Partner
+                    </span>
                     {/* Hover shimmer */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/8 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-2000"></div>
                     {/* 5-second repeating shine animation */}
@@ -264,12 +274,16 @@ export default function Index() {
           </div>
 
           {/* Right Side - Animation Area */}
-          <div className="relative flex items-center justify-center" style={{
-            backgroundImage: 'url(https://cdn.builder.io/o/assets%2F48c32e83d1314890b4d6a107b41a061a%2F127535bdd5094d29b5accb2e40fb5083?alt=media&token=0e811cdb-964a-4fcd-8025-556937daa9d1&apiKey=48c32e83d1314890b4d6a107b41a061a)',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
-            backgroundSize: 'cover'
-          }}>
+          <div
+            className="relative flex items-center justify-center"
+            style={{
+              backgroundImage:
+                "url(https://cdn.builder.io/o/assets%2F48c32e83d1314890b4d6a107b41a061a%2F127535bdd5094d29b5accb2e40fb5083?alt=media&token=0e811cdb-964a-4fcd-8025-556937daa9d1&apiKey=48c32e83d1314890b4d6a107b41a061a)",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+            }}
+          >
             {/* This space is reserved for animations */}
           </div>
         </div>

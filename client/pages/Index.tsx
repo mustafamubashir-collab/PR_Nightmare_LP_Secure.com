@@ -91,7 +91,7 @@ export default function Index() {
             <div className="absolute w-36 h-36 rounded-full bg-secure-blue-400/30 animate-pulse"></div>
 
             {/* Central Shield Icon - Perfectly Centered */}
-            <div className="w-32 h-32 bg-gradient-to-br from-secure-blue-400 to-secure-blue-600 rounded-xl flex items-center justify-center shadow-2xl animate-glow">
+            <div className="w-32 h-32 bg-black/80 backdrop-blur-sm border border-white/30 rounded-xl flex items-center justify-center shadow-2xl animate-glow">
               <Shield className="w-16 h-16 text-white" />
               <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/20 rounded-xl"></div>
             </div>
@@ -239,10 +239,10 @@ export default function Index() {
                 </p>
                 <div className="relative">
                   {/* Subtle glowing background */}
-                  <div className="absolute inset-0 bg-white/20 rounded-lg blur-xl animate-pulse" style={{animationDuration: '4s'}}></div>
+                  <div className="absolute inset-0 bg-black/30 rounded-lg blur-xl animate-pulse" style={{animationDuration: '4s'}}></div>
                   <Button
                     onClick={() => scrollToSection("final-cta")}
-                    className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden group"
+                    className="bg-black/80 backdrop-blur-sm border border-white/30 hover:bg-black/70 text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden group"
                   >
                     <span className="relative z-10">Sign-up for Beta Partner</span>
                     {/* Hover shimmer */}

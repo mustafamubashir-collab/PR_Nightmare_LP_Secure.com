@@ -285,7 +285,7 @@ export default function Index() {
               backgroundSize: "cover",
             }}
           >
-            {/* This space is reserved for animations */}
+
           </div>
         </div>
 

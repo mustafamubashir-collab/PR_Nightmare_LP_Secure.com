@@ -1153,16 +1153,34 @@ export default function Index() {
                     {deploymentProgress}%
                   </span>
                 </div>
-                <div style={{ backgroundColor: 'rgb(31, 34, 41)', borderRadius: '50px', height: '8px', marginTop: '24px' }}>
+                <div style={{ backgroundColor: 'rgb(31, 34, 41)', borderRadius: '50px', height: '8px', marginTop: '24px', position: 'relative', overflow: 'hidden' }}>
                   <div
                     style={{
                       backgroundColor: '#3c83f6',
                       borderRadius: '50px',
                       height: '8px',
                       width: `${deploymentProgress}%`,
-                      transition: 'width 1s ease-in-out'
+                      transition: 'width 1.5s cubic-bezier(0.4, 0, 0.2, 1)',
+                      position: 'relative',
+                      boxShadow: deploymentProgress === 100 ? '0 0 12px rgba(59, 130, 246, 0.6)' : 'none',
+                      animation: deploymentProgress === 100 ? 'pulse 2s infinite' : 'none'
                     }}
-                  />
+                  >
+                    {/* Shimmer effect during progress */}
+                    {deploymentProgress > 0 && deploymentProgress < 100 && (
+                      <div
+                        style={{
+                          position: 'absolute',
+                          top: 0,
+                          left: '-100%',
+                          width: '100%',
+                          height: '100%',
+                          background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent)',
+                          animation: 'shimmer 2s infinite'
+                        }}
+                      />
+                    )}
+                  </div>
                 </div>
                 <div style={{ marginTop: '24px' }}>
                   {/* Step 1: API Connection Established */}

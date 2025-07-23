@@ -1331,24 +1331,38 @@ export default function Index() {
               Secure.com gives you the firepower of a full security team, without the headcount.
             </p>
 
-            <Button style={{
-              backgroundColor: '#ffffff',
-              color: '#1A1AFF',
-              padding: '16px 32px',
-              fontSize: '18px',
-              fontWeight: '600',
-              borderRadius: '8px',
-              fontFamily: 'Inter, sans-serif',
-              border: 'none',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              margin: '0 auto',
-              transition: 'all 0.3s ease'
-            }}>
+            <Button
+              onClick={() => setShowBetaModal(true)}
+              style={{
+                backgroundColor: '#ffffff',
+                color: '#1A1AFF',
+                padding: '16px 32px',
+                fontSize: '18px',
+                fontWeight: '600',
+                borderRadius: '8px',
+                fontFamily: 'Inter, sans-serif',
+                border: 'none',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                margin: '0 auto',
+                transition: 'all 0.3s ease'
+              }}
+            >
               Sign-up for Beta Partner
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
+
+            {/* FOMO Messaging */}
+            <p style={{
+              color: 'rgba(255, 255, 255, 0.8)',
+              fontSize: '16px',
+              fontWeight: '400',
+              marginTop: '16px',
+              fontFamily: 'Inter, sans-serif'
+            }}>
+              Only 50 spots available. Be among the first to shape the future of AI-native security.
+            </p>
 
             {/* PureVPN Attribution */}
             <div style={{ marginTop: '48px', textAlign: 'center' }}>

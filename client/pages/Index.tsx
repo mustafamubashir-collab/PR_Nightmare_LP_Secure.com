@@ -516,7 +516,7 @@ export default function Index() {
         <div
           style={{
             width: "100%",
-            background: "linear-gradient(135deg, #5F00FF 0%, #00CBC9 100%)",
+            background: "linear-gradient(90deg, #3C00C9 0%, #00B2FF 100%)",
             margin: "0 auto",
             padding: "0 16px",
           }}

@@ -1197,17 +1197,28 @@ export default function Index() {
       >
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Let your team focus on growth
-              <br />
-              not grunt work.
+            <h2 style={{ color: '#ffffff', fontSize: '48px', fontWeight: '700', lineHeight: '1.2', marginBottom: '24px', fontFamily: 'Inter, sans-serif' }}>
+              Let your team focus on growth<br />not grunt work.
             </h2>
-            <p className="text-xl text-secure-blue-100 mb-12">
-              Secure.com gives you the firepower of a full security team,
-              without the headcount.
+            <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '20px', lineHeight: '1.4', marginBottom: '32px', fontFamily: 'Inter, sans-serif' }}>
+              Secure.com gives you the firepower of a full security team, without the headcount.
             </p>
 
-            <Button className="bg-white text-secure-blue-600 hover:bg-secure-blue-50 px-12 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <Button style={{
+              backgroundColor: '#ffffff',
+              color: '#1A1AFF',
+              padding: '16px 32px',
+              fontSize: '18px',
+              fontWeight: '600',
+              borderRadius: '8px',
+              fontFamily: 'Inter, sans-serif',
+              border: 'none',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              margin: '0 auto',
+              transition: 'all 0.3s ease'
+            }}>
               Sign-up for Beta Partner
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

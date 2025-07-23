@@ -1107,23 +1107,19 @@ export default function Index() {
                       <div style={{ marginLeft: '24px' }}>
                         <h3 style={{
                           color: 'rgb(255, 255, 255)',
-                          fontSize: '24px',
+                          fontSize: '20px',
                           fontWeight: '700',
-                          lineHeight: '32px',
-                          marginBottom: '16px',
+                          lineHeight: '28px',
+                          marginBottom: '12px',
                         }}>
-                          Agentic Automation & Response Workflows
+                          Case Management + MTTD/MTTR
                         </h3>
                         <p style={{
                           color: 'rgb(209, 213, 219)',
-                          fontSize: '18px',
-                          lineHeight: '29px',
+                          fontSize: '16px',
+                          lineHeight: '24px',
                         }}>
-                          Intelligent automation that learns from your team's
-                          responses and handles routine security tasks. From
-                          initial triage to incident response, our AI agents
-                          work alongside your team to accelerate every step of
-                          the security workflow.
+                          AI-driven incident response automates 70% of triage and cuts response time by 50%.
                         </p>
                       </div>
                     </div>
@@ -1139,7 +1135,60 @@ export default function Index() {
                   display: 'none',
                   marginTop: '32px'
                 }}
-              />
+              >
+                <Card style={{
+                  backdropFilter: 'blur(12px)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                  borderColor: 'rgba(255, 255, 255, 0.1)',
+                  borderRadius: '8px',
+                  borderWidth: '0.8px',
+                  boxShadow: 'rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px',
+                }}>
+                  <div style={{ padding: '32px' }}>
+                    <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{
+                          color: 'rgb(0, 112, 243)',
+                          width: '64px',
+                          height: '64px'
+                        }}
+                      >
+                        <path d="M9 12l2 2 4-4" />
+                        <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3" />
+                        <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3" />
+                        <path d="M3 12c0 5.5 4.5 10 10 10s10-4.5 10-10" />
+                      </svg>
+                      <div style={{ marginLeft: '24px' }}>
+                        <h3 style={{
+                          color: 'rgb(255, 255, 255)',
+                          fontSize: '20px',
+                          fontWeight: '700',
+                          lineHeight: '28px',
+                          marginBottom: '12px',
+                        }}>
+                          Risk Management
+                        </h3>
+                        <p style={{
+                          color: 'rgb(209, 213, 219)',
+                          fontSize: '16px',
+                          lineHeight: '24px',
+                        }}>
+                          Dynamic scoring engine prioritizes vulnerabilities before they escalate into business-impacting events.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              </div>
               <div
                 role="tabpanel"
                 aria-labelledby="radix-R167l7-trigger-risk"
@@ -1149,7 +1198,58 @@ export default function Index() {
                   display: 'none',
                   marginTop: '32px'
                 }}
-              />
+              >
+                <Card style={{
+                  backdropFilter: 'blur(12px)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                  borderColor: 'rgba(255, 255, 255, 0.1)',
+                  borderRadius: '8px',
+                  borderWidth: '0.8px',
+                  boxShadow: 'rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px',
+                }}>
+                  <div style={{ padding: '32px' }}>
+                    <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{
+                          color: 'rgb(0, 112, 243)',
+                          width: '64px',
+                          height: '64px'
+                        }}
+                      >
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                      </svg>
+                      <div style={{ marginLeft: '24px' }}>
+                        <h3 style={{
+                          color: 'rgb(255, 255, 255)',
+                          fontSize: '20px',
+                          fontWeight: '700',
+                          lineHeight: '28px',
+                          marginBottom: '12px',
+                        }}>
+                          Attack Surface Visibility
+                        </h3>
+                        <p style={{
+                          color: 'rgb(209, 213, 219)',
+                          fontSize: '16px',
+                          lineHeight: '24px',
+                        }}>
+                          Visualizes assets, risks, and misconfigurations — reducing blind spots by 40%.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              </div>
               <div
                 role="tabpanel"
                 aria-labelledby="radix-R167l7-trigger-compliance"
@@ -1159,7 +1259,58 @@ export default function Index() {
                   display: 'none',
                   marginTop: '32px'
                 }}
-              />
+              >
+                <Card style={{
+                  backdropFilter: 'blur(12px)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                  borderColor: 'rgba(255, 255, 255, 0.1)',
+                  borderRadius: '8px',
+                  borderWidth: '0.8px',
+                  boxShadow: 'rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px',
+                }}>
+                  <div style={{ padding: '32px' }}>
+                    <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{
+                          color: 'rgb(0, 112, 243)',
+                          width: '64px',
+                          height: '64px'
+                        }}
+                      >
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                        <rect x="7" y="7" width="10" height="10" rx="1" ry="1" />
+                      </svg>
+                      <div style={{ marginLeft: '24px' }}>
+                        <h3 style={{
+                          color: 'rgb(255, 255, 255)',
+                          fontSize: '20px',
+                          fontWeight: '700',
+                          lineHeight: '28px',
+                          marginBottom: '12px',
+                        }}>
+                          Context-Aware Unified Platform
+                        </h3>
+                        <p style={{
+                          color: 'rgb(209, 213, 219)',
+                          fontSize: '16px',
+                          lineHeight: '24px',
+                        }}>
+                          Centralizes all telemetry and decisioning to prevent overlooked threats from surfacing.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              </div>
               <div
                 role="tabpanel"
                 aria-labelledby="radix-R167l7-trigger-architecture"
@@ -1169,7 +1320,60 @@ export default function Index() {
                   display: 'none',
                   marginTop: '32px'
                 }}
-              />
+              >
+                <Card style={{
+                  backdropFilter: 'blur(12px)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                  borderColor: 'rgba(255, 255, 255, 0.1)',
+                  borderRadius: '8px',
+                  borderWidth: '0.8px',
+                  boxShadow: 'rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px',
+                }}>
+                  <div style={{ padding: '32px' }}>
+                    <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{
+                          color: 'rgb(0, 112, 243)',
+                          width: '64px',
+                          height: '64px'
+                        }}
+                      >
+                        <rect x="3" y="3" width="7" height="7" />
+                        <rect x="14" y="3" width="7" height="7" />
+                        <rect x="14" y="14" width="7" height="7" />
+                        <rect x="3" y="14" width="7" height="7" />
+                      </svg>
+                      <div style={{ marginLeft: '24px' }}>
+                        <h3 style={{
+                          color: 'rgb(255, 255, 255)',
+                          fontSize: '20px',
+                          fontWeight: '700',
+                          lineHeight: '28px',
+                          marginBottom: '12px',
+                        }}>
+                          Unified Security Architecture
+                        </h3>
+                        <p style={{
+                          color: 'rgb(209, 213, 219)',
+                          fontSize: '16px',
+                          lineHeight: '24px',
+                        }}>
+                          Video and detailed architecture overview coming soon.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              </div>
             </div>
           </div>
         </div>

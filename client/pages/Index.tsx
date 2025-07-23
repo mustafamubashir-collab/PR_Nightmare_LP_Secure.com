@@ -266,13 +266,13 @@ export default function Index() {
         {/* Logo and Brand Text - Top Left */}
         <div className="absolute top-8 left-8 xl:left-16 z-20">
           <div style={{ marginBottom: '-1px' }}>
-            <h1 className="text-2xl font-bold text-white">
+            <h1 style={{ fontSize: '24px', fontWeight: '700', color: '#ffffff', fontFamily: 'Inter, sans-serif' }}>
               <a href="secure.com">Secure.com</a>
             </h1>
-            <p className="text-white/70" style={{ fontSize: '14px', marginTop: '-2px', lineHeight: '1.2' }}>
+            <p style={{ fontSize: '14px', color: 'rgba(255, 255, 255, 0.7)', marginTop: '4px', lineHeight: '1.2', fontFamily: 'Inter, sans-serif' }}>
               From the Founders of{" "}
               <a href="www.purevpn.com" rel="noopener noreferrer">
-                &nbsp;PureVPN
+                PureVPN
               </a>
             </p>
           </div>
@@ -438,7 +438,7 @@ export default function Index() {
                 of private-market investors
               </p>
               <p className="text-xs text-secure-slate-500 mb-3 italic">
-                "81% of private‑market investors say cybersecurity and data‑reporting measures have become more important to their investment decisions in the past year."
+                "81% of private���market investors say cybersecurity and data‑reporting measures have become more important to their investment decisions in the past year."
               </p>
               <p className="text-xs text-secure-slate-400 font-medium">
                 KPMG Private Markets Pulse 2025

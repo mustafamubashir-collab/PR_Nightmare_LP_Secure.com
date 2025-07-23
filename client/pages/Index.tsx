@@ -1303,7 +1303,7 @@ export default function Index() {
       {/* Closing Section */}
       <section
         id="final-cta"
-        style={{ padding: '96px 0', background: 'linear-gradient(135deg, #5F00FF 0%, #7C3AED 50%, #00CBC9 100%)' }}
+        style={{ padding: '64px 0', background: 'linear-gradient(90deg, #3C00C9 0%, #00B2FF 100%)' }}
       >
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">

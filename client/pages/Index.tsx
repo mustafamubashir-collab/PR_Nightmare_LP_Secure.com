@@ -215,7 +215,7 @@ export default function Index() {
             <h1 className="text-2xl font-bold text-white">
               <a href="secure.com">Secure.com</a>
             </h1>
-            <p className="text-white/70" style={{ fontSize: '14px', marginTop: '4px' }}>
+            <p className="text-white/70" style={{ fontSize: '14px', marginTop: '-2px', lineHeight: '1.2' }}>
               From the Founders of{" "}
               <a href="www.purevpn.com" rel="noopener noreferrer">
                 PureVPN

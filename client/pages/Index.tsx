@@ -600,10 +600,10 @@ export default function Index() {
                     <p
                       style={{
                         color: "rgba(255, 255, 255, 0.9)",
-                        fontSize: "16px",
+                        fontSize: "15px",
                         fontWeight: "400",
-                        lineHeight: "24px",
-                        marginBottom: "32px",
+                        lineHeight: "22px",
+                        marginBottom: "20px",
                         maxWidth: "800px",
                         margin: "0 auto 32px auto",
                       }}
@@ -688,10 +688,10 @@ export default function Index() {
                     <p
                       style={{
                         color: "rgba(255, 255, 255, 0.9)",
-                        fontSize: "16px",
+                        fontSize: "15px",
                         fontWeight: "400",
-                        lineHeight: "24px",
-                        marginBottom: "32px",
+                        lineHeight: "22px",
+                        marginBottom: "20px",
                         maxWidth: "800px",
                         margin: "0 auto 32px auto",
                       }}
@@ -776,10 +776,10 @@ export default function Index() {
                     <p
                       style={{
                         color: "rgba(255, 255, 255, 0.9)",
-                        fontSize: "16px",
+                        fontSize: "15px",
                         fontWeight: "400",
-                        lineHeight: "24px",
-                        marginBottom: "32px",
+                        lineHeight: "22px",
+                        marginBottom: "20px",
                         maxWidth: "800px",
                         margin: "0 auto 32px auto",
                       }}
@@ -864,10 +864,10 @@ export default function Index() {
                     <p
                       style={{
                         color: "rgba(255, 255, 255, 0.9)",
-                        fontSize: "16px",
+                        fontSize: "15px",
                         fontWeight: "400",
-                        lineHeight: "24px",
-                        marginBottom: "32px",
+                        lineHeight: "22px",
+                        marginBottom: "20px",
                         maxWidth: "800px",
                         margin: "0 auto 32px auto",
                       }}

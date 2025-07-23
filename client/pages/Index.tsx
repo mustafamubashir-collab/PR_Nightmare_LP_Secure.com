@@ -1033,7 +1033,7 @@ export default function Index() {
       <section id="video" className="bg-gradient-to-br from-secure-slate-50 to-white" style={{ padding: '24px 0' }}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-secure-slate-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-secure-slate-900 mb-4">
               <span>
                 See <span style={{ color: 'rgb(29, 78, 216)' }}>Secure.com</span>{" "}
                 in

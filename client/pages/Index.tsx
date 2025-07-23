@@ -1165,44 +1165,116 @@ export default function Index() {
                   />
                 </div>
                 <div style={{ marginTop: '24px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', opacity: activeStep >= 1 ? 1 : 0.3, transition: 'opacity 0.5s ease-in-out' }}>
-                    <CheckCircle className={`w-5 h-5 ${activeStep >= 1 ? 'text-green-500' : 'text-gray-400'}`} />
+                  {/* Step 1: API Connection Established */}
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    opacity: activeStep >= 1 ? 1 : 0.3,
+                    transform: activeStep >= 1 ? 'translateX(0)' : 'translateX(-10px)',
+                    transition: 'all 0.6s ease-in-out'
+                  }}>
+                    <CheckCircle className={`w-5 h-5 transition-colors duration-500 ${activeStep >= 1 ? 'text-green-500' : 'text-gray-400'}`} />
                     <span style={{ color: '#ffffff', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
                       API Connection Established
                     </span>
-                    <span style={{ color: '#9096a2', fontSize: '14px', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
-                      2 min
+                    <span style={{
+                      color: activeStep >= 1 ? '#22c55e' : '#9096a2',
+                      fontSize: '14px',
+                      marginLeft: '12px',
+                      fontFamily: 'Inter, sans-serif',
+                      transition: 'color 0.5s ease-in-out'
+                    }}>
+                      {activeStep >= 1 ? '✓ 2 min' : '2 min'}
                     </span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', marginTop: '12px', opacity: activeStep >= 2 ? 1 : 0.3, transition: 'opacity 0.5s ease-in-out' }}>
-                    <CheckCircle className={`w-5 h-5 ${activeStep >= 2 ? 'text-green-500' : 'text-gray-400'}`} />
+
+                  {/* Step 2: Asset Discovery Complete */}
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginTop: '12px',
+                    opacity: activeStep >= 2 ? 1 : 0.3,
+                    transform: activeStep >= 2 ? 'translateX(0)' : 'translateX(-10px)',
+                    transition: 'all 0.6s ease-in-out',
+                    transitionDelay: activeStep >= 2 ? '0.2s' : '0s'
+                  }}>
+                    <CheckCircle className={`w-5 h-5 transition-colors duration-500 ${activeStep >= 2 ? 'text-green-500' : 'text-gray-400'}`} />
                     <span style={{ color: '#ffffff', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
                       Asset Discovery Complete
                     </span>
-                    <span style={{ color: '#9096a2', fontSize: '14px', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
-                      15 min
+                    <span style={{
+                      color: activeStep >= 2 ? '#22c55e' : '#9096a2',
+                      fontSize: '14px',
+                      marginLeft: '12px',
+                      fontFamily: 'Inter, sans-serif',
+                      transition: 'color 0.5s ease-in-out'
+                    }}>
+                      {activeStep >= 2 ? '✓ 15 min' : '15 min'}
                     </span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', marginTop: '12px', opacity: activeStep >= 3 ? 1 : 0.3, transition: 'opacity 0.5s ease-in-out' }}>
-                    <CheckCircle className={`w-5 h-5 ${activeStep >= 3 ? 'text-green-500' : 'text-gray-400'}`} />
+
+                  {/* Step 3: Risk Assessment Generated */}
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginTop: '12px',
+                    opacity: activeStep >= 3 ? 1 : 0.3,
+                    transform: activeStep >= 3 ? 'translateX(0)' : 'translateX(-10px)',
+                    transition: 'all 0.6s ease-in-out',
+                    transitionDelay: activeStep >= 3 ? '0.4s' : '0s'
+                  }}>
+                    <CheckCircle className={`w-5 h-5 transition-colors duration-500 ${activeStep >= 3 ? 'text-green-500' : 'text-gray-400'}`} />
                     <span style={{ color: '#ffffff', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
                       Risk Assessment Generated
                     </span>
-                    <span style={{ color: '#9096a2', fontSize: '14px', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
-                      28 min
+                    <span style={{
+                      color: activeStep >= 3 ? '#22c55e' : '#9096a2',
+                      fontSize: '14px',
+                      marginLeft: '12px',
+                      fontFamily: 'Inter, sans-serif',
+                      transition: 'color 0.5s ease-in-out'
+                    }}>
+                      {activeStep >= 3 ? '✓ 28 min' : '28 min'}
                     </span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', marginTop: '12px', opacity: activeStep >= 3 ? 1 : 0.3, transition: 'opacity 0.5s ease-in-out' }}>
-                    <div className={`w-5 h-5 ${activeStep >= 3 ? 'text-blue-400 animate-pulse' : 'text-gray-400'}`}>
+
+                  {/* Final Step: Agent Live. Monitoring Active */}
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginTop: '16px',
+                    padding: '12px',
+                    backgroundColor: activeStep >= 4 ? 'rgba(59, 130, 246, 0.1)' : 'transparent',
+                    borderRadius: '8px',
+                    opacity: activeStep >= 4 ? 1 : 0.3,
+                    transform: activeStep >= 4 ? 'scale(1.02)' : 'scale(1)',
+                    transition: 'all 0.8s ease-in-out',
+                    transitionDelay: activeStep >= 4 ? '0.6s' : '0s',
+                    border: activeStep >= 4 ? '1px solid rgba(59, 130, 246, 0.3)' : '1px solid transparent'
+                  }}>
+                    <div className={`w-5 h-5 transition-all duration-700 ${activeStep >= 4 ? 'text-blue-400 animate-pulse' : 'text-gray-400'}`}>
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
                       </svg>
                     </div>
-                    <span style={{ color: '#ffffff', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
-                      {activeStep >= 3 ? 'Agent Live. Monitoring Active' : 'Monitoring Standby'}
+                    <span style={{
+                      color: '#ffffff',
+                      marginLeft: '12px',
+                      fontFamily: 'Inter, sans-serif',
+                      fontWeight: activeStep >= 4 ? '600' : '400',
+                      transition: 'font-weight 0.5s ease-in-out'
+                    }}>
+                      Agent Live. Monitoring Active
                     </span>
-                    <span style={{ color: activeStep >= 3 ? '#3c83f6' : '#9096a2', fontSize: '14px', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
-                      {activeStep >= 3 ? 'Live' : 'Pending'}
+                    <span style={{
+                      color: activeStep >= 4 ? '#3c83f6' : '#9096a2',
+                      fontSize: '14px',
+                      marginLeft: '12px',
+                      fontFamily: 'Inter, sans-serif',
+                      fontWeight: activeStep >= 4 ? '600' : '400',
+                      transition: 'all 0.5s ease-in-out'
+                    }}>
+                      {activeStep >= 4 ? '● Live' : 'Pending'}
                     </span>
                   </div>
                 </div>

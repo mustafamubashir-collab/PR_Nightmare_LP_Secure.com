@@ -1030,7 +1030,7 @@ export default function Index() {
       </section>
 
       {/* Video Section - See Secure.com in Action */}
-      <section id="video" className="py-24 bg-gradient-to-br from-secure-slate-50 to-white">
+      <section id="video" className="bg-gradient-to-br from-secure-slate-50 to-white" style={{ padding: '24px 0' }}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-secure-slate-900 mb-6">

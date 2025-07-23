@@ -1168,7 +1168,7 @@ export default function Index() {
                   <span style={{ color: '#ffffff', fontWeight: '600', fontFamily: 'Inter, sans-serif' }}>
                     Deployment Progress
                   </span>
-                  <span style={{ color: '#3c83f6', fontFamily: 'Inter, sans-serif' }}>
+                  <span style={{ color: '#00CBC9', fontFamily: 'Inter, sans-serif' }}>
                     {deploymentProgress}%
                   </span>
                 </div>

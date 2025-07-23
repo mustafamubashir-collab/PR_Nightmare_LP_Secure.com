@@ -1397,6 +1397,266 @@ export default function Index() {
         </div>
       </footer>
 
+      {/* Beta Signup Modal */}
+      {showBetaModal && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1000,
+            padding: '20px'
+          }}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setShowBetaModal(false);
+          }}
+          onKeyDown={(e) => {
+            if (e.key === 'Escape') setShowBetaModal(false);
+          }}
+        >
+          <div
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: '16px',
+              padding: '32px',
+              maxWidth: '500px',
+              width: '100%',
+              maxHeight: '90vh',
+              overflowY: 'auto',
+              position: 'relative',
+              boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
+            }}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setShowBetaModal(false)}
+              style={{
+                position: 'absolute',
+                top: '16px',
+                right: '16px',
+                backgroundColor: 'transparent',
+                border: 'none',
+                fontSize: '24px',
+                cursor: 'pointer',
+                color: '#666666',
+                padding: '8px'
+              }}
+            >
+              ×
+            </button>
+
+            <h2 style={{
+              color: '#0A0A0A',
+              fontSize: '28px',
+              fontWeight: '700',
+              marginBottom: '8px',
+              fontFamily: 'Inter, sans-serif'
+            }}>
+              Exclusive Beta Access
+            </h2>
+
+            <p style={{
+              color: '#666666',
+              fontSize: '16px',
+              marginBottom: '24px',
+              fontFamily: 'Inter, sans-serif'
+            }}>
+              Join the first 50 companies to shape the future of AI-native security.
+            </p>
+
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                // Validate email
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(betaForm.workEmail)) {
+                  alert('Please enter a valid email address');
+                  return;
+                }
+                // Handle form submission here
+                console.log('Beta form submitted:', betaForm);
+                alert('Thank you! We\'ll be in touch soon.');
+                setShowBetaModal(false);
+              }}
+              style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}
+            >
+              {/* Full Name */}
+              <div>
+                <label style={{ display: 'block', marginBottom: '4px', fontWeight: '600', color: '#0A0A0A', fontFamily: 'Inter, sans-serif' }}>
+                  Full Name *
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={betaForm.fullName}
+                  onChange={(e) => setBetaForm({...betaForm, fullName: e.target.value})}
+                  style={{
+                    width: '100%',
+                    padding: '12px',
+                    border: '1px solid #ddd',
+                    borderRadius: '8px',
+                    fontSize: '16px',
+                    fontFamily: 'Inter, sans-serif'
+                  }}
+                />
+              </div>
+
+              {/* Work Email */}
+              <div>
+                <label style={{ display: 'block', marginBottom: '4px', fontWeight: '600', color: '#0A0A0A', fontFamily: 'Inter, sans-serif' }}>
+                  Work Email *
+                </label>
+                <input
+                  type="email"
+                  required
+                  value={betaForm.workEmail}
+                  onChange={(e) => setBetaForm({...betaForm, workEmail: e.target.value})}
+                  style={{
+                    width: '100%',
+                    padding: '12px',
+                    border: '1px solid #ddd',
+                    borderRadius: '8px',
+                    fontSize: '16px',
+                    fontFamily: 'Inter, sans-serif'
+                  }}
+                />
+              </div>
+
+              {/* Company Size */}
+              <div>
+                <label style={{ display: 'block', marginBottom: '4px', fontWeight: '600', color: '#0A0A0A', fontFamily: 'Inter, sans-serif' }}>
+                  Company Size *
+                </label>
+                <select
+                  required
+                  value={betaForm.companySize}
+                  onChange={(e) => setBetaForm({...betaForm, companySize: e.target.value})}
+                  style={{
+                    width: '100%',
+                    padding: '12px',
+                    border: '1px solid #ddd',
+                    borderRadius: '8px',
+                    fontSize: '16px',
+                    fontFamily: 'Inter, sans-serif'
+                  }}
+                >
+                  <option value="">Select company size</option>
+                  <option value="1-10">1–10</option>
+                  <option value="11-50">11–50</option>
+                  <option value="51-200">51–200</option>
+                  <option value="200+">200+</option>
+                </select>
+              </div>
+
+              {/* Industry */}
+              <div>
+                <label style={{ display: 'block', marginBottom: '4px', fontWeight: '600', color: '#0A0A0A', fontFamily: 'Inter, sans-serif' }}>
+                  Industry *
+                </label>
+                <select
+                  required
+                  value={betaForm.industry}
+                  onChange={(e) => setBetaForm({...betaForm, industry: e.target.value})}
+                  style={{
+                    width: '100%',
+                    padding: '12px',
+                    border: '1px solid #ddd',
+                    borderRadius: '8px',
+                    fontSize: '16px',
+                    fontFamily: 'Inter, sans-serif'
+                  }}
+                >
+                  <option value="">Select industry</option>
+                  <option value="FinTech">FinTech</option>
+                  <option value="Healthcare">Healthcare</option>
+                  <option value="SaaS">SaaS</option>
+                  <option value="Education">Education</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              {/* Security Challenges */}
+              <div>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600', color: '#0A0A0A', fontFamily: 'Inter, sans-serif' }}>
+                  Security Challenges (select all that apply)
+                </label>
+                {['Compliance', 'Threat Detection', 'Limited Staff', 'Alert Fatigue', 'Other'].map((challenge) => (
+                  <label key={challenge} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px', fontFamily: 'Inter, sans-serif' }}>
+                    <input
+                      type="checkbox"
+                      checked={betaForm.securityChallenges.includes(challenge)}
+                      onChange={(e) => {
+                        const challenges = betaForm.securityChallenges;
+                        if (e.target.checked) {
+                          setBetaForm({...betaForm, securityChallenges: [...challenges, challenge]});
+                        } else {
+                          setBetaForm({...betaForm, securityChallenges: challenges.filter(c => c !== challenge)});
+                        }
+                      }}
+                      style={{ marginRight: '8px' }}
+                    />
+                    {challenge}
+                  </label>
+                ))}
+              </div>
+
+              {/* Additional Comments */}
+              <div>
+                <label style={{ display: 'block', marginBottom: '4px', fontWeight: '600', color: '#0A0A0A', fontFamily: 'Inter, sans-serif' }}>
+                  Additional Comments (optional)
+                </label>
+                <textarea
+                  rows={3}
+                  value={betaForm.additionalComments}
+                  onChange={(e) => setBetaForm({...betaForm, additionalComments: e.target.value})}
+                  style={{
+                    width: '100%',
+                    padding: '12px',
+                    border: '1px solid #ddd',
+                    borderRadius: '8px',
+                    fontSize: '16px',
+                    fontFamily: 'Inter, sans-serif',
+                    resize: 'vertical'
+                  }}
+                />
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                style={{
+                  backgroundColor: '#1A1AFF',
+                  color: '#ffffff',
+                  padding: '16px 32px',
+                  fontSize: '18px',
+                  fontWeight: '600',
+                  borderRadius: '8px',
+                  border: 'none',
+                  cursor: 'pointer',
+                  marginTop: '8px',
+                  fontFamily: 'Inter, sans-serif',
+                  transition: 'background-color 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#1515CC';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#1A1AFF';
+                }}
+              >
+                Join Private Beta
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 }

@@ -1408,6 +1408,309 @@ export default function Index() {
           </div>
         </div>
       </footer>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <section
+          style={{
+            padding: "80px 0",
+          }}
+        >
+          <div
+            style={{
+              width: "100%",
+              margin: "0 auto",
+              padding: "0 16px",
+            }}
+          >
+            <div
+              style={{
+                color: "rgb(255, 255, 255)",
+                fontSize: "48px",
+                lineHeight: "48px",
+                marginBottom: "64px",
+                textAlign: "center",
+                paddingBottom: "16px",
+              }}
+            >
+              What's under the hood
+            </div>
+            <div
+              style={{
+                maxWidth: "1152px",
+                margin: "0 auto",
+              }}
+            >
+              <div
+                style={{
+                  width: "100%",
+                }}
+              >
+                <div
+                  role="tablist"
+                  aria-orientation="horizontal"
+                  tabIndex={0}
+                  style={{
+                    display: "grid",
+                    alignItems: "center",
+                    backdropFilter: "blur(12px)",
+                    backgroundColor: "rgba(255, 255, 255, 0.05)",
+                    borderRadius: "6px",
+                    color: "rgb(115, 115, 115)",
+                    gridTemplate: "none / repeat(5, minmax(0px, 1fr))",
+                    height: "40px",
+                    justifyContent: "center",
+                    width: "100%",
+                    padding: "4px",
+                  }}
+                >
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="radix-R167l7-content-automation"
+                    tabIndex={0}
+                    style={{
+                      backgroundColor: "rgb(0, 112, 243)",
+                      borderRadius: "4px",
+                      boxShadow: "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+                      color: "rgb(255, 255, 255)",
+                      fontSize: "14px",
+                      fontWeight: "500",
+                      lineHeight: "20px",
+                      whiteSpace: "nowrap",
+                      transitionDuration: "0.15s",
+                      transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                      border: "none",
+                      padding: "6px 12px",
+                    }}
+                  >
+                    Automation
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="radix-R167l7-content-intelligence"
+                    tabIndex={-1}
+                    style={{
+                      borderRadius: "4px",
+                      fontSize: "14px",
+                      fontWeight: "500",
+                      lineHeight: "20px",
+                      whiteSpace: "nowrap",
+                      transitionDuration: "0.15s",
+                      transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                      backgroundColor: "rgba(0, 0, 0, 0)",
+                      border: "none",
+                      padding: "6px 12px",
+                      color: "rgb(115, 115, 115)",
+                    }}
+                  >
+                    Intelligence
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="radix-R167l7-content-risk"
+                    tabIndex={-1}
+                    style={{
+                      borderRadius: "4px",
+                      fontSize: "14px",
+                      fontWeight: "500",
+                      lineHeight: "20px",
+                      whiteSpace: "nowrap",
+                      transitionDuration: "0.15s",
+                      transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                      backgroundColor: "rgba(0, 0, 0, 0)",
+                      border: "none",
+                      padding: "6px 12px",
+                      color: "rgb(115, 115, 115)",
+                    }}
+                  >
+                    Risk Engine
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="radix-R167l7-content-compliance"
+                    tabIndex={-1}
+                    style={{
+                      borderRadius: "4px",
+                      fontSize: "14px",
+                      fontWeight: "500",
+                      lineHeight: "20px",
+                      whiteSpace: "nowrap",
+                      transitionDuration: "0.15s",
+                      transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                      backgroundColor: "rgba(0, 0, 0, 0)",
+                      border: "none",
+                      padding: "6px 12px",
+                      color: "rgb(115, 115, 115)",
+                    }}
+                  >
+                    Compliance
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="radix-R167l7-content-architecture"
+                    tabIndex={-1}
+                    style={{
+                      borderRadius: "4px",
+                      fontSize: "14px",
+                      fontWeight: "500",
+                      lineHeight: "20px",
+                      whiteSpace: "nowrap",
+                      transitionDuration: "0.15s",
+                      transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                      backgroundColor: "rgba(0, 0, 0, 0)",
+                      border: "none",
+                      padding: "6px 12px",
+                      color: "rgb(115, 115, 115)",
+                    }}
+                  >
+                    Architecture
+                  </button>
+                </div>
+                <div
+                  role="tabpanel"
+                  aria-labelledby="radix-R167l7-trigger-automation"
+                  tabIndex={0}
+                  style={{
+                    marginTop: "32px",
+                  }}
+                >
+                  <Card
+                    style={{
+                      backdropFilter: "blur(12px)",
+                      backgroundColor: "rgba(255, 255, 255, 0.05)",
+                      borderColor: "rgba(255, 255, 255, 0.1)",
+                      borderRadius: "8px",
+                      borderWidth: "0.8px",
+                      boxShadow: "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        padding: "32px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "flex-start",
+                        }}
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          style={{
+                            display: "block",
+                            color: "rgb(0, 112, 243)",
+                            fill: "none",
+                            height: "64px",
+                            stroke: "rgb(0, 112, 243)",
+                            strokeLinecap: "round",
+                            strokeLinejoin: "round",
+                            strokeWidth: "2px",
+                            width: "64px",
+                          }}
+                        >
+                          <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
+                        </svg>
+                        <div
+                          style={{
+                            marginLeft: "24px",
+                          }}
+                        >
+                          <h3
+                            style={{
+                              color: "rgb(255, 255, 255)",
+                              fontSize: "24px",
+                              fontWeight: "700",
+                              lineHeight: "32px",
+                              marginBottom: "16px",
+                            }}
+                          >
+                            Agentic Automation & Response Workflows
+                          </h3>
+                          <p
+                            style={{
+                              color: "rgb(209, 213, 219)",
+                              fontSize: "18px",
+                              lineHeight: "29px",
+                            }}
+                          >
+                            Intelligent automation that learns from your team's
+                            responses and handles routine security tasks. From
+                            initial triage to incident response, our AI agents
+                            work alongside your team to accelerate every step of
+                            the security workflow.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
+                </div>
+                <div
+                  role="tabpanel"
+                  aria-labelledby="radix-R167l7-trigger-intelligence"
+                  tabIndex={0}
+                  hidden
+                  style={{
+                    display: "none",
+                    marginTop: "32px",
+                  }}
+                />
+                <div
+                  role="tabpanel"
+                  aria-labelledby="radix-R167l7-trigger-risk"
+                  tabIndex={0}
+                  hidden
+                  style={{
+                    display: "none",
+                    marginTop: "32px",
+                  }}
+                />
+                <div
+                  role="tabpanel"
+                  aria-labelledby="radix-R167l7-trigger-compliance"
+                  tabIndex={0}
+                  hidden
+                  style={{
+                    display: "none",
+                    marginTop: "32px",
+                  }}
+                />
+                <div
+                  role="tabpanel"
+                  aria-labelledby="radix-R167l7-trigger-architecture"
+                  tabIndex={0}
+                  hidden
+                  style={{
+                    display: "none",
+                    marginTop: "32px",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

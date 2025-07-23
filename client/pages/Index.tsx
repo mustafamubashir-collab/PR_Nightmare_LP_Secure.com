@@ -1236,32 +1236,11 @@ export default function Index() {
 
 
       {/* Footer */}
-      <footer className="bg-secure-slate-900 py-12">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-6 md:mb-0">
-              <p>
-                <a href="www.secure.com" rel="noopener noreferrer">
-                  <h3 className="text-2xl font-bold text-white">Secure.com</h3>
-                </a>
-              </p>
-            </div>
-
-            <div className="flex space-x-8">
-              <a
-                href="#contact"
-                className="text-secure-slate-400 hover:text-white transition-colors"
-              >
-                Contact
-              </a>
-              <a
-                href="#privacy"
-                className="text-secure-slate-400 hover:text-white transition-colors"
-              >
-                Privacy
-              </a>
-            </div>
-          </div>
+      <footer style={{ backgroundColor: '#000000', padding: '32px 0' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
+          <p style={{ color: '#666666', fontSize: '16px', fontFamily: 'Inter, sans-serif', margin: '0' }}>
+            Secure.com All Rights Reserved 2025
+          </p>
         </div>
       </footer>
 

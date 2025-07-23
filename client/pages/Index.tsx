@@ -616,9 +616,9 @@ export default function Index() {
                       style={{
                         position: "relative",
                         width: "100%",
-                        maxWidth: "1200px",
+                        maxWidth: "900px",
                         margin: "0 auto",
-                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                        paddingBottom: "39.375%", // Reduced height: 16:9 * 0.7
                         borderRadius: "12px",
                         overflow: "hidden",
                         boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
@@ -704,9 +704,9 @@ export default function Index() {
                       style={{
                         position: "relative",
                         width: "100%",
-                        maxWidth: "1200px",
+                        maxWidth: "900px",
                         margin: "0 auto",
-                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                        paddingBottom: "39.375%", // Reduced height: 16:9 * 0.7
                         borderRadius: "12px",
                         overflow: "hidden",
                         boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
@@ -792,9 +792,9 @@ export default function Index() {
                       style={{
                         position: "relative",
                         width: "100%",
-                        maxWidth: "1200px",
+                        maxWidth: "900px",
                         margin: "0 auto",
-                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                        paddingBottom: "39.375%", // Reduced height: 16:9 * 0.7
                         borderRadius: "12px",
                         overflow: "hidden",
                         boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
@@ -880,9 +880,9 @@ export default function Index() {
                       style={{
                         position: "relative",
                         width: "100%",
-                        maxWidth: "1200px",
+                        maxWidth: "900px",
                         margin: "0 auto",
-                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                        paddingBottom: "39.375%", // Reduced height: 16:9 * 0.7
                         borderRadius: "12px",
                         overflow: "hidden",
                         boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",

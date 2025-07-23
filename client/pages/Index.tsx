@@ -1056,7 +1056,7 @@ export default function Index() {
 
 
       {/* Video Section - See Secure.com in Action */}
-      <section id="video" style={{ padding: '32px 0', backgroundColor: '#f8fafc' }}>
+      <section id="video" style={{ padding: '64px 0', backgroundColor: '#f8fafc' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
           <div style={{ textAlign: 'center', marginBottom: '32px' }}>
             <h2 style={{ color: '#111827', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '16px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.025em' }}>

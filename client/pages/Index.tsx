@@ -605,7 +605,7 @@ export default function Index() {
                         lineHeight: "22px",
                         marginBottom: "20px",
                         maxWidth: "800px",
-                        margin: "0 auto 32px auto",
+                        margin: "0 auto 20px auto",
                       }}
                     >
                       AI-driven incident response automates 70% of triage and cuts response time by 50%.
@@ -693,7 +693,7 @@ export default function Index() {
                         lineHeight: "22px",
                         marginBottom: "20px",
                         maxWidth: "800px",
-                        margin: "0 auto 32px auto",
+                        margin: "0 auto 20px auto",
                       }}
                     >
                       Dynamic scoring engine prioritizes vulnerabilities before they escalate into business-impacting events.
@@ -781,7 +781,7 @@ export default function Index() {
                         lineHeight: "22px",
                         marginBottom: "20px",
                         maxWidth: "800px",
-                        margin: "0 auto 32px auto",
+                        margin: "0 auto 20px auto",
                       }}
                     >
                       Centralizes all telemetry and decisioning to prevent overlooked threats from surfacing.
@@ -869,7 +869,7 @@ export default function Index() {
                         lineHeight: "22px",
                         marginBottom: "20px",
                         maxWidth: "800px",
-                        margin: "0 auto 32px auto",
+                        margin: "0 auto 20px auto",
                       }}
                     >
                       Visualizes assets, risks, and misconfigurations — reducing blind spots by 40%.

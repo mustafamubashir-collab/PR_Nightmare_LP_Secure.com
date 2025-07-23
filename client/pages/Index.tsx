@@ -431,7 +431,7 @@ export default function Index() {
 
 
       {/* Problem Section */}
-      <section id="problem" className="py-24 bg-secure-slate-50">
+      <section id="problem" style={{ padding: '96px 0', backgroundColor: '#f8fafc' }}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 style={{ color: '#0A0A0A', fontSize: '48px', fontWeight: '700', lineHeight: '1.2', marginBottom: '24px', fontFamily: 'Inter, sans-serif', textAlign: 'center' }}>

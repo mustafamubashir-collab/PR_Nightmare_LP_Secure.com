@@ -306,17 +306,23 @@ export default function Index() {
                   ></div>
                   <Button
                     onClick={() => scrollToSection("final-cta")}
-                    className="text-white px-10 py-5 text-xl font-semibold rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden group"
-                    style={{ backgroundColor: "#2e2f3e" }}
+                    style={{
+                      backgroundColor: '#1A1AFF',
+                      color: '#ffffff',
+                      padding: '16px 32px',
+                      fontSize: '18px',
+                      fontWeight: '600',
+                      borderRadius: '8px',
+                      fontFamily: 'Inter, sans-serif',
+                      border: 'none',
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      transition: 'all 0.3s ease'
+                    }}
                   >
-                    <span className="relative z-10">
-                      Sign-up for Beta Partner
-                    </span>
-                    {/* Hover shimmer */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/8 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-2000"></div>
-                    {/* 5-second repeating shine animation */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/12 to-transparent transform -skew-x-12 -translate-x-full animate-shine"></div>
-                    <ArrowRight className="ml-3 w-6 h-6 relative z-10" />
+                    Sign-up for Beta Partner
+                    <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </div>
               </div>
@@ -438,7 +444,7 @@ export default function Index() {
                 of private-market investors
               </p>
               <p className="text-xs text-secure-slate-500 mb-3 italic">
-                "81% of private���market investors say cybersecurity and data‑reporting measures have become more important to their investment decisions in the past year."
+                "81% of private‑market investors say cybersecurity and data‑reporting measures have become more important to their investment decisions in the past year."
               </p>
               <p className="text-xs text-secure-slate-400 font-medium">
                 KPMG Private Markets Pulse 2025

@@ -411,155 +411,181 @@ export default function Index() {
 
       {/* Solution Section — How Secure.com Helps */}
       <section id="solution" style={{ padding: '80px 0' }}>
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
-
-            {/* Left Side - Content */}
-            <div className="space-y-8">
-              {/* Icon */}
-              <div className="w-16 h-16 bg-secure-blue-100 rounded-2xl flex items-center justify-center">
-                <Shield className="w-8 h-8 text-secure-blue-600" />
-              </div>
-
-              {/* Headline */}
-              <h2 className="text-4xl md:text-5xl font-bold text-secure-slate-900 leading-tight">
-                Prevent the breach.{" "}
-                <span className="text-secure-blue-600">Protect the brand.</span>
-              </h2>
-
-              {/* Description */}
-              <p className="text-xl text-secure-slate-600 leading-relaxed">
-                Secure.com provides unified threat detection, AI-driven response automation,
-                and comprehensive risk management to protect your organization from cyber threats
-                before they become business disasters.
-              </p>
-
-              {/* Key Benefits List */}
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-secure-slate-700">
-                    <strong>40% fewer blind spots</strong> through comprehensive asset visibility
-                  </span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-secure-slate-700">
-                    <strong>70% automation</strong> of incident triage and response workflows
-                  </span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-secure-slate-700">
-                    <strong>50% faster</strong> mean time to detection and response
-                  </span>
-                </div>
-              </div>
-
-              {/* CTA Button */}
-              <Button
-                onClick={() => scrollToSection("final-cta")}
-                className="bg-secure-blue-600 hover:bg-secure-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 inline-flex items-center group"
+        <div
+          style={{
+            width: "100%",
+            backgroundColor: "#3d4aec",
+            margin: "0 auto",
+            padding: "0 16px",
+          }}
+        >
+          <div
+            style={{
+              color: "rgb(255, 255, 255)",
+              fontSize: "48px",
+              lineHeight: "48px",
+              marginBottom: "24px",
+              paddingBottom: "16px",
+              textAlign: "center",
+            }}
+          >
+            Prevent the breach,
+            <br />
+            Protect the brand.
+            <br />
+          </div>
+          <div
+            style={{
+              width: "100%",
+            }}
+          >
+            <div
+              role="tablist"
+              aria-orientation="horizontal"
+              style={{
+                display: "grid",
+                alignItems: "center",
+                backdropFilter: "blur(12px)",
+                backgroundColor: "rgba(255, 255, 255, 0.05)",
+                borderRadius: "6px",
+                color: "rgb(115, 115, 115)",
+                gridTemplate: "none / repeat(5, minmax(0px, 1fr))",
+                height: "40px",
+                justifyContent: "center",
+                width: "100%",
+                padding: "4px",
+              }}
+            >
+              <button
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="radix-R167l7-content-automation"
+                tabIndex={0}
+                style={{
+                  backgroundColor: "rgb(0, 112, 243)",
+                  borderRadius: "4px",
+                  boxShadow: "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+                  color: "rgb(255, 255, 255)",
+                  fontSize: "14px",
+                  fontWeight: "500",
+                  lineHeight: "20px",
+                  whiteSpace: "nowrap",
+                  transitionDuration: "0.15s",
+                  transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                  border: "none",
+                  padding: "6px 12px",
+                }}
               >
-                Learn More
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </Button>
+                Automation
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="radix-R167l7-content-intelligence"
+                tabIndex={-1}
+                style={{
+                  borderRadius: "4px",
+                  fontSize: "14px",
+                  fontWeight: "500",
+                  lineHeight: "20px",
+                  whiteSpace: "nowrap",
+                  transitionDuration: "0.15s",
+                  transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                  backgroundColor: "rgba(0, 0, 0, 0)",
+                  border: "none",
+                  padding: "6px 12px",
+                  color: "rgba(253, 253, 253, 1)",
+                }}
+              >
+                Intelligence
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="radix-R167l7-content-compliance"
+                tabIndex={-1}
+                style={{
+                  borderRadius: "4px",
+                  fontSize: "14px",
+                  fontWeight: "500",
+                  lineHeight: "20px",
+                  whiteSpace: "nowrap",
+                  transitionDuration: "0.15s",
+                  transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                  backgroundColor: "rgba(0, 0, 0, 0)",
+                  border: "none",
+                  padding: "6px 12px",
+                  color: "rgba(253, 253, 253, 1)",
+                }}
+              >
+                Compliance
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="radix-R167l7-content-risk"
+                tabIndex={-1}
+                style={{
+                  borderRadius: "4px",
+                  fontSize: "14px",
+                  fontWeight: "500",
+                  lineHeight: "20px",
+                  whiteSpace: "nowrap",
+                  transitionDuration: "0.15s",
+                  transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                  backgroundColor: "rgba(0, 0, 0, 0)",
+                  border: "none",
+                  padding: "6px 12px",
+                  color: "rgba(253, 253, 253, 1)",
+                }}
+              >
+                Risk Engine
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="radix-R167l7-content-architecture"
+                tabIndex={-1}
+                style={{
+                  borderRadius: "4px",
+                  fontSize: "14px",
+                  fontWeight: "500",
+                  lineHeight: "20px",
+                  whiteSpace: "nowrap",
+                  transitionDuration: "0.15s",
+                  transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+                  backgroundColor: "rgba(0, 0, 0, 0)",
+                  border: "none",
+                  padding: "6px 12px",
+                  color: "rgba(253, 253, 253, 1)",
+                }}
+              >
+                Architecture
+              </button>
             </div>
-
-            {/* Right Side - Visual Grid with Integrations */}
-            <div className="relative">
-              <div className="bg-gradient-to-br from-indigo-900 via-indigo-800 to-blue-900 rounded-3xl p-8 relative overflow-hidden">
-                {/* Background pattern */}
-                <div className="absolute inset-0 opacity-10">
-                  <svg className="w-full h-full" viewBox="0 0 400 300">
-                    <defs>
-                      <pattern id="integrationGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="0.5"/>
-                      </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#integrationGrid)" />
-                  </svg>
-                </div>
-
-                {/* Integration Icons Grid */}
-                <div className="relative z-10 grid grid-cols-6 gap-4 mb-8">
-                  {/* Row 1 */}
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <Shield className="w-6 h-6 text-blue-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <Eye className="w-6 h-6 text-green-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <Brain className="w-6 h-6 text-purple-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <BarChart3 className="w-6 h-6 text-orange-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <Target className="w-6 h-6 text-red-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <Layers className="w-6 h-6 text-cyan-300" />
-                  </div>
-
-                  {/* Row 2 */}
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <AlertTriangle className="w-6 h-6 text-yellow-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <Clock className="w-6 h-6 text-pink-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <CheckCircle className="w-6 h-6 text-green-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <Map className="w-6 h-6 text-blue-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <LayoutDashboard className="w-6 h-6 text-indigo-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <Users className="w-6 h-6 text-purple-300" />
-                  </div>
-
-                  {/* Row 3 */}
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <DollarSign className="w-6 h-6 text-green-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <TrendingDown className="w-6 h-6 text-red-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <Star className="w-6 h-6 text-yellow-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <Shield className="w-6 h-6 text-cyan-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <Eye className="w-6 h-6 text-orange-300" />
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center justify-center h-12">
-                    <Brain className="w-6 h-6 text-pink-300" />
-                  </div>
-                </div>
-
-                {/* Statistics Overlays */}
-                <div className="absolute top-6 right-6 bg-white/20 backdrop-blur-md rounded-xl p-4 border border-white/30">
-                  <div className="text-3xl font-bold text-white">40%</div>
-                  <div className="text-white/80 text-sm">Fewer Blind Spots</div>
-                </div>
-
-                <div className="absolute bottom-20 left-6 bg-white/20 backdrop-blur-md rounded-xl p-4 border border-white/30">
-                  <div className="text-3xl font-bold text-white">70%</div>
-                  <div className="text-white/80 text-sm">Automated Triage</div>
-                </div>
-
-                <div className="absolute bottom-6 right-1/3 bg-white/20 backdrop-blur-md rounded-xl p-4 border border-white/30">
-                  <div className="text-3xl font-bold text-white">50%</div>
-                  <div className="text-white/80 text-sm">Faster Response</div>
-                </div>
-              </div>
+            <div
+              role="tabpanel"
+              aria-labelledby="radix-R167l7-trigger-automation"
+              tabIndex={0}
+              style={{
+                marginTop: "32px",
+              }}
+            >
+              <Card
+                style={{
+                  backdropFilter: "blur(12px)",
+                  backgroundColor: "rgba(255, 255, 255, 0.05)",
+                  borderColor: "rgba(255, 255, 255, 0.1)",
+                  borderRadius: "8px",
+                  borderWidth: "0.8px",
+                  boxShadow: "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+                }}
+              />
             </div>
           </div>
         </div>

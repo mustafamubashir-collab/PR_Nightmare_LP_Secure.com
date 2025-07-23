@@ -34,22 +34,6 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
-      {/* Brand Endorsement Top Bar */}
-      <section className="bg-secure-slate-900 py-3">
-        <div className="container mx-auto px-6">
-          <div className="flex items-center justify-center space-x-4">
-            <span className="text-secure-slate-300 text-sm">
-              From the Founders of
-            </span>
-            <div className="flex items-center space-x-6">
-              <div className="text-white font-semibold">PureVPN</div>
-              <div className="w-px h-4 bg-secure-slate-600"></div>
-              <div className="text-white font-semibold">CloudWays</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Hero Section */}
       <section
         className="relative overflow-hidden min-h-screen flex items-center"
@@ -224,10 +208,20 @@ export default function Index() {
           </div>
         </div>
 
+        {/* Logo and Brand Text - Top Left */}
+        <div className="absolute top-8 left-8 xl:left-16 z-20">
+          <div className="space-y-2">
+            <h1 className="text-2xl font-bold text-white">Secure.com</h1>
+            <p className="text-sm text-white/70">
+              From the Founders of PureVPN | Cloudways
+            </p>
+          </div>
+        </div>
+
         {/* Content Grid for 1920x1080 Layout */}
         <div className="relative z-10 w-full h-screen grid grid-cols-2">
           {/* Left Side - Content Area */}
-          <div className="flex items-center justify-start pl-16 xl:pl-24">
+          <div className="flex items-center justify-start pl-16 xl:pl-24 pt-20">
             <div className="max-w-xl">
               <div
                 className={`transition-all duration-1000 ${
@@ -294,6 +288,33 @@ export default function Index() {
           <div className="animate-bounce">
             <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
               <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Logos Section */}
+      <section className="py-12 bg-white border-b border-secure-slate-100">
+        <div className="container mx-auto px-6">
+          <div className="text-center">
+            <p className="text-secure-slate-500 text-sm mb-8">Trusted by growing companies</p>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
+              {/* Placeholder logos - replace with actual partner logos */}
+              <div className="w-24 h-12 bg-secure-slate-200 rounded flex items-center justify-center">
+                <span className="text-xs text-secure-slate-500">Partner 1</span>
+              </div>
+              <div className="w-24 h-12 bg-secure-slate-200 rounded flex items-center justify-center">
+                <span className="text-xs text-secure-slate-500">Partner 2</span>
+              </div>
+              <div className="w-24 h-12 bg-secure-slate-200 rounded flex items-center justify-center">
+                <span className="text-xs text-secure-slate-500">Partner 3</span>
+              </div>
+              <div className="w-24 h-12 bg-secure-slate-200 rounded flex items-center justify-center">
+                <span className="text-xs text-secure-slate-500">Partner 4</span>
+              </div>
+              <div className="w-24 h-12 bg-secure-slate-200 rounded flex items-center justify-center">
+                <span className="text-xs text-secure-slate-500">Partner 5</span>
+              </div>
             </div>
           </div>
         </div>
@@ -762,10 +783,6 @@ export default function Index() {
               See Secure.com in{" "}
               <span className="text-secure-blue-600">Action</span>
             </h2>
-            <p className="text-xl text-secure-slate-600 max-w-3xl mx-auto">
-              Watch how our AI-driven security platform transforms threat response 
-              and reduces operational overhead for growing companies.
-            </p>
           </div>
 
           <div className="max-w-6xl mx-auto">
@@ -797,21 +814,7 @@ export default function Index() {
               <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r-4 border-b-4 border-secure-blue-600 rounded-br-lg"></div>
             </div>
 
-            {/* Video stats/features below */}
-            <div className="grid md:grid-cols-3 gap-8 mt-16">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secure-blue-600 mb-2">3:42</div>
-                <p className="text-secure-slate-600">Video Duration</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secure-blue-600 mb-2">4K</div>
-                <p className="text-secure-slate-600">Ultra HD Quality</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secure-blue-600 mb-2">Live</div>
-                <p className="text-secure-slate-600">Real Demo Environment</p>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -839,31 +842,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Trust Section */}
-      <section className="py-16 bg-secure-slate-900">
-        <div className="container mx-auto px-6">
-          <div className="text-center">
-            <div className="mb-8">
-              <p className="text-secure-blue-100 text-lg mb-4">
-                From the Founders of{" "}
-                <span className="font-semibold text-white">PureVPN</span> and{" "}
-                <span className="font-semibold text-white">CloudWays</span>
-              </p>
-            </div>
-            
-            <div className="border-t border-secure-slate-700 pt-8">
-              <p className="text-secure-slate-400 text-sm mb-4">Trusted by growing companies</p>
-              <div className="flex justify-center items-center space-x-8 opacity-50">
-                {/* Placeholder for partner logos */}
-                <div className="w-24 h-8 bg-secure-slate-700 rounded"></div>
-                <div className="w-24 h-8 bg-secure-slate-700 rounded"></div>
-                <div className="w-24 h-8 bg-secure-slate-700 rounded"></div>
-                <div className="w-24 h-8 bg-secure-slate-700 rounded"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Footer */}
       <footer className="bg-secure-slate-900 py-12 border-t border-secure-slate-800">
@@ -871,9 +850,6 @@ export default function Index() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <h3 className="text-2xl font-bold text-white">Secure.com</h3>
-              <p className="text-secure-slate-400">
-                Protecting brands from cyber threats
-              </p>
             </div>
 
             <div className="flex space-x-8">
@@ -888,12 +864,6 @@ export default function Index() {
                 className="text-secure-slate-400 hover:text-white transition-colors"
               >
                 Privacy
-              </a>
-              <a
-                href="#download"
-                className="text-secure-slate-400 hover:text-white transition-colors"
-              >
-                One-pager Download
               </a>
             </div>
           </div>

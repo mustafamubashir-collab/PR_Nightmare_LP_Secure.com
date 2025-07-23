@@ -1116,7 +1116,7 @@ export default function Index() {
       </section>
 
       {/* Deployment Section - 30-minute deployment */}
-      <section style={{ padding: '32px 0', backgroundColor: 'rgb(31, 34, 41)' }}>
+      <section style={{ padding: '32px 0', background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 32px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '48px', alignItems: 'center' }}>
             <div>

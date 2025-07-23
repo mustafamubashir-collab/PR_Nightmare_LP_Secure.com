@@ -42,6 +42,26 @@ export default function Index() {
           background: "linear-gradient(to bottom right, #00CBC9, #5F00FF)",
         }}
       >
+        {/* Video Background */}
+        <video
+          autoPlay
+          muted
+          loop
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ zIndex: 1 }}
+        >
+          <source src="https://sample-videos.com/zip/10/mp4/1080/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
+        </video>
+
+        {/* Overlay to maintain brand consistency */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(to bottom right, rgba(0, 203, 201, 0.7), rgba(95, 0, 255, 0.7))",
+            zIndex: 2
+          }}
+        ></div>
+
         {/* Animated Background Grid */}
         <div className="absolute inset-0">
           <div className="w-full h-full opacity-20">

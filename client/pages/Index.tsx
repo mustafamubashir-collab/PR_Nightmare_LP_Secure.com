@@ -1065,6 +1065,130 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Deployment Section - 30-minute deployment */}
+      <section style={{ padding: '32px 0', backgroundColor: 'rgb(31, 34, 41)' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 32px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '48px', alignItems: 'center' }}>
+            <div>
+              <div>
+                <h2 style={{ color: '#ffffff', fontSize: '36px', fontWeight: '700', lineHeight: '1.2', fontFamily: 'Inter, sans-serif' }}>
+                  <span style={{ color: '#3c83f6' }}>30-minute</span> deployment, no rip-and-replace
+                </h2>
+                <p style={{ color: '#b6bcc8', fontSize: '20px', lineHeight: '1.4', marginTop: '16px', fontFamily: 'Inter, sans-serif' }}>
+                  Get started immediately with our agentless deployment. No infrastructure changes required.
+                </p>
+              </div>
+              <div style={{ marginTop: '32px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', backgroundColor: 'rgba(60, 131, 246, 0.1)', borderRadius: '50%' }}>
+                    <CheckCircle className="w-5 h-5 text-blue-400" />
+                  </div>
+                  <div style={{ marginLeft: '16px' }}>
+                    <div style={{ color: '#ffffff', fontWeight: '600', fontFamily: 'Inter, sans-serif' }}>
+                      No agent installation required
+                    </div>
+                    <div style={{ color: '#9096a2', fontSize: '14px', lineHeight: '1.4', fontFamily: 'Inter, sans-serif' }}>
+                      API-based integration with existing tools
+                    </div>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', backgroundColor: 'rgba(60, 131, 246, 0.1)', borderRadius: '50%' }}>
+                    <CheckCircle className="w-5 h-5 text-blue-400" />
+                  </div>
+                  <div style={{ marginLeft: '16px' }}>
+                    <div style={{ color: '#ffffff', fontWeight: '600', fontFamily: 'Inter, sans-serif' }}>
+                      Dedicated success engineer
+                    </div>
+                    <div style={{ color: '#9096a2', fontSize: '14px', lineHeight: '1.4', fontFamily: 'Inter, sans-serif' }}>
+                      Personal onboarding and optimization support
+                    </div>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', backgroundColor: 'rgba(60, 131, 246, 0.1)', borderRadius: '50%' }}>
+                    <CheckCircle className="w-5 h-5 text-blue-400" />
+                  </div>
+                  <div style={{ marginLeft: '16px' }}>
+                    <div style={{ color: '#ffffff', fontWeight: '600', fontFamily: 'Inter, sans-serif' }}>
+                      Immediate value realization
+                    </div>
+                    <div style={{ color: '#9096a2', fontSize: '14px', lineHeight: '1.4', fontFamily: 'Inter, sans-serif' }}>
+                      See results within the first week
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style={{ padding: '32px', backgroundImage: 'linear-gradient(to right bottom, rgb(44, 49, 58), rgb(70, 74, 83))', borderRadius: '16px', border: '0.8px solid rgb(107, 114, 128)' }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span style={{ color: '#ffffff', fontWeight: '600', fontFamily: 'Inter, sans-serif' }}>
+                    Deployment Progress
+                  </span>
+                  <span style={{ color: '#3c83f6', fontFamily: 'Inter, sans-serif' }}>
+                    {deploymentProgress}%
+                  </span>
+                </div>
+                <div style={{ backgroundColor: 'rgb(31, 34, 41)', borderRadius: '50px', height: '8px', marginTop: '24px' }}>
+                  <div
+                    style={{
+                      backgroundColor: '#3c83f6',
+                      borderRadius: '50px',
+                      height: '8px',
+                      width: `${deploymentProgress}%`,
+                      transition: 'width 1s ease-in-out'
+                    }}
+                  />
+                </div>
+                <div style={{ marginTop: '24px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', opacity: activeStep >= 1 ? 1 : 0.3, transition: 'opacity 0.5s ease-in-out' }}>
+                    <CheckCircle className={`w-5 h-5 ${activeStep >= 1 ? 'text-green-500' : 'text-gray-400'}`} />
+                    <span style={{ color: '#ffffff', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
+                      API Connection Established
+                    </span>
+                    <span style={{ color: '#9096a2', fontSize: '14px', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
+                      2 min
+                    </span>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', marginTop: '12px', opacity: activeStep >= 2 ? 1 : 0.3, transition: 'opacity 0.5s ease-in-out' }}>
+                    <CheckCircle className={`w-5 h-5 ${activeStep >= 2 ? 'text-green-500' : 'text-gray-400'}`} />
+                    <span style={{ color: '#ffffff', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
+                      Asset Discovery Complete
+                    </span>
+                    <span style={{ color: '#9096a2', fontSize: '14px', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
+                      15 min
+                    </span>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', marginTop: '12px', opacity: activeStep >= 3 ? 1 : 0.3, transition: 'opacity 0.5s ease-in-out' }}>
+                    <CheckCircle className={`w-5 h-5 ${activeStep >= 3 ? 'text-green-500' : 'text-gray-400'}`} />
+                    <span style={{ color: '#ffffff', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
+                      Risk Assessment Generated
+                    </span>
+                    <span style={{ color: '#9096a2', fontSize: '14px', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
+                      28 min
+                    </span>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', marginTop: '12px', opacity: activeStep >= 3 ? 1 : 0.3, transition: 'opacity 0.5s ease-in-out' }}>
+                    <div className={`w-5 h-5 ${activeStep >= 3 ? 'text-blue-400 animate-pulse' : 'text-gray-400'}`}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
+                      </svg>
+                    </div>
+                    <span style={{ color: '#ffffff', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
+                      {activeStep >= 3 ? 'Agent Live. Monitoring Active' : 'Monitoring Standby'}
+                    </span>
+                    <span style={{ color: activeStep >= 3 ? '#3c83f6' : '#9096a2', fontSize: '14px', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
+                      {activeStep >= 3 ? 'Live' : 'Pending'}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Closing Section */}
       <section
         id="final-cta"

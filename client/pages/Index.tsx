@@ -1330,7 +1330,7 @@ export default function Index() {
             <h2 style={{ color: '#FFFFFF', fontSize: '48px', fontWeight: '700', lineHeight: '1.1', marginBottom: '24px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
               Let your team focus on growth<br />not grunt work.
             </h2>
-            <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '20px', lineHeight: '1.4', marginBottom: '32px', fontFamily: 'Inter, sans-serif' }}>
+            <p style={{ color: '#F0F4F8', fontSize: '18px', fontWeight: '400', lineHeight: '1.5', marginBottom: '32px', fontFamily: 'Inter, sans-serif' }}>
               Secure.com gives you the firepower of a full security team, without the headcount.
             </p>
 

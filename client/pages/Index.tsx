@@ -986,6 +986,125 @@ export default function Index() {
 
 
 
+      {/* Deployment Section */}
+      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '20px' }}>
+        <section style={{ padding: '96px 0', backgroundColor: 'rgb(31, 34, 41)' }}>
+          <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 32px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '48px', alignItems: 'center' }}>
+              <div>
+                <div>
+                  <h2 style={{ color: 'rgb(255, 255, 255)', fontSize: '36px', fontWeight: '700', lineHeight: '40px' }}>
+                    <span style={{ color: 'rgb(60, 131, 246)' }}>30-minute</span>
+                    <span>&nbsp;deployment, no rip-and-replace</span>
+                  </h2>
+                  <p style={{ color: 'rgb(182, 188, 200)', fontSize: '20px', lineHeight: '28px', marginTop: '16px' }}>
+                    Get started immediately with our agentless deployment. No infrastructure changes required.
+                  </p>
+                </div>
+                <div style={{ marginTop: '32px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', backgroundColor: 'rgba(60, 131, 246, 0.1)', borderRadius: '9999px' }}>
+                      <CheckCircle className="w-5 h-5 text-blue-400" />
+                    </div>
+                    <div style={{ marginLeft: '16px' }}>
+                      <div style={{ color: 'rgb(255, 255, 255)', fontWeight: '600' }}>
+                        No agent installation required
+                      </div>
+                      <div style={{ color: 'rgb(144, 150, 162)', fontSize: '14px', lineHeight: '20px' }}>
+                        API-based integration with existing tools
+                      </div>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', marginTop: '16px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', backgroundColor: 'rgba(60, 131, 246, 0.1)', borderRadius: '9999px' }}>
+                      <CheckCircle className="w-5 h-5 text-blue-400" />
+                    </div>
+                    <div style={{ marginLeft: '16px' }}>
+                      <div style={{ color: 'rgb(255, 255, 255)', fontWeight: '600' }}>
+                        Dedicated success engineer
+                      </div>
+                      <div style={{ color: 'rgb(144, 150, 162)', fontSize: '14px', lineHeight: '20px' }}>
+                        Personal onboarding and optimization support
+                      </div>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', marginTop: '16px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', backgroundColor: 'rgba(60, 131, 246, 0.1)', borderRadius: '9999px' }}>
+                      <CheckCircle className="w-5 h-5 text-blue-400" />
+                    </div>
+                    <div style={{ marginLeft: '16px' }}>
+                      <div style={{ color: 'rgb(255, 255, 255)', fontWeight: '600' }}>
+                        Immediate value realization
+                      </div>
+                      <div style={{ color: 'rgb(144, 150, 162)', fontSize: '14px', lineHeight: '20px' }}>
+                        See results within the first week
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style={{ padding: '32px', backgroundImage: 'linear-gradient(to right bottom, rgb(44, 49, 58), rgb(70, 74, 83))', borderRadius: '16px', border: '0.8px solid rgb(107, 114, 128)' }}>
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <span style={{ color: 'rgb(255, 255, 255)', fontWeight: '600' }}>
+                      Deployment Progress
+                    </span>
+                    <span style={{ color: 'rgb(60, 131, 246)' }}>
+                      100%
+                    </span>
+                  </div>
+                  <div style={{ backgroundColor: 'rgb(31, 34, 41)', borderRadius: '9999px', height: '8px', marginTop: '24px' }}>
+                    <div style={{ backgroundColor: 'rgb(60, 131, 246)', borderRadius: '9999px', height: '8px', width: '100%' }} />
+                  </div>
+                  <div style={{ marginTop: '24px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span style={{ color: 'rgb(255, 255, 255)', marginLeft: '12px' }}>
+                        API Connection Established
+                      </span>
+                      <span style={{ color: 'rgb(144, 150, 162)', fontSize: '14px', lineHeight: '20px', marginLeft: '12px' }}>
+                        2 min
+                      </span>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', marginTop: '12px' }}>
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span style={{ color: 'rgb(255, 255, 255)', marginLeft: '12px' }}>
+                        Asset Discovery Complete
+                      </span>
+                      <span style={{ color: 'rgb(144, 150, 162)', fontSize: '14px', lineHeight: '20px', marginLeft: '12px' }}>
+                        15 min
+                      </span>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', marginTop: '12px' }}>
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span style={{ color: 'rgb(255, 255, 255)', marginLeft: '12px' }}>
+                        Risk Assessment Generated
+                      </span>
+                      <span style={{ color: 'rgb(144, 150, 162)', fontSize: '14px', lineHeight: '20px', marginLeft: '12px' }}>
+                        28 min
+                      </span>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', marginTop: '12px' }}>
+                      <div className="w-5 h-5 text-blue-400 animate-pulse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
+                        </svg>
+                      </div>
+                      <span style={{ color: 'rgb(255, 255, 255)', marginLeft: '12px' }}>
+                        Monitoring Active
+                      </span>
+                      <span style={{ color: 'rgb(60, 131, 246)', fontSize: '14px', lineHeight: '20px', marginLeft: '12px' }}>
+                        Live
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
       {/* Video Section - See Secure.com in Action */}
       <section id="video" className="bg-gradient-to-br from-secure-slate-50 to-white" style={{ padding: '24px 0' }}>
         <div className="container mx-auto px-6">

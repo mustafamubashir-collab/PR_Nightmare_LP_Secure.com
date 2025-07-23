@@ -1320,7 +1320,7 @@ export default function Index() {
       {/* Closing Section */}
       <section
         id="final-cta"
-        className="py-24 bg-gradient-to-br from-secure-blue-600 to-secure-blue-800"
+        style={{ padding: '96px 0', background: 'linear-gradient(135deg, #1d4ed8 0%, #3730a3 50%, #5b21b6 100%)' }}
       >
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">

@@ -326,7 +326,7 @@ export default function Index() {
                     <span>PR Nightmare</span>
                   </div>
                 </h1>
-                <p style={{ fontSize: '20px', color: 'rgba(255, 255, 255, 0.9)', marginBottom: '32px', lineHeight: '1.4', fontFamily: 'Inter, sans-serif' }}>
+                <p style={{ fontSize: '18px', fontWeight: '400', color: '#F0F4F8', marginBottom: '32px', lineHeight: '1.5', fontFamily: 'Inter, sans-serif' }}>
                   Reduce breach risk with 40% fewer blind spots and AI-led response before it turns into reputational damage.
                 </p>
                 <div className="relative">

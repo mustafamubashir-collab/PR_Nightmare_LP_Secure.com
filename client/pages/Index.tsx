@@ -309,45 +309,70 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+            {/* Brand Value at Risk */}
             <Card className="p-8 text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <TrendingDown className="w-8 h-8 text-red-600" />
               </div>
-              <div className="text-4xl font-bold text-red-600 mb-2">5-7%</div>
-              <p className="text-secure-slate-700 font-medium mb-2">
-                Brand value drops after a breach
+              <h3 className="text-lg font-bold text-secure-slate-900 mb-4">
+                Brand Value at Risk
+              </h3>
+              <div className="text-3xl font-bold text-red-600 mb-3">5–9%</div>
+              <p className="text-sm text-secure-slate-600 mb-3 leading-relaxed">
+                decline in reputational intangible capital
               </p>
-              <p className="text-sm text-secure-slate-500">(WEF 2023)</p>
+              <p className="text-xs text-secure-slate-500 mb-3 italic">
+                "The largest and most salient breaches are associated with a 5–9% decline in firms' reputational intangible capital."
+              </p>
+              <p className="text-xs text-secure-slate-400 font-medium">
+                Oxford Academic, Journal of Cybersecurity
+              </p>
             </Card>
 
+            {/* Media Blowback */}
             <Card className="p-8 text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="w-8 h-8 text-orange-600" />
               </div>
-              <div className="text-4xl font-bold text-orange-600 mb-2">94%</div>
-              <p className="text-secure-slate-700 font-medium mb-2">
-                Of consumers leave breached brands
+              <h3 className="text-lg font-bold text-secure-slate-900 mb-4">
+                Media Blowback from a Single Misstep
+              </h3>
+              <div className="text-3xl font-bold text-orange-600 mb-3">94%</div>
+              <p className="text-sm text-secure-slate-600 mb-3 leading-relaxed">
+                of respondents
               </p>
-              <p className="text-sm text-secure-slate-500">
-                (Security.org 2024)
+              <p className="text-xs text-secure-slate-500 mb-3 italic">
+                "94% of respondents said their customers would not buy from them if they did not adequately protect data."
+              </p>
+              <p className="text-xs text-secure-slate-400 font-medium">
+                Cisco 2024 Data Privacy Benchmark Study
               </p>
             </Card>
 
+            {/* Investor Confidence */}
             <Card className="p-8 text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <DollarSign className="w-8 h-8 text-red-600" />
               </div>
-              <div className="text-4xl font-bold text-red-600 mb-2">59%</div>
-              <p className="text-secure-slate-700 font-medium mb-2">
-                Of investors lose confidence
+              <h3 className="text-lg font-bold text-secure-slate-900 mb-4">
+                Investor Confidence Erodes
+              </h3>
+              <div className="text-3xl font-bold text-red-600 mb-3">81%</div>
+              <p className="text-sm text-secure-slate-600 mb-3 leading-relaxed">
+                of private-market investors
               </p>
-              <p className="text-sm text-secure-slate-500">(PwC 2023)</p>
+              <p className="text-xs text-secure-slate-500 mb-3 italic">
+                "81% of private‑market investors say cybersecurity and data‑reporting measures have become more important to their investment decisions in the past year."
+              </p>
+              <p className="text-xs text-secure-slate-400 font-medium">
+                KPMG Private Markets Pulse 2025
+              </p>
             </Card>
           </div>
 
           <div className="text-center max-w-4xl mx-auto">
             <p className="text-xl text-secure-slate-600 leading-relaxed">
-              A security failure doesn't just cost revenue — it damages your 
+              A security failure doesn't just cost revenue — it damages your
               reputation, valuation, and growth trajectory.
             </p>
           </div>
@@ -490,60 +515,54 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Product Highlights */}
+      {/* Product Highlights — Easily Skimmable Videos */}
       <section id="highlights" className="py-24 bg-white">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-              <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors">
-                <Shield className="w-8 h-8 text-green-600" />
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Top Row - Proactive Breach Prevention */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-secure-slate-900 mb-4">
+                  Proactive Breach Prevention
+                </h3>
               </div>
-              <h3 className="text-2xl font-bold text-secure-slate-900 mb-4">
-                Proactive Breach Prevention
-              </h3>
-              <p className="text-secure-slate-600">
-                Stay ahead of threats with predictive intelligence and automated
-                response.
-              </p>
+              {/* Video placeholder - 16:9 ratio optimized for 1920x1080 */}
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <div className="absolute inset-0 bg-gradient-to-br from-secure-slate-800 to-secure-slate-900 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-black/50"></div>
+                  <div className="relative text-center">
+                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 transition-colors">
+                      <Play className="w-8 h-8 text-white ml-1" />
+                    </div>
+                    <p className="text-white/80 text-sm font-medium">
+                      Preview Clip Coming Soon
+                    </p>
+                  </div>
+                </div>
+              </div>
             </Card>
 
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-              <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
-                <Target className="w-8 h-8 text-blue-600" />
+            {/* Top Row - Real-Time Asset & Threat Maps */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-secure-slate-900 mb-4">
+                  Real-Time Asset & Threat Maps
+                </h3>
               </div>
-              <h3 className="text-2xl font-bold text-secure-slate-900 mb-4">
-                Centralized Risk Scoring
-              </h3>
-              <p className="text-secure-slate-600">
-                Unified risk assessment across all your digital assets and
-                infrastructure.
-              </p>
-            </Card>
-
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-              <div className="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-200 transition-colors">
-                <Map className="w-8 h-8 text-red-600" />
+              {/* Video placeholder - 16:9 ratio optimized for 1920x1080 */}
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <div className="absolute inset-0 bg-gradient-to-br from-secure-slate-800 to-secure-slate-900 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-black/50"></div>
+                  <div className="relative text-center">
+                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 transition-colors">
+                      <Play className="w-8 h-8 text-white ml-1" />
+                    </div>
+                    <p className="text-white/80 text-sm font-medium">
+                      Preview Clip Coming Soon
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-secure-slate-900 mb-4">
-                Real-Time Threat Maps
-              </h3>
-              <p className="text-secure-slate-600">
-                Visual intelligence that shows threats as they emerge and
-                evolve.
-              </p>
-            </Card>
-
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-              <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors">
-                <LayoutDashboard className="w-8 h-8 text-purple-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-secure-slate-900 mb-4">
-                Unified Dashboard for Founders
-              </h3>
-              <p className="text-secure-slate-600">
-                Executive-level insights that translate security posture into
-                business metrics.
-              </p>
             </Card>
           </div>
         </div>

@@ -26,6 +26,15 @@ export default function Index() {
   const [activeTab, setActiveTab] = useState("case-management");
   const [deploymentProgress, setDeploymentProgress] = useState(0);
   const [activeStep, setActiveStep] = useState(0);
+  const [showBetaModal, setShowBetaModal] = useState(false);
+  const [betaForm, setBetaForm] = useState({
+    fullName: '',
+    workEmail: '',
+    companySize: '',
+    industry: '',
+    securityChallenges: [] as string[],
+    additionalComments: ''
+  });
 
   useEffect(() => {
     setIsVisible(true);

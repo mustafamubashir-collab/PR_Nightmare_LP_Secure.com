@@ -31,7 +31,7 @@ export default function Index() {
     setIsVisible(true);
   }, []);
 
-  // Enhanced deployment animation effect
+  // Enhanced deployment animation effect - Fast 2-second intervals
   useEffect(() => {
     const runAnimation = () => {
       // Reset to initial state
@@ -40,42 +40,42 @@ export default function Index() {
 
       const timeouts: NodeJS.Timeout[] = [];
 
-      // Step 1: API Connection Established - 5 seconds → 20%
+      // Step 1: API Connection Established - 2 seconds → 20%
       timeouts.push(
         setTimeout(() => {
           setActiveStep(1);
           setDeploymentProgress(20);
-        }, 1000) // Small delay for smooth start
+        }, 500) // Small delay for smooth start
       );
 
-      // Step 2: Asset Discovery Complete - 10 seconds → 60%
+      // Step 2: Asset Discovery Complete - 2 seconds → 60%
       timeouts.push(
         setTimeout(() => {
           setActiveStep(2);
           setDeploymentProgress(60);
-        }, 6000) // 5 seconds after step 1
+        }, 2500) // 2 seconds after step 1
       );
 
-      // Step 3: Risk Assessment Generated - 15 seconds → 100%
+      // Step 3: Risk Assessment Generated - 2 seconds → 100%
       timeouts.push(
         setTimeout(() => {
           setActiveStep(3);
           setDeploymentProgress(100);
-        }, 16000) // 10 seconds after step 2
+        }, 4500) // 2 seconds after step 2
       );
 
-      // Final: Agent Live. Monitoring Active
+      // Final: Agent Live. Monitoring Active - hold for 7 seconds
       timeouts.push(
         setTimeout(() => {
           setActiveStep(4);
-        }, 31000) // 15 seconds after step 3
+        }, 6500) // 2 seconds after step 3
       );
 
       // Reset and restart animation loop
       timeouts.push(
         setTimeout(() => {
           runAnimation();
-        }, 36000) // 5 seconds to appreciate final state, then restart
+        }, 13500) // 7 seconds to appreciate final state, then restart
       );
 
       return timeouts;

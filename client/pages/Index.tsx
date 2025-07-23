@@ -31,35 +31,57 @@ export default function Index() {
     setIsVisible(true);
   }, []);
 
-  // Deployment animation effect
+  // Enhanced deployment animation effect
   useEffect(() => {
-    const steps = [
-      { duration: 5000, progress: 20 },
-      { duration: 10000, progress: 60 },
-      { duration: 15000, progress: 100 }
-    ];
+    const runAnimation = () => {
+      // Reset to initial state
+      setActiveStep(0);
+      setDeploymentProgress(0);
 
-    let timeouts: NodeJS.Timeout[] = [];
-    let currentDelay = 0;
+      const timeouts: NodeJS.Timeout[] = [];
 
-    steps.forEach((step, index) => {
+      // Step 1: API Connection Established - 5 seconds → 20%
       timeouts.push(
         setTimeout(() => {
-          setActiveStep(index + 1);
-          setDeploymentProgress(step.progress);
-        }, currentDelay)
+          setActiveStep(1);
+          setDeploymentProgress(20);
+        }, 1000) // Small delay for smooth start
       );
-      currentDelay += step.duration;
-    });
 
-    // Reset animation after completion
-    timeouts.push(
-      setTimeout(() => {
-        setActiveStep(0);
-        setDeploymentProgress(0);
-      }, currentDelay + 3000)
-    );
+      // Step 2: Asset Discovery Complete - 10 seconds → 60%
+      timeouts.push(
+        setTimeout(() => {
+          setActiveStep(2);
+          setDeploymentProgress(60);
+        }, 6000) // 5 seconds after step 1
+      );
 
+      // Step 3: Risk Assessment Generated - 15 seconds → 100%
+      timeouts.push(
+        setTimeout(() => {
+          setActiveStep(3);
+          setDeploymentProgress(100);
+        }, 16000) // 10 seconds after step 2
+      );
+
+      // Final: Agent Live. Monitoring Active
+      timeouts.push(
+        setTimeout(() => {
+          setActiveStep(4);
+        }, 31000) // 15 seconds after step 3
+      );
+
+      // Reset and restart animation loop
+      timeouts.push(
+        setTimeout(() => {
+          runAnimation();
+        }, 36000) // 5 seconds to appreciate final state, then restart
+      );
+
+      return timeouts;
+    };
+
+    const timeouts = runAnimation();
     return () => timeouts.forEach(clearTimeout);
   }, []);
 

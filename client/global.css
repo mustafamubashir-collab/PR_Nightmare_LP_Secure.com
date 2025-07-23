@@ -138,6 +138,23 @@
     }
   }
 
+  /* Responsive section spacing utilities */
+  .section-spacing {
+    padding: 64px 0;
+  }
+
+  @media (max-width: 1024px) {
+    .section-spacing {
+      padding: 40px 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section-spacing {
+      padding: 32px 0;
+    }
+  }
+
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }

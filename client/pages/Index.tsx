@@ -1099,7 +1099,7 @@ export default function Index() {
       </section>
 
       {/* Deployment Section - 30-minute deployment */}
-      <section style={{ padding: '32px 0', background: 'linear-gradient(135deg, #1F2937 0%, #374151 50%, #4B5563 100%)' }}>
+      <section style={{ padding: '64px 0', background: 'linear-gradient(135deg, #1F2937 0%, #374151 50%, #4B5563 100%)' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 32px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '48px', alignItems: 'center' }}>
             <div>

@@ -1327,7 +1327,7 @@ export default function Index() {
       >
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 style={{ color: '#ffffff', fontSize: '48px', fontWeight: '700', lineHeight: '1.2', marginBottom: '24px', fontFamily: 'Inter, sans-serif' }}>
+            <h2 style={{ color: '#FFFFFF', fontSize: '48px', fontWeight: '700', lineHeight: '1.1', marginBottom: '24px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
               Let your team focus on growth<br />not grunt work.
             </h2>
             <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '20px', lineHeight: '1.4', marginBottom: '32px', fontFamily: 'Inter, sans-serif' }}>

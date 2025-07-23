@@ -375,6 +375,49 @@ export default function Index() {
           </div>
         </div>
 
+        {/* Trust Logos at bottom of hero */}
+        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-full" style={{ zIndex: 15 }}>
+          <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px' }}>
+            <div style={{ textAlign: 'center' }}>
+              <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '14px', marginBottom: '16px', fontFamily: 'Inter, sans-serif' }}>
+                Trusted by growing companies
+              </p>
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
+                {[1, 2, 3, 4, 5].map((num) => (
+                  <div
+                    key={num}
+                    style={{
+                      width: '80px',
+                      height: '40px',
+                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                      borderRadius: '8px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      backdropFilter: 'blur(10px)',
+                      border: '1px solid rgba(255, 255, 255, 0.2)',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+                      e.currentTarget.style.transform = 'scale(1.05)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+                      e.currentTarget.style.transform = 'scale(1)';
+                    }}
+                  >
+                    <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.8)', fontFamily: 'Inter, sans-serif' }}>
+                      Partner {num}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
           <div className="animate-bounce">

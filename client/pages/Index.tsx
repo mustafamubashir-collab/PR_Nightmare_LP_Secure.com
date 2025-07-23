@@ -862,8 +862,191 @@ export default function Index() {
 
 
 
+      {/* What's under the hood Section */}
+      <section style={{ paddingBottom: '44px', backgroundColor: 'rgba(1, 31, 53, 1)' }}>
+        <div className="container mx-auto px-4" style={{ backgroundColor: 'rgba(1, 31, 53, 1)' }}>
+          <div style={{
+            color: 'rgb(255, 255, 255)',
+            fontSize: '48px',
+            lineHeight: '48px',
+            marginBottom: '64px',
+            textAlign: 'center',
+            paddingBottom: '16px'
+          }}>
+            What's under the hood
+          </div>
+          <div style={{ maxWidth: '1152px', margin: '0 auto' }}>
+            <div style={{ width: '100%' }}>
+              <div
+                role="tablist"
+                aria-orientation="horizontal"
+                style={{
+                  display: 'grid',
+                  alignItems: 'center',
+                  backdropFilter: 'blur(12px)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                  borderRadius: '6px',
+                  color: 'rgb(115, 115, 115)',
+                  gridTemplate: 'none / repeat(5, minmax(0px, 1fr))',
+                  height: '40px',
+                  justifyContent: 'center',
+                  width: '100%',
+                  padding: '4px',
+                }}
+              >
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  style={{
+                    backgroundColor: 'rgb(0, 112, 243)',
+                    borderRadius: '4px',
+                    boxShadow: 'rgba(0, 0, 0, 0.05) 0px 1px 2px 0px',
+                    color: 'rgb(255, 255, 255)',
+                    fontSize: '14px',
+                    fontWeight: '500',
+                    lineHeight: '20px',
+                    whiteSpace: 'nowrap',
+                    border: 'none',
+                    padding: '6px 12px',
+                  }}
+                >
+                  Automation
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  style={{
+                    borderRadius: '4px',
+                    fontSize: '14px',
+                    fontWeight: '500',
+                    lineHeight: '20px',
+                    whiteSpace: 'nowrap',
+                    backgroundColor: 'rgba(0, 0, 0, 0)',
+                    border: 'none',
+                    padding: '6px 12px',
+                    color: 'rgb(115, 115, 115)',
+                  }}
+                >
+                  Intelligence
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  style={{
+                    borderRadius: '4px',
+                    fontSize: '14px',
+                    fontWeight: '500',
+                    lineHeight: '20px',
+                    whiteSpace: 'nowrap',
+                    backgroundColor: 'rgba(0, 0, 0, 0)',
+                    border: 'none',
+                    padding: '6px 12px',
+                    color: 'rgb(115, 115, 115)',
+                  }}
+                >
+                  Risk Engine
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  style={{
+                    borderRadius: '4px',
+                    fontSize: '14px',
+                    fontWeight: '500',
+                    lineHeight: '20px',
+                    whiteSpace: 'nowrap',
+                    backgroundColor: 'rgba(0, 0, 0, 0)',
+                    border: 'none',
+                    padding: '6px 12px',
+                    color: 'rgb(115, 115, 115)',
+                  }}
+                >
+                  Compliance
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  style={{
+                    borderRadius: '4px',
+                    fontSize: '14px',
+                    fontWeight: '500',
+                    lineHeight: '20px',
+                    whiteSpace: 'nowrap',
+                    backgroundColor: 'rgba(0, 0, 0, 0)',
+                    border: 'none',
+                    padding: '6px 12px',
+                    color: 'rgb(115, 115, 115)',
+                  }}
+                >
+                  Architecture
+                </button>
+              </div>
+              <div
+                role="tabpanel"
+                style={{ marginTop: '32px' }}
+              >
+                <Card style={{
+                  backdropFilter: 'blur(12px)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                  borderColor: 'rgba(255, 255, 255, 0.1)',
+                  borderRadius: '8px',
+                  borderWidth: '0.8px',
+                  boxShadow: 'rgba(0, 0, 0, 0.05) 0px 1px 2px 0px',
+                }}>
+                  <div style={{ padding: '32px' }}>
+                    <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="64"
+                        height="64"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="rgb(0, 112, 243)"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{ color: 'rgb(0, 112, 243)' }}
+                      >
+                        <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
+                      </svg>
+                      <div style={{ marginLeft: '24px' }}>
+                        <h3 style={{
+                          color: 'rgb(255, 255, 255)',
+                          fontSize: '24px',
+                          fontWeight: '700',
+                          lineHeight: '32px',
+                          marginBottom: '16px',
+                        }}>
+                          Agentic Automation & Response Workflows
+                        </h3>
+                        <p style={{
+                          color: 'rgb(209, 213, 219)',
+                          fontSize: '18px',
+                          lineHeight: '29px',
+                        }}>
+                          Intelligent automation that learns from your team's
+                          responses and handles routine security tasks. From
+                          initial triage to incident response, our AI agents
+                          work alongside your team to accelerate every step of
+                          the security workflow.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="bg-secure-slate-900 py-12 border-t border-secure-slate-800">
+      <footer className="bg-secure-slate-900 py-12">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">

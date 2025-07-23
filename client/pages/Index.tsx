@@ -577,8 +577,8 @@ export default function Index() {
             {/* Tab Content */}
             <div
               style={{
-                marginTop: "32px",
-                minHeight: "400px",
+                marginTop: "24px",
+                minHeight: "280px",
               }}
             >
               {/* Case Management + MTTD/MTTR Tab */}

@@ -1046,8 +1046,8 @@ export default function Index() {
 
           <div className="max-w-6xl mx-auto">
             <div className="relative">
-              {/* Video Container - 16:9 aspect ratio optimized for 1920x1080 */}
-              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              {/* Video Container - Reduced height for one-fold viewing */}
+              <div className="relative w-full" style={{ paddingBottom: '42%', maxHeight: '400px' }}>
                 <div className="absolute inset-0 bg-secure-slate-800 rounded-2xl shadow-2xl overflow-hidden">
                   {/* Placeholder for YouTube video */}
                   <div className="w-full h-full bg-gradient-to-br from-secure-slate-700 to-secure-slate-900 flex items-center justify-center">

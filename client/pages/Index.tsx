@@ -377,10 +377,10 @@ export default function Index() {
         </div>
 
         {/* Trust Logos at bottom of hero */}
-        <div className="absolute bottom-40 left-1/2 transform -translate-x-1/2 w-full" style={{ zIndex: 15 }}>
+        <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 w-full" style={{ zIndex: 15 }}>
           <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center' }}>
-              <p style={{ color: '#F0F4F8', fontSize: '14px', fontWeight: '400', marginBottom: '16px', fontFamily: 'Inter, sans-serif' }}>
+              <p style={{ color: '#E0E0E0', fontSize: '14px', fontWeight: '400', marginBottom: '16px', fontFamily: 'Inter, sans-serif' }}>
                 Trusted by growing companies
               </p>
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>

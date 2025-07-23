@@ -411,7 +411,7 @@ export default function Index() {
       </section>
 
       {/* Solution Section — How Secure.com Helps */}
-      <section id="solution" style={{ padding: '80px 0' }}>
+      <section id="solution" style={{ padding: '32px 0' }}>
         <div
           style={{
             width: "100%",

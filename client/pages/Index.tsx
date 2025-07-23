@@ -210,21 +210,19 @@ export default function Index() {
 
         {/* Logo and Brand Text - Top Left */}
         <div className="absolute top-8 left-8 xl:left-16 z-20">
-          <div className="space-y-2" style={{ marginBottom: '-3px' }}>
+          <div style={{ marginBottom: '-1px' }}>
             <h1 className="text-2xl font-bold text-white">
               <a href="secure.com">Secure.com</a>
             </h1>
-            <p className="text-white/70" style={{ fontSize: '8px', minHeight: '-2px' }}>
-              <p>
-                From the Founders of{" "}
-                <a href="www.purevpn.com" rel="noopener noreferrer">
-                  PureVPN
-                </a>{" "}
-                |{" "}
-                <a href="www.cloudways.com" rel="noopener noreferrer">
-                  Cloudways
-                </a>
-              </p>
+            <p className="text-white/70" style={{ fontSize: '14px', marginTop: '4px' }}>
+              From the Founders of{" "}
+              <a href="www.purevpn.com" rel="noopener noreferrer">
+                PureVPN
+              </a>{" "}
+              |{" "}
+              <a href="www.cloudways.com" rel="noopener noreferrer">
+                Cloudways
+              </a>
             </p>
           </div>
         </div>
@@ -869,11 +867,77 @@ export default function Index() {
             color: 'rgb(255, 255, 255)',
             fontSize: '48px',
             lineHeight: '48px',
-            marginBottom: '64px',
+            marginBottom: '24px',
             textAlign: 'center',
             paddingBottom: '16px'
           }}>
             What's under the hood
+          </div>
+
+          {/* Subheadline */}
+          <div style={{
+            color: 'rgb(156, 163, 175)',
+            fontSize: '16px',
+            lineHeight: '24px',
+            textAlign: 'center',
+            marginBottom: '48px',
+            maxWidth: '800px',
+            margin: '0 auto 48px auto'
+          }}>
+            Explore how Secure.com's AI-native security architecture unifies detection, response, and remediation to minimize breach risk.
+          </div>
+
+          {/* Video Block */}
+          <div style={{ marginBottom: '64px', maxWidth: '1152px', margin: '0 auto 64px auto' }}>
+            <div style={{ position: 'relative' }}>
+              <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%' }}>
+                <div style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  backgroundColor: 'rgb(31, 41, 55)',
+                  borderRadius: '16px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  overflow: 'hidden'
+                }}>
+                  <div style={{ position: 'absolute', top: '16px', left: '16px' }}>
+                    <h3 style={{
+                      color: 'rgb(255, 255, 255)',
+                      fontSize: '18px',
+                      fontWeight: '600',
+                      margin: 0
+                    }}>
+                      Overview: Secure.com Architecture in Action
+                    </h3>
+                  </div>
+                  <div style={{ textAlign: 'center' }}>
+                    <div style={{
+                      width: '80px',
+                      height: '80px',
+                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      marginBottom: '16px',
+                      cursor: 'pointer',
+                      transition: 'all 0.3s ease'
+                    }}>
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'white', marginLeft: '4px' }}>
+                        <polygon points="5,3 19,12 5,21" />
+                      </svg>
+                    </div>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '14px', margin: 0 }}>
+                      1920x1080 • Architecture Overview
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div style={{ maxWidth: '1152px', margin: '0 auto' }}>
             <div style={{ width: '100%' }}>

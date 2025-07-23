@@ -288,20 +288,15 @@ export default function Index() {
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mb-8 leading-tight text-left drop-shadow-lg">
+                <h1 style={{ fontSize: '48px', fontWeight: '700', color: '#ffffff', marginBottom: '32px', lineHeight: '1.2', textAlign: 'left', fontFamily: 'Inter, sans-serif' }}>
                   <div>One Cyber Breach</div>
                   <div>Away from a</div>
-                  <div className="text-gray-400 font-extrabold">
-                    <p>
-                      <span style={{ color: "rgb(10, 19, 46)" }}>
-                        PR Nightmare
-                      </span>
-                    </p>
+                  <div style={{ color: '#0A0A0A', fontWeight: '700' }}>
+                    <span>PR Nightmare</span>
                   </div>
                 </h1>
-                <p className="text-xl xl:text-2xl text-white/90 mb-10 leading-relaxed drop-shadow-md">
-                  Reduce breach risk with 40% fewer blind spots and AI-led
-                  response before it turns into reputational damage.
+                <p style={{ fontSize: '20px', color: 'rgba(255, 255, 255, 0.9)', marginBottom: '32px', lineHeight: '1.4', fontFamily: 'Inter, sans-serif' }}>
+                  Reduce breach risk with 40% fewer blind spots and AI-led response before it turns into reputational damage.
                 </p>
                 <div className="relative">
                   {/* Subtle glowing background */}

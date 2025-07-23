@@ -984,46 +984,7 @@ export default function Index() {
       </section>
 
 
-      {/* Onboarding Section */}
-      <section id="onboarding" className="py-24 bg-secure-slate-50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-secure-slate-900 mb-8">
-              Peace of mind, in{" "}
-              <span className="text-secure-blue-600">&nbsp;30 minutes.</span>
-            </h2>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-secure-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <CheckCircle className="w-8 h-8 text-secure-blue-600" />
-                </div>
-                <span className="text-lg font-semibold text-secure-slate-700">No Agents</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-secure-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <Clock className="w-8 h-8 text-secure-blue-600" />
-                </div>
-                <span className="text-lg font-semibold text-secure-slate-700">Fast Deployment</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-secure-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <Users className="w-8 h-8 text-secure-blue-600" />
-                </div>
-                <span className="text-lg font-semibold text-secure-slate-700">Dedicated Success Engineer</span>
-              </div>
-            </div>
-
-            <Button
-              onClick={() => scrollToSection("final-cta")}
-              className="bg-secure-blue-600 hover:bg-secure-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105"
-            >
-              Get Started Now
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* Video Section - See Secure.com in Action */}
       <section id="video" className="bg-gradient-to-br from-secure-slate-50 to-white" style={{ padding: '24px 0' }}>

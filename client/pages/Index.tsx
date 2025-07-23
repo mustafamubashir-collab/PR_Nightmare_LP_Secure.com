@@ -249,7 +249,7 @@ export default function Index() {
         </div>
 
         {/* Content Grid for 1920x1080 Layout */}
-        <div className="relative z-10 w-full h-screen grid grid-cols-2">
+        <div className="relative w-full h-screen grid grid-cols-2" style={{ zIndex: 10 }}>
           {/* Left Side - Content Area */}
           <div className="flex items-center justify-start pl-16 xl:pl-24 pt-20">
             <div className="max-w-xl">

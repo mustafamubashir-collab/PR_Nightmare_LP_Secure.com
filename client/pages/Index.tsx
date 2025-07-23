@@ -379,7 +379,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Solution Section */}
+      {/* Solution Section — How Secure.com Helps */}
       <section id="solution" className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
@@ -389,74 +389,71 @@ export default function Index() {
             </h2>
           </div>
 
-          <div className="space-y-8 max-w-6xl mx-auto">
-            {/* Capability Card 1 */}
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="flex items-center space-x-6">
-                <div className="w-16 h-16 bg-secure-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Eye className="w-8 h-8 text-secure-blue-600" />
+          {/* Responsive Grid: 1 column mobile, 2 columns desktop */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Capability Block 1 */}
+            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group bg-white hover:bg-secure-blue-50">
+              <div className="flex flex-col items-start space-y-4">
+                <div className="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center group-hover:bg-indigo-200 transition-colors duration-300">
+                  <Eye className="w-8 h-8 text-indigo-600" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-secure-slate-900 mb-3">
                     Attack Surface Visibility
                   </h3>
-                  <p className="text-secure-slate-600 text-lg">
-                    Visualize assets & risks - reduce blind spots by 40%. 
-                    Comprehensive visibility across all digital assets and potential attack vectors.
+                  <p className="text-secure-slate-600 leading-relaxed">
+                    Visualizes assets, risks, and misconfigurations — reducing blind spots by 40%.
                   </p>
                 </div>
               </div>
             </Card>
 
-            {/* Capability Card 2 */}
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="flex items-center space-x-6">
-                <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Brain className="w-8 h-8 text-purple-600" />
+            {/* Capability Block 2 */}
+            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group bg-white hover:bg-secure-blue-50">
+              <div className="flex flex-col items-start space-y-4">
+                <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-300">
+                  <Brain className="w-8 h-8 text-blue-600" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-secure-slate-900 mb-3">
-                    AI Case Management
+                    Case Management + MTTD/MTTR
                   </h3>
-                  <p className="text-secure-slate-600 text-lg">
-                    Automate triage, cut MTTR by 50%. 
-                    Intelligent automation that learns and adapts to your security patterns.
+                  <p className="text-secure-slate-600 leading-relaxed">
+                    AI-driven incident response automates 70% of triage and cuts response time by 50%.
                   </p>
                 </div>
               </div>
             </Card>
 
-            {/* Capability Card 3 */}
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="flex items-center space-x-6">
-                <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            {/* Capability Block 3 */}
+            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group bg-white hover:bg-secure-blue-50">
+              <div className="flex flex-col items-start space-y-4">
+                <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center group-hover:bg-green-200 transition-colors duration-300">
                   <BarChart3 className="w-8 h-8 text-green-600" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-secure-slate-900 mb-3">
-                    Dynamic Risk Scoring
+                    Risk Management
                   </h3>
-                  <p className="text-secure-slate-600 text-lg">
-                    Prioritize high-impact issues. 
-                    Real-time risk assessment that prioritizes threats by business impact.
+                  <p className="text-secure-slate-600 leading-relaxed">
+                    Dynamic scoring engine prioritizes vulnerabilities before they escalate into business-impacting events.
                   </p>
                 </div>
               </div>
             </Card>
 
-            {/* Capability Card 4 */}
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="flex items-center space-x-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Layers className="w-8 h-8 text-blue-600" />
+            {/* Capability Block 4 */}
+            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group bg-white hover:bg-secure-blue-50">
+              <div className="flex flex-col items-start space-y-4">
+                <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300">
+                  <Layers className="w-8 h-8 text-purple-600" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-secure-slate-900 mb-3">
-                    Context-Aware Platform
+                    Context-Aware Unified Platform
                   </h3>
-                  <p className="text-secure-slate-600 text-lg">
-                    Centralized decisioning. 
-                    Single pane of glass with contextual intelligence for faster decisions.
+                  <p className="text-secure-slate-600 leading-relaxed">
+                    Centralizes all telemetry and decisioning to prevent overlooked threats from surfacing.
                   </p>
                 </div>
               </div>
@@ -515,51 +512,126 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Product Highlights — Easily Skimmable Videos */}
-      <section id="highlights" className="py-24 bg-white">
+      {/* Product Highlights (Video Grid) */}
+      <section id="highlights" className="py-24 bg-gradient-to-br from-secure-slate-50 to-white">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {/* Top Row - Proactive Breach Prevention */}
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden">
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-secure-slate-900 mb-4">
-                  Proactive Breach Prevention
-                </h3>
-              </div>
-              {/* Video placeholder - 16:9 ratio optimized for 1920x1080 */}
-              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                <div className="absolute inset-0 bg-gradient-to-br from-secure-slate-800 to-secure-slate-900 flex items-center justify-center">
-                  <div className="absolute inset-0 bg-black/50"></div>
-                  <div className="relative text-center">
-                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 transition-colors">
-                      <Play className="w-8 h-8 text-white ml-1" />
+          {/* 2x2 Grid of Video Blocks */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Video Block 1 - Proactive Breach Prevention */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group overflow-hidden rounded-xl">
+              <div className="relative">
+                {/* Video placeholder - 16:9 ratio optimized for 1920x1080 */}
+                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 to-indigo-800 flex items-center justify-center">
+                    {/* Dark overlay */}
+                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300"></div>
+
+                    {/* Heading overlay */}
+                    <div className="absolute top-4 left-4 right-4">
+                      <h3 className="text-xl font-bold text-white drop-shadow-lg">
+                        Proactive Breach Prevention
+                      </h3>
                     </div>
-                    <p className="text-white/80 text-sm font-medium">
-                      Preview Clip Coming Soon
-                    </p>
+
+                    {/* Play button center */}
+                    <div className="relative text-center">
+                      <div className="w-20 h-20 bg-white/15 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/25 group-hover:scale-110 transition-all duration-300">
+                        <Play className="w-10 h-10 text-white ml-1" />
+                      </div>
+                      <p className="text-white/90 text-sm font-medium drop-shadow">
+                        ▶ Preview Coming Soon
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </Card>
 
-            {/* Top Row - Real-Time Asset & Threat Maps */}
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden">
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-secure-slate-900 mb-4">
-                  Real-Time Asset & Threat Maps
-                </h3>
-              </div>
-              {/* Video placeholder - 16:9 ratio optimized for 1920x1080 */}
-              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                <div className="absolute inset-0 bg-gradient-to-br from-secure-slate-800 to-secure-slate-900 flex items-center justify-center">
-                  <div className="absolute inset-0 bg-black/50"></div>
-                  <div className="relative text-center">
-                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 transition-colors">
-                      <Play className="w-8 h-8 text-white ml-1" />
+            {/* Video Block 2 - Centralized Risk Scoring */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group overflow-hidden rounded-xl">
+              <div className="relative">
+                {/* Video placeholder - 16:9 ratio optimized for 1920x1080 */}
+                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+                    {/* Dark overlay */}
+                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300"></div>
+
+                    {/* Heading overlay */}
+                    <div className="absolute top-4 left-4 right-4">
+                      <h3 className="text-xl font-bold text-white drop-shadow-lg">
+                        Centralized Risk Scoring
+                      </h3>
                     </div>
-                    <p className="text-white/80 text-sm font-medium">
-                      Preview Clip Coming Soon
-                    </p>
+
+                    {/* Play button center */}
+                    <div className="relative text-center">
+                      <div className="w-20 h-20 bg-white/15 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/25 group-hover:scale-110 transition-all duration-300">
+                        <Play className="w-10 h-10 text-white ml-1" />
+                      </div>
+                      <p className="text-white/90 text-sm font-medium drop-shadow">
+                        ▶ Preview Coming Soon
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Video Block 3 - Real-Time Asset & Threat Maps */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group overflow-hidden rounded-xl">
+              <div className="relative">
+                {/* Video placeholder - 16:9 ratio optimized for 1920x1080 */}
+                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
+                    {/* Dark overlay */}
+                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300"></div>
+
+                    {/* Heading overlay */}
+                    <div className="absolute top-4 left-4 right-4">
+                      <h3 className="text-xl font-bold text-white drop-shadow-lg">
+                        Real-Time Asset & Threat Maps
+                      </h3>
+                    </div>
+
+                    {/* Play button center */}
+                    <div className="relative text-center">
+                      <div className="w-20 h-20 bg-white/15 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/25 group-hover:scale-110 transition-all duration-300">
+                        <Play className="w-10 h-10 text-white ml-1" />
+                      </div>
+                      <p className="text-white/90 text-sm font-medium drop-shadow">
+                        ▶ Preview Coming Soon
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Video Block 4 - Unified Dashboard for Founders */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 group overflow-hidden rounded-xl">
+              <div className="relative">
+                {/* Video placeholder - 16:9 ratio optimized for 1920x1080 */}
+                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center">
+                    {/* Dark overlay */}
+                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300"></div>
+
+                    {/* Heading overlay */}
+                    <div className="absolute top-4 left-4 right-4">
+                      <h3 className="text-xl font-bold text-white drop-shadow-lg">
+                        Unified Dashboard for Founders
+                      </h3>
+                    </div>
+
+                    {/* Play button center */}
+                    <div className="relative text-center">
+                      <div className="w-20 h-20 bg-white/15 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/25 group-hover:scale-110 transition-all duration-300">
+                        <Play className="w-10 h-10 text-white ml-1" />
+                      </div>
+                      <p className="text-white/90 text-sm font-medium drop-shadow">
+                        ▶ Preview Coming Soon
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -385,7 +385,7 @@ export default function Index() {
       <section id="problem" className="py-24 bg-secure-slate-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-secure-slate-900 mb-6">
+            <h2 style={{ color: '#0A0A0A', fontSize: '48px', fontWeight: '700', lineHeight: '1.2', marginBottom: '24px', fontFamily: 'Inter, sans-serif', textAlign: 'center' }}>
               One breach can undo years of trust.
             </h2>
           </div>

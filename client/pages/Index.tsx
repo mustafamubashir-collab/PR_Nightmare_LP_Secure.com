@@ -438,6 +438,8 @@ export default function Index() {
           <div
             style={{
               width: "100%",
+              maxWidth: "1200px",
+              margin: "0 auto",
             }}
           >
             <div
@@ -450,24 +452,24 @@ export default function Index() {
                 backgroundColor: "rgba(255, 255, 255, 0.05)",
                 borderRadius: "6px",
                 color: "rgb(115, 115, 115)",
-                gridTemplate: "none / repeat(5, minmax(0px, 1fr))",
-                height: "40px",
+                gridTemplate: "none / repeat(4, minmax(0px, 1fr))",
+                height: "auto",
                 justifyContent: "center",
                 width: "100%",
                 padding: "4px",
+                gap: "4px",
               }}
             >
               <button
                 type="button"
                 role="tab"
-                aria-selected="true"
-                aria-controls="radix-R167l7-content-automation"
-                tabIndex={0}
+                aria-selected={activeTab === "case-management"}
+                onClick={() => setActiveTab("case-management")}
                 style={{
-                  backgroundColor: "rgb(0, 112, 243)",
+                  backgroundColor: activeTab === "case-management" ? "rgb(0, 112, 243)" : "rgba(0, 0, 0, 0)",
                   borderRadius: "4px",
-                  boxShadow: "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
-                  color: "rgb(255, 255, 255)",
+                  boxShadow: activeTab === "case-management" ? "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px" : "none",
+                  color: activeTab === "case-management" ? "rgb(255, 255, 255)" : "rgba(253, 253, 253, 1)",
                   fontSize: "14px",
                   fontWeight: "500",
                   lineHeight: "20px",
@@ -475,118 +477,441 @@ export default function Index() {
                   transitionDuration: "0.15s",
                   transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
                   border: "none",
-                  padding: "6px 12px",
+                  padding: "8px 12px",
+                  cursor: "pointer",
                 }}
               >
-                Automation
+                Case Management + MTTD/MTTR
               </button>
               <button
                 type="button"
                 role="tab"
-                aria-selected="false"
-                aria-controls="radix-R167l7-content-intelligence"
-                tabIndex={-1}
+                aria-selected={activeTab === "risk-management"}
+                onClick={() => setActiveTab("risk-management")}
                 style={{
+                  backgroundColor: activeTab === "risk-management" ? "rgb(0, 112, 243)" : "rgba(0, 0, 0, 0)",
                   borderRadius: "4px",
+                  boxShadow: activeTab === "risk-management" ? "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px" : "none",
+                  color: activeTab === "risk-management" ? "rgb(255, 255, 255)" : "rgba(253, 253, 253, 1)",
                   fontSize: "14px",
                   fontWeight: "500",
                   lineHeight: "20px",
                   whiteSpace: "nowrap",
                   transitionDuration: "0.15s",
                   transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-                  backgroundColor: "rgba(0, 0, 0, 0)",
                   border: "none",
-                  padding: "6px 12px",
-                  color: "rgba(253, 253, 253, 1)",
+                  padding: "8px 12px",
+                  cursor: "pointer",
                 }}
               >
-                Intelligence
+                Risk Management
               </button>
               <button
                 type="button"
                 role="tab"
-                aria-selected="false"
-                aria-controls="radix-R167l7-content-compliance"
-                tabIndex={-1}
+                aria-selected={activeTab === "unified-platform"}
+                onClick={() => setActiveTab("unified-platform")}
                 style={{
+                  backgroundColor: activeTab === "unified-platform" ? "rgb(0, 112, 243)" : "rgba(0, 0, 0, 0)",
                   borderRadius: "4px",
+                  boxShadow: activeTab === "unified-platform" ? "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px" : "none",
+                  color: activeTab === "unified-platform" ? "rgb(255, 255, 255)" : "rgba(253, 253, 253, 1)",
                   fontSize: "14px",
                   fontWeight: "500",
                   lineHeight: "20px",
                   whiteSpace: "nowrap",
                   transitionDuration: "0.15s",
                   transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-                  backgroundColor: "rgba(0, 0, 0, 0)",
                   border: "none",
-                  padding: "6px 12px",
-                  color: "rgba(253, 253, 253, 1)",
+                  padding: "8px 12px",
+                  cursor: "pointer",
                 }}
               >
-                Compliance
+                Context-Aware Unified Platform
               </button>
               <button
                 type="button"
                 role="tab"
-                aria-selected="false"
-                aria-controls="radix-R167l7-content-risk"
-                tabIndex={-1}
+                aria-selected={activeTab === "attack-surface"}
+                onClick={() => setActiveTab("attack-surface")}
                 style={{
+                  backgroundColor: activeTab === "attack-surface" ? "rgb(0, 112, 243)" : "rgba(0, 0, 0, 0)",
                   borderRadius: "4px",
+                  boxShadow: activeTab === "attack-surface" ? "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px" : "none",
+                  color: activeTab === "attack-surface" ? "rgb(255, 255, 255)" : "rgba(253, 253, 253, 1)",
                   fontSize: "14px",
                   fontWeight: "500",
                   lineHeight: "20px",
                   whiteSpace: "nowrap",
                   transitionDuration: "0.15s",
                   transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-                  backgroundColor: "rgba(0, 0, 0, 0)",
                   border: "none",
-                  padding: "6px 12px",
-                  color: "rgba(253, 253, 253, 1)",
+                  padding: "8px 12px",
+                  cursor: "pointer",
                 }}
               >
-                Risk Engine
-              </button>
-              <button
-                type="button"
-                role="tab"
-                aria-selected="false"
-                aria-controls="radix-R167l7-content-architecture"
-                tabIndex={-1}
-                style={{
-                  borderRadius: "4px",
-                  fontSize: "14px",
-                  fontWeight: "500",
-                  lineHeight: "20px",
-                  whiteSpace: "nowrap",
-                  transitionDuration: "0.15s",
-                  transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-                  backgroundColor: "rgba(0, 0, 0, 0)",
-                  border: "none",
-                  padding: "6px 12px",
-                  color: "rgba(253, 253, 253, 1)",
-                }}
-              >
-                Architecture
+                Attack Surface Visibility
               </button>
             </div>
+
+            {/* Tab Content */}
             <div
-              role="tabpanel"
-              aria-labelledby="radix-R167l7-trigger-automation"
-              tabIndex={0}
               style={{
                 marginTop: "32px",
+                minHeight: "400px",
               }}
             >
-              <Card
-                style={{
-                  backdropFilter: "blur(12px)",
-                  backgroundColor: "rgba(255, 255, 255, 0.05)",
-                  borderColor: "rgba(255, 255, 255, 0.1)",
-                  borderRadius: "8px",
-                  borderWidth: "0.8px",
-                  boxShadow: "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
-                }}
-              />
+              {/* Case Management + MTTD/MTTR Tab */}
+              {activeTab === "case-management" && (
+                <div
+                  style={{
+                    opacity: 1,
+                    transform: "scale(1.03)",
+                    transition: "opacity 250ms ease-in-out, transform 250ms ease-in-out",
+                    animation: "fadeIn 250ms ease-in-out",
+                  }}
+                >
+                  <div
+                    style={{
+                      textAlign: "center",
+                      padding: "24px 16px",
+                    }}
+                  >
+                    <p
+                      style={{
+                        color: "rgba(255, 255, 255, 0.9)",
+                        fontSize: "16px",
+                        fontWeight: "400",
+                        lineHeight: "24px",
+                        marginBottom: "32px",
+                        maxWidth: "800px",
+                        margin: "0 auto 32px auto",
+                      }}
+                    >
+                      AI-driven incident response automates 70% of triage and cuts response time by 50%.
+                    </p>
+
+                    {/* Video Container */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        maxWidth: "1200px",
+                        margin: "0 auto",
+                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                        borderRadius: "12px",
+                        overflow: "hidden",
+                        boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          width: "100%",
+                          height: "100%",
+                          backgroundColor: "rgba(31, 41, 55, 0.95)",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          flexDirection: "column",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "80px",
+                            height: "80px",
+                            backgroundColor: "rgba(255, 255, 255, 0.1)",
+                            borderRadius: "50%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            marginBottom: "16px",
+                            cursor: "pointer",
+                            transition: "all 0.3s ease",
+                          }}
+                        >
+                          <Play className="w-10 h-10 text-white ml-1" />
+                        </div>
+                        <p
+                          style={{
+                            color: "rgba(255, 255, 255, 0.7)",
+                            fontSize: "14px",
+                            margin: 0,
+                          }}
+                        >
+                          case-mgmt-mttd.mp4 • Coming Soon
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Risk Management Tab */}
+              {activeTab === "risk-management" && (
+                <div
+                  style={{
+                    opacity: 1,
+                    transform: "scale(1.03)",
+                    transition: "opacity 250ms ease-in-out, transform 250ms ease-in-out",
+                    animation: "fadeIn 250ms ease-in-out",
+                  }}
+                >
+                  <div
+                    style={{
+                      textAlign: "center",
+                      padding: "24px 16px",
+                    }}
+                  >
+                    <p
+                      style={{
+                        color: "rgba(255, 255, 255, 0.9)",
+                        fontSize: "16px",
+                        fontWeight: "400",
+                        lineHeight: "24px",
+                        marginBottom: "32px",
+                        maxWidth: "800px",
+                        margin: "0 auto 32px auto",
+                      }}
+                    >
+                      Dynamic scoring engine prioritizes vulnerabilities before they escalate into business-impacting events.
+                    </p>
+
+                    {/* Video Container */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        maxWidth: "1200px",
+                        margin: "0 auto",
+                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                        borderRadius: "12px",
+                        overflow: "hidden",
+                        boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          width: "100%",
+                          height: "100%",
+                          backgroundColor: "rgba(31, 41, 55, 0.95)",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          flexDirection: "column",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "80px",
+                            height: "80px",
+                            backgroundColor: "rgba(255, 255, 255, 0.1)",
+                            borderRadius: "50%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            marginBottom: "16px",
+                            cursor: "pointer",
+                            transition: "all 0.3s ease",
+                          }}
+                        >
+                          <Play className="w-10 h-10 text-white ml-1" />
+                        </div>
+                        <p
+                          style={{
+                            color: "rgba(255, 255, 255, 0.7)",
+                            fontSize: "14px",
+                            margin: 0,
+                          }}
+                        >
+                          risk-scoring-intel.mp4 • Coming Soon
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Context-Aware Unified Platform Tab */}
+              {activeTab === "unified-platform" && (
+                <div
+                  style={{
+                    opacity: 1,
+                    transform: "scale(1.03)",
+                    transition: "opacity 250ms ease-in-out, transform 250ms ease-in-out",
+                    animation: "fadeIn 250ms ease-in-out",
+                  }}
+                >
+                  <div
+                    style={{
+                      textAlign: "center",
+                      padding: "24px 16px",
+                    }}
+                  >
+                    <p
+                      style={{
+                        color: "rgba(255, 255, 255, 0.9)",
+                        fontSize: "16px",
+                        fontWeight: "400",
+                        lineHeight: "24px",
+                        marginBottom: "32px",
+                        maxWidth: "800px",
+                        margin: "0 auto 32px auto",
+                      }}
+                    >
+                      Centralizes all telemetry and decisioning to prevent overlooked threats from surfacing.
+                    </p>
+
+                    {/* Video Container */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        maxWidth: "1200px",
+                        margin: "0 auto",
+                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                        borderRadius: "12px",
+                        overflow: "hidden",
+                        boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          width: "100%",
+                          height: "100%",
+                          backgroundColor: "rgba(31, 41, 55, 0.95)",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          flexDirection: "column",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "80px",
+                            height: "80px",
+                            backgroundColor: "rgba(255, 255, 255, 0.1)",
+                            borderRadius: "50%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            marginBottom: "16px",
+                            cursor: "pointer",
+                            transition: "all 0.3s ease",
+                          }}
+                        >
+                          <Play className="w-10 h-10 text-white ml-1" />
+                        </div>
+                        <p
+                          style={{
+                            color: "rgba(255, 255, 255, 0.7)",
+                            fontSize: "14px",
+                            margin: 0,
+                          }}
+                        >
+                          context-aware-platform.mp4 • Coming Soon
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Attack Surface Visibility Tab */}
+              {activeTab === "attack-surface" && (
+                <div
+                  style={{
+                    opacity: 1,
+                    transform: "scale(1.03)",
+                    transition: "opacity 250ms ease-in-out, transform 250ms ease-in-out",
+                    animation: "fadeIn 250ms ease-in-out",
+                  }}
+                >
+                  <div
+                    style={{
+                      textAlign: "center",
+                      padding: "24px 16px",
+                    }}
+                  >
+                    <p
+                      style={{
+                        color: "rgba(255, 255, 255, 0.9)",
+                        fontSize: "16px",
+                        fontWeight: "400",
+                        lineHeight: "24px",
+                        marginBottom: "32px",
+                        maxWidth: "800px",
+                        margin: "0 auto 32px auto",
+                      }}
+                    >
+                      Visualizes assets, risks, and misconfigurations — reducing blind spots by 40%.
+                    </p>
+
+                    {/* Video Container */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        maxWidth: "1200px",
+                        margin: "0 auto",
+                        paddingBottom: "56.25%", // 16:9 aspect ratio
+                        borderRadius: "12px",
+                        overflow: "hidden",
+                        boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          width: "100%",
+                          height: "100%",
+                          backgroundColor: "rgba(31, 41, 55, 0.95)",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          flexDirection: "column",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "80px",
+                            height: "80px",
+                            backgroundColor: "rgba(255, 255, 255, 0.1)",
+                            borderRadius: "50%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            marginBottom: "16px",
+                            cursor: "pointer",
+                            transition: "all 0.3s ease",
+                          }}
+                        >
+                          <Play className="w-10 h-10 text-white ml-1" />
+                        </div>
+                        <p
+                          style={{
+                            color: "rgba(255, 255, 255, 0.7)",
+                            fontSize: "14px",
+                            margin: 0,
+                          }}
+                        >
+                          attack-surface-visibility.mp4 • Coming Soon
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

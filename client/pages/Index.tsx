@@ -1355,13 +1355,15 @@ export default function Index() {
 
             {/* FOMO Messaging */}
             <p style={{
-              color: 'rgba(255, 255, 255, 0.8)',
-              fontSize: '16px',
-              fontWeight: '400',
-              marginTop: '16px',
-              fontFamily: 'Inter, sans-serif'
+              color: 'rgba(255, 255, 255, 0.9)',
+              fontSize: '18px',
+              fontWeight: '500',
+              marginTop: '24px',
+              fontFamily: 'Inter, sans-serif',
+              lineHeight: '1.5',
+              letterSpacing: '0.025em'
             }}>
-              Only 50 spots available. Be among the first to shape the future of AI-native security.
+              Secure your spot among the first 50 visionary companies shaping the next era of AI-native cybersecurity. Limited access. Unmatched advantage.
             </p>
 
             {/* PureVPN Attribution */}

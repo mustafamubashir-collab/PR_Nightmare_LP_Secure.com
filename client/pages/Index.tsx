@@ -1638,8 +1638,8 @@ export default function Index() {
               <button
                 type="submit"
                 style={{
-                  backgroundColor: '#1A1AFF',
-                  color: '#ffffff',
+                  background: 'linear-gradient(135deg, #00CBC9 0%, #5F00FF 100%)',
+                  color: '#FFFFFF',
                   padding: '16px 32px',
                   fontSize: '18px',
                   fontWeight: '600',
@@ -1648,13 +1648,16 @@ export default function Index() {
                   cursor: 'pointer',
                   marginTop: '8px',
                   fontFamily: 'Inter, sans-serif',
-                  transition: 'background-color 0.3s ease'
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 14px rgba(95, 0, 255, 0.25)'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#1515CC';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(95, 0, 255, 0.35)';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#1A1AFF';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(95, 0, 255, 0.25)';
                 }}
               >
                 Join Private Beta

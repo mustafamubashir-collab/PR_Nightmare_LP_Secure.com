@@ -1015,7 +1015,7 @@ export default function Index() {
               <div className="w-24 h-24 bg-secure-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-12 h-12 text-white" />
               </div>
-              <div className="text-6xl font-bold text-secure-blue-600 mb-2">
+              <div style={{ fontSize: '60px', fontWeight: '700', color: '#3C00C9', marginBottom: '8px', fontFamily: 'Inter, sans-serif' }}>
                 70%
               </div>
               <p className="text-xl text-secure-slate-700">

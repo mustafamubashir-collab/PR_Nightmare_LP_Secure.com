@@ -23,6 +23,7 @@ import {
 
 export default function Index() {
   const [isVisible, setIsVisible] = useState(false);
+  const [activeTab, setActiveTab] = useState("case-management");
 
   useEffect(() => {
     setIsVisible(true);

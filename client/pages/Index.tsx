@@ -1105,7 +1105,7 @@ export default function Index() {
             <div>
               <div>
                 <h2 style={{ color: '#FFFFFF', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.025em' }}>
-                  Peace of mind, in <span style={{ color: '#00CBC9' }}>30 minutes</span>.
+                  Peace of mind, in <span style={{ color: '#00FFFF' }}>30 minutes</span>.
                 </h2>
               </div>
               <div style={{ marginTop: '32px' }}>

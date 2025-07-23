@@ -385,32 +385,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Trust Logos Section */}
-      <section className="py-12 bg-white border-b border-secure-slate-100">
-        <div className="container mx-auto px-6">
-          <div className="text-center">
-            <p className="text-secure-slate-500 text-sm mb-8">Trusted by growing companies</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
-              {/* Placeholder logos - replace with actual partner logos */}
-              <div className="w-24 h-12 bg-secure-slate-200 rounded flex items-center justify-center">
-                <span className="text-xs text-secure-slate-500">Partner 1</span>
-              </div>
-              <div className="w-24 h-12 bg-secure-slate-200 rounded flex items-center justify-center">
-                <span className="text-xs text-secure-slate-500">Partner 2</span>
-              </div>
-              <div className="w-24 h-12 bg-secure-slate-200 rounded flex items-center justify-center">
-                <span className="text-xs text-secure-slate-500">Partner 3</span>
-              </div>
-              <div className="w-24 h-12 bg-secure-slate-200 rounded flex items-center justify-center">
-                <span className="text-xs text-secure-slate-500">Partner 4</span>
-              </div>
-              <div className="w-24 h-12 bg-secure-slate-200 rounded flex items-center justify-center">
-                <span className="text-xs text-secure-slate-500">Partner 5</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Problem Section */}
       <section id="problem" className="py-24 bg-secure-slate-50">

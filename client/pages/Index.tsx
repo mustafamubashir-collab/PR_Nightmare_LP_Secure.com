@@ -50,7 +50,7 @@ export default function Index() {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ zIndex: 1 }}
         >
-          <source src="https://sample-videos.com/zip/10/mp4/1080/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
+          <source src="https://cdn.builder.io/o/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fba2fbd26cf6e4a7db43e6276e146d43c?alt=media&token=fc4c512d-f00a-422b-9ed6-19e3c2279a18&apiKey=48c32e83d1314890b4d6a107b41a061a" type="video/mp4" />
         </video>
 
         {/* Overlay to maintain brand consistency */}

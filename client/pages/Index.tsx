@@ -1124,8 +1124,8 @@ export default function Index() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '48px', alignItems: 'center' }}>
             <div>
               <div>
-                <h2 style={{ color: '#ffffff', fontSize: '36px', fontWeight: '700', lineHeight: '1.2', fontFamily: 'Inter, sans-serif' }}>
-                  Peace of mind, in <span style={{ color: '#3c83f6' }}>30 minutes</span>.
+                <h2 style={{ color: '#FFFFFF', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.025em' }}>
+                  Peace of mind, in <span style={{ color: '#00CBC9' }}>30 minutes</span>.
                 </h2>
               </div>
               <div style={{ marginTop: '32px' }}>

@@ -24,9 +24,43 @@ import {
 export default function Index() {
   const [isVisible, setIsVisible] = useState(false);
   const [activeTab, setActiveTab] = useState("case-management");
+  const [deploymentProgress, setDeploymentProgress] = useState(0);
+  const [activeStep, setActiveStep] = useState(0);
 
   useEffect(() => {
     setIsVisible(true);
+  }, []);
+
+  // Deployment animation effect
+  useEffect(() => {
+    const steps = [
+      { duration: 5000, progress: 20 },
+      { duration: 10000, progress: 60 },
+      { duration: 15000, progress: 100 }
+    ];
+
+    let timeouts: NodeJS.Timeout[] = [];
+    let currentDelay = 0;
+
+    steps.forEach((step, index) => {
+      timeouts.push(
+        setTimeout(() => {
+          setActiveStep(index + 1);
+          setDeploymentProgress(step.progress);
+        }, currentDelay)
+      );
+      currentDelay += step.duration;
+    });
+
+    // Reset animation after completion
+    timeouts.push(
+      setTimeout(() => {
+        setActiveStep(0);
+        setDeploymentProgress(0);
+      }, currentDelay + 3000)
+    );
+
+    return () => timeouts.forEach(clearTimeout);
   }, []);
 
   const scrollToSection = (id: string) => {

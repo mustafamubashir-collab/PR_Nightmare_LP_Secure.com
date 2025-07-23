@@ -336,7 +336,7 @@ export default function Index() {
                     style={{ animationDuration: "4s" }}
                   ></div>
                   <Button
-                    onClick={() => scrollToSection("final-cta")}
+                    onClick={() => setShowBetaModal(true)}
                     style={{
                       backgroundColor: '#1A1AFF',
                       color: '#ffffff',

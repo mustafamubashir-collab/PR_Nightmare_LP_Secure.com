@@ -1023,17 +1023,11 @@ export default function Index() {
 
 
       {/* Video Section - See Secure.com in Action */}
-      <section id="video" className="bg-gradient-to-br from-secure-slate-50 to-white" style={{ padding: '24px 0' }}>
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-secure-slate-900 mb-4">
-              <span>
-                See <span style={{ color: 'rgb(29, 78, 216)' }}>Secure.com</span>{" "}
-                in
-              </span>
-              <span style={{ color: 'rgba(1, 1, 1, 1)' }}>
-                &nbsp;Action
-              </span>
+      <section id="video" style={{ padding: '32px 0', backgroundColor: '#f8fafc' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+            <h2 style={{ color: '#0A0A0A', fontSize: '36px', fontWeight: '700', lineHeight: '1.2', marginBottom: '16px', fontFamily: 'Inter, sans-serif' }}>
+              See <span style={{ color: '#1d4ed8' }}>Secure.com</span> in Action
             </h2>
           </div>
 

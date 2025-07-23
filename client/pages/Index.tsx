@@ -319,10 +319,10 @@ export default function Index() {
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                <h1 style={{ fontSize: '48px', fontWeight: '700', color: '#ffffff', marginBottom: '32px', lineHeight: '1.2', textAlign: 'left', fontFamily: 'Inter, sans-serif' }}>
+                <h1 style={{ fontSize: '56px', fontWeight: '700', color: '#FFFFFF', marginBottom: '32px', lineHeight: '1.1', textAlign: 'left', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
                   <div>One Cyber Breach</div>
                   <div>Away from a</div>
-                  <div style={{ color: '#0A0A0A', fontWeight: '700' }}>
+                  <div style={{ color: '#111827', fontWeight: '700' }}>
                     <span>PR Nightmare</span>
                   </div>
                 </h1>

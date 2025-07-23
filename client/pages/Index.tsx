@@ -522,12 +522,15 @@ export default function Index() {
         >
           <div
             style={{
-              color: "rgb(255, 255, 255)",
-              fontSize: "48px",
-              lineHeight: "48px",
+              color: "#FFFFFF",
+              fontSize: "40px",
+              fontWeight: "700",
+              lineHeight: "1.2",
               marginBottom: "24px",
               paddingBottom: "16px",
               textAlign: "center",
+              fontFamily: "Inter, sans-serif",
+              letterSpacing: "-0.025em"
             }}
           >
             Prevent the breach,

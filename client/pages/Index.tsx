@@ -210,10 +210,21 @@ export default function Index() {
 
         {/* Logo and Brand Text - Top Left */}
         <div className="absolute top-8 left-8 xl:left-16 z-20">
-          <div className="space-y-2">
-            <h1 className="text-2xl font-bold text-white">Secure.com</h1>
-            <p className="text-sm text-white/70">
-              From the Founders of PureVPN | Cloudways
+          <div className="space-y-2" style={{ marginBottom: '-3px' }}>
+            <h1 className="text-2xl font-bold text-white">
+              <a href="secure.com">Secure.com</a>
+            </h1>
+            <p className="text-white/70" style={{ fontSize: '8px', minHeight: '-2px' }}>
+              <p>
+                From the Founders of{" "}
+                <a href="www.purevpn.com" rel="noopener noreferrer">
+                  PureVPN
+                </a>{" "}
+                |{" "}
+                <a href="www.cloudways.com" rel="noopener noreferrer">
+                  Cloudways
+                </a>
+              </p>
             </p>
           </div>
         </div>
@@ -401,7 +412,7 @@ export default function Index() {
       </section>
 
       {/* Solution Section — How Secure.com Helps */}
-      <section id="solution" className="py-24 bg-gradient-to-r from-secure-slate-50 to-white">
+      <section id="solution" style={{ padding: '80px 0' }}>
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
 
@@ -562,7 +573,7 @@ export default function Index() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-secure-slate-900 mb-6">
               Turn risk into{" "}
-              <span className="text-secure-blue-600">resilience.</span>
+              <span className="text-secure-blue-600">&nbsp;resilience.</span>
             </h2>
           </div>
 
@@ -740,7 +751,7 @@ export default function Index() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-secure-slate-900 mb-8">
               Peace of mind, in{" "}
-              <span className="text-secure-blue-600">30 minutes.</span>
+              <span className="text-secure-blue-600">&nbsp;30 minutes.</span>
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -780,8 +791,13 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-secure-slate-900 mb-6">
-              See Secure.com in{" "}
-              <span className="text-secure-blue-600">Action</span>
+              <span>
+                See <span style={{ color: 'rgb(29, 78, 216)' }}>Secure.com</span>{" "}
+                in
+              </span>
+              <span style={{ color: 'rgba(1, 1, 1, 1)' }}>
+                &nbsp;Action
+              </span>
             </h2>
           </div>
 
@@ -827,10 +843,12 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Let your team focus on growth — not grunt work.
+              Let your team focus on growth
+              <br />
+              not grunt work.
             </h2>
             <p className="text-xl text-secure-blue-100 mb-12">
-              Secure.com gives you the firepower of a full security team —
+              Secure.com gives you the firepower of a full security team,
               without the headcount.
             </p>
 
@@ -849,7 +867,11 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <h3 className="text-2xl font-bold text-white">Secure.com</h3>
+              <p>
+                <a href="www.secure.com" rel="noopener noreferrer">
+                  <h3 className="text-2xl font-bold text-white">Secure.com</h3>
+                </a>
+              </p>
             </div>
 
             <div className="flex space-x-8">

@@ -1210,6 +1210,23 @@ export default function Index() {
               Sign-up for Beta Partner
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
+
+            {/* PureVPN Attribution */}
+            <div style={{ marginTop: '48px', textAlign: 'center' }}>
+              <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '16px', fontFamily: 'Inter, sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                From the Founders of{" "}
+                <span style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  height: '28px',
+                  marginLeft: '8px',
+                  fontWeight: '600',
+                  color: '#ffffff'
+                }}>
+                  PureVPN
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -1001,7 +1001,7 @@ export default function Index() {
       </section>
 
       {/* Outcome & Proof Section */}
-      <section id="outcome" style={{ padding: '96px 0', background: 'linear-gradient(135deg, #eff6ff 0%, #f0f9ff 50%, #ecfeff 100%)' }}>
+      <section id="outcome" style={{ padding: '64px 0', background: 'linear-gradient(135deg, #eff6ff 0%, #f0f9ff 50%, #ecfeff 100%)' }}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-secure-slate-900 mb-6">

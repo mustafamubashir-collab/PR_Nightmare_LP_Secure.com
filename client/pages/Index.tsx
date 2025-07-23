@@ -238,11 +238,7 @@ export default function Index() {
             <p className="text-white/70" style={{ fontSize: '14px', marginTop: '-2px', lineHeight: '1.2' }}>
               From the Founders of{" "}
               <a href="www.purevpn.com" rel="noopener noreferrer">
-                PureVPN
-              </a>{" "}
-              |{" "}
-              <a href="www.cloudways.com" rel="noopener noreferrer">
-                Cloudways
+                &nbsp;PureVPN
               </a>
             </p>
           </div>

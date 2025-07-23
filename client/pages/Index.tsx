@@ -1122,11 +1122,8 @@ export default function Index() {
             <div>
               <div>
                 <h2 style={{ color: '#ffffff', fontSize: '36px', fontWeight: '700', lineHeight: '1.2', fontFamily: 'Inter, sans-serif' }}>
-                  <span style={{ color: '#3c83f6' }}>30-minute</span> deployment, no rip-and-replace
+                  Peace of mind, in <span style={{ color: '#3c83f6' }}>30 minutes</span>.
                 </h2>
-                <p style={{ color: '#b6bcc8', fontSize: '20px', lineHeight: '1.4', marginTop: '16px', fontFamily: 'Inter, sans-serif' }}>
-                  Get started immediately with our agentless deployment. No infrastructure changes required.
-                </p>
               </div>
               <div style={{ marginTop: '32px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
@@ -1135,10 +1132,7 @@ export default function Index() {
                   </div>
                   <div style={{ marginLeft: '16px' }}>
                     <div style={{ color: '#ffffff', fontWeight: '600', fontFamily: 'Inter, sans-serif' }}>
-                      No agent installation required
-                    </div>
-                    <div style={{ color: '#9096a2', fontSize: '14px', lineHeight: '1.4', fontFamily: 'Inter, sans-serif' }}>
-                      API-based integration with existing tools
+                      No Agents, No Rip-and-Replace
                     </div>
                   </div>
                 </div>
@@ -1148,10 +1142,7 @@ export default function Index() {
                   </div>
                   <div style={{ marginLeft: '16px' }}>
                     <div style={{ color: '#ffffff', fontWeight: '600', fontFamily: 'Inter, sans-serif' }}>
-                      Dedicated success engineer
-                    </div>
-                    <div style={{ color: '#9096a2', fontSize: '14px', lineHeight: '1.4', fontFamily: 'Inter, sans-serif' }}>
-                      Personal onboarding and optimization support
+                      Fast Deployment
                     </div>
                   </div>
                 </div>
@@ -1161,10 +1152,7 @@ export default function Index() {
                   </div>
                   <div style={{ marginLeft: '16px' }}>
                     <div style={{ color: '#ffffff', fontWeight: '600', fontFamily: 'Inter, sans-serif' }}>
-                      Immediate value realization
-                    </div>
-                    <div style={{ color: '#9096a2', fontSize: '14px', lineHeight: '1.4', fontFamily: 'Inter, sans-serif' }}>
-                      See results within the first week
+                      Dedicated Success Engineer
                     </div>
                   </div>
                 </div>

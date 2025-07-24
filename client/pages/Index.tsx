@@ -841,7 +841,7 @@ export default function Index() {
             </Card>
 
             {/* Media Blowback */}
-            <Card className="p-8 text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="p-8 text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col justify-between">
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="w-8 h-8 text-orange-600" />
               </div>

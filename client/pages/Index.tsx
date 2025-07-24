@@ -497,9 +497,10 @@ export default function Index() {
                   style={{
                     display: 'flex',
                     gap: '48px',
-                    animation: 'scroll 20s ease-in-out infinite',
+                    animation: 'scroll 25s linear infinite',
                     width: 'max-content',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    willChange: 'transform'
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.animationPlayState = 'paused';

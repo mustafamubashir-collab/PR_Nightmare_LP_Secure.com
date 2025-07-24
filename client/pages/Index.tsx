@@ -895,7 +895,7 @@ export default function Index() {
                   cursor: "pointer",
                 }}
               >
-                Case Management + MTTD/MTTR
+                Case Management
               </button>
               <button
                 type="button"

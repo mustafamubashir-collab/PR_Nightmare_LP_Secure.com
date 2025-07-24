@@ -820,7 +820,7 @@ export default function Index() {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12" style={{ alignItems: "stretch" }}>
             {/* Brand Value at Risk */}
-            <Card className="p-8 text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="p-8 text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col justify-between">
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <TrendingDown className="w-8 h-8 text-red-600" />
               </div>

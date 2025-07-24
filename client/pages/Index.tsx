@@ -101,6 +101,102 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
+      {/* Fixed Navigation Bar */}
+      <nav style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 1000,
+        background: 'rgba(255, 255, 255, 0.95)',
+        backdropFilter: 'blur(10px)',
+        borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
+        padding: '12px 24px'
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          {/* Left Section - Logo and Tagline */}
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <h1 style={{ fontSize: '20px', fontWeight: '700', color: '#1A1A1A', fontFamily: 'Inter, sans-serif', margin: 0, lineHeight: '1.2' }}>
+              Secure.com
+            </h1>
+            <p style={{ fontSize: '12px', fontWeight: '400', color: '#B0AFC0', fontFamily: 'Inter, sans-serif', margin: 0, lineHeight: '1.2' }}>
+              From the Founders of purevpn
+            </p>
+          </div>
+
+          {/* Desktop Right Section - CTA Button */}
+          <div style={{ display: mobileMenuOpen ? 'none' : 'block' }} className="hidden md:block">
+            <Button
+              onClick={() => setShowBetaModal(true)}
+              style={{
+                background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)',
+                color: '#FFFFFF',
+                padding: '10px 20px',
+                fontSize: '14px',
+                fontWeight: '500',
+                borderRadius: '6px',
+                fontFamily: 'Inter, sans-serif',
+                border: 'none',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease'
+              }}
+            >
+              Sign Up for Beta Partner
+            </Button>
+          </div>
+
+          {/* Mobile Hamburger Menu */}
+          <button
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            style={{
+              background: 'none',
+              border: 'none',
+              fontSize: '24px',
+              cursor: 'pointer',
+              color: '#1A1A1A'
+            }}
+          >
+            {mobileMenuOpen ? '✕' : '☰'}
+          </button>
+        </div>
+
+        {/* Mobile Menu Dropdown */}
+        {mobileMenuOpen && (
+          <div className="md:hidden" style={{
+            position: 'absolute',
+            top: '100%',
+            left: 0,
+            right: 0,
+            background: 'rgba(255, 255, 255, 0.98)',
+            backdropFilter: 'blur(10px)',
+            borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
+            padding: '16px 24px'
+          }}>
+            <Button
+              onClick={() => {
+                setShowBetaModal(true);
+                setMobileMenuOpen(false);
+              }}
+              style={{
+                background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)',
+                color: '#FFFFFF',
+                padding: '12px 24px',
+                fontSize: '14px',
+                fontWeight: '500',
+                borderRadius: '6px',
+                fontFamily: 'Inter, sans-serif',
+                border: 'none',
+                cursor: 'pointer',
+                width: '100%'
+              }}
+            >
+              Sign Up for Beta Partner
+            </Button>
+          </div>
+        )}
+      </nav>
+
       {/* Hero Section */}
       <section
         className="relative overflow-hidden min-h-screen flex items-center"

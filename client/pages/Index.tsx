@@ -468,11 +468,24 @@ export default function Index() {
               <p style={{ color: '#D6D6F2', fontSize: '14px', fontWeight: '400', margin: '-3px 0 16px', fontFamily: 'Inter, sans-serif' }}>
                 Trusted by the world's leading organizations
               </p>
-              <div style={{ display: 'flex', justifyContent: 'center', gap: '69px', flexWrap: 'wrap', maxHeight: '0px' }}>
-                <div
-                  style={{
-                    width: '80px',
-                    height: '74px',
+
+              {/* Scrollable Logo Carousel */}
+              <div style={{
+                width: '100%',
+                overflow: 'hidden',
+                maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+                WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  gap: '48px',
+                  animation: 'scroll 20s linear infinite',
+                  width: 'max-content'
+                }}>
+                  {/* First set of logos */}
+                  <div style={{
+                    width: '120px',
+                    height: '60px',
                     backgroundColor: 'rgba(255, 255, 255, 0.1)',
                     borderRadius: '8px',
                     display: 'flex',
@@ -480,23 +493,15 @@ export default function Index() {
                     justifyContent: 'center',
                     backdropFilter: 'blur(10px)',
                     border: '1px solid rgba(255, 255, 255, 0.2)',
-                    transition: 'all 0.3s ease',
-                    cursor: 'pointer',
-                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F064355e60f9148c091f092bdd57afc94)',
+                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F139dbd8472934042a9314401fb78bcfc?format=webp&width=800)',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    margin: 'auto 0'
-                  }}
-                >
-                  <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.8)', fontFamily: 'Inter, sans-serif' }}>
-                    Partner 1
-                  </span>
-                </div>
-                <div
-                  style={{
-                    width: '154px',
-                    height: '49px',
+                    backgroundSize: 'contain',
+                    flexShrink: 0
+                  }} />
+                  <div style={{
+                    width: '120px',
+                    height: '60px',
                     backgroundColor: 'rgba(255, 255, 255, 0.1)',
                     borderRadius: '8px',
                     display: 'flex',
@@ -504,23 +509,15 @@ export default function Index() {
                     justifyContent: 'center',
                     backdropFilter: 'blur(10px)',
                     border: '1px solid rgba(255, 255, 255, 0.2)',
-                    transition: 'all 0.3s ease',
-                    cursor: 'pointer',
-                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fd404ac94033144e4935e59bb9f6d1518)',
+                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F55663e2565db44c3852f0210f8c16d28?format=webp&width=800)',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    margin: 'auto 0'
-                  }}
-                >
-                  <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.8)', fontFamily: 'Inter, sans-serif' }}>
-                    2
-                  </span>
-                </div>
-                <div
-                  style={{
-                    width: '147px',
-                    height: '49px',
+                    backgroundSize: 'contain',
+                    flexShrink: 0
+                  }} />
+                  <div style={{
+                    width: '120px',
+                    height: '60px',
                     backgroundColor: 'rgba(255, 255, 255, 0.1)',
                     borderRadius: '8px',
                     display: 'flex',
@@ -528,20 +525,15 @@ export default function Index() {
                     justifyContent: 'center',
                     backdropFilter: 'blur(10px)',
                     border: '1px solid rgba(255, 255, 255, 0.2)',
-                    transition: 'all 0.3s ease',
-                    cursor: 'pointer',
-                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F988c23e123984435a2a4a471876090e4)',
+                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4115c1d29aca4b15b72caa78f21317f7?format=webp&width=800)',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    margin: 'auto 0'
-                  }}
-                >
-                </div>
-                <div
-                  style={{
-                    width: '128px',
-                    height: '49px',
+                    backgroundSize: 'contain',
+                    flexShrink: 0
+                  }} />
+                  <div style={{
+                    width: '120px',
+                    height: '60px',
                     backgroundColor: 'rgba(255, 255, 255, 0.1)',
                     borderRadius: '8px',
                     display: 'flex',
@@ -549,20 +541,65 @@ export default function Index() {
                     justifyContent: 'center',
                     backdropFilter: 'blur(10px)',
                     border: '1px solid rgba(255, 255, 255, 0.2)',
-                    transition: 'all 0.3s ease',
-                    cursor: 'pointer',
-                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Ff2d9d91189d5496ca4a38e4b86957761)',
+                    flexShrink: 0
+                  }}>
+                    <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.6)', fontFamily: 'Inter, sans-serif' }}>
+                      Partner 4
+                    </span>
+                  </div>
+                  <div style={{
+                    width: '120px',
+                    height: '60px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    flexShrink: 0
+                  }}>
+                    <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.6)', fontFamily: 'Inter, sans-serif' }}>
+                      Partner 5
+                    </span>
+                  </div>
+                  <div style={{
+                    width: '120px',
+                    height: '60px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    flexShrink: 0
+                  }}>
+                    <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.6)', fontFamily: 'Inter, sans-serif' }}>
+                      Partner 6
+                    </span>
+                  </div>
+
+                  {/* Duplicate set for seamless loop */}
+                  <div style={{
+                    width: '120px',
+                    height: '60px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F139dbd8472934042a9314401fb78bcfc?format=webp&width=800)',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    margin: 'auto 0'
-                  }}
-                >
-                </div>
-                <div
-                  style={{
-                    width: '80px',
-                    height: '40px',
+                    backgroundSize: 'contain',
+                    flexShrink: 0
+                  }} />
+                  <div style={{
+                    width: '120px',
+                    height: '60px',
                     backgroundColor: 'rgba(255, 255, 255, 0.1)',
                     borderRadius: '8px',
                     display: 'flex',
@@ -570,13 +607,28 @@ export default function Index() {
                     justifyContent: 'center',
                     backdropFilter: 'blur(10px)',
                     border: '1px solid rgba(255, 255, 255, 0.2)',
-                    transition: 'all 0.3s ease',
-                    cursor: 'pointer'
-                  }}
-                >
-                  <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.8)', fontFamily: 'Inter, sans-serif' }}>
-                    Partner 5
-                  </span>
+                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F55663e2565db44c3852f0210f8c16d28?format=webp&width=800)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundSize: 'contain',
+                    flexShrink: 0
+                  }} />
+                  <div style={{
+                    width: '120px',
+                    height: '60px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4115c1d29aca4b15b72caa78f21317f7?format=webp&width=800)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundSize: 'contain',
+                    flexShrink: 0
+                  }} />
                 </div>
               </div>
             </div>
@@ -613,7 +665,7 @@ export default function Index() {
               <h3 className="text-lg font-bold text-secure-slate-900 mb-4">
                 Brand Value at Risk
               </h3>
-              <div className="text-3xl font-bold text-red-600 mb-3">5��9%</div>
+              <div className="text-3xl font-bold text-red-600 mb-3">5–9%</div>
               <p className="text-sm text-secure-slate-600 mb-3 leading-relaxed">
                 decline in reputational intangible capital
               </p>

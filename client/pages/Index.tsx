@@ -140,8 +140,8 @@ export default function Index() {
             <Button
               onClick={() => setShowBetaModal(true)}
               style={{
-                background: '#00C2FF',
-                color: '#FFFFFF',
+                background: '#FFFFFF',
+                color: '#000000',
                 padding: '10px 20px',
                 fontSize: '14px',
                 fontWeight: '500',
@@ -149,10 +149,17 @@ export default function Index() {
                 fontFamily: 'Inter, sans-serif',
                 border: 'none',
                 cursor: 'pointer',
-                transition: 'all 0.3s ease'
+                transition: 'all 0.3s ease',
+                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
               }}
             >
-              Sign Up for Beta Partner
+              <span style={{ color: '#000000' }}>Sign Up for Beta Partner</span>
             </Button>
           </div>
 

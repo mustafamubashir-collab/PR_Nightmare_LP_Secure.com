@@ -2397,8 +2397,8 @@ export default function Index() {
               {/* ISO 27001 */}
               <div
                 style={{
-                  width: "56px",
-                  height: "56px",
+                  width: "64px",
+                  height: "64px",
                   backgroundColor: "rgba(255, 255, 255, 0.9)",
                   borderRadius: "50%",
                   display: "flex",
@@ -2406,11 +2406,21 @@ export default function Index() {
                   justifyContent: "center",
                   flexDirection: "column",
                   border: "2px solid rgba(255, 255, 255, 0.2)",
+                  transition: "all 0.3s ease",
+                  cursor: "pointer",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.05)';
+                  e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
                 }}
               >
                 <span
                   style={{
-                    fontSize: "8px",
+                    fontSize: "9px",
                     fontWeight: "700",
                     color: "#2A1A5E",
                     textAlign: "center",

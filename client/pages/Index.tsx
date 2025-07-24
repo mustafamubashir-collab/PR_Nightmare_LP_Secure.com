@@ -1671,7 +1671,7 @@ minHeight: "100vh"
           }}></div>
 
           {/* Footer Content Grid - Optimized for 15" laptops */}
-          <div style={{
+          <div className="footer-grid" style={{
             display: 'grid',
             gridTemplateColumns: '2fr 1fr',
             alignItems: 'center',
@@ -1720,7 +1720,7 @@ minHeight: "100vh"
               </div>
 
               {/* Legal Links - Optimized for 15" screens */}
-              <div style={{
+              <div className="footer-legal-links" style={{
                 display: 'flex',
                 flexWrap: 'wrap',
                 gap: '16px',
@@ -1779,7 +1779,7 @@ minHeight: "100vh"
             </div>
 
             {/* Right - ISO Certifications - Compact layout */}
-            <div style={{ display: 'flex', gap: '12px', alignItems: 'center', justifyContent: 'flex-end' }}>
+            <div className="footer-certifications" style={{ display: 'flex', gap: '12px', alignItems: 'center', justifyContent: 'flex-end' }}>
               {/* SOC2 */}
               <div style={{
                 width: '56px',

@@ -1099,7 +1099,21 @@ export default function Index() {
       </section>
 
       {/* Deployment Section - 30-minute deployment */}
-      <section style={{ padding: '64px 0', background: 'linear-gradient(135deg, #1F2937 0%, #374151 50%, #4B5563 100%)' }}>
+      <section style={{
+        padding: '64px 0',
+        background: 'linear-gradient(135deg, #1F2937 0%, #374151 50%, #4B5563 100%)',
+        position: 'relative'
+      }}>
+        {/* Subtle brand gradient overlay */}
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'linear-gradient(90deg, rgba(36, 0, 90, 0.1) 0%, rgba(59, 0, 200, 0.05) 50%, rgba(0, 194, 255, 0.1) 100%)',
+          pointerEvents: 'none'
+        }} />
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 32px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '48px', alignItems: 'center' }}>
             <div>

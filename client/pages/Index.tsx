@@ -1329,8 +1329,15 @@ minHeight: "100vh"
 
           <div className="max-w-6xl mx-auto">
             <div className="relative">
-              {/* Video Container - Restored larger dimensions */}
-              <div className="relative w-full" style={{ paddingBottom: '56.25%', maxHeight: '600px' }}>
+              {/* Video Container - Enhanced size with card styling */}
+              <div className="relative mx-auto" style={{
+                width: 'min(85%, 720px)',
+                paddingBottom: 'calc(min(85%, 720px) * 0.5625)', // 16:9 aspect ratio
+                maxHeight: '600px',
+                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.1)',
+                borderRadius: '16px',
+                overflow: 'hidden'
+              }}>
                 <div className="absolute inset-0 bg-secure-slate-800 rounded-2xl shadow-2xl overflow-hidden">
                   {/* Placeholder for YouTube video */}
                   <div className="w-full h-full bg-gradient-to-br from-secure-slate-700 to-secure-slate-900 flex items-center justify-center">

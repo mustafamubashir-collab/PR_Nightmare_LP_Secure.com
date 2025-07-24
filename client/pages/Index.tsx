@@ -619,23 +619,25 @@ export default function Index() {
                     e.currentTarget.style.animationPlayState = "running";
                   }}
                 >
-                  {/* Logo 1 */}
+                  {/* Movavi Logo - Horizontally stretched and vertically aligned */}
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F1384249b98624ce7a38ed4d6a8135954?format=webp&width=800"
-                    alt="Partner Logo 1"
+                    alt="Movavi"
                     style={{
                       height: "40px",
-                      width: "auto",
-                      maxWidth: "120px",
+                      width: "140px",
+                      maxWidth: "140px",
                       filter: "brightness(0) invert(1)",
                       opacity: 0.8,
+                      objectFit: "contain",
+                      transform: "scaleX(1.2)",
                     }}
                   />
 
-                  {/* Logo 2 */}
+                  {/* DeepFin Logo */}
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F9e7760e004864a9b91700d810f4091a8?format=webp&width=800"
-                    alt="Partner Logo 2"
+                    alt="DeepFin"
                     style={{
                       height: "40px",
                       width: "auto",
@@ -697,35 +699,24 @@ export default function Index() {
                     }}
                   />
 
-                  {/* Logo 7 */}
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F52a623eff3574e2b90c0aeb756297e5b?format=webp&width=800"
-                    alt="Partner Logo 7"
-                    style={{
-                      height: "40px",
-                      width: "auto",
-                      maxWidth: "120px",
-                      filter: "brightness(0) invert(1)",
-                      opacity: 0.8,
-                    }}
-                  />
-
                   {/* Duplicate set for seamless loop */}
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F1384249b98624ce7a38ed4d6a8135954?format=webp&width=800"
-                    alt="Partner Logo 1"
+                    alt="Movavi"
                     style={{
                       height: "40px",
-                      width: "auto",
-                      maxWidth: "120px",
+                      width: "140px",
+                      maxWidth: "140px",
                       filter: "brightness(0) invert(1)",
                       opacity: 0.8,
+                      objectFit: "contain",
+                      transform: "scaleX(1.2)",
                     }}
                   />
 
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F9e7760e004864a9b91700d810f4091a8?format=webp&width=800"
-                    alt="Partner Logo 2"
+                    alt="DeepFin"
                     style={{
                       height: "40px",
                       width: "auto",
@@ -782,18 +773,6 @@ export default function Index() {
                       opacity: 0.8,
                     }}
                   />
-
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F52a623eff3574e2b90c0aeb756297e5b?format=webp&width=800"
-                    alt="Partner Logo 7"
-                    style={{
-                      height: "40px",
-                      width: "auto",
-                      maxWidth: "120px",
-                      filter: "brightness(0) invert(1)",
-                      opacity: 0.8,
-                    }}
-                  />
                 </div>
               </div>
             </div>
@@ -839,7 +818,7 @@ export default function Index() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12" style={{ alignItems: "stretch" }}>
             {/* Brand Value at Risk */}
             <Card className="p-8 text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">

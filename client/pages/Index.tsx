@@ -2252,9 +2252,9 @@ export default function Index() {
             style={{
               height: "1px",
               background: "rgba(255, 255, 255, 0.2)",
-              marginBottom: "32px",
-              maxWidth: "800px",
-              margin: "0 auto 32px",
+              marginBottom: "40px",
+              maxWidth: "1000px",
+              margin: "0 auto 40px",
             }}
           ></div>
 

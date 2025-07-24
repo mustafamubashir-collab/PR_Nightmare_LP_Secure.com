@@ -2401,35 +2401,6 @@ export default function Index() {
                 justifyContent: "flex-end",
               }}
             >
-              {/* SOC2 */}
-              <div
-                style={{
-                  width: "56px",
-                  height: "56px",
-                  backgroundColor: "rgba(255, 255, 255, 0.9)",
-                  borderRadius: "50%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                  border: "2px solid rgba(255, 255, 255, 0.2)",
-                }}
-              >
-                <span
-                  style={{
-                    fontSize: "9px",
-                    fontWeight: "700",
-                    color: "#2A1A5E",
-                    textAlign: "center",
-                    lineHeight: "1.1",
-                  }}
-                >
-                  SOC2
-                  <br />
-                  Type II
-                </span>
-              </div>
-
               {/* ISO 27001 */}
               <div
                 style={{
@@ -2485,35 +2456,6 @@ export default function Index() {
                   ISO
                   <br />
                   22301
-                </span>
-              </div>
-
-              {/* GDPR */}
-              <div
-                style={{
-                  width: "56px",
-                  height: "56px",
-                  backgroundColor: "rgba(255, 255, 255, 0.9)",
-                  borderRadius: "50%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                  border: "2px solid rgba(255, 255, 255, 0.2)",
-                }}
-              >
-                <span
-                  style={{
-                    fontSize: "9px",
-                    fontWeight: "700",
-                    color: "#2A1A5E",
-                    textAlign: "center",
-                    lineHeight: "1.1",
-                  }}
-                >
-                  GDPR
-                  <br />
-                  Ready
                 </span>
               </div>
             </div>

@@ -1648,7 +1648,7 @@ export default function Index() {
         <div
           style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 24px" }}
         >
-          <div style={{ textAlign: "center", marginBottom: "48px" }}>
+          <div style={{ textAlign: "center", marginBottom: "96px" }}>
             <h2
               style={{
                 color: "#1A1A1A",

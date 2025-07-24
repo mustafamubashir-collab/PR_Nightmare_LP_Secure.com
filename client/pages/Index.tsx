@@ -1590,7 +1590,7 @@ minHeight: "100vh"
       {/* Closing Section */}
       <section
         id="final-cta"
-        style={{ padding: '8vh 0', background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)', minHeight: '100vh', display: 'flex', alignItems: 'center' }}
+        style={{ padding: '6vh 0 2vh', background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)', minHeight: '100vh', display: 'flex', alignItems: 'center' }}
       >
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">

@@ -2274,9 +2274,9 @@ export default function Index() {
             className="footer-grid"
             style={{
               display: "grid",
-              gridTemplateColumns: "3fr 2fr",
+              gridTemplateColumns: "2fr 1fr 2fr",
               alignItems: "start",
-              gap: "48px",
+              gap: "32px",
               marginBottom: "32px",
             }}
           >

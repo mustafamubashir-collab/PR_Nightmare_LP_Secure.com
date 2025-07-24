@@ -173,6 +173,26 @@
       grid-template-columns: 1fr !important;
       gap: 32px !important;
     }
+
+    /* Mobile footer optimization - stack grid vertically */
+    .footer-grid {
+      grid-template-columns: 1fr !important;
+      gap: 24px !important;
+      text-align: center !important;
+    }
+
+    /* Mobile footer legal links - stack vertically */
+    .footer-legal-links {
+      flex-direction: column !important;
+      gap: 12px !important;
+      align-items: center !important;
+    }
+
+    /* Mobile ISO certifications - smaller and centered */
+    .footer-certifications {
+      justify-content: center !important;
+      gap: 8px !important;
+    }
   }
 
   /* Typography consistency */

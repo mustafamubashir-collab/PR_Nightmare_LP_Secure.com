@@ -2384,12 +2384,12 @@ export default function Index() {
               </p>
             </div>
 
-            {/* Right - ISO Certifications - Compact layout */}
+            {/* Right - ISO Certifications - Laptop optimized layout */}
             <div
               className="footer-certifications"
               style={{
                 display: "flex",
-                gap: "12px",
+                gap: "20px",
                 alignItems: "center",
                 justifyContent: "flex-end",
               }}

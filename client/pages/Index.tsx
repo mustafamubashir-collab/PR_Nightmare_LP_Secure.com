@@ -2375,7 +2375,7 @@ export default function Index() {
               <p
                 style={{
                   color: "rgba(255, 255, 255, 0.5)",
-                  fontSize: "13px",
+                  fontSize: "14px",
                   fontFamily: "Inter, sans-serif",
                   margin: "0",
                 }}

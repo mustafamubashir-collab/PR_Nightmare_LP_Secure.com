@@ -145,7 +145,7 @@
 
   @media (max-width: 1024px) {
     .section-spacing {
-      padding: 40px 0;
+      padding: 48px 0;
     }
   }
 
@@ -153,6 +153,26 @@
     .section-spacing {
       padding: 32px 0;
     }
+  }
+
+  /* Typography consistency */
+  .brand-heading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+  }
+
+  .brand-subheading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .brand-body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
   }
 
   .animate-float {

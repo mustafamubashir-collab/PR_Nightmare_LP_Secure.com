@@ -380,10 +380,10 @@ export default function Index() {
         <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-full" style={{ zIndex: 15 }}>
           <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center' }}>
-              <p style={{ color: '#D6D6F2', fontSize: '14px', fontWeight: '400', marginBottom: '16px', fontFamily: 'Inter, sans-serif' }}>
-                Trusted by growing companies
+              <p style={{ color: '#D6D6F2', fontSize: '14px', fontWeight: '400', margin: '-3px 0 16px', fontFamily: 'Inter, sans-serif' }}>
+                Trusted by the world's leading organizations
               </p>
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'flex', justifyContent: 'center', gap: '69px', flexWrap: 'wrap', maxHeight: '0px' }}>
                 {[1, 2, 3, 4, 5].map((num) => (
                   <div
                     key={num}
@@ -494,7 +494,7 @@ export default function Index() {
                 of private-market investors
               </p>
               <p className="text-xs text-secure-slate-500 mb-3 italic">
-                "81% of private‑market investors say cybersecurity and data‑reporting measures have become more important to their investment decisions in the past year."
+                "81% of private‑market investors say cybersecurity and data���reporting measures have become more important to their investment decisions in the past year."
               </p>
               <p className="text-xs text-secure-slate-400 font-medium">
                 KPMG Private Markets Pulse 2025

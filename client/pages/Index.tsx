@@ -583,7 +583,7 @@ export default function Index() {
 
           <div className="text-center max-w-4xl mx-auto">
             <p className="text-xl text-secure-slate-600 leading-relaxed">
-              A security failure doesn't just cost revenue — it damages your
+              A security failure doesn't just cost revenue, it damages your
               reputation, valuation, and growth trajectory.
             </p>
           </div>

@@ -2161,6 +2161,7 @@ export default function Index() {
                   width: "auto",
                   filter: "brightness(0) invert(1)",
                   opacity: 0.9,
+                  marginRight: "-3px",
                 }}
               />
             </div>

@@ -1646,7 +1646,7 @@ export default function Index() {
           }}
         />
         <div
-          style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 24px" }}
+          style={{ maxWidth: "100vw", margin: "0 auto", padding: "0 5vw" }}
         >
           <div style={{ textAlign: "center", marginBottom: "96px" }}>
             <h2
@@ -1664,15 +1664,15 @@ export default function Index() {
             </h2>
           </div>
 
-          <div className="max-w-6xl mx-auto" style={{ marginBottom: "80px" }}>
+          <div className="mx-auto" style={{ marginBottom: "40px", maxWidth: "none" }}>
             <div className="relative">
-              {/* Enhanced Video Container - 4x Bigger Size */}
+              {/* Enhanced Video Container - 70% of fold covering */}
               <div
                 className="relative mx-auto"
                 style={{
-                  width: "min(95%, 1440px)",
-                  aspectRatio: "16/9",
-                  maxWidth: "1440px",
+                  width: "90vw",
+                  height: "70vh",
+                  maxWidth: "none",
                   boxShadow:
                     "0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 25px rgba(0, 0, 0, 0.1)",
                   borderRadius: "16px",

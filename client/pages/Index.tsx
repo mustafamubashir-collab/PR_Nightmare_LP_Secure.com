@@ -1624,10 +1624,10 @@ export default function Index() {
       <section
         id="video"
         style={{
-          padding: "8vh 0",
+          padding: "16vh 0",
           backgroundColor: "#f8fafc",
           position: "relative",
-          minHeight: "100vh",
+          minHeight: "140vh",
           display: "flex",
           alignItems: "center",
         }}

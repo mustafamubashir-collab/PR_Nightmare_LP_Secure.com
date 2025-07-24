@@ -1645,7 +1645,7 @@ export default function Index() {
               <button
                 type="submit"
                 style={{
-                  background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 50%, #00C2FF 100%)',
+                  background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)',
                   color: '#FFFFFF',
                   padding: '16px 32px',
                   fontSize: '18px',

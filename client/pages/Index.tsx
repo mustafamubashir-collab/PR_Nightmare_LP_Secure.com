@@ -2331,15 +2331,15 @@ export default function Index() {
                 </a>
               </div>
 
-              {/* Legal Links - Optimized for 15" screens */}
+              {/* Legal Links - Optimized for laptop screens */}
               <div
                 className="footer-legal-links"
                 style={{
                   display: "flex",
                   flexWrap: "wrap",
-                  gap: "16px",
-                  marginBottom: "16px",
-                  maxWidth: "600px",
+                  gap: "24px",
+                  marginBottom: "20px",
+                  maxWidth: "700px",
                 }}
               >
                 <a

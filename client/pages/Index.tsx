@@ -1182,13 +1182,13 @@ export default function Index() {
                 <div style={{ backgroundColor: 'rgb(31, 34, 41)', borderRadius: '50px', height: '8px', marginTop: '24px', position: 'relative', overflow: 'hidden' }}>
                   <div
                     style={{
-                      background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 50%, #00C2FF 100%)',
+                      background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)',
                       borderRadius: '50px',
                       height: '8px',
                       width: `${deploymentProgress}%`,
                       transition: 'width 1.5s cubic-bezier(0.4, 0, 0.2, 1)',
                       position: 'relative',
-                      boxShadow: deploymentProgress === 100 ? '0 0 12px rgba(0, 194, 255, 0.6)' : 'none',
+                      boxShadow: deploymentProgress === 100 ? '0 0 12px rgba(59, 0, 200, 0.6)' : 'none',
                       animation: deploymentProgress === 100 ? 'pulse 2s infinite' : 'none'
                     }}
                   >

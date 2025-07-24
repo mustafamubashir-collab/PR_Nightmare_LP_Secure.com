@@ -138,7 +138,7 @@ export default function Index() {
           }}
         >
           {/* Left Section - Logo and Tagline */}
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex", alignItems: "baseline", gap: "16px" }}>
             <a
               href="https://www.secure.com"
               style={{

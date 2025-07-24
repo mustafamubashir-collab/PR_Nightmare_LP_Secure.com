@@ -202,6 +202,7 @@ export default function Index() {
         className="relative overflow-hidden min-h-screen flex items-center"
         style={{
           background: "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
+          paddingTop: '80px'
         }}
       >
         {/* Video Background */}

@@ -705,7 +705,7 @@ export default function Index() {
         style={{
           padding: "8vh 0",
           backgroundColor: "#f8fafc",
-          minHeight: "100vh",
+          minHeight: "735px",
           display: "flex",
           alignItems: "center",
         }}

@@ -2215,7 +2215,7 @@ export default function Index() {
                 src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F2afddc7a35e24a43b6ecb35ca9acf838?format=webp&width=800"
                 alt="PureVPN Logo"
                 style={{
-                  height: "20px",
+                  height: "28px",
                   width: "auto",
                   filter: "brightness(0) invert(1)",
                   opacity: 0.9,

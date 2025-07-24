@@ -1603,15 +1603,15 @@ export default function Index() {
       <section
         id="video"
         style={{
-          padding: "16vh 0",
-          backgroundColor: "#f8fafc",
+          padding: "12vh 0",
+          background: "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
           position: "relative",
-          minHeight: "140vh",
+          minHeight: "120vh",
           display: "flex",
           alignItems: "center",
         }}
       >
-        {/* Subtle brand gradient overlay */}
+        {/* Enhanced brand pattern overlay */}
         <div
           style={{
             position: "absolute",
@@ -1619,44 +1619,57 @@ export default function Index() {
             left: 0,
             right: 0,
             bottom: 0,
-            background:
-              "linear-gradient(90deg, rgba(36, 0, 90, 0.02) 0%, rgba(59, 0, 200, 0.02) 100%)",
+            background: "radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%)",
             pointerEvents: "none",
           }}
         />
         <div
-          style={{ maxWidth: "100vw", margin: "0 auto", padding: "0 5vw" }}
+          style={{
+            maxWidth: "100vw",
+            margin: "0 auto",
+            padding: "0 5vw",
+            position: "relative",
+            zIndex: 2
+          }}
         >
-          <div style={{ textAlign: "center", marginBottom: "96px" }}>
+          <div style={{
+            textAlign: "center",
+            marginBottom: "clamp(48px, 8vw, 96px)"
+          }}>
             <h2
               style={{
-                color: "#1A1A1A",
-                fontSize: "40px",
+                color: "#FFFFFF",
+                fontSize: "clamp(28px, 5vw, 40px)",
                 fontWeight: "700",
                 lineHeight: "1.2",
                 marginBottom: "16px",
                 fontFamily: "Inter, sans-serif",
                 letterSpacing: "-0.025em",
+                textShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
               }}
             >
-              See <span style={{ color: "#3B00C8" }}>Secure.com</span> in Action
+              See <span style={{ color: "#00FFF7", textShadow: "0 0 20px rgba(0, 255, 247, 0.3)" }}>Secure.com</span> in Action
             </h2>
           </div>
 
-          <div className="mx-auto" style={{ marginBottom: "40px", maxWidth: "none" }}>
+          <div className="mx-auto" style={{
+            marginBottom: "clamp(20px, 4vw, 40px)",
+            maxWidth: "none"
+          }}>
             <div className="relative">
-              {/* Enhanced Video Container - 70% of fold covering */}
+              {/* Enhanced Video Container - Responsive and Optimized */}
               <div
                 className="relative mx-auto"
                 style={{
-                  width: "90vw",
-                  height: "70vh",
+                  width: "clamp(90vw, 95vw, 1200px)",
+                  height: "clamp(50vh, 60vh, 70vh)",
                   maxWidth: "none",
                   boxShadow:
-                    "0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 25px rgba(0, 0, 0, 0.1)",
-                  borderRadius: "16px",
+                    "0 30px 60px rgba(0, 0, 0, 0.4), 0 20px 40px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1)",
+                  borderRadius: "20px",
                   overflow: "hidden",
-                  border: "1px solid rgba(59, 0, 200, 0.1)",
+                  border: "2px solid rgba(255, 255, 255, 0.2)",
+                  background: "rgba(0, 0, 0, 0.1)",
                 }}
               >
                 <div className="absolute inset-0 rounded-2xl shadow-2xl overflow-hidden">

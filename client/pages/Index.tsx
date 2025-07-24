@@ -1059,8 +1059,8 @@ export default function Index() {
       <section id="video" style={{ padding: '64px 0', backgroundColor: '#f8fafc' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
           <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-            <h2 style={{ color: '#141414', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '16px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.025em' }}>
-              See <span style={{ color: '#3C00C9' }}>Secure.com</span> in Action
+            <h2 style={{ color: '#1A1A1A', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '16px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.025em' }}>
+              See <span style={{ color: '#3B00C8' }}>Secure.com</span> in Action
             </h2>
           </div>
 

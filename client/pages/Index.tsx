@@ -139,18 +139,29 @@ export default function Index() {
         >
           {/* Left Section - Logo and Tagline */}
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <h1
+            <a
+              href="https://www.secure.com"
               style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                color: "#FFFFFF",
-                fontFamily: "Inter, sans-serif",
-                margin: 0,
-                lineHeight: "1.2",
+                textDecoration: "none",
+                color: "inherit",
+                transition: "opacity 0.3s ease",
               }}
+              onMouseEnter={(e) => { e.currentTarget.style.opacity = '0.8'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.opacity = '1'; }}
             >
-              Secure.com
-            </h1>
+              <h1
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "700",
+                  color: "#FFFFFF",
+                  fontFamily: "Inter, sans-serif",
+                  margin: 0,
+                  lineHeight: "1.2",
+                }}
+              >
+                Secure.com
+              </h1>
+            </a>
             <p
               style={{
                 fontSize: "12px",

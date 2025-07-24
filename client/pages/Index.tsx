@@ -140,7 +140,7 @@ export default function Index() {
             <Button
               onClick={() => setShowBetaModal(true)}
               style={{
-                background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)',
+                background: '#00C2FF',
                 color: '#FFFFFF',
                 padding: '10px 20px',
                 fontSize: '14px',

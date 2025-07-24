@@ -1002,7 +1002,7 @@ export default function Index() {
                 minHeight: "280px",
               }}
             >
-              {/* Case Management + MTTD/MTTR Tab */}
+              {/* Case Management Tab */}
               {activeTab === "case-management" && (
                 <div
                   style={{

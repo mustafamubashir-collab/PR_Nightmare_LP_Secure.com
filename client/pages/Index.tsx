@@ -2395,7 +2395,7 @@ export default function Index() {
               </p>
             </div>
 
-            {/* Center - Secure.com Logo */}
+            {/* Center - Secure.com Text */}
             <div
               style={{
                 display: "flex",
@@ -2414,44 +2414,35 @@ export default function Index() {
                   textDecoration: "none",
                   transition: "all 0.3s ease",
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.05)'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.opacity = '0.8'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.opacity = '1'; }}
               >
-                <div
+                <h2
                   style={{
-                    width: "80px",
-                    height: "80px",
-                    backgroundColor: "rgba(255, 255, 255, 0.1)",
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    marginBottom: "8px",
-                    border: "2px solid rgba(255, 255, 255, 0.2)",
-                  }}
-                >
-                  <span
-                    style={{
-                      fontSize: "14px",
-                      fontWeight: "700",
-                      color: "#FFFFFF",
-                      textAlign: "center",
-                      fontFamily: "Inter, sans-serif",
-                    }}
-                  >
-                    S
-                  </span>
-                </div>
-                <span
-                  style={{
-                    fontSize: "12px",
-                    fontWeight: "500",
-                    color: "rgba(255, 255, 255, 0.7)",
+                    fontSize: "24px",
+                    fontWeight: "700",
+                    color: "#FFFFFF",
                     fontFamily: "Inter, sans-serif",
+                    margin: 0,
+                    lineHeight: "1.2",
+                    textAlign: "center",
                   }}
                 >
                   Secure.com
-                </span>
+                </h2>
+                <p
+                  style={{
+                    fontSize: "12px",
+                    fontWeight: "400",
+                    color: "rgba(255, 255, 255, 0.7)",
+                    fontFamily: "Inter, sans-serif",
+                    margin: "4px 0 0 0",
+                    lineHeight: "1.2",
+                    textAlign: "center",
+                  }}
+                >
+                  AI-Native Cybersecurity
+                </p>
               </a>
             </div>
 

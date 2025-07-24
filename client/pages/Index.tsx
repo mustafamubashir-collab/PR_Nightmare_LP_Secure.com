@@ -435,7 +435,7 @@ export default function Index() {
       <section id="problem" style={{ padding: '64px 0', backgroundColor: '#f8fafc' }}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 style={{ color: '#141414', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '24px', fontFamily: 'Inter, sans-serif', textAlign: 'center', letterSpacing: '-0.025em' }}>
+            <h2 style={{ color: '#1A1A1A', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '24px', fontFamily: 'Inter, sans-serif', textAlign: 'center', letterSpacing: '-0.025em' }}>
               One breach can undo years of trust.
             </h2>
           </div>

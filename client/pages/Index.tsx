@@ -1664,7 +1664,7 @@ export default function Index() {
             </h2>
           </div>
 
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto" style={{ marginBottom: "80px" }}>
             <div className="relative">
               {/* Enhanced Video Container - 4x Bigger Size */}
               <div

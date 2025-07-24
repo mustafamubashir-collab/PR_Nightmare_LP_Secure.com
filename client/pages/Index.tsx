@@ -1680,21 +1680,20 @@ export default function Index() {
                   border: "1px solid rgba(59, 0, 200, 0.1)",
                 }}
               >
-                <div className="absolute inset-0 bg-secure-slate-800 rounded-2xl shadow-2xl overflow-hidden">
-                  {/* Placeholder for YouTube video */}
-                  <div className="w-full h-full bg-gradient-to-br from-secure-slate-700 to-secure-slate-900 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 hover:bg-white/20 transition-colors cursor-pointer">
-                        <Play className="w-12 h-12 text-white ml-1" />
-                      </div>
-                      <h3 className="text-2xl font-bold text-white mb-2">
-                        Product Demo
-                      </h3>
-                      <p className="text-white/70">
-                        YouTube video will be embedded here
-                      </p>
-                    </div>
-                  </div>
+                <div className="absolute inset-0 rounded-2xl shadow-2xl overflow-hidden">
+                  {/* YouTube Video Embed */}
+                  <iframe
+                    src="https://www.youtube.com/embed/rO-IHWYqO34?rel=0&showinfo=0&modestbranding=1"
+                    title="Secure.com in Action - Product Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      border: "none",
+                      borderRadius: "16px",
+                    }}
+                  />
                 </div>
               </div>
 

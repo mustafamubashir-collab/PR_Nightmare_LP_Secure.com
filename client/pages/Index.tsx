@@ -1623,11 +1623,16 @@ minHeight: "100vh"
               Secure your spot among the first 50 visionary companies shaping the next era of AI-native cybersecurity. Limited access. Unmatched advantage.
             </p>
 
-            {/* PureVPN Attribution */}
+            {/* PureVPN Attribution with Logo */}
             <div style={{ marginTop: '48px', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
               <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '16px', fontFamily: 'Inter, sans-serif', fontWeight: '400', margin: 0 }}>
-                From the Founders of PureVPN
+                From the Founders of
               </p>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F2afddc7a35e24a43b6ecb35ca9acf838?format=webp&width=800"
+                alt="PureVPN Logo"
+                style={{ height: '20px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.9 }}
+              />
             </div>
           </div>
         </div>

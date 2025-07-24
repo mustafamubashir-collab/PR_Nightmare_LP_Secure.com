@@ -2206,6 +2206,7 @@ export default function Index() {
                 marginTop: "48px",
                 textAlign: "center",
                 display: "flex",
+                flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
                 gap: "8px",
@@ -2241,7 +2242,6 @@ export default function Index() {
                     width: "auto",
                     filter: "brightness(0) invert(1)",
                     opacity: 0.9,
-                    marginRight: "-3px",
                   }}
                 />
               </a>

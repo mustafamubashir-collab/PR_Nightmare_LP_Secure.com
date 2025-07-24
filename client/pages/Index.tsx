@@ -2254,7 +2254,7 @@ export default function Index() {
           style={{
             maxWidth: "1400px",
             margin: "0 auto",
-            padding: "40px 32px",
+            padding: "12px 32px 0",
             width: "100%",
           }}
         >

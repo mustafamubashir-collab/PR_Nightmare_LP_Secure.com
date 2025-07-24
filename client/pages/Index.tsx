@@ -1398,7 +1398,7 @@ export default function Index() {
         id="outcome"
         style={{
           padding: "8vh 0",
-          background: "linear-gradient(135deg, #E7F0FF 0%, #ffffff 100%)",
+          background: "#ffffff",
           minHeight: "100vh",
           display: "flex",
           alignItems: "center",
@@ -1427,20 +1427,40 @@ export default function Index() {
             <div className="text-center group">
               <div
                 style={{
-                  width: "96px",
-                  height: "96px",
+                  width: "120px",
+                  height: "120px",
                   background:
                     "linear-gradient(135deg, #3B00C8 0%, #24005A 100%)",
-                  borderRadius: "50%",
+                  borderRadius: "20px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   margin: "0 auto 24px",
                   transition: "all 0.3s ease",
                   cursor: "pointer",
+                  position: "relative",
+                  transform: "perspective(1000px) rotateX(0deg) rotateY(0deg)",
+                  boxShadow: "0 10px 25px rgba(59, 0, 200, 0.3), 0 0 0 4px rgba(255, 255, 255, 1), 0 0 0 8px #e2e8f0",
                 }}
                 className="group-hover:scale-110 group-hover:shadow-lg"
               >
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: "-12px",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    fontSize: "14px",
+                    fontWeight: "700",
+                    color: "#FFFFFF",
+                    background: "linear-gradient(90deg, #3B00C8 0%, #24005A 100%)",
+                    padding: "4px 12px",
+                    borderRadius: "12px",
+                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                  }}
+                >
+                  1st
+                </div>
                 {/* Robot Gear Icon */}
                 <svg
                   width="48"
@@ -1483,20 +1503,40 @@ export default function Index() {
             <div className="text-center group">
               <div
                 style={{
-                  width: "96px",
-                  height: "96px",
+                  width: "110px",
+                  height: "110px",
                   background:
                     "linear-gradient(135deg, #3B00C8 0%, #24005A 100%)",
-                  borderRadius: "50%",
+                  borderRadius: "20px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   margin: "0 auto 24px",
                   transition: "all 0.3s ease",
                   cursor: "pointer",
+                  position: "relative",
+                  transform: "perspective(1000px) rotateX(0deg) rotateY(0deg)",
+                  boxShadow: "0 8px 20px rgba(59, 0, 200, 0.25), 0 0 0 3px rgba(255, 255, 255, 1), 0 0 0 6px #e2e8f0",
                 }}
                 className="group-hover:scale-110 group-hover:shadow-lg"
               >
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: "-12px",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    fontSize: "14px",
+                    fontWeight: "700",
+                    color: "#FFFFFF",
+                    background: "linear-gradient(90deg, #6B7280 0%, #4B5563 100%)",
+                    padding: "4px 12px",
+                    borderRadius: "12px",
+                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                  }}
+                >
+                  2nd
+                </div>
                 {/* Stopwatch with Alert Icon */}
                 <svg
                   width="48"
@@ -1543,20 +1583,40 @@ export default function Index() {
             <div className="text-center group">
               <div
                 style={{
-                  width: "96px",
-                  height: "96px",
+                  width: "100px",
+                  height: "100px",
                   background:
                     "linear-gradient(135deg, #3B00C8 0%, #24005A 100%)",
-                  borderRadius: "50%",
+                  borderRadius: "20px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   margin: "0 auto 24px",
                   transition: "all 0.3s ease",
                   cursor: "pointer",
+                  position: "relative",
+                  transform: "perspective(1000px) rotateX(0deg) rotateY(0deg)",
+                  boxShadow: "0 6px 15px rgba(59, 0, 200, 0.2), 0 0 0 2px rgba(255, 255, 255, 1), 0 0 0 4px #e2e8f0",
                 }}
                 className="group-hover:scale-110 group-hover:shadow-lg"
               >
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: "-12px",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    fontSize: "14px",
+                    fontWeight: "700",
+                    color: "#FFFFFF",
+                    background: "linear-gradient(90deg, #9CA3AF 0%, #6B7280 100%)",
+                    padding: "4px 12px",
+                    borderRadius: "12px",
+                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                  }}
+                >
+                  3rd
+                </div>
                 {/* Shield with Dollar Icon */}
                 <svg
                   width="48"
@@ -1661,9 +1721,11 @@ export default function Index() {
               <div
                 className="relative mx-auto"
                 style={{
-                  width: "clamp(90vw, 95vw, 1200px)",
-                  height: "clamp(50vh, 60vh, 70vh)",
-                  maxWidth: "none",
+                  width: "1920px",
+                  height: "1080px",
+                  maxWidth: "90vw",
+                  maxHeight: "60vh",
+                  aspectRatio: "16/9",
                   boxShadow:
                     "0 30px 60px rgba(0, 0, 0, 0.4), 0 20px 40px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1)",
                   borderRadius: "20px",
@@ -1703,27 +1765,13 @@ export default function Index() {
       <section
         style={{
           padding: "8vh 0",
-          background:
-            "linear-gradient(135deg, #1F2937 0%, #374151 50%, #4B5563 100%)",
+          background: "#ffffff",
           position: "relative",
           minHeight: "100vh",
           display: "flex",
           alignItems: "center",
         }}
       >
-        {/* Subtle brand gradient overlay */}
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background:
-              "linear-gradient(90deg, rgba(36, 0, 90, 0.1) 0%, rgba(59, 0, 200, 0.1) 100%)",
-            pointerEvents: "none",
-          }}
-        />
         <div
           style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 32px" }}
         >
@@ -1739,7 +1787,7 @@ export default function Index() {
               <div>
                 <h2
                   style={{
-                    color: "#FFFFFF",
+                    color: "#1A1A1A",
                     fontSize: "40px",
                     fontWeight: "700",
                     lineHeight: "1.2",
@@ -1748,7 +1796,7 @@ export default function Index() {
                   }}
                 >
                   Peace of mind, in{" "}
-                  <span style={{ color: "#00FFF7" }}>30 minutes</span>.
+                  <span style={{ color: "#3B00C8" }}>30 minutes</span>.
                 </h2>
               </div>
               <div style={{ marginTop: "32px" }}>
@@ -1775,7 +1823,7 @@ export default function Index() {
                   <div style={{ marginLeft: "16px" }}>
                     <div
                       style={{
-                        color: "#ffffff",
+                        color: "#1A1A1A",
                         fontWeight: "600",
                         fontFamily: "Inter, sans-serif",
                       }}
@@ -1807,7 +1855,7 @@ export default function Index() {
                   <div style={{ marginLeft: "16px" }}>
                     <div
                       style={{
-                        color: "#ffffff",
+                        color: "#1A1A1A",
                         fontWeight: "600",
                         fontFamily: "Inter, sans-serif",
                       }}
@@ -1833,7 +1881,7 @@ export default function Index() {
                   <div style={{ marginLeft: "16px" }}>
                     <div
                       style={{
-                        color: "#ffffff",
+                        color: "#1A1A1A",
                         fontWeight: "600",
                         fontFamily: "Inter, sans-serif",
                       }}
@@ -1848,9 +1896,9 @@ export default function Index() {
               style={{
                 padding: "32px",
                 backgroundImage:
-                  "linear-gradient(to right bottom, rgb(44, 49, 58), rgb(70, 74, 83))",
+                  "linear-gradient(to right bottom, #f8fafc, #e2e8f0)",
                 borderRadius: "16px",
-                border: "0.8px solid rgb(107, 114, 128)",
+                border: "0.8px solid #cbd5e1",
               }}
             >
               <div>
@@ -1863,7 +1911,7 @@ export default function Index() {
                 >
                   <span
                     style={{
-                      color: "#ffffff",
+                      color: "#1A1A1A",
                       fontWeight: "600",
                       fontFamily: "Inter, sans-serif",
                     }}
@@ -1881,7 +1929,7 @@ export default function Index() {
                 </div>
                 <div
                   style={{
-                    backgroundColor: "rgb(31, 34, 41)",
+                    backgroundColor: "#e2e8f0",
                     borderRadius: "50px",
                     height: "8px",
                     marginTop: "24px",
@@ -1942,7 +1990,7 @@ export default function Index() {
                     />
                     <span
                       style={{
-                        color: "#ffffff",
+                        color: "#1A1A1A",
                         marginLeft: "12px",
                         fontFamily: "Inter, sans-serif",
                       }}
@@ -1980,7 +2028,7 @@ export default function Index() {
                     />
                     <span
                       style={{
-                        color: "#ffffff",
+                        color: "#1A1A1A",
                         marginLeft: "12px",
                         fontFamily: "Inter, sans-serif",
                       }}
@@ -2018,7 +2066,7 @@ export default function Index() {
                     />
                     <span
                       style={{
-                        color: "#ffffff",
+                        color: "#1A1A1A",
                         marginLeft: "12px",
                         fontFamily: "Inter, sans-serif",
                       }}
@@ -2079,7 +2127,7 @@ export default function Index() {
                     </div>
                     <span
                       style={{
-                        color: "#ffffff",
+                        color: "#1A1A1A",
                         marginLeft: "12px",
                         fontFamily: "Inter, sans-serif",
                         fontWeight: activeStep >= 4 ? "600" : "400",

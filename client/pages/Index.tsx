@@ -2258,15 +2258,15 @@ export default function Index() {
             }}
           ></div>
 
-          {/* Footer Content Grid - Optimized for 15" laptops */}
+          {/* Footer Content Grid - Optimized for laptop screens */}
           <div
             className="footer-grid"
             style={{
               display: "grid",
-              gridTemplateColumns: "2fr 1fr",
-              alignItems: "center",
-              gap: "32px",
-              marginBottom: "24px",
+              gridTemplateColumns: "3fr 2fr",
+              alignItems: "start",
+              gap: "48px",
+              marginBottom: "32px",
             }}
           >
             {/* Left - Social Links and Legal */}

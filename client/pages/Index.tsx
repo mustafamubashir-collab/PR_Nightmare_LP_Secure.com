@@ -608,15 +608,15 @@ export default function Index() {
               fontWeight: "700",
               lineHeight: "1.2",
               marginBottom: "24px",
-              paddingBottom: "16px",
+              paddingBottom: "26px",
               textAlign: "center",
               fontFamily: "Inter, sans-serif",
-              letterSpacing: "-0.025em"
+              letterSpacing: "-1px"
             }}
           >
-            Prevent the breach,
+            <span style={{ height: "0px" }}>Prevent the breach,</span>
             <br />
-            Protect the brand.
+            <span style={{ height: "0px" }}>Protect the brand.</span>
             <br />
           </div>
           <div

@@ -30,12 +30,12 @@ export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [betaForm, setBetaForm] = useState({
-    fullName: '',
-    workEmail: '',
-    companySize: '',
-    industry: '',
+    fullName: "",
+    workEmail: "",
+    companySize: "",
+    industry: "",
     securityChallenges: [] as string[],
-    additionalComments: ''
+    additionalComments: "",
   });
 
   useEffect(() => {
@@ -47,8 +47,8 @@ export default function Index() {
       setScrolled(scrollPosition > 100);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Enhanced deployment animation effect - Fast 2-second intervals
@@ -65,7 +65,7 @@ export default function Index() {
         setTimeout(() => {
           setActiveStep(1);
           setDeploymentProgress(20);
-        }, 500) // Small delay for smooth start
+        }, 500), // Small delay for smooth start
       );
 
       // Step 2: Asset Discovery Complete - 2 seconds → 60%
@@ -73,7 +73,7 @@ export default function Index() {
         setTimeout(() => {
           setActiveStep(2);
           setDeploymentProgress(60);
-        }, 2500) // 2 seconds after step 1
+        }, 2500), // 2 seconds after step 1
       );
 
       // Step 3: Risk Assessment Generated - 2 seconds → 100%
@@ -81,21 +81,21 @@ export default function Index() {
         setTimeout(() => {
           setActiveStep(3);
           setDeploymentProgress(100);
-        }, 4500) // 2 seconds after step 2
+        }, 4500), // 2 seconds after step 2
       );
 
       // Final: Agent Live. Monitoring Active - hold for 7 seconds
       timeouts.push(
         setTimeout(() => {
           setActiveStep(4);
-        }, 6500) // 2 seconds after step 3
+        }, 6500), // 2 seconds after step 3
       );
 
       // Reset and restart animation loop
       timeouts.push(
         setTimeout(() => {
           runAnimation();
-        }, 13500) // 7 seconds to appreciate final state, then restart
+        }, 13500), // 7 seconds to appreciate final state, then restart
       );
 
       return timeouts;
@@ -112,54 +112,89 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Adaptive Navigation Bar */}
-      <nav style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 1000,
-        background: scrolled ? 'rgba(0, 0, 0, 0.85)' : 'transparent',
-        backdropFilter: scrolled ? 'blur(10px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
-        padding: '12px 24px',
-        transition: 'all 0.3s ease'
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <nav
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 1000,
+          background: scrolled ? "rgba(0, 0, 0, 0.85)" : "transparent",
+          backdropFilter: scrolled ? "blur(10px)" : "none",
+          borderBottom: scrolled
+            ? "1px solid rgba(255, 255, 255, 0.1)"
+            : "none",
+          padding: "12px 24px",
+          transition: "all 0.3s ease",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
           {/* Left Section - Logo and Tagline */}
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <h1 style={{ fontSize: '20px', fontWeight: '700', color: '#FFFFFF', fontFamily: 'Inter, sans-serif', margin: 0, lineHeight: '1.2' }}>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <h1
+              style={{
+                fontSize: "20px",
+                fontWeight: "700",
+                color: "#FFFFFF",
+                fontFamily: "Inter, sans-serif",
+                margin: 0,
+                lineHeight: "1.2",
+              }}
+            >
               Secure.com
             </h1>
-            <p style={{ fontSize: '12px', fontWeight: '400', color: 'rgba(255, 255, 255, 0.8)', fontFamily: 'Inter, sans-serif', margin: 0, lineHeight: '1.2' }}>
+            <p
+              style={{
+                fontSize: "12px",
+                fontWeight: "400",
+                color: "rgba(255, 255, 255, 0.8)",
+                fontFamily: "Inter, sans-serif",
+                margin: 0,
+                lineHeight: "1.2",
+              }}
+            >
               From the Founders of purevpn
             </p>
           </div>
 
           {/* Desktop Right Section - CTA Button */}
-          <div style={{ display: mobileMenuOpen ? 'none' : 'block' }} className="hidden md:block">
+          <div
+            style={{ display: mobileMenuOpen ? "none" : "block" }}
+            className="hidden md:block"
+          >
             <Button
               onClick={() => setShowBetaModal(true)}
               style={{
-                background: '#FFFFFF',
-                color: '#000000',
-                padding: '10px 20px',
-                fontSize: '14px',
-                fontWeight: '500',
-                borderRadius: '6px',
-                fontFamily: 'Inter, sans-serif',
-                border: 'none',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
+                background: "#FFFFFF",
+                color: "#000000",
+                padding: "10px 20px",
+                fontSize: "14px",
+                fontWeight: "500",
+                borderRadius: "6px",
+                fontFamily: "Inter, sans-serif",
+                border: "none",
+                cursor: "pointer",
+                transition: "all 0.3s ease",
+                boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.15)';
+                e.currentTarget.style.boxShadow =
+                  "0 4px 8px rgba(0, 0, 0, 0.15)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
+                e.currentTarget.style.boxShadow =
+                  "0 2px 4px rgba(0, 0, 0, 0.1)";
               }}
             >
-              <span style={{ color: '#000000' }}>Sign Up for Beta Partner</span>
+              <span style={{ color: "#000000" }}>Sign Up for Beta Partner</span>
             </Button>
           </div>
 
@@ -168,46 +203,51 @@ export default function Index() {
             className="md:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             style={{
-              background: 'none',
-              border: 'none',
-              fontSize: '24px',
-              cursor: 'pointer',
-              color: scrolled ? '#FFFFFF' : '#1A1A1A',
-              transition: 'color 0.3s ease'
+              background: "none",
+              border: "none",
+              fontSize: "24px",
+              cursor: "pointer",
+              color: scrolled ? "#FFFFFF" : "#1A1A1A",
+              transition: "color 0.3s ease",
             }}
           >
-            <span style={{ color: '#7ED321' }}>{mobileMenuOpen ? '✕' : '☰'}</span>
+            <span style={{ color: "#7ED321" }}>
+              {mobileMenuOpen ? "✕" : "☰"}
+            </span>
           </button>
         </div>
 
         {/* Mobile Menu Dropdown */}
         {mobileMenuOpen && (
-          <div className="md:hidden" style={{
-            position: 'absolute',
-            top: '100%',
-            left: 0,
-            right: 0,
-            background: 'rgba(255, 255, 255, 0.98)',
-            backdropFilter: 'blur(10px)',
-            borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
-            padding: '16px 24px'
-          }}>
+          <div
+            className="md:hidden"
+            style={{
+              position: "absolute",
+              top: "100%",
+              left: 0,
+              right: 0,
+              background: "rgba(255, 255, 255, 0.98)",
+              backdropFilter: "blur(10px)",
+              borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
+              padding: "16px 24px",
+            }}
+          >
             <Button
               onClick={() => {
                 setShowBetaModal(true);
                 setMobileMenuOpen(false);
               }}
               style={{
-                background: '#00C2FF',
-                color: '#FFFFFF',
-                padding: '12px 24px',
-                fontSize: '14px',
-                fontWeight: '500',
-                borderRadius: '6px',
-                fontFamily: 'Inter, sans-serif',
-                border: 'none',
-                cursor: 'pointer',
-                width: '100%'
+                background: "#00C2FF",
+                color: "#FFFFFF",
+                padding: "12px 24px",
+                fontSize: "14px",
+                fontWeight: "500",
+                borderRadius: "6px",
+                fontFamily: "Inter, sans-serif",
+                border: "none",
+                cursor: "pointer",
+                width: "100%",
               }}
             >
               Sign Up for Beta Partner
@@ -221,9 +261,9 @@ export default function Index() {
         className="relative overflow-hidden flex items-center"
         style={{
           background: "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
-          paddingTop: '80px',
-          height: '100vh',
-          maxHeight: '100vh'
+          paddingTop: "80px",
+          height: "100vh",
+          maxHeight: "100vh",
         }}
       >
         {/* Video Background */}
@@ -234,15 +274,19 @@ export default function Index() {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ zIndex: 1 }}
         >
-          <source src="https://cdn.builder.io/o/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fba2fbd26cf6e4a7db43e6276e146d43c?alt=media&token=fc4c512d-f00a-422b-9ed6-19e3c2279a18&apiKey=48c32e83d1314890b4d6a107b41a061a" type="video/mp4" />
+          <source
+            src="https://cdn.builder.io/o/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fba2fbd26cf6e4a7db43e6276e146d43c?alt=media&token=fc4c512d-f00a-422b-9ed6-19e3c2279a18&apiKey=48c32e83d1314890b4d6a107b41a061a"
+            type="video/mp4"
+          />
         </video>
 
         {/* Subtle gradient overlay for text readability */}
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, transparent 50%)",
-            zIndex: 2
+            background:
+              "linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, transparent 50%)",
+            zIndex: 2,
           }}
         ></div>
 
@@ -413,27 +457,56 @@ export default function Index() {
           </div>
         </div>
 
-
-
         {/* Content Grid - Optimized for 15" laptop viewing */}
-        <div className="relative w-full grid grid-cols-2" style={{ zIndex: 10, height: '80vh' }}>
+        <div
+          className="relative w-full grid grid-cols-2"
+          style={{ zIndex: 10, height: "80vh" }}
+        >
           {/* Left Side - Content Area */}
           <div className="flex items-center justify-start pl-12 lg:pl-16 xl:pl-24">
             <div className="max-w-lg">
               <div
                 className={`transition-all duration-1000 ${
-                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
                 }`}
               >
-                <h1 style={{ fontSize: '44px', fontWeight: '700', color: '#FFFFFF', marginBottom: '20px', lineHeight: '1.1', textAlign: 'left', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
+                <h1
+                  style={{
+                    fontSize: "44px",
+                    fontWeight: "700",
+                    color: "#FFFFFF",
+                    marginBottom: "20px",
+                    lineHeight: "1.1",
+                    textAlign: "left",
+                    fontFamily: "Inter, sans-serif",
+                    letterSpacing: "-0.02em",
+                  }}
+                >
                   <div>One Cyber Breach</div>
                   <div>Away from a</div>
-                  <div style={{ color: '#00FFF7', fontWeight: '700' }}>
-                    <span style={{ color: 'rgb(166, 26, 210)' }}>PR Nightmare</span>
+                  <div style={{ color: "#00FFF7", fontWeight: "700" }}>
+                    <span style={{ color: "rgb(166, 26, 210)" }}>
+                      PR Nightmare
+                    </span>
                   </div>
                 </h1>
-                <p style={{ fontSize: '16px', fontWeight: '400', color: '#D6D6F2', marginBottom: '20px', lineHeight: '1.4', fontFamily: 'Inter, sans-serif' }}>
-                  Reduce breach risk with <span style={{ color: '#A5FFFB' }}>40% fewer blind spots</span> and AI-led response before it turns into reputational damage.
+                <p
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    color: "#D6D6F2",
+                    marginBottom: "20px",
+                    lineHeight: "1.4",
+                    fontFamily: "Inter, sans-serif",
+                  }}
+                >
+                  Reduce breach risk with{" "}
+                  <span style={{ color: "#A5FFFB" }}>
+                    40% fewer blind spots
+                  </span>{" "}
+                  and AI-led response before it turns into reputational damage.
                 </p>
                 <div className="relative">
                   {/* Subtle glowing background */}
@@ -444,19 +517,19 @@ export default function Index() {
                   <Button
                     onClick={() => setShowBetaModal(true)}
                     style={{
-                      backgroundColor: '#FFFFFF',
-                      color: '#000000',
-                      padding: '14px 28px',
-                      fontSize: '16px',
-                      fontWeight: '600',
-                      borderRadius: '8px',
-                      fontFamily: 'Inter, sans-serif',
-                      border: 'none',
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      transition: 'all 0.3s ease',
-                      boxShadow: '0 4px 14px rgba(60, 0, 201, 0.25)'
+                      backgroundColor: "#FFFFFF",
+                      color: "#000000",
+                      padding: "14px 28px",
+                      fontSize: "16px",
+                      fontWeight: "600",
+                      borderRadius: "8px",
+                      fontFamily: "Inter, sans-serif",
+                      border: "none",
+                      cursor: "pointer",
+                      display: "flex",
+                      alignItems: "center",
+                      transition: "all 0.3s ease",
+                      boxShadow: "0 4px 14px rgba(60, 0, 201, 0.25)",
                     }}
                   >
                     Sign-up for Beta Partner
@@ -477,49 +550,62 @@ export default function Index() {
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}
-          >
-
-          </div>
+          ></div>
         </div>
 
         {/* Trust Logos at bottom of hero - Cleaned up */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-full" style={{ zIndex: 15 }}>
-          <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px' }}>
-            <div style={{ textAlign: 'center' }}>
-              <p style={{ color: '#D6D6F2', fontSize: '14px', fontWeight: '400', margin: '-3px 0 16px', fontFamily: 'Inter, sans-serif' }}>
+        <div
+          className="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-full"
+          style={{ zIndex: 15 }}
+        >
+          <div
+            style={{ maxWidth: "800px", margin: "0 auto", padding: "0 24px" }}
+          >
+            <div style={{ textAlign: "center" }}>
+              <p
+                style={{
+                  color: "#D6D6F2",
+                  fontSize: "14px",
+                  fontWeight: "400",
+                  margin: "-3px 0 16px",
+                  fontFamily: "Inter, sans-serif",
+                }}
+              >
                 Trusted by the world's leading organizations
               </p>
 
               {/* Clean Logo Display - No backgrounds or borders */}
               <div
                 style={{
-                  width: '100%',
-                  overflow: 'hidden',
-                  maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
-                  WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'
+                  width: "100%",
+                  overflow: "hidden",
+                  maskImage:
+                    "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+                  WebkitMaskImage:
+                    "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
                 }}
                 className="trust-carousel"
               >
                 <div
                   style={{
-                    display: 'flex',
-                    gap: '48px',
-                    animation: 'scroll 25s linear infinite',
-                    width: 'max-content',
-                    alignItems: 'center',
-                    willChange: 'transform'
+                    display: "flex",
+                    gap: "48px",
+                    animation: "scroll 25s linear infinite",
+                    width: "max-content",
+                    alignItems: "center",
+                    willChange: "transform",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.animationPlayState = 'paused';
+                    e.currentTarget.style.animationPlayState = "paused";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.animationPlayState = 'running';
+                    e.currentTarget.style.animationPlayState = "running";
                   }}
                   onTouchStart={(e) => {
-                    e.currentTarget.style.animationPlayState = 'paused';
+                    e.currentTarget.style.animationPlayState = "paused";
                   }}
                   onTouchEnd={(e) => {
-                    e.currentTarget.style.animationPlayState = 'running';
+                    e.currentTarget.style.animationPlayState = "running";
                   }}
                 >
                   {/* Movavi Logo */}
@@ -527,11 +613,11 @@ export default function Index() {
                     src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F139dbd8472934042a9314401fb78bcfc?format=webp&width=800"
                     alt="Movavi"
                     style={{
-                      height: '40px',
-                      width: 'auto',
-                      maxWidth: '120px',
-                      filter: 'brightness(0) invert(1)',
-                      opacity: 0.8
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
                     }}
                   />
 
@@ -540,11 +626,11 @@ export default function Index() {
                     src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F55663e2565db44c3852f0210f8c16d28?format=webp&width=800"
                     alt="DeepFin"
                     style={{
-                      height: '40px',
-                      width: 'auto',
-                      maxWidth: '120px',
-                      filter: 'brightness(0) invert(1)',
-                      opacity: 0.8
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
                     }}
                   />
 
@@ -553,11 +639,11 @@ export default function Index() {
                     src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4914446477734611af37ac4faee1e9ff?format=webp&width=800"
                     alt="OLG"
                     style={{
-                      height: '40px',
-                      width: 'auto',
-                      maxWidth: '120px',
-                      filter: 'brightness(0) invert(1)',
-                      opacity: 0.8
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
                     }}
                   />
 
@@ -566,11 +652,11 @@ export default function Index() {
                     src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F139dbd8472934042a9314401fb78bcfc?format=webp&width=800"
                     alt="Movavi"
                     style={{
-                      height: '40px',
-                      width: 'auto',
-                      maxWidth: '120px',
-                      filter: 'brightness(0) invert(1)',
-                      opacity: 0.8
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
                     }}
                   />
 
@@ -578,11 +664,11 @@ export default function Index() {
                     src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F55663e2565db44c3852f0210f8c16d28?format=webp&width=800"
                     alt="DeepFin"
                     style={{
-                      height: '40px',
-                      width: 'auto',
-                      maxWidth: '120px',
-                      filter: 'brightness(0) invert(1)',
-                      opacity: 0.8
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
                     }}
                   />
 
@@ -590,11 +676,11 @@ export default function Index() {
                     src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4914446477734611af37ac4faee1e9ff?format=webp&width=800"
                     alt="OLG"
                     style={{
-                      height: '40px',
-                      width: 'auto',
-                      maxWidth: '120px',
-                      filter: 'brightness(0) invert(1)',
-                      opacity: 0.8
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
                     }}
                   />
                 </div>
@@ -613,13 +699,31 @@ export default function Index() {
         </div>
       </section>
 
-
-
       {/* Problem Section */}
-      <section id="problem" style={{ padding: '8vh 0', backgroundColor: '#f8fafc', minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
+      <section
+        id="problem"
+        style={{
+          padding: "8vh 0",
+          backgroundColor: "#f8fafc",
+          minHeight: "100vh",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 style={{ color: '#1A1A1A', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '24px', fontFamily: 'Inter, sans-serif', textAlign: 'center', letterSpacing: '-0.025em' }}>
+            <h2
+              style={{
+                color: "#1A1A1A",
+                fontSize: "40px",
+                fontWeight: "700",
+                lineHeight: "1.2",
+                marginBottom: "24px",
+                fontFamily: "Inter, sans-serif",
+                textAlign: "center",
+                letterSpacing: "-0.025em",
+              }}
+            >
               One breach can undo years of trust.
             </h2>
           </div>
@@ -638,7 +742,8 @@ export default function Index() {
                 decline in reputational intangible capital
               </p>
               <p className="text-xs text-secure-slate-500 mb-3 italic">
-                "The largest and most salient breaches are associated with a 5–9% decline in firms' reputational intangible capital."
+                "The largest and most salient breaches are associated with a
+                5–9% decline in firms' reputational intangible capital."
               </p>
               <p className="text-xs text-secure-slate-400 font-medium">
                 Oxford Academic, Journal of Cybersecurity
@@ -658,7 +763,8 @@ export default function Index() {
                 of respondents
               </p>
               <p className="text-xs text-secure-slate-500 mb-3 italic">
-                "94% of respondents said their customers would not buy from them if they did not adequately protect data."
+                "94% of respondents said their customers would not buy from them
+                if they did not adequately protect data."
               </p>
               <p className="text-xs text-secure-slate-400 font-medium">
                 Cisco 2024 Data Privacy Benchmark Study
@@ -678,7 +784,9 @@ export default function Index() {
                 of private-market investors
               </p>
               <p className="text-xs text-secure-slate-500 mb-3 italic">
-                "81% of private‑market investors say cybersecurity and data‑reporting measures have become more important to their investment decisions in the past year."
+                "81% of private‑market investors say cybersecurity and
+                data‑reporting measures have become more important to their
+                investment decisions in the past year."
               </p>
               <p className="text-xs text-secure-slate-400 font-medium">
                 KPMG Private Markets Pulse 2025
@@ -696,14 +804,22 @@ export default function Index() {
       </section>
 
       {/* Solution Section — How Secure.com Helps */}
-      <section id="solution" style={{ marginTop: '-2px', minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
+      <section
+        id="solution"
+        style={{
+          marginTop: "-2px",
+          minHeight: "100vh",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
         <div
           style={{
             width: "100%",
             background: "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
             margin: "0 auto",
             padding: "0 16px",
-minHeight: "100vh"
+            minHeight: "100vh",
           }}
         >
           <div
@@ -716,7 +832,7 @@ minHeight: "100vh"
               paddingBottom: "26px",
               textAlign: "center",
               fontFamily: "Inter, sans-serif",
-              letterSpacing: "-1px"
+              letterSpacing: "-1px",
             }}
           >
             <span style={{ height: "0px" }}>Prevent the breach,</span>
@@ -755,10 +871,19 @@ minHeight: "100vh"
                 aria-selected={activeTab === "case-management"}
                 onClick={() => setActiveTab("case-management")}
                 style={{
-                  backgroundColor: activeTab === "case-management" ? "rgb(0, 112, 243)" : "rgba(0, 0, 0, 0)",
+                  backgroundColor:
+                    activeTab === "case-management"
+                      ? "rgb(0, 112, 243)"
+                      : "rgba(0, 0, 0, 0)",
                   borderRadius: "4px",
-                  boxShadow: activeTab === "case-management" ? "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px" : "none",
-                  color: activeTab === "case-management" ? "rgb(255, 255, 255)" : "rgba(253, 253, 253, 1)",
+                  boxShadow:
+                    activeTab === "case-management"
+                      ? "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px"
+                      : "none",
+                  color:
+                    activeTab === "case-management"
+                      ? "rgb(255, 255, 255)"
+                      : "rgba(253, 253, 253, 1)",
                   fontSize: "14px",
                   fontWeight: "500",
                   lineHeight: "20px",
@@ -778,10 +903,19 @@ minHeight: "100vh"
                 aria-selected={activeTab === "risk-management"}
                 onClick={() => setActiveTab("risk-management")}
                 style={{
-                  backgroundColor: activeTab === "risk-management" ? "rgb(0, 112, 243)" : "rgba(0, 0, 0, 0)",
+                  backgroundColor:
+                    activeTab === "risk-management"
+                      ? "rgb(0, 112, 243)"
+                      : "rgba(0, 0, 0, 0)",
                   borderRadius: "4px",
-                  boxShadow: activeTab === "risk-management" ? "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px" : "none",
-                  color: activeTab === "risk-management" ? "rgb(255, 255, 255)" : "rgba(253, 253, 253, 1)",
+                  boxShadow:
+                    activeTab === "risk-management"
+                      ? "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px"
+                      : "none",
+                  color:
+                    activeTab === "risk-management"
+                      ? "rgb(255, 255, 255)"
+                      : "rgba(253, 253, 253, 1)",
                   fontSize: "14px",
                   fontWeight: "500",
                   lineHeight: "20px",
@@ -801,10 +935,19 @@ minHeight: "100vh"
                 aria-selected={activeTab === "unified-platform"}
                 onClick={() => setActiveTab("unified-platform")}
                 style={{
-                  backgroundColor: activeTab === "unified-platform" ? "rgb(0, 112, 243)" : "rgba(0, 0, 0, 0)",
+                  backgroundColor:
+                    activeTab === "unified-platform"
+                      ? "rgb(0, 112, 243)"
+                      : "rgba(0, 0, 0, 0)",
                   borderRadius: "4px",
-                  boxShadow: activeTab === "unified-platform" ? "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px" : "none",
-                  color: activeTab === "unified-platform" ? "rgb(255, 255, 255)" : "rgba(253, 253, 253, 1)",
+                  boxShadow:
+                    activeTab === "unified-platform"
+                      ? "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px"
+                      : "none",
+                  color:
+                    activeTab === "unified-platform"
+                      ? "rgb(255, 255, 255)"
+                      : "rgba(253, 253, 253, 1)",
                   fontSize: "14px",
                   fontWeight: "500",
                   lineHeight: "20px",
@@ -824,10 +967,19 @@ minHeight: "100vh"
                 aria-selected={activeTab === "attack-surface"}
                 onClick={() => setActiveTab("attack-surface")}
                 style={{
-                  backgroundColor: activeTab === "attack-surface" ? "rgb(0, 112, 243)" : "rgba(0, 0, 0, 0)",
+                  backgroundColor:
+                    activeTab === "attack-surface"
+                      ? "rgb(0, 112, 243)"
+                      : "rgba(0, 0, 0, 0)",
                   borderRadius: "4px",
-                  boxShadow: activeTab === "attack-surface" ? "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px" : "none",
-                  color: activeTab === "attack-surface" ? "rgb(255, 255, 255)" : "rgba(253, 253, 253, 1)",
+                  boxShadow:
+                    activeTab === "attack-surface"
+                      ? "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px"
+                      : "none",
+                  color:
+                    activeTab === "attack-surface"
+                      ? "rgb(255, 255, 255)"
+                      : "rgba(253, 253, 253, 1)",
                   fontSize: "14px",
                   fontWeight: "500",
                   lineHeight: "20px",
@@ -856,7 +1008,8 @@ minHeight: "100vh"
                   style={{
                     opacity: 1,
                     transform: "scale(1.03)",
-                    transition: "opacity 250ms ease-in-out, transform 250ms ease-in-out",
+                    transition:
+                      "opacity 250ms ease-in-out, transform 250ms ease-in-out",
                     animation: "fadeIn 250ms ease-in-out",
                   }}
                 >
@@ -877,7 +1030,8 @@ minHeight: "100vh"
                         margin: "0 auto 20px auto",
                       }}
                     >
-                      AI-driven incident response automates 70% of triage and cuts response time by 50%.
+                      AI-driven incident response automates 70% of triage and
+                      cuts response time by 50%.
                     </p>
 
                     {/* Video Container */}
@@ -923,7 +1077,8 @@ minHeight: "100vh"
                   style={{
                     opacity: 1,
                     transform: "scale(1.03)",
-                    transition: "opacity 250ms ease-in-out, transform 250ms ease-in-out",
+                    transition:
+                      "opacity 250ms ease-in-out, transform 250ms ease-in-out",
                     animation: "fadeIn 250ms ease-in-out",
                   }}
                 >
@@ -944,7 +1099,8 @@ minHeight: "100vh"
                         margin: "0 auto 20px auto",
                       }}
                     >
-                      Dynamic scoring engine prioritizes vulnerabilities before they escalate into business-impacting events.
+                      Dynamic scoring engine prioritizes vulnerabilities before
+                      they escalate into business-impacting events.
                     </p>
 
                     {/* Video Container */}
@@ -1011,7 +1167,8 @@ minHeight: "100vh"
                   style={{
                     opacity: 1,
                     transform: "scale(1.03)",
-                    transition: "opacity 250ms ease-in-out, transform 250ms ease-in-out",
+                    transition:
+                      "opacity 250ms ease-in-out, transform 250ms ease-in-out",
                     animation: "fadeIn 250ms ease-in-out",
                   }}
                 >
@@ -1032,7 +1189,8 @@ minHeight: "100vh"
                         margin: "0 auto 20px auto",
                       }}
                     >
-                      Centralizes all telemetry and decisioning to prevent overlooked threats from surfacing.
+                      Centralizes all telemetry and decisioning to prevent
+                      overlooked threats from surfacing.
                     </p>
 
                     {/* Video Container */}
@@ -1099,7 +1257,8 @@ minHeight: "100vh"
                   style={{
                     opacity: 1,
                     transform: "scale(1.03)",
-                    transition: "opacity 250ms ease-in-out, transform 250ms ease-in-out",
+                    transition:
+                      "opacity 250ms ease-in-out, transform 250ms ease-in-out",
                     animation: "fadeIn 250ms ease-in-out",
                   }}
                 >
@@ -1120,7 +1279,8 @@ minHeight: "100vh"
                         margin: "0 auto 20px auto",
                       }}
                     >
-                      Visualizes assets, risks, and misconfigurations — reducing blind spots by 40%.
+                      Visualizes assets, risks, and misconfigurations — reducing
+                      blind spots by 40%.
                     </p>
 
                     {/* Video Container */}
@@ -1186,11 +1346,31 @@ minHeight: "100vh"
       </section>
 
       {/* Outcome & Proof Section */}
-      <section id="outcome" style={{ padding: '8vh 0', background: 'linear-gradient(135deg, #E7F0FF 0%, #ffffff 100%)', minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
+      <section
+        id="outcome"
+        style={{
+          padding: "8vh 0",
+          background: "linear-gradient(135deg, #E7F0FF 0%, #ffffff 100%)",
+          minHeight: "100vh",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 style={{ color: '#1A1A1A', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '24px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.025em' }}>
-              Turn risk into <span style={{ color: '#3B00C8' }}>resilience</span>.
+            <h2
+              style={{
+                color: "#1A1A1A",
+                fontSize: "40px",
+                fontWeight: "700",
+                lineHeight: "1.2",
+                marginBottom: "24px",
+                fontFamily: "Inter, sans-serif",
+                letterSpacing: "-0.025em",
+              }}
+            >
+              Turn risk into{" "}
+              <span style={{ color: "#3B00C8" }}>resilience</span>.
             </h2>
           </div>
 
@@ -1199,29 +1379,54 @@ minHeight: "100vh"
             <div className="text-center group">
               <div
                 style={{
-                  width: '96px',
-                  height: '96px',
-                  background: 'linear-gradient(135deg, #3B00C8 0%, #24005A 100%)',
-                  borderRadius: '50%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  margin: '0 auto 24px',
-                  transition: 'all 0.3s ease',
-                  cursor: 'pointer'
+                  width: "96px",
+                  height: "96px",
+                  background:
+                    "linear-gradient(135deg, #3B00C8 0%, #24005A 100%)",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "0 auto 24px",
+                  transition: "all 0.3s ease",
+                  cursor: "pointer",
                 }}
                 className="group-hover:scale-110 group-hover:shadow-lg"
               >
                 {/* Robot Gear Icon */}
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="3"/>
-                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
                 </svg>
               </div>
-              <div style={{ fontSize: '60px', fontWeight: '700', color: '#3B00C8', marginBottom: '8px', fontFamily: 'Inter, sans-serif' }}>
+              <div
+                style={{
+                  fontSize: "60px",
+                  fontWeight: "700",
+                  color: "#3B00C8",
+                  marginBottom: "8px",
+                  fontFamily: "Inter, sans-serif",
+                }}
+              >
                 70%
               </div>
-              <p style={{ fontSize: '18px', fontWeight: '500', color: '#4D4D4D', fontFamily: 'Inter, sans-serif' }}>
+              <p
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "500",
+                  color: "#4D4D4D",
+                  fontFamily: "Inter, sans-serif",
+                }}
+              >
                 Incident workload automated
               </p>
             </div>
@@ -1230,33 +1435,58 @@ minHeight: "100vh"
             <div className="text-center group">
               <div
                 style={{
-                  width: '96px',
-                  height: '96px',
-                  background: 'linear-gradient(135deg, #3B00C8 0%, #24005A 100%)',
-                  borderRadius: '50%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  margin: '0 auto 24px',
-                  transition: 'all 0.3s ease',
-                  cursor: 'pointer'
+                  width: "96px",
+                  height: "96px",
+                  background:
+                    "linear-gradient(135deg, #3B00C8 0%, #24005A 100%)",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "0 auto 24px",
+                  transition: "all 0.3s ease",
+                  cursor: "pointer",
                 }}
                 className="group-hover:scale-110 group-hover:shadow-lg"
               >
                 {/* Stopwatch with Alert Icon */}
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="13" r="8"/>
-                  <path d="M12 9v4l2 2"/>
-                  <path d="M5 3L3 5"/>
-                  <path d="M19 3l2 2"/>
-                  <path d="M12 1v2"/>
-                  <path d="M22 12h-2"/>
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="13" r="8" />
+                  <path d="M12 9v4l2 2" />
+                  <path d="M5 3L3 5" />
+                  <path d="M19 3l2 2" />
+                  <path d="M12 1v2" />
+                  <path d="M22 12h-2" />
                 </svg>
               </div>
-              <div style={{ fontSize: '60px', fontWeight: '700', color: '#3B00C8', marginBottom: '8px', fontFamily: 'Inter, sans-serif' }}>
+              <div
+                style={{
+                  fontSize: "60px",
+                  fontWeight: "700",
+                  color: "#3B00C8",
+                  marginBottom: "8px",
+                  fontFamily: "Inter, sans-serif",
+                }}
+              >
                 50%
               </div>
-              <p style={{ fontSize: '18px', fontWeight: '500', color: '#4D4D4D', fontFamily: 'Inter, sans-serif' }}>
+              <p
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "500",
+                  color: "#4D4D4D",
+                  fontFamily: "Inter, sans-serif",
+                }}
+              >
                 Faster response time
               </p>
             </div>
@@ -1265,30 +1495,55 @@ minHeight: "100vh"
             <div className="text-center group">
               <div
                 style={{
-                  width: '96px',
-                  height: '96px',
-                  background: 'linear-gradient(135deg, #3B00C8 0%, #24005A 100%)',
-                  borderRadius: '50%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  margin: '0 auto 24px',
-                  transition: 'all 0.3s ease',
-                  cursor: 'pointer'
+                  width: "96px",
+                  height: "96px",
+                  background:
+                    "linear-gradient(135deg, #3B00C8 0%, #24005A 100%)",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "0 auto 24px",
+                  transition: "all 0.3s ease",
+                  cursor: "pointer",
                 }}
                 className="group-hover:scale-110 group-hover:shadow-lg"
               >
                 {/* Shield with Dollar Icon */}
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  <path d="M9.5 9L12 11.5L16.5 7"/>
-                  <path d="M12 16v-4"/>
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="M9.5 9L12 11.5L16.5 7" />
+                  <path d="M12 16v-4" />
                 </svg>
               </div>
-              <div style={{ fontSize: '60px', fontWeight: '700', color: '#3B00C8', marginBottom: '8px', fontFamily: 'Inter, sans-serif' }}>
+              <div
+                style={{
+                  fontSize: "60px",
+                  fontWeight: "700",
+                  color: "#3B00C8",
+                  marginBottom: "8px",
+                  fontFamily: "Inter, sans-serif",
+                }}
+              >
                 $25K+
               </div>
-              <p style={{ fontSize: '18px', fontWeight: '500', color: '#4D4D4D', fontFamily: 'Inter, sans-serif' }}>
+              <p
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "500",
+                  color: "#4D4D4D",
+                  fontFamily: "Inter, sans-serif",
+                }}
+              >
                 Annual IR cost savings
               </p>
             </div>
@@ -1296,49 +1551,66 @@ minHeight: "100vh"
         </div>
       </section>
 
-
-
-
-
-
       {/* Video Section - See Secure.com in Action */}
-      <section id="video" style={{
-        padding: '8vh 0',
-        backgroundColor: '#f8fafc',
-        position: 'relative',
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center'
-      }}>
+      <section
+        id="video"
+        style={{
+          padding: "8vh 0",
+          backgroundColor: "#f8fafc",
+          position: "relative",
+          minHeight: "100vh",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
         {/* Subtle brand gradient overlay */}
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: 'linear-gradient(90deg, rgba(36, 0, 90, 0.02) 0%, rgba(59, 0, 200, 0.02) 100%)',
-          pointerEvents: 'none'
-        }} />
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
-            <h2 style={{ color: '#1A1A1A', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '16px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.025em' }}>
-              See <span style={{ color: '#3B00C8' }}>Secure.com</span> in Action
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background:
+              "linear-gradient(90deg, rgba(36, 0, 90, 0.02) 0%, rgba(59, 0, 200, 0.02) 100%)",
+            pointerEvents: "none",
+          }}
+        />
+        <div
+          style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px" }}
+        >
+          <div style={{ textAlign: "center", marginBottom: "48px" }}>
+            <h2
+              style={{
+                color: "#1A1A1A",
+                fontSize: "40px",
+                fontWeight: "700",
+                lineHeight: "1.2",
+                marginBottom: "16px",
+                fontFamily: "Inter, sans-serif",
+                letterSpacing: "-0.025em",
+              }}
+            >
+              See <span style={{ color: "#3B00C8" }}>Secure.com</span> in Action
             </h2>
           </div>
 
           <div className="max-w-6xl mx-auto">
             <div className="relative">
               {/* Enhanced Video Container with specified dimensions and card styling */}
-              <div className="relative mx-auto" style={{
-                width: 'min(85%, 720px)',
-                aspectRatio: '16/9',
-                maxWidth: '720px',
-                boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 25px rgba(0, 0, 0, 0.1)',
-                borderRadius: '16px',
-                overflow: 'hidden',
-                border: '1px solid rgba(59, 0, 200, 0.1)'
-              }}>
+              <div
+                className="relative mx-auto"
+                style={{
+                  width: "min(85%, 720px)",
+                  aspectRatio: "16/9",
+                  maxWidth: "720px",
+                  boxShadow:
+                    "0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 25px rgba(0, 0, 0, 0.1)",
+                  borderRadius: "16px",
+                  overflow: "hidden",
+                  border: "1px solid rgba(59, 0, 200, 0.1)",
+                }}
+              >
                 <div className="absolute inset-0 bg-secure-slate-800 rounded-2xl shadow-2xl overflow-hidden">
                   {/* Placeholder for YouTube video */}
                   <div className="w-full h-full bg-gradient-to-br from-secure-slate-700 to-secure-slate-900 flex items-center justify-center">
@@ -1363,222 +1635,410 @@ minHeight: "100vh"
               <div className="absolute -bottom-4 -left-4 w-8 h-8 border-l-4 border-b-4 border-secure-blue-600 rounded-bl-lg"></div>
               <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r-4 border-b-4 border-secure-blue-600 rounded-br-lg"></div>
             </div>
-
-
           </div>
         </div>
       </section>
 
       {/* Deployment Section - 30-minute deployment */}
-      <section style={{
-        padding: '8vh 0',
-        background: 'linear-gradient(135deg, #1F2937 0%, #374151 50%, #4B5563 100%)',
-        position: 'relative',
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center'
-      }}>
+      <section
+        style={{
+          padding: "8vh 0",
+          background:
+            "linear-gradient(135deg, #1F2937 0%, #374151 50%, #4B5563 100%)",
+          position: "relative",
+          minHeight: "100vh",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
         {/* Subtle brand gradient overlay */}
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: 'linear-gradient(90deg, rgba(36, 0, 90, 0.1) 0%, rgba(59, 0, 200, 0.1) 100%)',
-          pointerEvents: 'none'
-        }} />
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 32px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '48px', alignItems: 'center' }}>
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background:
+              "linear-gradient(90deg, rgba(36, 0, 90, 0.1) 0%, rgba(59, 0, 200, 0.1) 100%)",
+            pointerEvents: "none",
+          }}
+        />
+        <div
+          style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 32px" }}
+        >
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+              gap: "48px",
+              alignItems: "center",
+            }}
+          >
             <div>
               <div>
-                <h2 style={{ color: '#FFFFFF', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.025em' }}>
-                  Peace of mind, in <span style={{ color: '#00FFF7' }}>30 minutes</span>.
+                <h2
+                  style={{
+                    color: "#FFFFFF",
+                    fontSize: "40px",
+                    fontWeight: "700",
+                    lineHeight: "1.2",
+                    fontFamily: "Inter, sans-serif",
+                    letterSpacing: "-0.025em",
+                  }}
+                >
+                  Peace of mind, in{" "}
+                  <span style={{ color: "#00FFF7" }}>30 minutes</span>.
                 </h2>
               </div>
-              <div style={{ marginTop: '32px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', backgroundColor: 'rgba(60, 131, 246, 0.1)', borderRadius: '50%' }}>
+              <div style={{ marginTop: "32px" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: "16px",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      width: "40px",
+                      height: "40px",
+                      backgroundColor: "rgba(60, 131, 246, 0.1)",
+                      borderRadius: "50%",
+                    }}
+                  >
                     <CheckCircle className="w-5 h-5 text-blue-400" />
                   </div>
-                  <div style={{ marginLeft: '16px' }}>
-                    <div style={{ color: '#ffffff', fontWeight: '600', fontFamily: 'Inter, sans-serif' }}>
+                  <div style={{ marginLeft: "16px" }}>
+                    <div
+                      style={{
+                        color: "#ffffff",
+                        fontWeight: "600",
+                        fontFamily: "Inter, sans-serif",
+                      }}
+                    >
                       No Agents, No Rip-and-Replace
                     </div>
                   </div>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', backgroundColor: 'rgba(60, 131, 246, 0.1)', borderRadius: '50%' }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: "16px",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      width: "40px",
+                      height: "40px",
+                      backgroundColor: "rgba(60, 131, 246, 0.1)",
+                      borderRadius: "50%",
+                    }}
+                  >
                     <CheckCircle className="w-5 h-5 text-blue-400" />
                   </div>
-                  <div style={{ marginLeft: '16px' }}>
-                    <div style={{ color: '#ffffff', fontWeight: '600', fontFamily: 'Inter, sans-serif' }}>
+                  <div style={{ marginLeft: "16px" }}>
+                    <div
+                      style={{
+                        color: "#ffffff",
+                        fontWeight: "600",
+                        fontFamily: "Inter, sans-serif",
+                      }}
+                    >
                       Fast Deployment
                     </div>
                   </div>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', backgroundColor: 'rgba(60, 131, 246, 0.1)', borderRadius: '50%' }}>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      width: "40px",
+                      height: "40px",
+                      backgroundColor: "rgba(60, 131, 246, 0.1)",
+                      borderRadius: "50%",
+                    }}
+                  >
                     <CheckCircle className="w-5 h-5 text-blue-400" />
                   </div>
-                  <div style={{ marginLeft: '16px' }}>
-                    <div style={{ color: '#ffffff', fontWeight: '600', fontFamily: 'Inter, sans-serif' }}>
+                  <div style={{ marginLeft: "16px" }}>
+                    <div
+                      style={{
+                        color: "#ffffff",
+                        fontWeight: "600",
+                        fontFamily: "Inter, sans-serif",
+                      }}
+                    >
                       Dedicated Success Engineer
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div style={{ padding: '32px', backgroundImage: 'linear-gradient(to right bottom, rgb(44, 49, 58), rgb(70, 74, 83))', borderRadius: '16px', border: '0.8px solid rgb(107, 114, 128)' }}>
+            <div
+              style={{
+                padding: "32px",
+                backgroundImage:
+                  "linear-gradient(to right bottom, rgb(44, 49, 58), rgb(70, 74, 83))",
+                borderRadius: "16px",
+                border: "0.8px solid rgb(107, 114, 128)",
+              }}
+            >
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <span style={{ color: '#ffffff', fontWeight: '600', fontFamily: 'Inter, sans-serif' }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <span
+                    style={{
+                      color: "#ffffff",
+                      fontWeight: "600",
+                      fontFamily: "Inter, sans-serif",
+                    }}
+                  >
                     Deployment Progress
                   </span>
-                  <span style={{ color: '#3B00C8', fontFamily: 'Inter, sans-serif' }}>
+                  <span
+                    style={{
+                      color: "#3B00C8",
+                      fontFamily: "Inter, sans-serif",
+                    }}
+                  >
                     {deploymentProgress}%
                   </span>
                 </div>
-                <div style={{ backgroundColor: 'rgb(31, 34, 41)', borderRadius: '50px', height: '8px', marginTop: '24px', position: 'relative', overflow: 'hidden' }}>
+                <div
+                  style={{
+                    backgroundColor: "rgb(31, 34, 41)",
+                    borderRadius: "50px",
+                    height: "8px",
+                    marginTop: "24px",
+                    position: "relative",
+                    overflow: "hidden",
+                  }}
+                >
                   <div
                     style={{
-                      background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)',
-                      borderRadius: '50px',
-                      height: '8px',
+                      background:
+                        "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
+                      borderRadius: "50px",
+                      height: "8px",
                       width: `${deploymentProgress}%`,
-                      transition: 'width 1.5s cubic-bezier(0.4, 0, 0.2, 1)',
-                      position: 'relative',
-                      boxShadow: deploymentProgress === 100 ? '0 0 12px rgba(59, 0, 200, 0.6)' : 'none',
-                      animation: deploymentProgress === 100 ? 'pulse 2s infinite' : 'none'
+                      transition: "width 1.5s cubic-bezier(0.4, 0, 0.2, 1)",
+                      position: "relative",
+                      boxShadow:
+                        deploymentProgress === 100
+                          ? "0 0 12px rgba(59, 0, 200, 0.6)"
+                          : "none",
+                      animation:
+                        deploymentProgress === 100
+                          ? "pulse 2s infinite"
+                          : "none",
                     }}
                   >
                     {/* Shimmer effect during progress */}
                     {deploymentProgress > 0 && deploymentProgress < 100 && (
                       <div
                         style={{
-                          position: 'absolute',
+                          position: "absolute",
                           top: 0,
-                          left: '-100%',
-                          width: '100%',
-                          height: '100%',
-                          background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent)',
-                          animation: 'shimmer 2s infinite'
+                          left: "-100%",
+                          width: "100%",
+                          height: "100%",
+                          background:
+                            "linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent)",
+                          animation: "shimmer 2s infinite",
                         }}
                       />
                     )}
                   </div>
                 </div>
-                <div style={{ marginTop: '24px' }}>
+                <div style={{ marginTop: "24px" }}>
                   {/* Step 1: API Connection Established */}
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    opacity: activeStep >= 1 ? 1 : 0.3,
-                    transform: activeStep >= 1 ? 'translateX(0)' : 'translateX(-10px)',
-                    transition: 'all 0.6s ease-in-out'
-                  }}>
-                    <CheckCircle className={`w-5 h-5 transition-colors duration-500 ${activeStep >= 1 ? 'text-green-500' : 'text-gray-400'}`} />
-                    <span style={{ color: '#ffffff', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      opacity: activeStep >= 1 ? 1 : 0.3,
+                      transform:
+                        activeStep >= 1 ? "translateX(0)" : "translateX(-10px)",
+                      transition: "all 0.6s ease-in-out",
+                    }}
+                  >
+                    <CheckCircle
+                      className={`w-5 h-5 transition-colors duration-500 ${activeStep >= 1 ? "text-green-500" : "text-gray-400"}`}
+                    />
+                    <span
+                      style={{
+                        color: "#ffffff",
+                        marginLeft: "12px",
+                        fontFamily: "Inter, sans-serif",
+                      }}
+                    >
                       API Connection Established
                     </span>
-                    <span style={{
-                      color: activeStep >= 1 ? '#22c55e' : '#9096a2',
-                      fontSize: '14px',
-                      marginLeft: '12px',
-                      fontFamily: 'Inter, sans-serif',
-                      transition: 'color 0.5s ease-in-out'
-                    }}>
-                      {activeStep >= 1 ? '✓ 2 min' : '2 min'}
+                    <span
+                      style={{
+                        color: activeStep >= 1 ? "#22c55e" : "#9096a2",
+                        fontSize: "14px",
+                        marginLeft: "12px",
+                        fontFamily: "Inter, sans-serif",
+                        transition: "color 0.5s ease-in-out",
+                      }}
+                    >
+                      {activeStep >= 1 ? "✓ 2 min" : "2 min"}
                     </span>
                   </div>
 
                   {/* Step 2: Asset Discovery Complete */}
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginTop: '12px',
-                    opacity: activeStep >= 2 ? 1 : 0.3,
-                    transform: activeStep >= 2 ? 'translateX(0)' : 'translateX(-10px)',
-                    transition: 'all 0.6s ease-in-out',
-                    transitionDelay: activeStep >= 2 ? '0.2s' : '0s'
-                  }}>
-                    <CheckCircle className={`w-5 h-5 transition-colors duration-500 ${activeStep >= 2 ? 'text-green-500' : 'text-gray-400'}`} />
-                    <span style={{ color: '#ffffff', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginTop: "12px",
+                      opacity: activeStep >= 2 ? 1 : 0.3,
+                      transform:
+                        activeStep >= 2 ? "translateX(0)" : "translateX(-10px)",
+                      transition: "all 0.6s ease-in-out",
+                      transitionDelay: activeStep >= 2 ? "0.2s" : "0s",
+                    }}
+                  >
+                    <CheckCircle
+                      className={`w-5 h-5 transition-colors duration-500 ${activeStep >= 2 ? "text-green-500" : "text-gray-400"}`}
+                    />
+                    <span
+                      style={{
+                        color: "#ffffff",
+                        marginLeft: "12px",
+                        fontFamily: "Inter, sans-serif",
+                      }}
+                    >
                       Asset Discovery Complete
                     </span>
-                    <span style={{
-                      color: activeStep >= 2 ? '#22c55e' : '#9096a2',
-                      fontSize: '14px',
-                      marginLeft: '12px',
-                      fontFamily: 'Inter, sans-serif',
-                      transition: 'color 0.5s ease-in-out'
-                    }}>
-                      {activeStep >= 2 ? '✓ 15 min' : '15 min'}
+                    <span
+                      style={{
+                        color: activeStep >= 2 ? "#22c55e" : "#9096a2",
+                        fontSize: "14px",
+                        marginLeft: "12px",
+                        fontFamily: "Inter, sans-serif",
+                        transition: "color 0.5s ease-in-out",
+                      }}
+                    >
+                      {activeStep >= 2 ? "✓ 15 min" : "15 min"}
                     </span>
                   </div>
 
                   {/* Step 3: Risk Assessment Generated */}
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginTop: '12px',
-                    opacity: activeStep >= 3 ? 1 : 0.3,
-                    transform: activeStep >= 3 ? 'translateX(0)' : 'translateX(-10px)',
-                    transition: 'all 0.6s ease-in-out',
-                    transitionDelay: activeStep >= 3 ? '0.4s' : '0s'
-                  }}>
-                    <CheckCircle className={`w-5 h-5 transition-colors duration-500 ${activeStep >= 3 ? 'text-green-500' : 'text-gray-400'}`} />
-                    <span style={{ color: '#ffffff', marginLeft: '12px', fontFamily: 'Inter, sans-serif' }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginTop: "12px",
+                      opacity: activeStep >= 3 ? 1 : 0.3,
+                      transform:
+                        activeStep >= 3 ? "translateX(0)" : "translateX(-10px)",
+                      transition: "all 0.6s ease-in-out",
+                      transitionDelay: activeStep >= 3 ? "0.4s" : "0s",
+                    }}
+                  >
+                    <CheckCircle
+                      className={`w-5 h-5 transition-colors duration-500 ${activeStep >= 3 ? "text-green-500" : "text-gray-400"}`}
+                    />
+                    <span
+                      style={{
+                        color: "#ffffff",
+                        marginLeft: "12px",
+                        fontFamily: "Inter, sans-serif",
+                      }}
+                    >
                       Risk Assessment Generated
                     </span>
-                    <span style={{
-                      color: activeStep >= 3 ? '#22c55e' : '#9096a2',
-                      fontSize: '14px',
-                      marginLeft: '12px',
-                      fontFamily: 'Inter, sans-serif',
-                      transition: 'color 0.5s ease-in-out'
-                    }}>
-                      {activeStep >= 3 ? '✓ 28 min' : '28 min'}
+                    <span
+                      style={{
+                        color: activeStep >= 3 ? "#22c55e" : "#9096a2",
+                        fontSize: "14px",
+                        marginLeft: "12px",
+                        fontFamily: "Inter, sans-serif",
+                        transition: "color 0.5s ease-in-out",
+                      }}
+                    >
+                      {activeStep >= 3 ? "✓ 28 min" : "28 min"}
                     </span>
                   </div>
 
                   {/* Final Step: Agent Live. Monitoring Active */}
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginTop: '16px',
-                    padding: '12px',
-                    backgroundColor: activeStep >= 4 ? 'rgba(59, 130, 246, 0.1)' : 'transparent',
-                    borderRadius: '8px',
-                    opacity: activeStep >= 4 ? 1 : 0.3,
-                    transform: activeStep >= 4 ? 'scale(1.02)' : 'scale(1)',
-                    transition: 'all 0.8s ease-in-out',
-                    transitionDelay: activeStep >= 4 ? '0.6s' : '0s',
-                    border: activeStep >= 4 ? '1px solid rgba(59, 130, 246, 0.3)' : '1px solid transparent'
-                  }}>
-                    <div className={`w-5 h-5 transition-all duration-700 ${activeStep >= 4 ? 'text-blue-400 animate-pulse' : 'text-gray-400'}`}>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginTop: "16px",
+                      padding: "12px",
+                      backgroundColor:
+                        activeStep >= 4
+                          ? "rgba(59, 130, 246, 0.1)"
+                          : "transparent",
+                      borderRadius: "8px",
+                      opacity: activeStep >= 4 ? 1 : 0.3,
+                      transform: activeStep >= 4 ? "scale(1.02)" : "scale(1)",
+                      transition: "all 0.8s ease-in-out",
+                      transitionDelay: activeStep >= 4 ? "0.6s" : "0s",
+                      border:
+                        activeStep >= 4
+                          ? "1px solid rgba(59, 130, 246, 0.3)"
+                          : "1px solid transparent",
+                    }}
+                  >
+                    <div
+                      className={`w-5 h-5 transition-all duration-700 ${activeStep >= 4 ? "text-blue-400 animate-pulse" : "text-gray-400"}`}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
                         <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
                       </svg>
                     </div>
-                    <span style={{
-                      color: '#ffffff',
-                      marginLeft: '12px',
-                      fontFamily: 'Inter, sans-serif',
-                      fontWeight: activeStep >= 4 ? '600' : '400',
-                      transition: 'font-weight 0.5s ease-in-out'
-                    }}>
+                    <span
+                      style={{
+                        color: "#ffffff",
+                        marginLeft: "12px",
+                        fontFamily: "Inter, sans-serif",
+                        fontWeight: activeStep >= 4 ? "600" : "400",
+                        transition: "font-weight 0.5s ease-in-out",
+                      }}
+                    >
                       Agent Live. Monitoring Active
                     </span>
-                    <span style={{
-                      color: activeStep >= 4 ? '#3B00C8' : '#9096a2',
-                      fontSize: '14px',
-                      marginLeft: '12px',
-                      fontFamily: 'Inter, sans-serif',
-                      fontWeight: activeStep >= 4 ? '600' : '400',
-                      transition: 'all 0.5s ease-in-out'
-                    }}>
-                      {activeStep >= 4 ? '● Live' : 'Pending'}
+                    <span
+                      style={{
+                        color: activeStep >= 4 ? "#3B00C8" : "#9096a2",
+                        fontSize: "14px",
+                        marginLeft: "12px",
+                        fontFamily: "Inter, sans-serif",
+                        fontWeight: activeStep >= 4 ? "600" : "400",
+                        transition: "all 0.5s ease-in-out",
+                      }}
+                    >
+                      {activeStep >= 4 ? "● Live" : "Pending"}
                     </span>
                   </div>
                 </div>
@@ -1592,40 +2052,62 @@ minHeight: "100vh"
       <section
         id="final-cta"
         style={{
-          background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)',
-          minHeight: '100vh',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center'
+          background: "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
         }}
       >
         {/* CTA Content */}
         <div className="container mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 style={{ color: '#FFFFFF', fontSize: '48px', fontWeight: '700', lineHeight: '1.1', marginBottom: '24px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
-              Let your team focus on growth<br />not grunt work.
+            <h2
+              style={{
+                color: "#FFFFFF",
+                fontSize: "48px",
+                fontWeight: "700",
+                lineHeight: "1.1",
+                marginBottom: "24px",
+                fontFamily: "Inter, sans-serif",
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Let your team focus on growth
+              <br />
+              not grunt work.
             </h2>
-            <p style={{ color: '#F0F4F8', fontSize: '18px', fontWeight: '400', lineHeight: '1.5', marginBottom: '32px', fontFamily: 'Inter, sans-serif' }}>
-              Secure.com gives you the firepower of a full security team, without the headcount.
+            <p
+              style={{
+                color: "#F0F4F8",
+                fontSize: "18px",
+                fontWeight: "400",
+                lineHeight: "1.5",
+                marginBottom: "32px",
+                fontFamily: "Inter, sans-serif",
+              }}
+            >
+              Secure.com gives you the firepower of a full security team,
+              without the headcount.
             </p>
 
             <Button
               onClick={() => setShowBetaModal(true)}
               style={{
-                backgroundColor: '#FFFFFF',
-                color: '#000000',
-                padding: '16px 32px',
-                fontSize: '18px',
-                fontWeight: '500',
-                borderRadius: '8px',
-                fontFamily: 'Inter, sans-serif',
-                border: 'none',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                margin: '0 auto',
-                transition: 'all 0.3s ease',
-                boxShadow: '0 4px 14px rgba(255, 255, 255, 0.25)'
+                backgroundColor: "#FFFFFF",
+                color: "#000000",
+                padding: "16px 32px",
+                fontSize: "18px",
+                fontWeight: "500",
+                borderRadius: "8px",
+                fontFamily: "Inter, sans-serif",
+                border: "none",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                margin: "0 auto",
+                transition: "all 0.3s ease",
+                boxShadow: "0 4px 14px rgba(255, 255, 255, 0.25)",
               }}
             >
               Sign-up for Beta Partner
@@ -1633,242 +2115,346 @@ minHeight: "100vh"
             </Button>
 
             {/* FOMO Messaging */}
-            <p style={{
-              color: 'rgba(255, 255, 255, 0.9)',
-              fontSize: '18px',
-              fontWeight: '500',
-              marginTop: '24px',
-              fontFamily: 'Inter, sans-serif',
-              lineHeight: '1.5',
-              letterSpacing: '0.025em'
-            }}>
-              Secure your spot among the first 50 visionary companies shaping the next era of AI-native cybersecurity. Limited access. Unmatched advantage.
+            <p
+              style={{
+                color: "rgba(255, 255, 255, 0.9)",
+                fontSize: "18px",
+                fontWeight: "500",
+                marginTop: "24px",
+                fontFamily: "Inter, sans-serif",
+                lineHeight: "1.5",
+                letterSpacing: "0.025em",
+              }}
+            >
+              Secure your spot among the first 50 visionary companies shaping
+              the next era of AI-native cybersecurity. Limited access. Unmatched
+              advantage.
             </p>
 
             {/* PureVPN Attribution with Logo */}
-            <div style={{ marginTop: '48px', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-              <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '16px', fontFamily: 'Inter, sans-serif', fontWeight: '400', margin: 0 }}>
+            <div
+              style={{
+                marginTop: "48px",
+                textAlign: "center",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "8px",
+              }}
+            >
+              <p
+                style={{
+                  color: "rgba(255, 255, 255, 0.8)",
+                  fontSize: "16px",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "400",
+                  margin: 0,
+                }}
+              >
                 From the Founders of
               </p>
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F2afddc7a35e24a43b6ecb35ca9acf838?format=webp&width=800"
                 alt="PureVPN Logo"
-                style={{ height: '20px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.9 }}
+                style={{
+                  height: "20px",
+                  width: "auto",
+                  filter: "brightness(0) invert(1)",
+                  opacity: 0.9,
+                }}
               />
             </div>
           </div>
         </div>
 
         {/* Footer Content - Now integrated within the same purple background */}
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '32px 24px', width: '100%' }}>
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            padding: "32px 24px",
+            width: "100%",
+          }}
+        >
           {/* Separator line */}
-          <div style={{
-            height: '1px',
-            background: 'rgba(255, 255, 255, 0.2)',
-            marginBottom: '32px',
-            maxWidth: '800px',
-            margin: '0 auto 32px'
-          }}></div>
+          <div
+            style={{
+              height: "1px",
+              background: "rgba(255, 255, 255, 0.2)",
+              marginBottom: "32px",
+              maxWidth: "800px",
+              margin: "0 auto 32px",
+            }}
+          ></div>
 
           {/* Footer Content Grid - Optimized for 15" laptops */}
-          <div className="footer-grid" style={{
-            display: 'grid',
-            gridTemplateColumns: '2fr 1fr',
-            alignItems: 'center',
-            gap: '32px',
-            marginBottom: '24px'
-          }}>
-
+          <div
+            className="footer-grid"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "2fr 1fr",
+              alignItems: "center",
+              gap: "32px",
+              marginBottom: "24px",
+            }}
+          >
             {/* Left - Social Links and Legal */}
             <div>
               {/* Social Icons */}
-              <div style={{ display: 'flex', gap: '12px', marginBottom: '20px' }}>
-                <a href="#" style={{
-                  width: '36px',
-                  height: '36px',
-                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                  borderRadius: '50%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: '#FFFFFF',
-                  textDecoration: 'none',
-                  transition: 'all 0.3s ease'
-                }}>
+              <div
+                style={{ display: "flex", gap: "12px", marginBottom: "20px" }}
+              >
+                <a
+                  href="#"
+                  style={{
+                    width: "36px",
+                    height: "36px",
+                    backgroundColor: "rgba(255, 255, 255, 0.1)",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    transition: "all 0.3s ease",
+                  }}
+                >
                   {/* LinkedIn Icon */}
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                   </svg>
                 </a>
-                <a href="#" style={{
-                  width: '36px',
-                  height: '36px',
-                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                  borderRadius: '50%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: '#FFFFFF',
-                  textDecoration: 'none',
-                  transition: 'all 0.3s ease'
-                }}>
+                <a
+                  href="#"
+                  style={{
+                    width: "36px",
+                    height: "36px",
+                    backgroundColor: "rgba(255, 255, 255, 0.1)",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    transition: "all 0.3s ease",
+                  }}
+                >
                   {/* X (Twitter) Icon */}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                   </svg>
                 </a>
               </div>
 
               {/* Legal Links - Optimized for 15" screens */}
-              <div className="footer-legal-links" style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                gap: '16px',
-                marginBottom: '16px',
-                maxWidth: '600px'
-              }}>
-                <a href="#" style={{
-                  color: 'rgba(255, 255, 255, 0.7)',
-                  fontSize: '13px',
-                  fontFamily: 'Inter, sans-serif',
-                  textDecoration: 'none',
-                  transition: 'color 0.3s ease',
-                  whiteSpace: 'nowrap'
-                }}>
+              <div
+                className="footer-legal-links"
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "16px",
+                  marginBottom: "16px",
+                  maxWidth: "600px",
+                }}
+              >
+                <a
+                  href="#"
+                  style={{
+                    color: "rgba(255, 255, 255, 0.7)",
+                    fontSize: "13px",
+                    fontFamily: "Inter, sans-serif",
+                    textDecoration: "none",
+                    transition: "color 0.3s ease",
+                    whiteSpace: "nowrap",
+                  }}
+                >
                   Terms
                 </a>
-                <a href="#" style={{
-                  color: 'rgba(255, 255, 255, 0.7)',
-                  fontSize: '13px',
-                  fontFamily: 'Inter, sans-serif',
-                  textDecoration: 'none',
-                  transition: 'color 0.3s ease',
-                  whiteSpace: 'nowrap'
-                }}>
+                <a
+                  href="#"
+                  style={{
+                    color: "rgba(255, 255, 255, 0.7)",
+                    fontSize: "13px",
+                    fontFamily: "Inter, sans-serif",
+                    textDecoration: "none",
+                    transition: "color 0.3s ease",
+                    whiteSpace: "nowrap",
+                  }}
+                >
                   Privacy
                 </a>
-                <a href="#" style={{
-                  color: 'rgba(255, 255, 255, 0.7)',
-                  fontSize: '13px',
-                  fontFamily: 'Inter, sans-serif',
-                  textDecoration: 'none',
-                  transition: 'color 0.3s ease'
-                }}>
+                <a
+                  href="#"
+                  style={{
+                    color: "rgba(255, 255, 255, 0.7)",
+                    fontSize: "13px",
+                    fontFamily: "Inter, sans-serif",
+                    textDecoration: "none",
+                    transition: "color 0.3s ease",
+                  }}
+                >
                   Do Not Sell My Personal Information
                 </a>
-                <a href="#" style={{
-                  color: 'rgba(255, 255, 255, 0.7)',
-                  fontSize: '13px',
-                  fontFamily: 'Inter, sans-serif',
-                  textDecoration: 'none',
-                  transition: 'color 0.3s ease'
-                }}>
+                <a
+                  href="#"
+                  style={{
+                    color: "rgba(255, 255, 255, 0.7)",
+                    fontSize: "13px",
+                    fontFamily: "Inter, sans-serif",
+                    textDecoration: "none",
+                    transition: "color 0.3s ease",
+                  }}
+                >
                   Modern Slavery Act Statement
                 </a>
               </div>
 
               {/* Copyright */}
-              <p style={{
-                color: 'rgba(255, 255, 255, 0.5)',
-                fontSize: '13px',
-                fontFamily: 'Inter, sans-serif',
-                margin: '0'
-              }}>
+              <p
+                style={{
+                  color: "rgba(255, 255, 255, 0.5)",
+                  fontSize: "13px",
+                  fontFamily: "Inter, sans-serif",
+                  margin: "0",
+                }}
+              >
                 © 2025 Secure. All rights reserved
               </p>
             </div>
 
             {/* Right - ISO Certifications - Compact layout */}
-            <div className="footer-certifications" style={{ display: 'flex', gap: '12px', alignItems: 'center', justifyContent: 'flex-end' }}>
+            <div
+              className="footer-certifications"
+              style={{
+                display: "flex",
+                gap: "12px",
+                alignItems: "center",
+                justifyContent: "flex-end",
+              }}
+            >
               {/* SOC2 */}
-              <div style={{
-                width: '56px',
-                height: '56px',
-                backgroundColor: 'rgba(255, 255, 255, 0.9)',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: 'column',
-                border: '2px solid rgba(255, 255, 255, 0.2)'
-              }}>
-                <span style={{
-                  fontSize: '9px',
-                  fontWeight: '700',
-                  color: '#2A1A5E',
-                  textAlign: 'center',
-                  lineHeight: '1.1'
-                }}>
-                  SOC2<br/>Type II
+              <div
+                style={{
+                  width: "56px",
+                  height: "56px",
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  border: "2px solid rgba(255, 255, 255, 0.2)",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "9px",
+                    fontWeight: "700",
+                    color: "#2A1A5E",
+                    textAlign: "center",
+                    lineHeight: "1.1",
+                  }}
+                >
+                  SOC2
+                  <br />
+                  Type II
                 </span>
               </div>
 
               {/* ISO 27001 */}
-              <div style={{
-                width: '56px',
-                height: '56px',
-                backgroundColor: 'rgba(255, 255, 255, 0.9)',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: 'column',
-                border: '2px solid rgba(255, 255, 255, 0.2)'
-              }}>
-                <span style={{
-                  fontSize: '8px',
-                  fontWeight: '700',
-                  color: '#2A1A5E',
-                  textAlign: 'center',
-                  lineHeight: '1.1'
-                }}>
-                  ISO<br/>27001
+              <div
+                style={{
+                  width: "56px",
+                  height: "56px",
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  border: "2px solid rgba(255, 255, 255, 0.2)",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "8px",
+                    fontWeight: "700",
+                    color: "#2A1A5E",
+                    textAlign: "center",
+                    lineHeight: "1.1",
+                  }}
+                >
+                  ISO
+                  <br />
+                  27001
                 </span>
               </div>
 
               {/* ISO 22301 */}
-              <div style={{
-                width: '56px',
-                height: '56px',
-                backgroundColor: 'rgba(255, 255, 255, 0.9)',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: 'column',
-                border: '2px solid rgba(255, 255, 255, 0.2)'
-              }}>
-                <span style={{
-                  fontSize: '8px',
-                  fontWeight: '700',
-                  color: '#2A1A5E',
-                  textAlign: 'center',
-                  lineHeight: '1.1'
-                }}>
-                  ISO<br/>22301
+              <div
+                style={{
+                  width: "56px",
+                  height: "56px",
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  border: "2px solid rgba(255, 255, 255, 0.2)",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "8px",
+                    fontWeight: "700",
+                    color: "#2A1A5E",
+                    textAlign: "center",
+                    lineHeight: "1.1",
+                  }}
+                >
+                  ISO
+                  <br />
+                  22301
                 </span>
               </div>
 
               {/* GDPR */}
-              <div style={{
-                width: '56px',
-                height: '56px',
-                backgroundColor: 'rgba(255, 255, 255, 0.9)',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: 'column',
-                border: '2px solid rgba(255, 255, 255, 0.2)'
-              }}>
-                <span style={{
-                  fontSize: '9px',
-                  fontWeight: '700',
-                  color: '#2A1A5E',
-                  textAlign: 'center',
-                  lineHeight: '1.1'
-                }}>
-                  GDPR<br/>Ready
+              <div
+                style={{
+                  width: "56px",
+                  height: "56px",
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  border: "2px solid rgba(255, 255, 255, 0.2)",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "9px",
+                    fontWeight: "700",
+                    color: "#2A1A5E",
+                    textAlign: "center",
+                    lineHeight: "1.1",
+                  }}
+                >
+                  GDPR
+                  <br />
+                  Ready
                 </span>
               </div>
             </div>
@@ -1880,73 +2466,79 @@ minHeight: "100vh"
       {showBetaModal && (
         <div
           style={{
-            position: 'fixed',
+            position: "fixed",
             top: 0,
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.7)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
             zIndex: 1000,
-            padding: '20px'
+            padding: "20px",
           }}
           onClick={(e) => {
             if (e.target === e.currentTarget) setShowBetaModal(false);
           }}
           onKeyDown={(e) => {
-            if (e.key === 'Escape') setShowBetaModal(false);
+            if (e.key === "Escape") setShowBetaModal(false);
           }}
         >
           <div
             style={{
-              backgroundColor: '#ffffff',
-              borderRadius: '16px',
-              padding: '32px',
-              maxWidth: '500px',
-              width: '100%',
-              maxHeight: '90vh',
-              overflowY: 'auto',
-              position: 'relative',
-              boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
+              backgroundColor: "#ffffff",
+              borderRadius: "16px",
+              padding: "32px",
+              maxWidth: "500px",
+              width: "100%",
+              maxHeight: "90vh",
+              overflowY: "auto",
+              position: "relative",
+              boxShadow:
+                "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
             }}
           >
             {/* Close button */}
             <button
               onClick={() => setShowBetaModal(false)}
               style={{
-                position: 'absolute',
-                top: '16px',
-                right: '16px',
-                backgroundColor: 'transparent',
-                border: 'none',
-                fontSize: '24px',
-                cursor: 'pointer',
-                color: '#666666',
-                padding: '8px'
+                position: "absolute",
+                top: "16px",
+                right: "16px",
+                backgroundColor: "transparent",
+                border: "none",
+                fontSize: "24px",
+                cursor: "pointer",
+                color: "#666666",
+                padding: "8px",
               }}
             >
               ×
             </button>
 
-            <h2 style={{
-              color: '#0A0A0A',
-              fontSize: '28px',
-              fontWeight: '700',
-              marginBottom: '8px',
-              fontFamily: 'Inter, sans-serif'
-            }}>
+            <h2
+              style={{
+                color: "#0A0A0A",
+                fontSize: "28px",
+                fontWeight: "700",
+                marginBottom: "8px",
+                fontFamily: "Inter, sans-serif",
+              }}
+            >
               Exclusive Beta Access
             </h2>
 
-            <p style={{
-              color: '#666666',
-              fontSize: '16px',
-              marginBottom: '24px',
-              fontFamily: 'Inter, sans-serif'
-            }}>
-              Join the first 50 companies to shape the future of AI-native security.
+            <p
+              style={{
+                color: "#666666",
+                fontSize: "16px",
+                marginBottom: "24px",
+                fontFamily: "Inter, sans-serif",
+              }}
+            >
+              Join the first 50 companies to shape the future of AI-native
+              security.
             </p>
 
             <form
@@ -1955,74 +2547,104 @@ minHeight: "100vh"
                 // Validate email
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailRegex.test(betaForm.workEmail)) {
-                  alert('Please enter a valid email address');
+                  alert("Please enter a valid email address");
                   return;
                 }
                 // Handle form submission here
-                console.log('Beta form submitted:', betaForm);
-                alert('Thank you! We\'ll be in touch soon.');
+                console.log("Beta form submitted:", betaForm);
+                alert("Thank you! We'll be in touch soon.");
                 setShowBetaModal(false);
               }}
-              style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}
+              style={{ display: "flex", flexDirection: "column", gap: "16px" }}
             >
               {/* Full Name */}
               <div>
-                <label style={{ display: 'block', marginBottom: '4px', fontWeight: '600', color: '#0A0A0A', fontFamily: 'Inter, sans-serif' }}>
+                <label
+                  style={{
+                    display: "block",
+                    marginBottom: "4px",
+                    fontWeight: "600",
+                    color: "#0A0A0A",
+                    fontFamily: "Inter, sans-serif",
+                  }}
+                >
                   Full Name *
                 </label>
                 <input
                   type="text"
                   required
                   value={betaForm.fullName}
-                  onChange={(e) => setBetaForm({...betaForm, fullName: e.target.value})}
+                  onChange={(e) =>
+                    setBetaForm({ ...betaForm, fullName: e.target.value })
+                  }
                   style={{
-                    width: '100%',
-                    padding: '12px',
-                    border: '1px solid #ddd',
-                    borderRadius: '8px',
-                    fontSize: '16px',
-                    fontFamily: 'Inter, sans-serif'
+                    width: "100%",
+                    padding: "12px",
+                    border: "1px solid #ddd",
+                    borderRadius: "8px",
+                    fontSize: "16px",
+                    fontFamily: "Inter, sans-serif",
                   }}
                 />
               </div>
 
               {/* Work Email */}
               <div>
-                <label style={{ display: 'block', marginBottom: '4px', fontWeight: '600', color: '#0A0A0A', fontFamily: 'Inter, sans-serif' }}>
+                <label
+                  style={{
+                    display: "block",
+                    marginBottom: "4px",
+                    fontWeight: "600",
+                    color: "#0A0A0A",
+                    fontFamily: "Inter, sans-serif",
+                  }}
+                >
                   Work Email *
                 </label>
                 <input
                   type="email"
                   required
                   value={betaForm.workEmail}
-                  onChange={(e) => setBetaForm({...betaForm, workEmail: e.target.value})}
+                  onChange={(e) =>
+                    setBetaForm({ ...betaForm, workEmail: e.target.value })
+                  }
                   style={{
-                    width: '100%',
-                    padding: '12px',
-                    border: '1px solid #ddd',
-                    borderRadius: '8px',
-                    fontSize: '16px',
-                    fontFamily: 'Inter, sans-serif'
+                    width: "100%",
+                    padding: "12px",
+                    border: "1px solid #ddd",
+                    borderRadius: "8px",
+                    fontSize: "16px",
+                    fontFamily: "Inter, sans-serif",
                   }}
                 />
               </div>
 
               {/* Company Size */}
               <div>
-                <label style={{ display: 'block', marginBottom: '4px', fontWeight: '600', color: '#0A0A0A', fontFamily: 'Inter, sans-serif' }}>
+                <label
+                  style={{
+                    display: "block",
+                    marginBottom: "4px",
+                    fontWeight: "600",
+                    color: "#0A0A0A",
+                    fontFamily: "Inter, sans-serif",
+                  }}
+                >
                   Company Size *
                 </label>
                 <select
                   required
                   value={betaForm.companySize}
-                  onChange={(e) => setBetaForm({...betaForm, companySize: e.target.value})}
+                  onChange={(e) =>
+                    setBetaForm({ ...betaForm, companySize: e.target.value })
+                  }
                   style={{
-                    width: '100%',
-                    padding: '12px',
-                    border: '1px solid #ddd',
-                    borderRadius: '8px',
-                    fontSize: '16px',
-                    fontFamily: 'Inter, sans-serif'
+                    width: "100%",
+                    padding: "12px",
+                    border: "1px solid #ddd",
+                    borderRadius: "8px",
+                    fontSize: "16px",
+                    fontFamily: "Inter, sans-serif",
                   }}
                 >
                   <option value="">Select company size</option>
@@ -2035,20 +2657,30 @@ minHeight: "100vh"
 
               {/* Industry */}
               <div>
-                <label style={{ display: 'block', marginBottom: '4px', fontWeight: '600', color: '#0A0A0A', fontFamily: 'Inter, sans-serif' }}>
+                <label
+                  style={{
+                    display: "block",
+                    marginBottom: "4px",
+                    fontWeight: "600",
+                    color: "#0A0A0A",
+                    fontFamily: "Inter, sans-serif",
+                  }}
+                >
                   Industry *
                 </label>
                 <select
                   required
                   value={betaForm.industry}
-                  onChange={(e) => setBetaForm({...betaForm, industry: e.target.value})}
+                  onChange={(e) =>
+                    setBetaForm({ ...betaForm, industry: e.target.value })
+                  }
                   style={{
-                    width: '100%',
-                    padding: '12px',
-                    border: '1px solid #ddd',
-                    borderRadius: '8px',
-                    fontSize: '16px',
-                    fontFamily: 'Inter, sans-serif'
+                    width: "100%",
+                    padding: "12px",
+                    border: "1px solid #ddd",
+                    borderRadius: "8px",
+                    fontSize: "16px",
+                    fontFamily: "Inter, sans-serif",
                   }}
                 >
                   <option value="">Select industry</option>
@@ -2062,23 +2694,53 @@ minHeight: "100vh"
 
               {/* Security Challenges */}
               <div>
-                <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600', color: '#0A0A0A', fontFamily: 'Inter, sans-serif' }}>
+                <label
+                  style={{
+                    display: "block",
+                    marginBottom: "8px",
+                    fontWeight: "600",
+                    color: "#0A0A0A",
+                    fontFamily: "Inter, sans-serif",
+                  }}
+                >
                   Security Challenges (select all that apply)
                 </label>
-                {['Compliance', 'Threat Detection', 'Limited Staff', 'Alert Fatigue', 'Other'].map((challenge) => (
-                  <label key={challenge} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px', fontFamily: 'Inter, sans-serif' }}>
+                {[
+                  "Compliance",
+                  "Threat Detection",
+                  "Limited Staff",
+                  "Alert Fatigue",
+                  "Other",
+                ].map((challenge) => (
+                  <label
+                    key={challenge}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginBottom: "8px",
+                      fontFamily: "Inter, sans-serif",
+                    }}
+                  >
                     <input
                       type="checkbox"
                       checked={betaForm.securityChallenges.includes(challenge)}
                       onChange={(e) => {
                         const challenges = betaForm.securityChallenges;
                         if (e.target.checked) {
-                          setBetaForm({...betaForm, securityChallenges: [...challenges, challenge]});
+                          setBetaForm({
+                            ...betaForm,
+                            securityChallenges: [...challenges, challenge],
+                          });
                         } else {
-                          setBetaForm({...betaForm, securityChallenges: challenges.filter(c => c !== challenge)});
+                          setBetaForm({
+                            ...betaForm,
+                            securityChallenges: challenges.filter(
+                              (c) => c !== challenge,
+                            ),
+                          });
                         }
                       }}
-                      style={{ marginRight: '8px' }}
+                      style={{ marginRight: "8px" }}
                     />
                     {challenge}
                   </label>
@@ -2087,21 +2749,34 @@ minHeight: "100vh"
 
               {/* Additional Comments */}
               <div>
-                <label style={{ display: 'block', marginBottom: '4px', fontWeight: '600', color: '#0A0A0A', fontFamily: 'Inter, sans-serif' }}>
+                <label
+                  style={{
+                    display: "block",
+                    marginBottom: "4px",
+                    fontWeight: "600",
+                    color: "#0A0A0A",
+                    fontFamily: "Inter, sans-serif",
+                  }}
+                >
                   Additional Comments (optional)
                 </label>
                 <textarea
                   rows={3}
                   value={betaForm.additionalComments}
-                  onChange={(e) => setBetaForm({...betaForm, additionalComments: e.target.value})}
+                  onChange={(e) =>
+                    setBetaForm({
+                      ...betaForm,
+                      additionalComments: e.target.value,
+                    })
+                  }
                   style={{
-                    width: '100%',
-                    padding: '12px',
-                    border: '1px solid #ddd',
-                    borderRadius: '8px',
-                    fontSize: '16px',
-                    fontFamily: 'Inter, sans-serif',
-                    resize: 'vertical'
+                    width: "100%",
+                    padding: "12px",
+                    border: "1px solid #ddd",
+                    borderRadius: "8px",
+                    fontSize: "16px",
+                    fontFamily: "Inter, sans-serif",
+                    resize: "vertical",
                   }}
                 />
               </div>
@@ -2110,26 +2785,29 @@ minHeight: "100vh"
               <button
                 type="submit"
                 style={{
-                  background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)',
-                  color: '#FFFFFF',
-                  padding: '16px 32px',
-                  fontSize: '18px',
-                  fontWeight: '500',
-                  borderRadius: '8px',
-                  border: 'none',
-                  cursor: 'pointer',
-                  marginTop: '8px',
-                  fontFamily: 'Inter, sans-serif',
-                  transition: 'all 0.3s ease',
-                  boxShadow: '0 4px 14px rgba(59, 0, 200, 0.25)'
+                  background:
+                    "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
+                  color: "#FFFFFF",
+                  padding: "16px 32px",
+                  fontSize: "18px",
+                  fontWeight: "500",
+                  borderRadius: "8px",
+                  border: "none",
+                  cursor: "pointer",
+                  marginTop: "8px",
+                  fontFamily: "Inter, sans-serif",
+                  transition: "all 0.3s ease",
+                  boxShadow: "0 4px 14px rgba(59, 0, 200, 0.25)",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(59, 0, 200, 0.35)';
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 6px 20px rgba(59, 0, 200, 0.35)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(59, 0, 200, 0.25)';
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 14px rgba(59, 0, 200, 0.25)";
                 }}
               >
                 Join Private Beta
@@ -2138,7 +2816,6 @@ minHeight: "100vh"
           </div>
         </div>
       )}
-
     </div>
   );
 }

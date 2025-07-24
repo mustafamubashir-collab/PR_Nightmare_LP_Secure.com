@@ -138,6 +138,15 @@
     }
   }
 
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
   /* Responsive section spacing utilities */
   .section-spacing {
     padding: 64px 0;

@@ -127,19 +127,12 @@ export default function Index() {
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           {/* Left Section - Logo and Tagline */}
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <h1 style={{ fontSize: '20px', fontWeight: '700', color: scrolled ? '#FFFFFF' : '#1A1A1A', fontFamily: 'Inter, sans-serif', margin: 0, lineHeight: '1.2', transition: 'color 0.3s ease' }}>
+            <h1 style={{ fontSize: '20px', fontWeight: '700', color: '#FFFFFF', fontFamily: 'Inter, sans-serif', margin: 0, lineHeight: '1.2' }}>
               Secure.com
             </h1>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <p style={{ fontSize: '12px', fontWeight: '400', color: scrolled ? 'rgba(255, 255, 255, 0.8)' : '#B0AFC0', fontFamily: 'Inter, sans-serif', margin: 0, lineHeight: '1.2', transition: 'color 0.3s ease' }}>
-                From the Founders of
-              </p>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fe4711614fff24bd791d13b4d0bafee22?format=webp&width=800"
-                alt="PureVPN Logo"
-                style={{ height: '14px', width: 'auto' }}
-              />
-            </div>
+            <p style={{ fontSize: '12px', fontWeight: '400', color: 'rgba(255, 255, 255, 0.8)', fontFamily: 'Inter, sans-serif', margin: 0, lineHeight: '1.2' }}>
+              From the Founders of purevpn
+            </p>
           </div>
 
           {/* Desktop Right Section - CTA Button */}
@@ -216,13 +209,13 @@ export default function Index() {
         )}
       </nav>
 
-      {/* Hero Section - Optimized for laptop screens */}
+      {/* Hero Section - Optimized for 15" laptop screens (1920x1080) */}
       <section
         className="relative overflow-hidden flex items-center"
         style={{
           background: "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
           paddingTop: '80px',
-          minHeight: '85vh',
+          height: '100vh',
           maxHeight: '100vh'
         }}
       >
@@ -415,8 +408,8 @@ export default function Index() {
 
 
 
-        {/* Content Grid - Optimized for laptop viewing */}
-        <div className="relative w-full grid grid-cols-2" style={{ zIndex: 10, minHeight: '75vh', maxHeight: '85vh' }}>
+        {/* Content Grid - Optimized for 15" laptop viewing */}
+        <div className="relative w-full grid grid-cols-2" style={{ zIndex: 10, height: '80vh' }}>
           {/* Left Side - Content Area */}
           <div className="flex items-center justify-start pl-12 lg:pl-16 xl:pl-24">
             <div className="max-w-lg">
@@ -425,14 +418,14 @@ export default function Index() {
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                <h1 style={{ fontSize: '48px', fontWeight: '700', color: '#FFFFFF', marginBottom: '24px', lineHeight: '1.1', textAlign: 'left', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
+                <h1 style={{ fontSize: '44px', fontWeight: '700', color: '#FFFFFF', marginBottom: '20px', lineHeight: '1.1', textAlign: 'left', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
                   <div>One Cyber Breach</div>
                   <div>Away from a</div>
                   <div style={{ color: '#00FFF7', fontWeight: '700' }}>
                     <span style={{ color: 'rgb(166, 26, 210)' }}>PR Nightmare</span>
                   </div>
                 </h1>
-                <p style={{ fontSize: '16px', fontWeight: '400', color: '#D6D6F2', marginBottom: '24px', lineHeight: '1.5', fontFamily: 'Inter, sans-serif' }}>
+                <p style={{ fontSize: '16px', fontWeight: '400', color: '#D6D6F2', marginBottom: '20px', lineHeight: '1.4', fontFamily: 'Inter, sans-serif' }}>
                   Reduce breach risk with <span style={{ color: '#A5FFFB' }}>40% fewer blind spots</span> and AI-led response before it turns into reputational damage.
                 </p>
                 <div className="relative">
@@ -483,7 +476,7 @@ export default function Index() {
         </div>
 
         {/* Trust Logos at bottom of hero - Cleaned up */}
-        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 w-full" style={{ zIndex: 15 }}>
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-full" style={{ zIndex: 15 }}>
           <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center' }}>
               <p style={{ color: '#D6D6F2', fontSize: '14px', fontWeight: '400', margin: '-3px 0 16px', fontFamily: 'Inter, sans-serif' }}>
@@ -504,9 +497,15 @@ export default function Index() {
                   style={{
                     display: 'flex',
                     gap: '48px',
-                    animation: 'scroll 15s linear infinite',
+                    animation: 'scroll 20s ease-in-out infinite',
                     width: 'max-content',
                     alignItems: 'center'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.animationPlayState = 'paused';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.animationPlayState = 'running';
                   }}
                   onTouchStart={(e) => {
                     e.currentTarget.style.animationPlayState = 'paused';
@@ -541,10 +540,10 @@ export default function Index() {
                     }}
                   />
 
-                  {/* Third Logo */}
+                  {/* OLG Logo */}
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4115c1d29aca4b15b72caa78f21317f7?format=webp&width=800"
-                    alt="Partner"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4914446477734611af37ac4faee1e9ff?format=webp&width=800"
+                    alt="OLG"
                     style={{
                       height: '40px',
                       width: 'auto',
@@ -580,8 +579,8 @@ export default function Index() {
                   />
 
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4115c1d29aca4b15b72caa78f21317f7?format=webp&width=800"
-                    alt="Partner"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4914446477734611af37ac4faee1e9ff?format=webp&width=800"
+                    alt="OLG"
                     style={{
                       height: '40px',
                       width: 'auto',
@@ -609,7 +608,7 @@ export default function Index() {
 
 
       {/* Problem Section */}
-      <section id="problem" style={{ padding: '64px 0', backgroundColor: '#f8fafc' }}>
+      <section id="problem" style={{ padding: '8vh 0', backgroundColor: '#f8fafc', minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 style={{ color: '#1A1A1A', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '24px', fontFamily: 'Inter, sans-serif', textAlign: 'center', letterSpacing: '-0.025em' }}>
@@ -689,14 +688,14 @@ export default function Index() {
       </section>
 
       {/* Solution Section — How Secure.com Helps */}
-      <section id="solution" style={{ marginTop: '-2px', padding: '68px 0 64px' }}>
+      <section id="solution" style={{ marginTop: '-2px', minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
         <div
           style={{
             width: "100%",
             background: "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
             margin: "0 auto",
             padding: "0 16px",
-            height: "757.5px"
+minHeight: "100vh"
           }}
         >
           <div
@@ -1179,7 +1178,7 @@ export default function Index() {
       </section>
 
       {/* Outcome & Proof Section */}
-      <section id="outcome" style={{ padding: '64px 0', background: 'linear-gradient(135deg, #E7F0FF 0%, #ffffff 100%)' }}>
+      <section id="outcome" style={{ padding: '8vh 0', background: 'linear-gradient(135deg, #E7F0FF 0%, #ffffff 100%)', minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 style={{ color: '#1A1A1A', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '24px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.025em' }}>
@@ -1296,9 +1295,12 @@ export default function Index() {
 
       {/* Video Section - See Secure.com in Action */}
       <section id="video" style={{
-        padding: '64px 0',
+        padding: '8vh 0',
         backgroundColor: '#f8fafc',
-        position: 'relative'
+        position: 'relative',
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center'
       }}>
         {/* Subtle brand gradient overlay */}
         <div style={{
@@ -1353,9 +1355,12 @@ export default function Index() {
 
       {/* Deployment Section - 30-minute deployment */}
       <section style={{
-        padding: '64px 0',
+        padding: '8vh 0',
         background: 'linear-gradient(135deg, #1F2937 0%, #374151 50%, #4B5563 100%)',
-        position: 'relative'
+        position: 'relative',
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center'
       }}>
         {/* Subtle brand gradient overlay */}
         <div style={{
@@ -1570,7 +1575,7 @@ export default function Index() {
       {/* Closing Section */}
       <section
         id="final-cta"
-        style={{ padding: '64px 0', background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)' }}
+        style={{ padding: '8vh 0', background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)', minHeight: '100vh', display: 'flex', alignItems: 'center' }}
       >
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
@@ -1620,13 +1625,8 @@ export default function Index() {
             {/* PureVPN Attribution */}
             <div style={{ marginTop: '48px', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
               <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '16px', fontFamily: 'Inter, sans-serif', fontWeight: '400', margin: 0 }}>
-                From the Founders of
+                From the Founders of PureVPN
               </p>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fe4711614fff24bd791d13b4d0bafee22?format=webp&width=800"
-                alt="PureVPN Logo"
-                style={{ height: '20px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.9 }}
-              />
             </div>
           </div>
         </div>

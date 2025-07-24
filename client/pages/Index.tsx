@@ -176,7 +176,7 @@ export default function Index() {
               transition: 'color 0.3s ease'
             }}
           >
-            {mobileMenuOpen ? '✕' : '☰'}
+            <span style={{ color: '#7ED321' }}>{mobileMenuOpen ? '✕' : '☰'}</span>
           </button>
         </div>
 

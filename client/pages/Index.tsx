@@ -2192,6 +2192,7 @@ export default function Index() {
                 fontFamily: "Inter, sans-serif",
                 lineHeight: "1.5",
                 letterSpacing: "0.025em",
+                height: "38px",
               }}
             >
               Secure your spot among the first 50 visionary companies shaping

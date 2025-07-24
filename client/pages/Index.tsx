@@ -1317,11 +1317,11 @@ export default function Index() {
             <Button
               onClick={() => setShowBetaModal(true)}
               style={{
-                backgroundColor: '#00FFFF',
+                backgroundColor: '#FFFFFF',
                 color: '#000000',
                 padding: '16px 32px',
                 fontSize: '18px',
-                fontWeight: '600',
+                fontWeight: '500',
                 borderRadius: '8px',
                 fontFamily: 'Inter, sans-serif',
                 border: 'none',
@@ -1330,7 +1330,7 @@ export default function Index() {
                 alignItems: 'center',
                 margin: '0 auto',
                 transition: 'all 0.3s ease',
-                boxShadow: '0 4px 14px rgba(0, 255, 255, 0.25)'
+                boxShadow: '0 4px 14px rgba(255, 255, 255, 0.25)'
               }}
             >
               Sign-up for Beta Partner

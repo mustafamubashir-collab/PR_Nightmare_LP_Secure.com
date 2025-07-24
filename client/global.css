@@ -273,6 +273,35 @@
     }
   }
 
+  /* Desktop and laptop optimizations */
+  @media (min-width: 1024px) {
+    /* Video section laptop optimization */
+    #video .relative.mx-auto {
+      width: 1920px !important;
+      height: 1080px !important;
+      max-width: 85vw !important;
+      max-height: 70vh !important;
+    }
+
+    /* Outcome section laptop spacing */
+    .outcome-grid {
+      gap: 64px !important;
+    }
+
+    /* Deployment section laptop optimization */
+    .deployment-section {
+      padding: 10vh 0 !important;
+    }
+  }
+
+  /* Large desktop screens */
+  @media (min-width: 1440px) {
+    #video .relative.mx-auto {
+      max-width: 80vw !important;
+      max-height: 75vh !important;
+    }
+  }
+
   /* Typography consistency */
   .brand-heading {
     font-family: "Inter", sans-serif;

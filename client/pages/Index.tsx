@@ -1056,7 +1056,21 @@ export default function Index() {
 
 
       {/* Video Section - See Secure.com in Action */}
-      <section id="video" style={{ padding: '64px 0', backgroundColor: '#f8fafc' }}>
+      <section id="video" style={{
+        padding: '64px 0',
+        backgroundColor: '#f8fafc',
+        position: 'relative'
+      }}>
+        {/* Subtle brand gradient overlay */}
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'linear-gradient(90deg, rgba(36, 0, 90, 0.02) 0%, rgba(59, 0, 200, 0.01) 50%, rgba(0, 194, 255, 0.02) 100%)',
+          pointerEvents: 'none'
+        }} />
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
           <div style={{ textAlign: 'center', marginBottom: '32px' }}>
             <h2 style={{ color: '#1A1A1A', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '16px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.025em' }}>

@@ -28,6 +28,7 @@ export default function Index() {
   const [activeStep, setActiveStep] = useState(0);
   const [showBetaModal, setShowBetaModal] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [betaForm, setBetaForm] = useState({
     fullName: '',
     workEmail: '',
@@ -39,6 +40,15 @@ export default function Index() {
 
   useEffect(() => {
     setIsVisible(true);
+
+    // Handle scroll for adaptive navigation
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setScrolled(scrollPosition > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Enhanced deployment animation effect - Fast 2-second intervals
@@ -101,27 +111,35 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
-      {/* Fixed Navigation Bar */}
+      {/* Adaptive Navigation Bar */}
       <nav style={{
         position: 'fixed',
         top: 0,
         left: 0,
         right: 0,
         zIndex: 1000,
-        background: 'rgba(255, 255, 255, 0.95)',
-        backdropFilter: 'blur(10px)',
-        borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
-        padding: '12px 24px'
+        background: scrolled ? 'rgba(0, 0, 0, 0.85)' : 'transparent',
+        backdropFilter: scrolled ? 'blur(10px)' : 'none',
+        borderBottom: scrolled ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
+        padding: '12px 24px',
+        transition: 'all 0.3s ease'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           {/* Left Section - Logo and Tagline */}
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <h1 style={{ fontSize: '20px', fontWeight: '700', color: '#1A1A1A', fontFamily: 'Inter, sans-serif', margin: 0, lineHeight: '1.2' }}>
+            <h1 style={{ fontSize: '20px', fontWeight: '700', color: scrolled ? '#FFFFFF' : '#1A1A1A', fontFamily: 'Inter, sans-serif', margin: 0, lineHeight: '1.2', transition: 'color 0.3s ease' }}>
               Secure.com
             </h1>
-            <p style={{ fontSize: '12px', fontWeight: '400', color: '#B0AFC0', fontFamily: 'Inter, sans-serif', margin: 0, lineHeight: '1.2' }}>
-              From the Founders of purevpn
-            </p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <p style={{ fontSize: '12px', fontWeight: '400', color: scrolled ? 'rgba(255, 255, 255, 0.8)' : '#B0AFC0', fontFamily: 'Inter, sans-serif', margin: 0, lineHeight: '1.2', transition: 'color 0.3s ease' }}>
+                From the Founders of
+              </p>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fe4711614fff24bd791d13b4d0bafee22?format=webp&width=800"
+                alt="PureVPN Logo"
+                style={{ height: '14px', width: 'auto' }}
+              />
+            </div>
           </div>
 
           {/* Desktop Right Section - CTA Button */}
@@ -154,7 +172,8 @@ export default function Index() {
               border: 'none',
               fontSize: '24px',
               cursor: 'pointer',
-              color: '#1A1A1A'
+              color: scrolled ? '#FFFFFF' : '#1A1A1A',
+              transition: 'color 0.3s ease'
             }}
           >
             {mobileMenuOpen ? '✕' : '☰'}
@@ -197,12 +216,14 @@ export default function Index() {
         )}
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section - Optimized for laptop screens */}
       <section
-        className="relative overflow-hidden min-h-screen flex items-center"
+        className="relative overflow-hidden flex items-center"
         style={{
           background: "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
-          paddingTop: '80px'
+          paddingTop: '80px',
+          minHeight: '85vh',
+          maxHeight: '100vh'
         }}
       >
         {/* Video Background */}
@@ -394,24 +415,24 @@ export default function Index() {
 
 
 
-        {/* Content Grid for 1920x1080 Layout */}
-        <div className="relative w-full h-screen grid grid-cols-2" style={{ zIndex: 10 }}>
+        {/* Content Grid - Optimized for laptop viewing */}
+        <div className="relative w-full grid grid-cols-2" style={{ zIndex: 10, minHeight: '75vh', maxHeight: '85vh' }}>
           {/* Left Side - Content Area */}
-          <div className="flex items-center justify-start pl-16 xl:pl-24 pt-20">
-            <div className="max-w-xl">
+          <div className="flex items-center justify-start pl-12 lg:pl-16 xl:pl-24">
+            <div className="max-w-lg">
               <div
                 className={`transition-all duration-1000 ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                <h1 style={{ fontSize: '56px', fontWeight: '700', color: '#FFFFFF', marginBottom: '32px', lineHeight: '1.1', textAlign: 'left', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
+                <h1 style={{ fontSize: '48px', fontWeight: '700', color: '#FFFFFF', marginBottom: '24px', lineHeight: '1.1', textAlign: 'left', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
                   <div>One Cyber Breach</div>
                   <div>Away from a</div>
                   <div style={{ color: '#00FFF7', fontWeight: '700' }}>
                     <span style={{ color: 'rgb(166, 26, 210)' }}>PR Nightmare</span>
                   </div>
                 </h1>
-                <p style={{ fontSize: '18px', fontWeight: '400', color: '#D6D6F2', marginBottom: '32px', lineHeight: '1.5', fontFamily: 'Inter, sans-serif' }}>
+                <p style={{ fontSize: '16px', fontWeight: '400', color: '#D6D6F2', marginBottom: '24px', lineHeight: '1.5', fontFamily: 'Inter, sans-serif' }}>
                   Reduce breach risk with <span style={{ color: '#A5FFFB' }}>40% fewer blind spots</span> and AI-led response before it turns into reputational damage.
                 </p>
                 <div className="relative">
@@ -425,8 +446,8 @@ export default function Index() {
                     style={{
                       backgroundColor: '#FFFFFF',
                       color: '#000000',
-                      padding: '16px 32px',
-                      fontSize: '18px',
+                      padding: '14px 28px',
+                      fontSize: '16px',
                       fontWeight: '600',
                       borderRadius: '8px',
                       fontFamily: 'Inter, sans-serif',
@@ -461,15 +482,15 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Trust Logos at bottom of hero */}
-        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-full" style={{ zIndex: 15 }}>
+        {/* Trust Logos at bottom of hero - Cleaned up */}
+        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 w-full" style={{ zIndex: 15 }}>
           <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center' }}>
               <p style={{ color: '#D6D6F2', fontSize: '14px', fontWeight: '400', margin: '-3px 0 16px', fontFamily: 'Inter, sans-serif' }}>
                 Trusted by the world's leading organizations
               </p>
 
-              {/* Scrollable Logo Carousel */}
+              {/* Clean Logo Display - No backgrounds or borders */}
               <div
                 style={{
                   width: '100%',
@@ -483,8 +504,9 @@ export default function Index() {
                   style={{
                     display: 'flex',
                     gap: '48px',
-                    animation: 'scroll 20s linear infinite',
-                    width: 'max-content'
+                    animation: 'scroll 15s linear infinite',
+                    width: 'max-content',
+                    alignItems: 'center'
                   }}
                   onTouchStart={(e) => {
                     e.currentTarget.style.animationPlayState = 'paused';
@@ -493,153 +515,81 @@ export default function Index() {
                     e.currentTarget.style.animationPlayState = 'running';
                   }}
                 >
-                  {/* First set of logos */}
-                  <div style={{
-                    width: '120px',
-                    height: '60px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    borderRadius: '8px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    backdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F139dbd8472934042a9314401fb78bcfc?format=webp&width=800)',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'contain',
-                    flexShrink: 0
-                  }} />
-                  <div style={{
-                    width: '120px',
-                    height: '60px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    borderRadius: '8px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    backdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F55663e2565db44c3852f0210f8c16d28?format=webp&width=800)',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'contain',
-                    flexShrink: 0
-                  }} />
-                  <div style={{
-                    width: '120px',
-                    height: '60px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    borderRadius: '8px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    backdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4115c1d29aca4b15b72caa78f21317f7?format=webp&width=800)',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'contain',
-                    flexShrink: 0
-                  }} />
-                  <div style={{
-                    width: '120px',
-                    height: '60px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    borderRadius: '8px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    backdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    flexShrink: 0
-                  }}>
-                    <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.6)', fontFamily: 'Inter, sans-serif' }}>
-                      Partner 4
-                    </span>
-                  </div>
-                  <div style={{
-                    width: '120px',
-                    height: '60px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    borderRadius: '8px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    backdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    flexShrink: 0
-                  }}>
-                    <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.6)', fontFamily: 'Inter, sans-serif' }}>
-                      Partner 5
-                    </span>
-                  </div>
-                  <div style={{
-                    width: '120px',
-                    height: '60px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    borderRadius: '8px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    backdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    flexShrink: 0
-                  }}>
-                    <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.6)', fontFamily: 'Inter, sans-serif' }}>
-                      Partner 6
-                    </span>
-                  </div>
+                  {/* Movavi Logo */}
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F139dbd8472934042a9314401fb78bcfc?format=webp&width=800"
+                    alt="Movavi"
+                    style={{
+                      height: '40px',
+                      width: 'auto',
+                      maxWidth: '120px',
+                      filter: 'brightness(0) invert(1)',
+                      opacity: 0.8
+                    }}
+                  />
+
+                  {/* DeepFin Logo */}
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F55663e2565db44c3852f0210f8c16d28?format=webp&width=800"
+                    alt="DeepFin"
+                    style={{
+                      height: '40px',
+                      width: 'auto',
+                      maxWidth: '120px',
+                      filter: 'brightness(0) invert(1)',
+                      opacity: 0.8
+                    }}
+                  />
+
+                  {/* Third Logo */}
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4115c1d29aca4b15b72caa78f21317f7?format=webp&width=800"
+                    alt="Partner"
+                    style={{
+                      height: '40px',
+                      width: 'auto',
+                      maxWidth: '120px',
+                      filter: 'brightness(0) invert(1)',
+                      opacity: 0.8
+                    }}
+                  />
 
                   {/* Duplicate set for seamless loop */}
-                  <div style={{
-                    width: '120px',
-                    height: '60px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    borderRadius: '8px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    backdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F139dbd8472934042a9314401fb78bcfc?format=webp&width=800)',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'contain',
-                    flexShrink: 0
-                  }} />
-                  <div style={{
-                    width: '120px',
-                    height: '60px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    borderRadius: '8px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    backdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F55663e2565db44c3852f0210f8c16d28?format=webp&width=800)',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'contain',
-                    flexShrink: 0
-                  }} />
-                  <div style={{
-                    width: '120px',
-                    height: '60px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    borderRadius: '8px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    backdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4115c1d29aca4b15b72caa78f21317f7?format=webp&width=800)',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'contain',
-                    flexShrink: 0
-                  }} />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F139dbd8472934042a9314401fb78bcfc?format=webp&width=800"
+                    alt="Movavi"
+                    style={{
+                      height: '40px',
+                      width: 'auto',
+                      maxWidth: '120px',
+                      filter: 'brightness(0) invert(1)',
+                      opacity: 0.8
+                    }}
+                  />
+
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F55663e2565db44c3852f0210f8c16d28?format=webp&width=800"
+                    alt="DeepFin"
+                    style={{
+                      height: '40px',
+                      width: 'auto',
+                      maxWidth: '120px',
+                      filter: 'brightness(0) invert(1)',
+                      opacity: 0.8
+                    }}
+                  />
+
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4115c1d29aca4b15b72caa78f21317f7?format=webp&width=800"
+                    alt="Partner"
+                    style={{
+                      height: '40px',
+                      width: 'auto',
+                      maxWidth: '120px',
+                      filter: 'brightness(0) invert(1)',
+                      opacity: 0.8
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -1668,10 +1618,15 @@ export default function Index() {
             </p>
 
             {/* PureVPN Attribution */}
-            <div style={{ marginTop: '48px', textAlign: 'center' }}>
-              <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '16px', fontFamily: 'Inter, sans-serif', fontWeight: '400' }}>
-                From the Founders of PureVPN
+            <div style={{ marginTop: '48px', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+              <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '16px', fontFamily: 'Inter, sans-serif', fontWeight: '400', margin: 0 }}>
+                From the Founders of
               </p>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fe4711614fff24bd791d13b4d0bafee22?format=webp&width=800"
+                alt="PureVPN Logo"
+                style={{ height: '20px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.9 }}
+              />
             </div>
           </div>
         </div>

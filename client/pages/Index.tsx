@@ -2389,6 +2389,7 @@ export default function Index() {
                   fontSize: "14px",
                   fontFamily: "Inter, sans-serif",
                   margin: "0",
+                  textAlign: "left",
                 }}
               >
                 © 2025 Secure. All rights reserved

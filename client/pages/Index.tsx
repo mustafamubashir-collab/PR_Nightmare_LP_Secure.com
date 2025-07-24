@@ -1275,46 +1275,25 @@ export default function Index() {
                         boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
                       }}
                     >
-                      <div
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
                         style={{
                           position: "absolute",
                           top: 0,
                           left: 0,
                           width: "100%",
                           height: "100%",
-                          backgroundColor: "rgba(31, 41, 55, 0.95)",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          flexDirection: "column",
+                          objectFit: "cover",
                         }}
                       >
-                        <div
-                          style={{
-                            width: "80px",
-                            height: "80px",
-                            backgroundColor: "rgba(255, 255, 255, 0.1)",
-                            borderRadius: "50%",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            marginBottom: "16px",
-                            cursor: "pointer",
-                            transition: "all 0.3s ease",
-                          }}
-                        >
-                          <Play className="w-10 h-10 text-white ml-1" />
-                        </div>
-                        <p
-                          style={{
-                            color: "rgba(255, 255, 255, 0.7)",
-                            fontSize: "14px",
-                            margin: 0,
-                          }}
-                        >
-                          attack-surface-visibility.mp4 • Coming Soon
-                        </p>
-                      </div>
+                        <source
+                          src="https://cdn.builder.io/o/assets%2F48c32e83d1314890b4d6a107b41a061a%2F19022ae6dd554d459d8200dd24d08f1a?alt=media&token=fad09ed5-a3a6-469d-8b1e-9ef0104eb210&apiKey=48c32e83d1314890b4d6a107b41a061a"
+                          type="video/mp4"
+                        />
+                      </video>
                     </div>
                   </div>
                 </div>

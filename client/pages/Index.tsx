@@ -164,7 +164,7 @@ export default function Index() {
             </a>
             <p
               style={{
-                fontSize: "12px",
+                fontSize: "11px",
                 fontWeight: "400",
                 color: "rgba(255, 255, 255, 0.8)",
                 fontFamily: "Inter, sans-serif",

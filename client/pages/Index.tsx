@@ -1321,7 +1321,7 @@ minHeight: "100vh"
           pointerEvents: 'none'
         }} />
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
             <h2 style={{ color: '#1A1A1A', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '16px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.025em' }}>
               See <span style={{ color: '#3B00C8' }}>Secure.com</span> in Action
             </h2>
@@ -1329,14 +1329,15 @@ minHeight: "100vh"
 
           <div className="max-w-6xl mx-auto">
             <div className="relative">
-              {/* Video Container - Enhanced size with card styling */}
+              {/* Enhanced Video Container with specified dimensions and card styling */}
               <div className="relative mx-auto" style={{
                 width: 'min(85%, 720px)',
-                paddingBottom: 'calc(min(85%, 720px) * 0.5625)', // 16:9 aspect ratio
-                maxHeight: '600px',
-                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.1)',
+                aspectRatio: '16/9',
+                maxWidth: '720px',
+                boxShadow: '0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 25px rgba(0, 0, 0, 0.1)',
                 borderRadius: '16px',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                border: '1px solid rgba(59, 0, 200, 0.1)'
               }}>
                 <div className="absolute inset-0 bg-secure-slate-800 rounded-2xl shadow-2xl overflow-hidden">
                   {/* Placeholder for YouTube video */}
@@ -1355,7 +1356,7 @@ minHeight: "100vh"
                   </div>
                 </div>
               </div>
-              
+
               {/* Video overlay elements */}
               <div className="absolute -top-4 -left-4 w-8 h-8 border-l-4 border-t-4 border-secure-blue-600 rounded-tl-lg"></div>
               <div className="absolute -top-4 -right-4 w-8 h-8 border-r-4 border-t-4 border-secure-blue-600 rounded-tr-lg"></div>
@@ -1587,12 +1588,19 @@ minHeight: "100vh"
         </div>
       </section>
 
-      {/* Closing Section */}
+      {/* Merged CTA + Footer Section */}
       <section
         id="final-cta"
-        style={{ padding: '6vh 0 2vh', background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)', minHeight: '100vh', display: 'flex', alignItems: 'center' }}
+        style={{
+          background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 100%)',
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center'
+        }}
       >
-        <div className="container mx-auto px-6">
+        {/* CTA Content */}
+        <div className="container mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto text-center">
             <h2 style={{ color: '#FFFFFF', fontSize: '48px', fontWeight: '700', lineHeight: '1.1', marginBottom: '24px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
               Let your team focus on growth<br />not grunt work.
@@ -1650,35 +1658,34 @@ minHeight: "100vh"
             </div>
           </div>
         </div>
-      </section>
 
+        {/* Footer Content - Now integrated within the same purple background */}
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '32px 24px', width: '100%' }}>
+          {/* Separator line */}
+          <div style={{
+            height: '1px',
+            background: 'rgba(255, 255, 255, 0.2)',
+            marginBottom: '32px',
+            maxWidth: '800px',
+            margin: '0 auto 32px'
+          }}></div>
 
-
-
-
-      {/* Footer */}
-      <footer style={{
-        backgroundColor: '#2A1A5E',
-        padding: '48px 0 32px',
-        background: 'linear-gradient(135deg, #2A1A5E 0%, #1A0F3A 100%)'
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
-          {/* Footer Content Grid */}
+          {/* Footer Content Grid - Optimized for 15" laptops */}
           <div style={{
             display: 'grid',
-            gridTemplateColumns: '1fr auto auto',
+            gridTemplateColumns: '2fr 1fr',
             alignItems: 'center',
-            gap: '48px',
+            gap: '32px',
             marginBottom: '24px'
           }}>
 
             {/* Left - Social Links and Legal */}
             <div>
               {/* Social Icons */}
-              <div style={{ display: 'flex', gap: '12px', marginBottom: '24px' }}>
+              <div style={{ display: 'flex', gap: '12px', marginBottom: '20px' }}>
                 <a href="#" style={{
-                  width: '40px',
-                  height: '40px',
+                  width: '36px',
+                  height: '36px',
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
                   borderRadius: '50%',
                   display: 'flex',
@@ -1689,13 +1696,13 @@ minHeight: "100vh"
                   transition: 'all 0.3s ease'
                 }}>
                   {/* LinkedIn Icon */}
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                   </svg>
                 </a>
                 <a href="#" style={{
-                  width: '40px',
-                  height: '40px',
+                  width: '36px',
+                  height: '36px',
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
                   borderRadius: '50%',
                   display: 'flex',
@@ -1706,49 +1713,52 @@ minHeight: "100vh"
                   transition: 'all 0.3s ease'
                 }}>
                   {/* X (Twitter) Icon */}
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                   </svg>
                 </a>
               </div>
 
-              {/* Legal Links */}
+              {/* Legal Links - Optimized for 15" screens */}
               <div style={{
                 display: 'flex',
                 flexWrap: 'wrap',
-                gap: '24px',
-                marginBottom: '16px'
+                gap: '16px',
+                marginBottom: '16px',
+                maxWidth: '600px'
               }}>
                 <a href="#" style={{
                   color: 'rgba(255, 255, 255, 0.7)',
-                  fontSize: '14px',
+                  fontSize: '13px',
                   fontFamily: 'Inter, sans-serif',
                   textDecoration: 'none',
-                  transition: 'color 0.3s ease'
+                  transition: 'color 0.3s ease',
+                  whiteSpace: 'nowrap'
                 }}>
                   Terms
                 </a>
                 <a href="#" style={{
                   color: 'rgba(255, 255, 255, 0.7)',
-                  fontSize: '14px',
+                  fontSize: '13px',
                   fontFamily: 'Inter, sans-serif',
                   textDecoration: 'none',
-                  transition: 'color 0.3s ease'
+                  transition: 'color 0.3s ease',
+                  whiteSpace: 'nowrap'
                 }}>
                   Privacy
                 </a>
                 <a href="#" style={{
                   color: 'rgba(255, 255, 255, 0.7)',
-                  fontSize: '14px',
+                  fontSize: '13px',
                   fontFamily: 'Inter, sans-serif',
                   textDecoration: 'none',
                   transition: 'color 0.3s ease'
                 }}>
-                  Do Not Sell or Share My Personal Information
+                  Do Not Sell My Personal Information
                 </a>
                 <a href="#" style={{
                   color: 'rgba(255, 255, 255, 0.7)',
-                  fontSize: '14px',
+                  fontSize: '13px',
                   fontFamily: 'Inter, sans-serif',
                   textDecoration: 'none',
                   transition: 'color 0.3s ease'
@@ -1760,7 +1770,7 @@ minHeight: "100vh"
               {/* Copyright */}
               <p style={{
                 color: 'rgba(255, 255, 255, 0.5)',
-                fontSize: '14px',
+                fontSize: '13px',
                 fontFamily: 'Inter, sans-serif',
                 margin: '0'
               }}>
@@ -1768,12 +1778,12 @@ minHeight: "100vh"
               </p>
             </div>
 
-            {/* Center - ISO Certifications */}
-            <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-              {/* SOC2 Placeholder */}
+            {/* Right - ISO Certifications - Compact layout */}
+            <div style={{ display: 'flex', gap: '12px', alignItems: 'center', justifyContent: 'flex-end' }}>
+              {/* SOC2 */}
               <div style={{
-                width: '64px',
-                height: '64px',
+                width: '56px',
+                height: '56px',
                 backgroundColor: 'rgba(255, 255, 255, 0.9)',
                 borderRadius: '50%',
                 display: 'flex',
@@ -1783,7 +1793,7 @@ minHeight: "100vh"
                 border: '2px solid rgba(255, 255, 255, 0.2)'
               }}>
                 <span style={{
-                  fontSize: '10px',
+                  fontSize: '9px',
                   fontWeight: '700',
                   color: '#2A1A5E',
                   textAlign: 'center',
@@ -1793,10 +1803,10 @@ minHeight: "100vh"
                 </span>
               </div>
 
-              {/* ISO 27001 Placeholder */}
+              {/* ISO 27001 */}
               <div style={{
-                width: '64px',
-                height: '64px',
+                width: '56px',
+                height: '56px',
                 backgroundColor: 'rgba(255, 255, 255, 0.9)',
                 borderRadius: '50%',
                 display: 'flex',
@@ -1806,7 +1816,7 @@ minHeight: "100vh"
                 border: '2px solid rgba(255, 255, 255, 0.2)'
               }}>
                 <span style={{
-                  fontSize: '9px',
+                  fontSize: '8px',
                   fontWeight: '700',
                   color: '#2A1A5E',
                   textAlign: 'center',
@@ -1816,10 +1826,33 @@ minHeight: "100vh"
                 </span>
               </div>
 
-              {/* ISO 22301 Placeholder */}
+              {/* ISO 22301 */}
               <div style={{
-                width: '64px',
-                height: '64px',
+                width: '56px',
+                height: '56px',
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                borderRadius: '50%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexDirection: 'column',
+                border: '2px solid rgba(255, 255, 255, 0.2)'
+              }}>
+                <span style={{
+                  fontSize: '8px',
+                  fontWeight: '700',
+                  color: '#2A1A5E',
+                  textAlign: 'center',
+                  lineHeight: '1.1'
+                }}>
+                  ISO<br/>22301
+                </span>
+              </div>
+
+              {/* GDPR */}
+              <div style={{
+                width: '56px',
+                height: '56px',
                 backgroundColor: 'rgba(255, 255, 255, 0.9)',
                 borderRadius: '50%',
                 display: 'flex',
@@ -1835,39 +1868,13 @@ minHeight: "100vh"
                   textAlign: 'center',
                   lineHeight: '1.1'
                 }}>
-                  ISO<br/>22301
-                </span>
-              </div>
-
-              {/* GDPR Placeholder */}
-              <div style={{
-                width: '64px',
-                height: '64px',
-                backgroundColor: 'rgba(255, 255, 255, 0.9)',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: 'column',
-                border: '2px solid rgba(255, 255, 255, 0.2)'
-              }}>
-                <span style={{
-                  fontSize: '10px',
-                  fontWeight: '700',
-                  color: '#2A1A5E',
-                  textAlign: 'center',
-                  lineHeight: '1.1'
-                }}>
                   GDPR<br/>Ready
                 </span>
               </div>
             </div>
-
-            {/* Right - Empty space for balance */}
-            <div></div>
           </div>
         </div>
-      </footer>
+      </section>
 
       {/* Beta Signup Modal */}
       {showBetaModal && (

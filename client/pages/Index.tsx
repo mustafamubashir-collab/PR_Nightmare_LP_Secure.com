@@ -222,7 +222,7 @@ export default function Index() {
               transition: "color 0.3s ease",
             }}
           >
-            <span style={{ color: "#7ED321" }}>
+            <span style={{ color: scrolled ? "#FFFFFF" : "#7ED321" }}>
               {mobileMenuOpen ? "✕" : "☰"}
             </span>
           </button>

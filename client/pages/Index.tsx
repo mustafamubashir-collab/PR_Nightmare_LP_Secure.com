@@ -470,18 +470,29 @@ export default function Index() {
               </p>
 
               {/* Scrollable Logo Carousel */}
-              <div style={{
-                width: '100%',
-                overflow: 'hidden',
-                maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
-                WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'
-              }}>
-                <div style={{
-                  display: 'flex',
-                  gap: '48px',
-                  animation: 'scroll 20s linear infinite',
-                  width: 'max-content'
-                }}>
+              <div
+                style={{
+                  width: '100%',
+                  overflow: 'hidden',
+                  maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+                  WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'
+                }}
+                className="trust-carousel"
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    gap: '48px',
+                    animation: 'scroll 20s linear infinite',
+                    width: 'max-content'
+                  }}
+                  onTouchStart={(e) => {
+                    e.currentTarget.style.animationPlayState = 'paused';
+                  }}
+                  onTouchEnd={(e) => {
+                    e.currentTarget.style.animationPlayState = 'running';
+                  }}
+                >
                   {/* First set of logos */}
                   <div style={{
                     width: '120px',

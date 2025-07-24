@@ -591,13 +591,14 @@ export default function Index() {
       </section>
 
       {/* Solution Section — How Secure.com Helps */}
-      <section id="solution" style={{ padding: '64px 0' }}>
+      <section id="solution" style={{ marginTop: '-2px', padding: '68px 0 64px' }}>
         <div
           style={{
             width: "100%",
             background: "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
             margin: "0 auto",
             padding: "0 16px",
+            height: "757.5px"
           }}
         >
           <div

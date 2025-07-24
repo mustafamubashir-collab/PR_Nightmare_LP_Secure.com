@@ -1227,38 +1227,100 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center">
-              <div className="w-24 h-24 bg-secure-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <CheckCircle className="w-12 h-12 text-white" />
+            {/* Incident Automation */}
+            <div className="text-center group">
+              <div
+                style={{
+                  width: '96px',
+                  height: '96px',
+                  background: 'linear-gradient(135deg, #3B00C8 0%, #24005A 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  margin: '0 auto 24px',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer'
+                }}
+                className="group-hover:scale-110 group-hover:shadow-lg"
+              >
+                {/* Robot Gear Icon */}
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
               </div>
               <div style={{ fontSize: '60px', fontWeight: '700', color: '#3B00C8', marginBottom: '8px', fontFamily: 'Inter, sans-serif' }}>
                 70%
               </div>
-              <p className="text-xl text-secure-slate-700">
+              <p style={{ fontSize: '18px', fontWeight: '500', color: '#4D4D4D', fontFamily: 'Inter, sans-serif' }}>
                 Incident workload automated
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-24 h-24 bg-secure-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Clock className="w-12 h-12 text-white" />
+            {/* Faster Response */}
+            <div className="text-center group">
+              <div
+                style={{
+                  width: '96px',
+                  height: '96px',
+                  background: 'linear-gradient(135deg, #3B00C8 0%, #24005A 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  margin: '0 auto 24px',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer'
+                }}
+                className="group-hover:scale-110 group-hover:shadow-lg"
+              >
+                {/* Stopwatch with Alert Icon */}
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="13" r="8"/>
+                  <path d="M12 9v4l2 2"/>
+                  <path d="M5 3L3 5"/>
+                  <path d="M19 3l2 2"/>
+                  <path d="M12 1v2"/>
+                  <path d="M22 12h-2"/>
+                </svg>
               </div>
               <div style={{ fontSize: '60px', fontWeight: '700', color: '#3B00C8', marginBottom: '8px', fontFamily: 'Inter, sans-serif' }}>
                 50%
               </div>
-              <p className="text-xl text-secure-slate-700">
+              <p style={{ fontSize: '18px', fontWeight: '500', color: '#4D4D4D', fontFamily: 'Inter, sans-serif' }}>
                 Faster response time
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-24 h-24 bg-secure-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <DollarSign className="w-12 h-12 text-white" />
+            {/* Cost Savings */}
+            <div className="text-center group">
+              <div
+                style={{
+                  width: '96px',
+                  height: '96px',
+                  background: 'linear-gradient(135deg, #3B00C8 0%, #24005A 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  margin: '0 auto 24px',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer'
+                }}
+                className="group-hover:scale-110 group-hover:shadow-lg"
+              >
+                {/* Shield with Dollar Icon */}
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M9.5 9L12 11.5L16.5 7"/>
+                  <path d="M12 16v-4"/>
+                </svg>
               </div>
               <div style={{ fontSize: '60px', fontWeight: '700', color: '#3B00C8', marginBottom: '8px', fontFamily: 'Inter, sans-serif' }}>
                 $25K+
               </div>
-              <p className="text-xl text-secure-slate-700">
+              <p style={{ fontSize: '18px', fontWeight: '500', color: '#4D4D4D', fontFamily: 'Inter, sans-serif' }}>
                 Annual IR cost savings
               </p>
             </div>

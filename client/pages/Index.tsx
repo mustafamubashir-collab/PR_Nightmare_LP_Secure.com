@@ -1125,7 +1125,7 @@ export default function Index() {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'linear-gradient(90deg, rgba(36, 0, 90, 0.1) 0%, rgba(59, 0, 200, 0.05) 50%, rgba(0, 194, 255, 0.1) 100%)',
+          background: 'linear-gradient(90deg, rgba(36, 0, 90, 0.1) 0%, rgba(59, 0, 200, 0.1) 100%)',
           pointerEvents: 'none'
         }} />
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 32px' }}>

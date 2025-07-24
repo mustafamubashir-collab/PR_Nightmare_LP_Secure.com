@@ -1311,7 +1311,7 @@ export default function Index() {
                       Agent Live. Monitoring Active
                     </span>
                     <span style={{
-                      color: activeStep >= 4 ? '#00C2FF' : '#9096a2',
+                      color: activeStep >= 4 ? '#3B00C8' : '#9096a2',
                       fontSize: '14px',
                       marginLeft: '12px',
                       fontFamily: 'Inter, sans-serif',

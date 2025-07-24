@@ -1218,12 +1218,11 @@ export default function Index() {
       </section>
 
       {/* Outcome & Proof Section */}
-      <section id="outcome" style={{ padding: '64px 0', background: 'linear-gradient(135deg, #eff6ff 0%, #f0f9ff 50%, #ecfeff 100%)' }}>
+      <section id="outcome" style={{ padding: '64px 0', background: 'linear-gradient(135deg, #E7F0FF 0%, #ffffff 100%)' }}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-secure-slate-900 mb-6">
-              Turn risk into{" "}
-              <span className="text-secure-blue-600">&nbsp;resilience.</span>
+            <h2 style={{ color: '#1A1A1A', fontSize: '40px', fontWeight: '700', lineHeight: '1.2', marginBottom: '24px', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.025em' }}>
+              Turn risk into <span style={{ color: '#3B00C8' }}>resilience</span>.
             </h2>
           </div>
 

@@ -384,36 +384,115 @@ export default function Index() {
                 Trusted by the world's leading organizations
               </p>
               <div style={{ display: 'flex', justifyContent: 'center', gap: '69px', flexWrap: 'wrap', maxHeight: '0px' }}>
-                {[1, 2, 3, 4, 5].map((num) => (
-                  <div
-                    key={num}
-                    style={{
-                      width: '80px',
-                      height: '40px',
-                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                      borderRadius: '8px',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      backdropFilter: 'blur(10px)',
-                      border: '1px solid rgba(255, 255, 255, 0.2)',
-                      transition: 'all 0.3s ease',
-                      cursor: 'pointer'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
-                      e.currentTarget.style.transform = 'scale(1.05)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
-                      e.currentTarget.style.transform = 'scale(1)';
-                    }}
-                  >
-                    <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.8)', fontFamily: 'Inter, sans-serif' }}>
-                      Partner {num}
-                    </span>
-                  </div>
-                ))}
+                <div
+                  style={{
+                    width: '80px',
+                    height: '74px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer',
+                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F064355e60f9148c091f092bdd57afc94)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    margin: 'auto 0'
+                  }}
+                >
+                  <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.8)', fontFamily: 'Inter, sans-serif' }}>
+                    Partner 1
+                  </span>
+                </div>
+                <div
+                  style={{
+                    width: '154px',
+                    height: '49px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer',
+                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fd404ac94033144e4935e59bb9f6d1518)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    margin: 'auto 0'
+                  }}
+                >
+                  <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.8)', fontFamily: 'Inter, sans-serif' }}>
+                    2
+                  </span>
+                </div>
+                <div
+                  style={{
+                    width: '147px',
+                    height: '49px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer',
+                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F988c23e123984435a2a4a471876090e4)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    margin: 'auto 0'
+                  }}
+                >
+                </div>
+                <div
+                  style={{
+                    width: '128px',
+                    height: '49px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer',
+                    backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Ff2d9d91189d5496ca4a38e4b86957761)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    margin: 'auto 0'
+                  }}
+                >
+                </div>
+                <div
+                  style={{
+                    width: '80px',
+                    height: '40px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer'
+                  }}
+                >
+                  <span style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.8)', fontFamily: 'Inter, sans-serif' }}>
+                    Partner 5
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -494,7 +573,7 @@ export default function Index() {
                 of private-market investors
               </p>
               <p className="text-xs text-secure-slate-500 mb-3 italic">
-                "81% of private‑market investors say cybersecurity and data���reporting measures have become more important to their investment decisions in the past year."
+                "81% of private‑market investors say cybersecurity and data‑reporting measures have become more important to their investment decisions in the past year."
               </p>
               <p className="text-xs text-secure-slate-400 font-medium">
                 KPMG Private Markets Pulse 2025

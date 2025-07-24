@@ -2273,7 +2273,7 @@ export default function Index() {
             <div>
               {/* Social Icons */}
               <div
-                style={{ display: "flex", gap: "12px", marginBottom: "20px" }}
+                style={{ display: "flex", gap: "16px", marginBottom: "24px" }}
               >
                 <a
                   href="https://www.linkedin.com/company/securebydisrupt"

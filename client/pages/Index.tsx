@@ -27,6 +27,7 @@ export default function Index() {
   const [deploymentProgress, setDeploymentProgress] = useState(0);
   const [activeStep, setActiveStep] = useState(0);
   const [showBetaModal, setShowBetaModal] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [betaForm, setBetaForm] = useState({
     fullName: '',
     workEmail: '',

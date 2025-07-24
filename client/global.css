@@ -162,6 +162,17 @@
     .section-spacing {
       padding: 32px 0;
     }
+
+    /* Mobile trust logos - pause animation on touch */
+    .trust-carousel:hover {
+      animation-play-state: paused;
+    }
+
+    /* Mobile outcome section - stack vertically */
+    .outcome-grid {
+      grid-template-columns: 1fr !important;
+      gap: 32px !important;
+    }
   }
 
   /* Typography consistency */

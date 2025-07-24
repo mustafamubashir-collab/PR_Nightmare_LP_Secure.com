@@ -1617,26 +1617,26 @@ export default function Index() {
               <button
                 type="submit"
                 style={{
-                  background: 'linear-gradient(90deg, #3C00C9 0%, #00B2FF 100%)',
+                  background: 'linear-gradient(90deg, #24005A 0%, #3B00C8 50%, #00C2FF 100%)',
                   color: '#FFFFFF',
                   padding: '16px 32px',
                   fontSize: '18px',
-                  fontWeight: '600',
+                  fontWeight: '500',
                   borderRadius: '8px',
                   border: 'none',
                   cursor: 'pointer',
                   marginTop: '8px',
                   fontFamily: 'Inter, sans-serif',
                   transition: 'all 0.3s ease',
-                  boxShadow: '0 4px 14px rgba(60, 0, 201, 0.25)'
+                  boxShadow: '0 4px 14px rgba(59, 0, 200, 0.25)'
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = 'translateY(-2px)';
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(60, 0, 201, 0.35)';
+                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(59, 0, 200, 0.35)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(60, 0, 201, 0.25)';
+                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(59, 0, 200, 0.25)';
                 }}
               >
                 Join Private Beta

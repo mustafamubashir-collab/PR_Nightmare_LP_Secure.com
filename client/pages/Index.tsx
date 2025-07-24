@@ -2238,12 +2238,12 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Footer Content - Now integrated within the same purple background */}
+        {/* Footer Content - Optimized for laptop viewing */}
         <div
           style={{
-            maxWidth: "1200px",
+            maxWidth: "1400px",
             margin: "0 auto",
-            padding: "32px 24px",
+            padding: "40px 32px",
             width: "100%",
           }}
         >

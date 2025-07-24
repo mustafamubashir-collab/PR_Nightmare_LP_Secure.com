@@ -213,6 +213,26 @@
       justify-content: center !important;
       gap: 8px !important;
     }
+
+    /* Mobile video section optimization */
+    #video {
+      padding: 8vh 0 !important;
+      min-height: 100vh !important;
+    }
+
+    /* Mobile video container adjustments */
+    #video .mx-auto {
+      margin-bottom: 20px !important;
+    }
+
+    /* Mobile video responsive sizing */
+    @media (max-width: 480px) {
+      #video .relative.mx-auto {
+        width: 95vw !important;
+        height: 45vh !important;
+        border-radius: 12px !important;
+      }
+    }
   }
 
   /* Typography consistency */

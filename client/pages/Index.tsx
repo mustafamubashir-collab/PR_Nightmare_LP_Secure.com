@@ -2430,19 +2430,6 @@ export default function Index() {
                 >
                   Secure.com
                 </h2>
-                <p
-                  style={{
-                    fontSize: "12px",
-                    fontWeight: "400",
-                    color: "rgba(255, 255, 255, 0.7)",
-                    fontFamily: "Inter, sans-serif",
-                    margin: "4px 0 0 0",
-                    lineHeight: "1.2",
-                    textAlign: "center",
-                  }}
-                >
-                  AI-Native Cybersecurity
-                </p>
               </a>
             </div>
 

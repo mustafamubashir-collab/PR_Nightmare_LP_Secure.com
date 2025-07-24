@@ -608,10 +608,10 @@ export default function Index() {
                     e.currentTarget.style.animationPlayState = "running";
                   }}
                 >
-                  {/* Movavi Logo */}
+                  {/* Logo 1 */}
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F139dbd8472934042a9314401fb78bcfc?format=webp&width=800"
-                    alt="Movavi"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F1384249b98624ce7a38ed4d6a8135954?format=webp&width=800"
+                    alt="Partner Logo 1"
                     style={{
                       height: "40px",
                       width: "auto",
@@ -621,10 +621,10 @@ export default function Index() {
                     }}
                   />
 
-                  {/* DeepFin Logo */}
+                  {/* Logo 2 */}
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F55663e2565db44c3852f0210f8c16d28?format=webp&width=800"
-                    alt="DeepFin"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F9e7760e004864a9b91700d810f4091a8?format=webp&width=800"
+                    alt="Partner Logo 2"
                     style={{
                       height: "40px",
                       width: "auto",
@@ -634,10 +634,62 @@ export default function Index() {
                     }}
                   />
 
-                  {/* OLG Logo */}
+                  {/* Logo 3 */}
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4914446477734611af37ac4faee1e9ff?format=webp&width=800"
-                    alt="OLG"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4b278a46d60f428fa408e3af67e04707?format=webp&width=800"
+                    alt="Partner Logo 3"
+                    style={{
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
+                    }}
+                  />
+
+                  {/* Logo 4 */}
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fcd5c999ec90c4b24a46361ff12c9acdf?format=webp&width=800"
+                    alt="Partner Logo 4"
+                    style={{
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
+                    }}
+                  />
+
+                  {/* Logo 5 */}
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Ff9a6accfff5b4a019725b1ffc0caea10?format=webp&width=800"
+                    alt="Partner Logo 5"
+                    style={{
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
+                    }}
+                  />
+
+                  {/* Logo 6 */}
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F5197c848d159482aa9aeed11d0e8b092?format=webp&width=800"
+                    alt="Partner Logo 6"
+                    style={{
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
+                    }}
+                  />
+
+                  {/* Logo 7 */}
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F52a623eff3574e2b90c0aeb756297e5b?format=webp&width=800"
+                    alt="Partner Logo 7"
                     style={{
                       height: "40px",
                       width: "auto",
@@ -649,8 +701,8 @@ export default function Index() {
 
                   {/* Duplicate set for seamless loop */}
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F139dbd8472934042a9314401fb78bcfc?format=webp&width=800"
-                    alt="Movavi"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F1384249b98624ce7a38ed4d6a8135954?format=webp&width=800"
+                    alt="Partner Logo 1"
                     style={{
                       height: "40px",
                       width: "auto",
@@ -661,8 +713,8 @@ export default function Index() {
                   />
 
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F55663e2565db44c3852f0210f8c16d28?format=webp&width=800"
-                    alt="DeepFin"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F9e7760e004864a9b91700d810f4091a8?format=webp&width=800"
+                    alt="Partner Logo 2"
                     style={{
                       height: "40px",
                       width: "auto",
@@ -673,8 +725,56 @@ export default function Index() {
                   />
 
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4914446477734611af37ac4faee1e9ff?format=webp&width=800"
-                    alt="OLG"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4b278a46d60f428fa408e3af67e04707?format=webp&width=800"
+                    alt="Partner Logo 3"
+                    style={{
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
+                    }}
+                  />
+
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fcd5c999ec90c4b24a46361ff12c9acdf?format=webp&width=800"
+                    alt="Partner Logo 4"
+                    style={{
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
+                    }}
+                  />
+
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Ff9a6accfff5b4a019725b1ffc0caea10?format=webp&width=800"
+                    alt="Partner Logo 5"
+                    style={{
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
+                    }}
+                  />
+
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F5197c848d159482aa9aeed11d0e8b092?format=webp&width=800"
+                    alt="Partner Logo 6"
+                    style={{
+                      height: "40px",
+                      width: "auto",
+                      maxWidth: "120px",
+                      filter: "brightness(0) invert(1)",
+                      opacity: 0.8,
+                    }}
+                  />
+
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F52a623eff3574e2b90c0aeb756297e5b?format=webp&width=800"
+                    alt="Partner Logo 7"
                     style={{
                       height: "40px",
                       width: "auto",

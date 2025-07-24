@@ -1666,13 +1666,13 @@ export default function Index() {
 
           <div className="max-w-6xl mx-auto">
             <div className="relative">
-              {/* Enhanced Video Container with specified dimensions and card styling */}
+              {/* Enhanced Video Container - 4x Bigger Size */}
               <div
                 className="relative mx-auto"
                 style={{
-                  width: "min(85%, 720px)",
+                  width: "min(95%, 1440px)",
                   aspectRatio: "16/9",
-                  maxWidth: "720px",
+                  maxWidth: "1440px",
                   boxShadow:
                     "0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 25px rgba(0, 0, 0, 0.1)",
                   borderRadius: "16px",

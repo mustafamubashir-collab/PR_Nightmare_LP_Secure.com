@@ -322,12 +322,12 @@ export default function Index() {
                 <h1 style={{ fontSize: '56px', fontWeight: '700', color: '#FFFFFF', marginBottom: '32px', lineHeight: '1.1', textAlign: 'left', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}>
                   <div>One Cyber Breach</div>
                   <div>Away from a</div>
-                  <div style={{ color: '#00FFFF', fontWeight: '700' }}>
+                  <div style={{ color: '#00FFF7', fontWeight: '700' }}>
                     <span>PR Nightmare</span>
                   </div>
                 </h1>
-                <p style={{ fontSize: '18px', fontWeight: '400', color: '#E0E0E0', marginBottom: '32px', lineHeight: '1.5', fontFamily: 'Inter, sans-serif' }}>
-                  Reduce breach risk with <span style={{ color: '#A0FFFD' }}>40% fewer blind spots</span> and AI-led response before it turns into reputational damage.
+                <p style={{ fontSize: '18px', fontWeight: '400', color: '#D6D6F2', marginBottom: '32px', lineHeight: '1.5', fontFamily: 'Inter, sans-serif' }}>
+                  Reduce breach risk with <span style={{ color: '#A5FFFB' }}>40% fewer blind spots</span> and AI-led response before it turns into reputational damage.
                 </p>
                 <div className="relative">
                   {/* Subtle glowing background */}

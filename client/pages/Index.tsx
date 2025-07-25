@@ -1595,7 +1595,8 @@ export default function Index() {
                 lineHeight: "1.3",
               }}
             >
-              Fewer breaches, more confidence
+              Fewer <span style={{ color: "rgb(241, 6, 34)" }}>breaches</span>,
+              more <span style={{ color: "rgb(59, 0, 200)" }}>confidence</span>
             </p>
           </div>
         </div>

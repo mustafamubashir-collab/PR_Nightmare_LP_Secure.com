@@ -1341,6 +1341,7 @@ export default function Index() {
                   }}
                 >
                   <div
+                    className="responsive-prevent-content"
                     style={{
                       textAlign: "center",
                       padding: "16px 12px",
@@ -1363,6 +1364,7 @@ export default function Index() {
 
                     {/* Video Container */}
                     <div
+                      className="responsive-prevent-video"
                       style={{
                         position: "relative",
                         width: "100%",

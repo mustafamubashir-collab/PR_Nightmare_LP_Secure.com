@@ -264,22 +264,25 @@
 
     /* Secure.com in Action video section - MOBILE ONLY responsive styles */
     .responsive-video-section {
-      padding: 6vh 0 !important;
-      min-height: 90vh !important;
+      padding: 4vh 0 !important;
+      min-height: 80vh !important;
     }
 
     .responsive-video-container {
-      padding: 0 12px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      max-width: 100vw !important;
     }
 
     .responsive-video-player {
-      width: 96vw !important;
-      height: 40vh !important;
-      max-width: 96vw !important;
-      max-height: 40vh !important;
-      border-radius: 8px !important;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25) !important;
-      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      width: 100vw !important;
+      height: 35vh !important;
+      max-width: 100vw !important;
+      max-height: 35vh !important;
+      border-radius: 0 !important;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+      border: none !important;
+      margin: 0 !important;
     }
 
     .responsive-video-corner {

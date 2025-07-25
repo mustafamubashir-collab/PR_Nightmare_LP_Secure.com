@@ -2135,7 +2135,7 @@ export default function Index() {
         {/* CTA Content */}
         <div
           className="container mx-auto"
-          style={{ padding: "5px 24px 11px" }}
+          style={{ padding: "73px 24px 16px" }}
         >
           <div className="max-w-4xl mx-auto text-center">
             <h2

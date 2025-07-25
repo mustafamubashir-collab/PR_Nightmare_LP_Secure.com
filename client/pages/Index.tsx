@@ -1466,23 +1466,6 @@ export default function Index() {
                 }}
                 className="group-hover:scale-110 group-hover:shadow-lg"
               >
-                <div
-                  style={{
-                    position: "absolute",
-                    bottom: "-12px",
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    fontSize: "14px",
-                    fontWeight: "700",
-                    color: "#FFFFFF",
-                    background: "linear-gradient(90deg, #6B7280 0%, #4B5563 100%)",
-                    padding: "4px 12px",
-                    borderRadius: "12px",
-                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                  }}
-                >
-                  2nd
-                </div>
                 {/* Stopwatch with Alert Icon */}
                 <svg
                   width="48"

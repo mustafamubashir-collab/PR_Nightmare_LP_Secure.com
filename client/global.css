@@ -338,8 +338,8 @@
 
   }
 
-  /* Desktop and laptop optimizations */
-  @media (min-width: 1024px) {
+  /* Tablet, Desktop and laptop optimizations */
+  @media (min-width: 768px) {
     /* Video section laptop optimization */
     #video .relative.mx-auto {
       width: 1920px !important;

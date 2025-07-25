@@ -551,7 +551,7 @@ export default function Index() {
                       boxShadow: "0 4px 14px rgba(0, 112, 243, 0.3)",
                     }}
                   >
-                    Sign-up for Beta Partner
+                    Get Started for Free
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </div>

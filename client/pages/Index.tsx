@@ -157,6 +157,7 @@ export default function Index() {
                   fontFamily: "Inter, sans-serif",
                   margin: 0,
                   lineHeight: "1.2",
+                  textShadow: "0 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.6)",
                 }}
               >
                 Secure.com

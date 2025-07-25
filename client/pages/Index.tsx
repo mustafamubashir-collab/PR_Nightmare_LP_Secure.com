@@ -269,7 +269,7 @@ export default function Index() {
                 width: "100%",
               }}
             >
-              Sign Up for Beta Partner
+              Get Started for Free
             </Button>
           </div>
         )}

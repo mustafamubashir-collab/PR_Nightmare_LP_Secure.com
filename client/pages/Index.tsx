@@ -797,7 +797,12 @@ export default function Index() {
                 letterSpacing: "-0.025em",
               }}
             >
-              One breach can undo years of trust.
+              One{" "}
+              <span style={{ color: "rgb(241, 6, 34)" }}>
+                <span>Breach</span>{" "}
+              </span>
+              can undo Years of{" "}
+              <span style={{ color: "rgb(59, 0, 200)" }}>Trust.</span>
             </h2>
           </div>
 
@@ -2745,7 +2750,7 @@ export default function Index() {
                 >
                   <option value="">Select company size</option>
                   <option value="1-10">1–10</option>
-                  <option value="11-50">11–50</option>
+                  <option value="11-50">11���50</option>
                   <option value="51-200">51–200</option>
                   <option value="200+">200+</option>
                 </select>

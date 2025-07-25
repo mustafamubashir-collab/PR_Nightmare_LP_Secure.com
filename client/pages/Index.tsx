@@ -119,8 +119,8 @@ export default function Index() {
           left: 0,
           right: 0,
           zIndex: 1000,
-          background: scrolled ? "rgba(0, 0, 0, 0.95)" : "transparent",
-          backdropFilter: scrolled ? "blur(10px)" : "none",
+          background: scrolled ? "rgba(0, 0, 0, 0.95)" : "rgba(0, 0, 0, 0.7)",
+          backdropFilter: scrolled ? "blur(10px)" : "blur(8px)",
           borderBottom: scrolled
             ? "1px solid rgba(255, 255, 255, 0.1)"
             : "none",

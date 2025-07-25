@@ -1678,7 +1678,7 @@ export default function Index() {
               See{" "}
               <span
                 style={{
-                  color: "#00FFF7",
+                  color: "rgba(2, 243, 255, 1)",
                   textShadow: "0 0 20px rgba(0, 255, 247, 0.3)",
                 }}
               >

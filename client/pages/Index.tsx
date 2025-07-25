@@ -2853,6 +2853,24 @@ export default function Index() {
           </div>
         </div>
       )}
+      <button
+        style={{
+          all: "unset",
+          display: "flex",
+          flexDirection: "column",
+          position: "relative",
+          appearance: "none",
+          backgroundColor: "black",
+          color: "white",
+          borderRadius: "4px",
+          textAlign: "center",
+          cursor: "pointer",
+          marginTop: "20px",
+          padding: "15px 25px",
+        }}
+      >
+        Click me!
+      </button>
     </div>
   );
 }

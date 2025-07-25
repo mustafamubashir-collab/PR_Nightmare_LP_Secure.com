@@ -1363,7 +1363,6 @@ export default function Index() {
         style={{
           padding: "37.8px 0",
           background: "#ffffff",
-          minHeight: "100vh",
           display: "flex",
           alignItems: "center",
         }}

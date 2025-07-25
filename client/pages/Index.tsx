@@ -2245,7 +2245,7 @@ export default function Index() {
               gridTemplateColumns: "2fr 1fr 2fr",
               alignItems: "start",
               gap: "32px",
-              marginBottom: "32px",
+              marginTop: "-21px",
             }}
           >
             {/* Left - Social Links and Legal */}

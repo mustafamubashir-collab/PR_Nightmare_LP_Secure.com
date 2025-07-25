@@ -517,7 +517,7 @@ export default function Index() {
                   <span style={{ color: "#A5FFFB" }}>
                     40% fewer blind spots
                   </span>{" "}
-                  and AI-led response before it turns into reputational damage.
+                  and AI-led response, before it turns into reputational damage.
                 </p>
                 <div className="relative">
                   {/* Subtle glowing background */}

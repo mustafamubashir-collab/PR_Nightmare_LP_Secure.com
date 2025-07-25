@@ -534,7 +534,12 @@ export default function Index() {
                     style={{ animationDuration: "4s", width: "253px" }}
                   ></div>
                   <Button
-                    onClick={() => setShowBetaModal(true)}
+                    onClick={() => {
+                      document.getElementById('final-cta')?.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                      });
+                    }}
                     style={{
                       backgroundColor: "#0070F3",
                       color: "#FFFFFF",

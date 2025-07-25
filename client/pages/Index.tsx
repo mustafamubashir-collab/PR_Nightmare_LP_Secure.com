@@ -1537,7 +1537,7 @@ export default function Index() {
                   fontFamily: "Inter, sans-serif",
                 }}
               >
-                Faster response time
+                faster mean-time-to-respond
               </p>
             </div>
 

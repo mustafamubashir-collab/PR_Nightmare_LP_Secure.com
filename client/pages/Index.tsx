@@ -2380,34 +2380,7 @@ export default function Index() {
                   marginBottom: "20px",
                   maxWidth: "700px",
                 }}
-              >
-                <a
-                  href="#"
-                  style={{
-                    color: "rgba(255, 255, 255, 0.7)",
-                    fontSize: "13px",
-                    fontFamily: "Inter, sans-serif",
-                    textDecoration: "none",
-                    transition: "color 0.3s ease",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Terms
-                </a>
-                <a
-                  href="#"
-                  style={{
-                    color: "rgba(255, 255, 255, 0.7)",
-                    fontSize: "13px",
-                    fontFamily: "Inter, sans-serif",
-                    textDecoration: "none",
-                    transition: "color 0.3s ease",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Privacy
-                </a>
-              </div>
+              />
 
               {/* Copyright */}
               <p

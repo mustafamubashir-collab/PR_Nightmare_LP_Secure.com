@@ -1746,7 +1746,9 @@ export default function Index() {
           padding: "15px 0",
           background: "#ffffff",
           position: "relative",
-          minHeight: "100vh",
+          minHeight: "200px",
+          height: "auto",
+          flexGrow: "0",
           display: "flex",
           alignItems: "center",
         }}

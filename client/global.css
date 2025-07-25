@@ -397,6 +397,31 @@
       text-align: left !important;
       margin-bottom: 0 !important;
     }
+
+    /* Reset Secure.com in Action video section for desktop */
+    .responsive-video-section {
+      padding: 12vh 0 !important;
+      min-height: 120vh !important;
+    }
+
+    .responsive-video-container {
+      padding: 0 5vw !important;
+    }
+
+    .responsive-video-player {
+      width: 1920px !important;
+      height: 1080px !important;
+      max-width: 90vw !important;
+      max-height: 60vh !important;
+      border-radius: 20px !important;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 20px 40px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .responsive-video-corner {
+      display: block !important;
+      width: 32px !important;
+      height: 32px !important;
+    }
   }
 
   /* Large desktop screens */

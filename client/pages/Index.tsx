@@ -921,7 +921,7 @@ export default function Index() {
           >
             <span style={{ height: "0px" }}>
               <p>Prevent the Breach.</p>
-              <p>Protect the Brand.</p>
+              <p style={{ color: "rgba(2, 243, 255, 1)" }}>Protect the Brand.</p>
             </span>
             <br />
             <br />

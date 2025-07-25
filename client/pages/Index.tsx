@@ -1359,7 +1359,7 @@ export default function Index() {
       <section
         id="outcome"
         style={{
-          padding: "8vh 0",
+          padding: "37.8px 0",
           background: "#ffffff",
           minHeight: "100vh",
           display: "flex",

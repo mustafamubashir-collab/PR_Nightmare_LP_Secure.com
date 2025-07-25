@@ -260,6 +260,20 @@
       font-size: 7px !important;
     }
 
+    /* Navigation CTA button mobile responsive */
+    .responsive-nav-cta {
+      display: block !important;
+    }
+
+    .responsive-nav-button {
+      padding: 8px 16px !important;
+      font-size: 12px !important;
+    }
+
+    .responsive-nav-button span {
+      font-size: 12px !important;
+    }
+
     /* Mobile video section optimization */
     #video {
       padding: 8vh 0 !important;

@@ -1614,7 +1614,7 @@ export default function Index() {
                   fontFamily: "Inter, sans-serif",
                 }}
               >
-                Annual IR cost savings
+                per year saved on incident response
               </p>
             </div>
           </div>

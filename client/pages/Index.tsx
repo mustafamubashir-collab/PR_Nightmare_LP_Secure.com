@@ -522,7 +522,7 @@ export default function Index() {
                   }}
                 >
                   Reduce breach risk with{" "}
-                  <span style={{ color: "#A5FFFB" }}>
+                  <span style={{ color: "rgba(2, 243, 255, 1)" }}>
                     40% fewer blind spots
                   </span>{" "}
                   and AI-led response, before it turns into reputational damage.

@@ -477,10 +477,7 @@ export default function Index() {
         </div>
 
         {/* Content Grid - Optimized for 15" laptop viewing */}
-        <div
-          className="relative"
-          style={{ zIndex: 10, height: "80vh" }}
-        >
+        <div className="relative" style={{ zIndex: 10, height: "80vh" }}>
           <div
             style={{
               maxWidth: "1200px",
@@ -492,89 +489,90 @@ export default function Index() {
           >
             {/* Left Side - Content Area */}
             <div className="flex items-center justify-start pl-12">
-            <div className="max-w-lg">
-              <div
-                className={`transition-all duration-1000 ${
-                  isVisible
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-8"
-                }`}
-              >
-                <h1
-                  style={{
-                    fontSize: "44px",
-                    fontWeight: "700",
-                    color: "#FFFFFF",
-                    marginBottom: "20px",
-                    lineHeight: "1.1",
-                    textAlign: "left",
-                    fontFamily: "Inter, sans-serif",
-                    letterSpacing: "-0.02em",
-                  }}
+              <div className="max-w-lg">
+                <div
+                  className={`transition-all duration-1000 ${
+                    isVisible
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-8"
+                  }`}
                 >
-                  <div>One Cyber Breach</div>
-                  <div>Away from a</div>
-                  <div style={{ color: "#00FFF7", fontWeight: "700" }}>
-                    <span style={{ color: "rgb(250, 0, 30)" }}>
-                      PR Nightmare
-                    </span>
-                  </div>
-                </h1>
-                <p
-                  style={{
-                    fontSize: "16px",
-                    fontWeight: "400",
-                    color: "#D6D6F2",
-                    marginBottom: "20px",
-                    lineHeight: "1.4",
-                    fontFamily: "Inter, sans-serif",
-                  }}
-                >
-                  Reduce breach risk with{" "}
-                  <span style={{ color: "rgba(2, 243, 255, 1)" }}>
-                    40% fewer blind spots
-                  </span>{" "}
-                  and AI-led response, before it turns into reputational damage.
-                </p>
-                <div className="relative">
-                  <Button
-                    onClick={() => setShowBetaModal(true)}
+                  <h1
                     style={{
-                      backgroundColor: "#0070F3",
+                      fontSize: "44px",
+                      fontWeight: "700",
                       color: "#FFFFFF",
-                      padding: "14px 28px",
-                      fontSize: "16px",
-                      fontWeight: "600",
-                      borderRadius: "8px",
+                      marginBottom: "20px",
+                      lineHeight: "1.1",
+                      textAlign: "left",
                       fontFamily: "Inter, sans-serif",
-                      border: "none",
-                      cursor: "pointer",
-                      display: "flex",
-                      alignItems: "center",
-                      transition: "all 0.3s ease",
-                      boxShadow: "0 4px 14px rgba(0, 112, 243, 0.3)",
+                      letterSpacing: "-0.02em",
                     }}
                   >
-                    Get Started for Free
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </Button>
+                    <div>One Cyber Breach</div>
+                    <div>Away from a</div>
+                    <div style={{ color: "#00FFF7", fontWeight: "700" }}>
+                      <span style={{ color: "rgb(250, 0, 30)" }}>
+                        PR Nightmare
+                      </span>
+                    </div>
+                  </h1>
                   <p
                     style={{
-                      color: "rgba(255, 255, 255, 0.8)",
-                      fontSize: "12px",
+                      fontSize: "16px",
                       fontWeight: "400",
+                      color: "#D6D6F2",
+                      marginBottom: "20px",
+                      lineHeight: "1.4",
                       fontFamily: "Inter, sans-serif",
-                      textAlign: "center",
-                      alignSelf: "start",
-                      margin: "8px 0 0 -292px",
                     }}
                   >
-                    *No Credit Card Required
+                    Reduce breach risk with{" "}
+                    <span style={{ color: "rgba(2, 243, 255, 1)" }}>
+                      40% fewer blind spots
+                    </span>{" "}
+                    and AI-led response, before it turns into reputational
+                    damage.
                   </p>
+                  <div className="relative">
+                    <Button
+                      onClick={() => setShowBetaModal(true)}
+                      style={{
+                        backgroundColor: "#0070F3",
+                        color: "#FFFFFF",
+                        padding: "14px 28px",
+                        fontSize: "16px",
+                        fontWeight: "600",
+                        borderRadius: "8px",
+                        fontFamily: "Inter, sans-serif",
+                        border: "none",
+                        cursor: "pointer",
+                        display: "flex",
+                        alignItems: "center",
+                        transition: "all 0.3s ease",
+                        boxShadow: "0 4px 14px rgba(0, 112, 243, 0.3)",
+                      }}
+                    >
+                      Get Started for Free
+                      <ArrowRight className="ml-2 w-5 h-5" />
+                    </Button>
+                    <p
+                      style={{
+                        color: "rgba(255, 255, 255, 0.8)",
+                        fontSize: "12px",
+                        fontWeight: "400",
+                        fontFamily: "Inter, sans-serif",
+                        textAlign: "center",
+                        alignSelf: "start",
+                        margin: "8px 0 0 -292px",
+                      }}
+                    >
+                      *No Credit Card Required
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
             {/* Right Side - Animation Area */}
             <div
@@ -829,7 +827,10 @@ export default function Index() {
             style={{ alignItems: "stretch" }}
           >
             {/* Brand Value at Risk */}
-            <Card className="p-8 text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col justify-between" style={{ backgroundColor: "rgba(0, 154, 255, 0)" }}>
+            <Card
+              className="p-8 text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col justify-between"
+              style={{ backgroundColor: "rgba(0, 154, 255, 0)" }}
+            >
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <TrendingDown className="w-8 h-8 text-red-600" />
               </div>
@@ -841,7 +842,8 @@ export default function Index() {
                 className="text-xs mb-3 italic"
               >
                 "The largest and most salient breaches are associated with a
-                <b>&nbsp;5–9% decline</b> in firms' reputational intangible capital."
+                <b>&nbsp;5–9% decline</b> in firms' reputational intangible
+                capital."
               </p>
               <p className="text-xs text-secure-slate-400 font-medium">
                 Oxford Academic, Journal of Cybersecurity
@@ -860,8 +862,8 @@ export default function Index() {
                 style={{ color: "rgba(70, 82, 100, 1)", fontSize: "13px" }}
                 className="text-xs mb-3 italic"
               >
-                "<b>94% of respondents</b> said their customers would not buy from
-                them if they did not adequately protect data."
+                "<b>94% of respondents</b> said their customers would not buy
+                from them if they did not adequately protect data."
               </p>
               <p className="text-xs text-secure-slate-400 font-medium">
                 Cisco 2024 Data Privacy Benchmark Study
@@ -939,7 +941,9 @@ export default function Index() {
           >
             <span style={{ height: "0px" }}>
               <p>Prevent the Breach.</p>
-              <p style={{ color: "rgba(2, 243, 255, 1)" }}>Protect the Brand.</p>
+              <p style={{ color: "rgba(2, 243, 255, 1)" }}>
+                Protect the Brand.
+              </p>
             </span>
             <br />
             <br />
@@ -1791,8 +1795,7 @@ export default function Index() {
                 >
                   Peace of mind,
                   <br />
-                  in{" "}
-                  <span style={{ color: "#3B00C8" }}>30 Minutes</span>.
+                  in <span style={{ color: "#3B00C8" }}>30 Minutes</span>.
                 </h2>
               </div>
               <div style={{ marginTop: "32px" }}>

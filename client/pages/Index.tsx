@@ -834,13 +834,9 @@ export default function Index() {
                 <DollarSign className="w-8 h-8 text-red-600" />
               </div>
               <h3 className="text-lg font-bold text-secure-slate-900 mb-4">
-                Investor Confidence Erodes
+                Investors, Customers, and Partners Lose Confidence
               </h3>
-              <div className="text-3xl font-bold text-red-600 mb-3">81%</div>
-              <p className="text-sm text-secure-slate-600 mb-3 leading-relaxed">
-                of private-market investors
-              </p>
-              <p className="text-xs text-secure-slate-500 mb-3 italic">
+              <p style={{ color: "rgba(70, 82, 100, 1)", fontSize: "13px" }} className="text-xs mb-3 italic">
                 "81% of private‑market investors say cybersecurity and
                 data‑reporting measures have become more important to their
                 investment decisions in the past year."
@@ -2725,7 +2721,7 @@ export default function Index() {
                   <option value="">Select company size</option>
                   <option value="1-10">1–10</option>
                   <option value="11-50">11–50</option>
-                  <option value="51-200">51–200</option>
+                  <option value="51-200">51��200</option>
                   <option value="200+">200+</option>
                 </select>
               </div>

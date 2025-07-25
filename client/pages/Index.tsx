@@ -949,6 +949,7 @@ export default function Index() {
             <br />
           </div>
           <div
+            className="responsive-prevent-container"
             style={{
               width: "100%",
               maxWidth: "1200px",
@@ -958,6 +959,7 @@ export default function Index() {
             <div
               role="tablist"
               aria-orientation="horizontal"
+              className="responsive-prevent-tablist"
               style={{
                 display: "grid",
                 alignItems: "center",
@@ -976,6 +978,7 @@ export default function Index() {
               <button
                 type="button"
                 role="tab"
+                className="responsive-prevent-tab"
                 aria-selected={activeTab === "case-management"}
                 onClick={() => setActiveTab("case-management")}
                 style={{
@@ -1008,6 +1011,7 @@ export default function Index() {
               <button
                 type="button"
                 role="tab"
+                className="responsive-prevent-tab"
                 aria-selected={activeTab === "risk-management"}
                 onClick={() => setActiveTab("risk-management")}
                 style={{
@@ -1040,6 +1044,7 @@ export default function Index() {
               <button
                 type="button"
                 role="tab"
+                className="responsive-prevent-tab"
                 aria-selected={activeTab === "unified-platform"}
                 onClick={() => setActiveTab("unified-platform")}
                 style={{
@@ -1072,6 +1077,7 @@ export default function Index() {
               <button
                 type="button"
                 role="tab"
+                className="responsive-prevent-tab"
                 aria-selected={activeTab === "attack-surface"}
                 onClick={() => setActiveTab("attack-surface")}
                 style={{

@@ -1457,7 +1457,7 @@ export default function Index() {
                   fontFamily: "Inter, sans-serif",
                 }}
               >
-                Incident workload automated
+                of incident workload automated
               </p>
             </div>
 

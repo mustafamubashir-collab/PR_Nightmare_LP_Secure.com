@@ -2083,6 +2083,7 @@ export default function Index() {
                       borderRadius: "8px",
                       opacity: activeStep >= 4 ? 1 : 0.3,
                       transform: activeStep >= 4 ? "scale(1.02)" : "scale(1)",
+                      transformOrigin: "center center",
                       transition: "all 0.8s ease-in-out",
                       transitionDelay: activeStep >= 4 ? "0.6s" : "0s",
                       border:

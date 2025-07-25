@@ -208,7 +208,7 @@ export default function Index() {
                   "0 2px 4px rgba(0, 0, 0, 0.1)";
               }}
             >
-              <span style={{ color: "#000000" }}>Sign-up for Beta Partner</span>
+              <span style={{ color: "#FFFFFF" }}>Sign-up for Beta Partner</span>
             </Button>
           </div>
 

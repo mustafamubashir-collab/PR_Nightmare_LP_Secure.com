@@ -289,6 +289,16 @@
       display: none !important;
     }
 
+    /* Additional mobile overrides for video container */
+    .responsive-video-section > div {
+      padding: 0 !important;
+      margin: 0 auto !important;
+    }
+
+    .responsive-video-section .mx-auto {
+      margin: 0 !important;
+    }
+
     /* Mobile outcome/podium section optimization */
     .outcome-grid .text-center {
       margin-bottom: 40px;

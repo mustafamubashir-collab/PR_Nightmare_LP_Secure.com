@@ -1390,8 +1390,8 @@ export default function Index() {
             <div className="text-center group">
               <div
                 style={{
-                  width: "120px",
-                  height: "120px",
+                  width: "110px",
+                  height: "110px",
                   background:
                     "linear-gradient(135deg, #3B00C8 0%, #24005A 100%)",
                   borderRadius: "20px",
@@ -1403,27 +1403,10 @@ export default function Index() {
                   cursor: "pointer",
                   position: "relative",
                   transform: "perspective(1000px) rotateX(0deg) rotateY(0deg)",
-                  boxShadow: "0 10px 25px rgba(59, 0, 200, 0.3), 0 0 0 4px rgba(255, 255, 255, 1), 0 0 0 8px #e2e8f0",
+                  boxShadow: "0 8px 20px rgba(59, 0, 200, 0.25), 0 0 0 3px rgba(255, 255, 255, 1), 0 0 0 6px #e2e8f0",
                 }}
                 className="group-hover:scale-110 group-hover:shadow-lg"
               >
-                <div
-                  style={{
-                    position: "absolute",
-                    bottom: "-12px",
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    fontSize: "14px",
-                    fontWeight: "700",
-                    color: "#FFFFFF",
-                    background: "linear-gradient(90deg, #3B00C8 0%, #24005A 100%)",
-                    padding: "4px 12px",
-                    borderRadius: "12px",
-                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                  }}
-                >
-                  1st
-                </div>
                 {/* Robot Gear Icon */}
                 <svg
                   width="48"

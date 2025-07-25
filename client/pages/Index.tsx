@@ -647,19 +647,6 @@ export default function Index() {
                     }}
                   />
 
-                  {/* Logo 3 */}
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F4b278a46d60f428fa408e3af67e04707?format=webp&width=800"
-                    alt="Partner Logo 3"
-                    style={{
-                      height: "40px",
-                      width: "auto",
-                      maxWidth: "120px",
-                      filter: "brightness(0) invert(1)",
-                      opacity: 0.8,
-                    }}
-                  />
-
                   {/* Logo 4 */}
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fcd5c999ec90c4b24a46361ff12c9acdf?format=webp&width=800"

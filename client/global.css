@@ -235,14 +235,32 @@
     }
 
     /* Mobile deployment/onboarding section optimization */
-    .deployment-section {
-      padding: 6vh 0 !important;
-    }
+  .deployment-section {
+    padding: 6vh 0 !important;
+  }
 
-    .deployment-section .grid {
-      grid-template-columns: 1fr !important;
-      gap: 32px !important;
-    }
+  .deployment-section .grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  /* Peace of mind section responsive styles */
+  .responsive-deployment-container {
+    margin: 0 16px !important;
+    padding: 0 16px !important;
+  }
+
+  .responsive-deployment-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    text-align: center !important;
+  }
+
+  .responsive-deployment-title {
+    font-size: 28px !important;
+    min-height: auto !important;
+    margin-bottom: 24px !important;
+  }
 
     /* Mobile outcome/podium section optimization */
     .outcome-grid .text-center {

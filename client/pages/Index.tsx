@@ -1770,7 +1770,9 @@ export default function Index() {
                     letterSpacing: "-0.025em",
                   }}
                 >
-                  Peace of mind, <br />
+                  Peace of mind,
+                  <br />
+                  <br />
                   in{" "}
                   <span style={{ color: "#3B00C8" }}>30 Minutes</span>.
                 </h2>

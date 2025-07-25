@@ -2315,6 +2315,7 @@ export default function Index() {
 
         {/* Footer Content - Optimized for laptop viewing */}
         <div
+          className="responsive-footer-container"
           style={{
             maxWidth: "1400px",
             margin: "0 auto",
@@ -2324,6 +2325,7 @@ export default function Index() {
         >
           {/* Separator line */}
           <div
+            className="responsive-footer-separator"
             style={{
               height: "1px",
               background: "rgba(255, 255, 255, 0.2)",
@@ -2345,9 +2347,10 @@ export default function Index() {
             }}
           >
             {/* Left - Social Links and Legal */}
-            <div>
+            <div className="responsive-footer-left">
               {/* Social Icons */}
               <div
+                className="responsive-footer-social"
                 style={{ display: "flex", gap: "16px", marginBottom: "-10px" }}
               >
                 <a
@@ -2420,6 +2423,7 @@ export default function Index() {
 
               {/* Copyright */}
               <p
+                className="responsive-footer-copyright"
                 style={{
                   color: "rgba(255, 255, 255, 0.5)",
                   fontSize: "14px",
@@ -2434,6 +2438,7 @@ export default function Index() {
 
             {/* Center - Secure.com Text */}
             <div
+              className="responsive-footer-center"
               style={{
                 display: "flex",
                 justifyContent: "center",
@@ -2459,6 +2464,7 @@ export default function Index() {
                 }}
               >
                 <h2
+                  className="responsive-footer-logo"
                   style={{
                     fontSize: "24px",
                     fontWeight: "700",

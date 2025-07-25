@@ -1757,7 +1757,12 @@ export default function Index() {
         }}
       >
         <div
-          style={{ maxWidth: "1200px", margin: "0 20px 0 108px", padding: "0 32px" }}
+          style={{
+            maxWidth: "1200px",
+            margin: "0 20px 0 108px",
+            padding: "0 32px",
+          }}
+          className="responsive-deployment-container"
         >
           <div
             style={{
@@ -1766,6 +1771,7 @@ export default function Index() {
               gap: "48px",
               alignItems: "center",
             }}
+            className="responsive-deployment-grid"
           >
             <div>
               <div>
@@ -1781,6 +1787,7 @@ export default function Index() {
                     flexGrow: "0",
                     height: "auto",
                   }}
+                  className="responsive-deployment-title"
                 >
                   Peace of mind,
                   <br />

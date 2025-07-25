@@ -800,13 +800,9 @@ export default function Index() {
                 <TrendingDown className="w-8 h-8 text-red-600" />
               </div>
               <h3 className="text-lg font-bold text-secure-slate-900 mb-4">
-                Brand Value at Risk
+                Brand Value at Risk due to Undetected Threats
               </h3>
-              <div className="text-3xl font-bold text-red-600 mb-3">~9%</div>
-              <p className="text-sm text-secure-slate-600 mb-3 leading-relaxed">
-                decline in reputational intangible capital
-              </p>
-              <p className="text-xs text-secure-slate-500 mb-3 italic">
+              <p style={{ color: "rgba(70, 82, 100, 1)", fontSize: "13px" }} className="text-xs mb-3 italic">
                 "The largest and most salient breaches are associated with a
                 5–9% decline in firms' reputational intangible capital."
               </p>

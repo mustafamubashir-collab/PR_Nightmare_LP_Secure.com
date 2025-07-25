@@ -848,7 +848,7 @@ export default function Index() {
           </div>
 
           <div className="text-center max-w-4xl mx-auto">
-            <p className="text-xl text-secure-slate-600 leading-relaxed">
+            <p style={{ color: "rgba(17, 17, 17, 1)", fontSize: "20px", lineHeight: "32.5px" }} className="leading-relaxed">
               A security failure doesn't just cost revenue, it damages your
               reputation, valuation, and growth trajectory.
             </p>
@@ -2721,7 +2721,7 @@ export default function Index() {
                   <option value="">Select company size</option>
                   <option value="1-10">1–10</option>
                   <option value="11-50">11–50</option>
-                  <option value="51-200">51��200</option>
+                  <option value="51-200">51–200</option>
                   <option value="200+">200+</option>
                 </select>
               </div>

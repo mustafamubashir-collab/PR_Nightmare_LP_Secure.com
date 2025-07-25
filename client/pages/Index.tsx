@@ -531,7 +531,7 @@ export default function Index() {
                   {/* Subtle glowing background */}
                   <div
                     className="absolute inset-0 bg-blue-700/30 rounded-lg blur-xl animate-pulse"
-                    style={{ animationDuration: "4s" }}
+                    style={{ animationDuration: "4s", width: "253px" }}
                   ></div>
                   <Button
                     onClick={() => setShowBetaModal(true)}

@@ -187,8 +187,8 @@ export default function Index() {
             <Button
               onClick={() => setShowBetaModal(true)}
               style={{
-                background: "#FFFFFF",
-                color: "#000000",
+                background: "#0070F3",
+                color: "#FFFFFF",
                 padding: "10px 20px",
                 fontSize: "14px",
                 fontWeight: "500",
@@ -197,7 +197,7 @@ export default function Index() {
                 border: "none",
                 cursor: "pointer",
                 transition: "all 0.3s ease",
-                boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+                boxShadow: "0 2px 4px rgba(0, 112, 243, 0.3)",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.boxShadow =

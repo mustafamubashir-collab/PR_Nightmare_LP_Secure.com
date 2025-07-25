@@ -2258,22 +2258,7 @@ export default function Index() {
             </p>
 
             {/* FOMO Messaging */}
-            <p
-              style={{
-                color: "rgba(255, 255, 255, 0.9)",
-                fontSize: "14px",
-                fontWeight: "500",
-                marginTop: "24px",
-                fontFamily: "Inter, sans-serif",
-                lineHeight: "1.5",
-                letterSpacing: "0.025em",
-                height: "38px",
-              }}
-            >
-              Secure your spot among the exclusive 50 visionary companies
-              shaping the next era of AI-native cybersecurity. <br />
-              Limited access. Unmatched advantage.
-            </p>
+
 
             {/* PureVPN Attribution with Logo */}
             <div

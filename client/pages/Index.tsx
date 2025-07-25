@@ -823,7 +823,7 @@ export default function Index() {
                 className="text-xs mb-3 italic"
               >
                 "The largest and most salient breaches are associated with a
-                <b>5–9% decline</b> in firms' reputational intangible capital."
+                <b>&nbsp;5–9% decline</b> in firms' reputational intangible capital."
               </p>
               <p className="text-xs text-secure-slate-400 font-medium">
                 Oxford Academic, Journal of Cybersecurity

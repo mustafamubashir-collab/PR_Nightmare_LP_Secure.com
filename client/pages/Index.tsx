@@ -252,7 +252,7 @@ export default function Index() {
                 setMobileMenuOpen(false);
               }}
               style={{
-                background: "#00C2FF",
+                background: "#0070F3",
                 color: "#FFFFFF",
                 padding: "12px 24px",
                 fontSize: "14px",

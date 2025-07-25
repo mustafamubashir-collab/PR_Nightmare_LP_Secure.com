@@ -2188,7 +2188,7 @@ export default function Index() {
             <p
               style={{
                 color: "rgba(255, 255, 255, 0.9)",
-                fontSize: "18px",
+                fontSize: "14px",
                 fontWeight: "500",
                 marginTop: "24px",
                 fontFamily: "Inter, sans-serif",
@@ -2197,9 +2197,9 @@ export default function Index() {
                 height: "38px",
               }}
             >
-              Secure your spot among the first 50 visionary companies shaping
-              the next era of AI-native cybersecurity. Limited access. Unmatched
-              advantage.
+              Secure your spot among the exclusive 50 visionary companies
+              shaping the next era of AI-native cybersecurity. <br />
+              Limited access. Unmatched advantage.
             </p>
 
             {/* PureVPN Attribution with Logo */}

@@ -291,6 +291,27 @@
     }
   }
 
+  /* Tablet optimizations */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Peace of mind section tablet styles */
+    .responsive-deployment-container {
+      margin: 0 32px !important;
+      padding: 0 24px !important;
+    }
+
+    .responsive-deployment-grid {
+      grid-template-columns: 1fr !important;
+      gap: 40px !important;
+      text-align: left !important;
+    }
+
+    .responsive-deployment-title {
+      font-size: 32px !important;
+      text-align: center !important;
+      margin-bottom: 32px !important;
+    }
+  }
+
   /* Desktop and laptop optimizations */
   @media (min-width: 1024px) {
     /* Video section laptop optimization */
@@ -309,6 +330,24 @@
     /* Deployment section laptop optimization */
     .deployment-section {
       padding: 10vh 0 !important;
+    }
+
+    /* Reset Peace of mind section for desktop */
+    .responsive-deployment-container {
+      margin: 0 20px 0 108px !important;
+      padding: 0 32px !important;
+    }
+
+    .responsive-deployment-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      gap: 48px !important;
+      text-align: left !important;
+    }
+
+    .responsive-deployment-title {
+      font-size: 40px !important;
+      text-align: left !important;
+      margin-bottom: 0 !important;
     }
   }
 

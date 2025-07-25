@@ -2201,6 +2201,18 @@ export default function Index() {
               Get Started for Free
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
+            <p
+              style={{
+                color: "rgba(255, 255, 255, 0.8)",
+                fontSize: "12px",
+                fontWeight: "400",
+                marginTop: "8px",
+                fontFamily: "Inter, sans-serif",
+                textAlign: "center",
+              }}
+            >
+              *No Credit Card Required
+            </p>
 
             {/* FOMO Messaging */}
             <p

@@ -1619,6 +1619,22 @@ export default function Index() {
               </p>
             </div>
           </div>
+
+          {/* Ending line */}
+          <div className="text-center mt-16">
+            <p
+              style={{
+                color: "#1A1A1A",
+                fontSize: "24px",
+                fontWeight: "600",
+                fontFamily: "Inter, sans-serif",
+                letterSpacing: "-0.015em",
+                lineHeight: "1.3",
+              }}
+            >
+              Fewer breaches, more confidence
+            </p>
+          </div>
         </div>
       </section>
 

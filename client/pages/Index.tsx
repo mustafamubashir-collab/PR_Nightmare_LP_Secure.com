@@ -559,9 +559,10 @@ export default function Index() {
                       color: "rgba(255, 255, 255, 0.8)",
                       fontSize: "12px",
                       fontWeight: "400",
-                      marginTop: "8px",
                       fontFamily: "Inter, sans-serif",
                       textAlign: "center",
+                      alignSelf: "start",
+                      margin: "8px 0 0 -292px",
                     }}
                   >
                     *No Credit Card Required

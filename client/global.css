@@ -482,6 +482,26 @@
       align-items: initial !important;
       justify-content: initial !important;
     }
+
+    /* Reset Prevent the breach video containers for desktop and tablet */
+    .responsive-prevent-content {
+      padding: 16px 12px !important;
+      margin: 0 !important;
+    }
+
+    .responsive-prevent-video {
+      width: 100% !important;
+      max-width: 900px !important;
+      margin: 0 auto !important;
+      padding-bottom: 39.375% !important;
+      border-radius: 12px !important;
+      position: relative !important;
+      left: auto !important;
+      right: auto !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+    }
   }
 
   /* Large desktop screens */

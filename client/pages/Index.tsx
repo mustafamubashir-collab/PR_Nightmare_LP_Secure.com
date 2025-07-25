@@ -148,8 +148,12 @@ export default function Index() {
                 color: "inherit",
                 transition: "opacity 0.3s ease",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.opacity = '0.8'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.opacity = '1'; }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.opacity = "0.8";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.opacity = "1";
+              }}
             >
               <h1
                 style={{
@@ -159,7 +163,8 @@ export default function Index() {
                   fontFamily: "Inter, sans-serif",
                   margin: 0,
                   lineHeight: "1.2",
-                  textShadow: "0 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.6)",
+                  textShadow:
+                    "0 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.6)",
                 }}
               >
                 Secure.com
@@ -796,7 +801,10 @@ export default function Index() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12" style={{ alignItems: "stretch" }}>
+          <div
+            className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12"
+            style={{ alignItems: "stretch" }}
+          >
             {/* Brand Value at Risk */}
             <Card className="p-8 text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col justify-between">
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -805,7 +813,10 @@ export default function Index() {
               <h3 className="text-lg font-bold text-secure-slate-900 mb-4">
                 Brand Value at Risk due to Undetected Threats
               </h3>
-              <p style={{ color: "rgba(70, 82, 100, 1)", fontSize: "13px" }} className="text-xs mb-3 italic">
+              <p
+                style={{ color: "rgba(70, 82, 100, 1)", fontSize: "13px" }}
+                className="text-xs mb-3 italic"
+              >
                 "The largest and most salient breaches are associated with a
                 5–9% decline in firms' reputational intangible capital."
               </p>
@@ -822,7 +833,10 @@ export default function Index() {
               <h3 className="text-lg font-bold text-secure-slate-900 mb-4">
                 Media Blowback from a Single Misstep
               </h3>
-              <p style={{ color: "rgba(70, 82, 100, 1)", fontSize: "13px" }} className="text-xs mb-3 italic">
+              <p
+                style={{ color: "rgba(70, 82, 100, 1)", fontSize: "13px" }}
+                className="text-xs mb-3 italic"
+              >
                 "94% of respondents said their customers would not buy from them
                 if they did not adequately protect data."
               </p>
@@ -839,7 +853,10 @@ export default function Index() {
               <h3 className="text-lg font-bold text-secure-slate-900 mb-4">
                 Investors, Customers, and Partners Lose Confidence
               </h3>
-              <p style={{ color: "rgba(70, 82, 100, 1)", fontSize: "13px" }} className="text-xs mb-3 italic">
+              <p
+                style={{ color: "rgba(70, 82, 100, 1)", fontSize: "13px" }}
+                className="text-xs mb-3 italic"
+              >
                 "81% of private‑market investors say cybersecurity and
                 data‑reporting measures have become more important to their
                 investment decisions in the past year."
@@ -851,7 +868,14 @@ export default function Index() {
           </div>
 
           <div className="text-center max-w-4xl mx-auto">
-            <p style={{ color: "rgba(17, 17, 17, 1)", fontSize: "20px", lineHeight: "32.5px" }} className="leading-relaxed">
+            <p
+              style={{
+                color: "rgba(17, 17, 17, 1)",
+                fontSize: "20px",
+                lineHeight: "32.5px",
+              }}
+              className="leading-relaxed"
+            >
               A security failure doesn't just cost revenue, it damages your
               reputation, valuation, and growth trajectory.
             </p>
@@ -890,7 +914,10 @@ export default function Index() {
               letterSpacing: "-1px",
             }}
           >
-            <span style={{ height: "0px" }}><p>Prevent the Breach.</p><p>Protect the Brand.</p></span>
+            <span style={{ height: "0px" }}>
+              <p>Prevent the Breach.</p>
+              <p>Protect the Brand.</p>
+            </span>
             <br />
             <br />
           </div>
@@ -1403,7 +1430,8 @@ export default function Index() {
                   cursor: "pointer",
                   position: "relative",
                   transform: "perspective(1000px) rotateX(0deg) rotateY(0deg)",
-                  boxShadow: "0 8px 20px rgba(59, 0, 200, 0.25), 0 0 0 3px rgba(255, 255, 255, 1), 0 0 0 6px #e2e8f0",
+                  boxShadow:
+                    "0 8px 20px rgba(59, 0, 200, 0.25), 0 0 0 3px rgba(255, 255, 255, 1), 0 0 0 6px #e2e8f0",
                 }}
                 className="group-hover:scale-110 group-hover:shadow-lg"
               >
@@ -1462,7 +1490,8 @@ export default function Index() {
                   cursor: "pointer",
                   position: "relative",
                   transform: "perspective(1000px) rotateX(0deg) rotateY(0deg)",
-                  boxShadow: "0 8px 20px rgba(59, 0, 200, 0.25), 0 0 0 3px rgba(255, 255, 255, 1), 0 0 0 6px #e2e8f0",
+                  boxShadow:
+                    "0 8px 20px rgba(59, 0, 200, 0.25), 0 0 0 3px rgba(255, 255, 255, 1), 0 0 0 6px #e2e8f0",
                 }}
                 className="group-hover:scale-110 group-hover:shadow-lg"
               >
@@ -1525,7 +1554,8 @@ export default function Index() {
                   cursor: "pointer",
                   position: "relative",
                   transform: "perspective(1000px) rotateX(0deg) rotateY(0deg)",
-                  boxShadow: "0 8px 20px rgba(59, 0, 200, 0.25), 0 0 0 3px rgba(255, 255, 255, 1), 0 0 0 6px #e2e8f0",
+                  boxShadow:
+                    "0 8px 20px rgba(59, 0, 200, 0.25), 0 0 0 3px rgba(255, 255, 255, 1), 0 0 0 6px #e2e8f0",
                 }}
                 className="group-hover:scale-110 group-hover:shadow-lg"
               >
@@ -1607,7 +1637,8 @@ export default function Index() {
             left: 0,
             right: 0,
             bottom: 0,
-            background: "radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%)",
+            background:
+              "radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%)",
             pointerEvents: "none",
             padding: "75.6px 0",
           }}
@@ -1618,13 +1649,15 @@ export default function Index() {
             margin: "0 auto",
             padding: "0 5vw",
             position: "relative",
-            zIndex: 2
+            zIndex: 2,
           }}
         >
-          <div style={{
-            textAlign: "center",
-            marginBottom: "clamp(48px, 8vw, 96px)"
-          }}>
+          <div
+            style={{
+              textAlign: "center",
+              marginBottom: "clamp(48px, 8vw, 96px)",
+            }}
+          >
             <h2
               style={{
                 color: "#FFFFFF",
@@ -1637,14 +1670,26 @@ export default function Index() {
                 textShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
               }}
             >
-              See <span style={{ color: "#00FFF7", textShadow: "0 0 20px rgba(0, 255, 247, 0.3)" }}>Secure.com</span> in Action
+              See{" "}
+              <span
+                style={{
+                  color: "#00FFF7",
+                  textShadow: "0 0 20px rgba(0, 255, 247, 0.3)",
+                }}
+              >
+                Secure.com
+              </span>{" "}
+              in Action
             </h2>
           </div>
 
-          <div className="mx-auto" style={{
-            marginBottom: "clamp(20px, 4vw, 40px)",
-            maxWidth: "none"
-          }}>
+          <div
+            className="mx-auto"
+            style={{
+              marginBottom: "clamp(20px, 4vw, 40px)",
+              maxWidth: "none",
+            }}
+          >
             <div className="relative">
               {/* Enhanced Video Container - Responsive and Optimized */}
               <div
@@ -2097,7 +2142,10 @@ export default function Index() {
         }}
       >
         {/* CTA Content */}
-        <div className="container mx-auto" style={{ padding: "64px 24px 23px" }}>
+        <div
+          className="container mx-auto"
+          style={{ padding: "64px 24px 23px" }}
+        >
           <div className="max-w-4xl mx-auto text-center">
             <h2
               style={{
@@ -2197,11 +2245,15 @@ export default function Index() {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  display: 'inline-block',
-                  transition: 'opacity 0.3s ease'
+                  display: "inline-block",
+                  transition: "opacity 0.3s ease",
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.opacity = '0.7'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.opacity = '1'; }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.opacity = "0.7";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.opacity = "1";
+                }}
               >
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F48c32e83d1314890b4d6a107b41a061a%2F2afddc7a35e24a43b6ecb35ca9acf838?format=webp&width=800"
@@ -2348,7 +2400,6 @@ export default function Index() {
                 >
                   Privacy
                 </a>
-
               </div>
 
               {/* Copyright */}
@@ -2384,8 +2435,12 @@ export default function Index() {
                   textDecoration: "none",
                   transition: "all 0.3s ease",
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.opacity = '0.8'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.opacity = '1'; }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.opacity = "0.8";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.opacity = "1";
+                }}
               >
                 <h2
                   style={{
@@ -2429,12 +2484,14 @@ export default function Index() {
                   cursor: "pointer",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.05)';
-                  e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+                  e.currentTarget.style.transform = "scale(1.05)";
+                  e.currentTarget.style.backgroundColor =
+                    "rgba(255, 255, 255, 1)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+                  e.currentTarget.style.transform = "scale(1)";
+                  e.currentTarget.style.backgroundColor =
+                    "rgba(255, 255, 255, 0.9)";
                 }}
               >
                 <span
@@ -2470,12 +2527,14 @@ export default function Index() {
                   cursor: "pointer",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.05)';
-                  e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+                  e.currentTarget.style.transform = "scale(1.05)";
+                  e.currentTarget.style.backgroundColor =
+                    "rgba(255, 255, 255, 1)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+                  e.currentTarget.style.transform = "scale(1)";
+                  e.currentTarget.style.backgroundColor =
+                    "rgba(255, 255, 255, 0.9)";
                 }}
               >
                 <span

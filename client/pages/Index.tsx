@@ -2005,7 +2005,7 @@ export default function Index() {
                         transition: "color 0.5s ease-in-out",
                       }}
                     >
-                      {activeStep >= 2 ? "�� 15 min" : "15 min"}
+                      {activeStep >= 2 ? "✓  15 mins" : "15 mins"}
                     </span>
                   </div>
 

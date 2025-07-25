@@ -124,7 +124,8 @@ export default function Index() {
           borderBottom: scrolled
             ? "1px solid rgba(255, 255, 255, 0.1)"
             : "none",
-          width: "100%",
+          width: "100vw",
+          marginLeft: "calc(50% - 50vw)",
           padding: "12px 24px",
           transition: "all 0.3s ease",
         }}

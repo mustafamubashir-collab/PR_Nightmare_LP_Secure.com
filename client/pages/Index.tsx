@@ -1768,10 +1768,12 @@ export default function Index() {
                     lineHeight: "1.2",
                     fontFamily: "Inter, sans-serif",
                     letterSpacing: "-0.025em",
+                    minHeight: "115px",
+                    flexGrow: "0",
+                    height: "auto",
                   }}
                 >
                   Peace of mind,
-                  <br />
                   <br />
                   in{" "}
                   <span style={{ color: "#3B00C8" }}>30 Minutes</span>.

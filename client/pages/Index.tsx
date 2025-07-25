@@ -2149,7 +2149,7 @@ export default function Index() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Let your team focus on growth
+              Let your Team Focus on Growth
               <br />
               <span style={{ color: "rgba(2, 243, 255, 1)" }}>not grunt work.</span>
             </h2>

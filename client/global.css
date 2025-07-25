@@ -376,7 +376,7 @@
       margin-bottom: 0 !important;
     }
 
-    /* Reset Secure.com in Action video section for desktop */
+    /* Reset Secure.com in Action video section for desktop and tablet */
     .responsive-video-section {
       padding: 12vh 0 !important;
       min-height: 120vh !important;
@@ -393,6 +393,7 @@
       max-height: 60vh !important;
       border-radius: 20px !important;
       box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 20px 40px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+      border: 2px solid rgba(255, 255, 255, 0.2) !important;
     }
 
     .responsive-video-corner {

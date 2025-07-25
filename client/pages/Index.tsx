@@ -2125,10 +2125,11 @@ export default function Index() {
         id="final-cta"
         style={{
           background: "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
-          minHeight: "100vh",
+          minHeight: "572px",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
+          margin: "-55px 0 -97px",
         }}
       >
         {/* CTA Content */}

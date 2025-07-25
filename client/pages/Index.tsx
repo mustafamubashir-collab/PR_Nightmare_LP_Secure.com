@@ -1748,7 +1748,7 @@ export default function Index() {
         }}
       >
         <div
-          style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 32px" }}
+          style={{ maxWidth: "1200px", margin: "0 20px 0 108px", padding: "0 32px" }}
         >
           <div
             style={{

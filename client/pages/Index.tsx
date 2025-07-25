@@ -842,8 +842,8 @@ export default function Index() {
                 style={{ color: "rgba(70, 82, 100, 1)", fontSize: "13px" }}
                 className="text-xs mb-3 italic"
               >
-                "94% of respondents said their customers would not buy from them
-                if they did not adequately protect data."
+                "<b>94% of respondents</b> said their customers would not buy from
+                them if they did not adequately protect data."
               </p>
               <p className="text-xs text-secure-slate-400 font-medium">
                 Cisco 2024 Data Privacy Benchmark Study

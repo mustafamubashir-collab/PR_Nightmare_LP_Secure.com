@@ -862,7 +862,7 @@ export default function Index() {
                 style={{ color: "rgba(70, 82, 100, 1)", fontSize: "13px" }}
                 className="text-xs mb-3 italic"
               >
-                "<b>81% of private‑market investors</b> say cybersecurity and
+                "<b>81% of private��market investors</b> say cybersecurity and
                 data‑reporting measures have become more important to their
                 investment decisions in the past year."
               </p>
@@ -2430,6 +2430,7 @@ export default function Index() {
                 gap: "20px",
                 alignItems: "center",
                 justifyContent: "flex-end",
+                marginBottom: "2px",
               }}
             >
               {/* ISO 27001 */}

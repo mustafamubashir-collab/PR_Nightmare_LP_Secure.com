@@ -506,7 +506,7 @@ export default function Index() {
                   <div>One Cyber Breach</div>
                   <div>Away from a</div>
                   <div style={{ color: "#00FFF7", fontWeight: "700" }}>
-                    <span style={{ color: "rgb(166, 26, 210)" }}>
+                    <span style={{ color: "rgb(250, 0, 30)" }}>
                       PR Nightmare
                     </span>
                   </div>

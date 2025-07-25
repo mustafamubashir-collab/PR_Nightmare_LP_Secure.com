@@ -528,11 +528,6 @@ export default function Index() {
                   and AI-led response, before it turns into reputational damage.
                 </p>
                 <div className="relative">
-                  {/* Subtle glowing background */}
-                  <div
-                    className="absolute inset-0 bg-blue-700/30 rounded-lg blur-xl animate-pulse"
-                    style={{ animationDuration: "4s", width: "253px" }}
-                  ></div>
                   <Button
                     onClick={() => {
                       document.getElementById('final-cta')?.scrollIntoView({

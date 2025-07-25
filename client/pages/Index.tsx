@@ -1723,7 +1723,7 @@ export default function Index() {
       {/* Deployment Section - 30-minute deployment */}
       <section
         style={{
-          padding: "15px 0",
+          padding: "37.8px 0",
           background: "#ffffff",
           position: "relative",
           minHeight: "200px",

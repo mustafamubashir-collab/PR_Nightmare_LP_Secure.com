@@ -390,14 +390,14 @@
     }
 
     .responsive-prevent-video {
-      width: 100vw !important;
-      max-width: 100vw !important;
+      width: 100% !important;
+      max-width: 100% !important;
       margin: 0 !important;
-      padding-bottom: 56.25% !important; /* 16:9 aspect ratio */
+      /* padding-bottom: 56.25% !important; 16:9 aspect ratio */
       border-radius: 0 !important;
       position: relative !important;
-      left: 50% !important;
-      right: 50% !important;
+      /* left: 50% !important; */
+      /* right: 50% !important; */
       margin-left: -50vw !important;
       margin-right: -50vw !important;
       box-shadow: none !important;

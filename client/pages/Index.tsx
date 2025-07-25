@@ -184,13 +184,11 @@ export default function Index() {
             </p>
           </div>
 
-          {/* Desktop Right Section - CTA Button */}
-          <div
-            style={{ display: mobileMenuOpen ? "none" : "block" }}
-            className="hidden md:block"
-          >
+          {/* Right Section - CTA Button (Responsive) */}
+          <div className="responsive-nav-cta">
             <Button
               onClick={() => setShowBetaModal(true)}
+              className="responsive-nav-button"
               style={{
                 background: "#0070F3",
                 color: "#FFFFFF",
@@ -217,62 +215,10 @@ export default function Index() {
             </Button>
           </div>
 
-          {/* Mobile Hamburger Menu */}
-          <button
-            className="md:hidden"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            style={{
-              background: "none",
-              border: "none",
-              fontSize: "24px",
-              cursor: "pointer",
-              color: scrolled ? "#FFFFFF" : "#1A1A1A",
-              transition: "color 0.3s ease",
-            }}
-          >
-            <span style={{ color: scrolled ? "#FFFFFF" : "#7ED321" }}>
-              {mobileMenuOpen ? "✕" : "☰"}
-            </span>
-          </button>
+
         </div>
 
-        {/* Mobile Menu Dropdown */}
-        {mobileMenuOpen && (
-          <div
-            className="md:hidden"
-            style={{
-              position: "absolute",
-              top: "100%",
-              left: 0,
-              right: 0,
-              background: "rgba(255, 255, 255, 0.98)",
-              backdropFilter: "blur(10px)",
-              borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
-              padding: "16px 24px",
-            }}
-          >
-            <Button
-              onClick={() => {
-                setShowBetaModal(true);
-                setMobileMenuOpen(false);
-              }}
-              style={{
-                background: "#0070F3",
-                color: "#FFFFFF",
-                padding: "12px 24px",
-                fontSize: "14px",
-                fontWeight: "500",
-                borderRadius: "6px",
-                fontFamily: "Inter, sans-serif",
-                border: "none",
-                cursor: "pointer",
-                width: "100%",
-              }}
-            >
-              Get Started for Free
-            </Button>
-          </div>
-        )}
+
       </nav>
 
       {/* Hero Section - Optimized for 15" laptop screens (1920x1080) */}

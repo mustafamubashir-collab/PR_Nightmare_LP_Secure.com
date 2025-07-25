@@ -819,11 +819,7 @@ export default function Index() {
               <h3 className="text-lg font-bold text-secure-slate-900 mb-4">
                 Media Blowback from a Single Misstep
               </h3>
-              <div className="text-3xl font-bold text-orange-600 mb-3">94%</div>
-              <p className="text-sm text-secure-slate-600 mb-3 leading-relaxed">
-                of respondents
-              </p>
-              <p className="text-xs text-secure-slate-500 mb-3 italic">
+              <p style={{ color: "rgba(70, 82, 100, 1)", fontSize: "13px" }} className="text-xs mb-3 italic">
                 "94% of respondents said their customers would not buy from them
                 if they did not adequately protect data."
               </p>

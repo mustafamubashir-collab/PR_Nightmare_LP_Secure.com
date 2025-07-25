@@ -531,8 +531,8 @@ export default function Index() {
                   <Button
                     onClick={() => setShowBetaModal(true)}
                     style={{
-                      backgroundColor: "#FFFFFF",
-                      color: "#000000",
+                      backgroundColor: "#0070F3",
+                      color: "#FFFFFF",
                       padding: "14px 28px",
                       fontSize: "16px",
                       fontWeight: "600",
@@ -543,7 +543,7 @@ export default function Index() {
                       display: "flex",
                       alignItems: "center",
                       transition: "all 0.3s ease",
-                      boxShadow: "0 4px 14px rgba(60, 0, 201, 0.25)",
+                      boxShadow: "0 4px 14px rgba(0, 112, 243, 0.3)",
                     }}
                   >
                     Sign-up for Beta Partner

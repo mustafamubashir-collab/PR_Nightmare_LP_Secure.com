@@ -133,7 +133,6 @@ export default function Index() {
         <div
           style={{
             maxWidth: "1200px",
-            width: "1200px",
             margin: "0 auto",
             display: "flex",
             alignItems: "center",

@@ -883,7 +883,6 @@ export default function Index() {
               fontWeight: "700",
               lineHeight: "1.2",
               margin: "1px 0 -50px",
-              padding: "70px 0 26px",
               textAlign: "center",
               fontFamily: "Inter, sans-serif",
               letterSpacing: "-1px",

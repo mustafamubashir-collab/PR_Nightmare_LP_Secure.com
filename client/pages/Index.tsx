@@ -529,12 +529,7 @@ export default function Index() {
                 </p>
                 <div className="relative">
                   <Button
-                    onClick={() => {
-                      document.getElementById('final-cta')?.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                      });
-                    }}
+                    onClick={() => setShowBetaModal(true)}
                     style={{
                       backgroundColor: "#0070F3",
                       color: "#FFFFFF",

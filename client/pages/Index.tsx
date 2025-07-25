@@ -1627,6 +1627,7 @@ export default function Index() {
       {/* Video Section - See Secure.com in Action */}
       <section
         id="video"
+        className="responsive-video-section"
         style={{
           padding: "12vh 0",
           background: "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
@@ -1652,6 +1653,7 @@ export default function Index() {
           }}
         />
         <div
+          className="responsive-video-container"
           style={{
             maxWidth: "100vw",
             margin: "0 auto",
@@ -1701,7 +1703,7 @@ export default function Index() {
             <div className="relative">
               {/* Enhanced Video Container - Responsive and Optimized */}
               <div
-                className="relative mx-auto"
+                className="relative mx-auto responsive-video-player"
                 style={{
                   width: "1920px",
                   height: "1080px",
@@ -1734,10 +1736,10 @@ export default function Index() {
               </div>
 
               {/* Video overlay elements */}
-              <div className="absolute -top-4 -left-4 w-8 h-8 border-l-4 border-t-4 border-secure-blue-600 rounded-tl-lg"></div>
-              <div className="absolute -top-4 -right-4 w-8 h-8 border-r-4 border-t-4 border-secure-blue-600 rounded-tr-lg"></div>
-              <div className="absolute -bottom-4 -left-4 w-8 h-8 border-l-4 border-b-4 border-secure-blue-600 rounded-bl-lg"></div>
-              <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r-4 border-b-4 border-secure-blue-600 rounded-br-lg"></div>
+              <div className="absolute -top-4 -left-4 w-8 h-8 border-l-4 border-t-4 border-secure-blue-600 rounded-tl-lg responsive-video-corner"></div>
+              <div className="absolute -top-4 -right-4 w-8 h-8 border-r-4 border-t-4 border-secure-blue-600 rounded-tr-lg responsive-video-corner"></div>
+              <div className="absolute -bottom-4 -left-4 w-8 h-8 border-l-4 border-b-4 border-secure-blue-600 rounded-bl-lg responsive-video-corner"></div>
+              <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r-4 border-b-4 border-secure-blue-600 rounded-br-lg responsive-video-corner"></div>
             </div>
           </div>
         </div>

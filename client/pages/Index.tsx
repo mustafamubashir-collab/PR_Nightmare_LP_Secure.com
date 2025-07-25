@@ -1740,13 +1740,14 @@ export default function Index() {
           padding: "37.8px 0",
           background: "#ffffff",
           position: "relative",
-          minHeight: "200px",
           height: "auto",
-          flexGrow: "0",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          width: "100%",
+          flexGrow: "0",
+          margin: "10px 0",
         }}
       >
         <div

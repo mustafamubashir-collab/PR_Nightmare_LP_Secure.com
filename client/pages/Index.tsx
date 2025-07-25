@@ -2266,7 +2266,7 @@ export default function Index() {
           style={{
             maxWidth: "1400px",
             margin: "0 auto",
-            padding: "12px 32px 0",
+            padding: "12px 32px 31px",
             width: "100%",
           }}
         >

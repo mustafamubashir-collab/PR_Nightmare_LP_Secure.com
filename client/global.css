@@ -398,8 +398,8 @@
       position: relative !important;
       /* left: 50% !important; */
       /* right: 50% !important; */
-      margin-left: -50vw !important;
-      margin-right: -50vw !important;
+      /* margin-left: -50vw !important; */
+      /* margin-right: -50vw !important; */
       box-shadow: none !important;
     }
 

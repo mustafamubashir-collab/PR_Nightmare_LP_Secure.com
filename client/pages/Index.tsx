@@ -888,9 +888,8 @@ export default function Index() {
               letterSpacing: "-1px",
             }}
           >
-            <span style={{ height: "0px" }}>Prevent the breach,</span>
+            <span style={{ height: "0px" }}><p>Prevent the Breach.</p><p>Protect the Brand.</p></span>
             <br />
-            <span style={{ height: "0px" }}>Protect the brand.</span>
             <br />
           </div>
           <div

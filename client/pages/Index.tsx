@@ -2043,7 +2043,10 @@ export default function Index() {
                         transition: "color 0.5s ease-in-out",
                       }}
                     >
-                      {activeStep >= 3 ? "✓ 18 mins" : "18 mins"}
+                      <span style={{ color: "rgb(34, 197, 94)" }}>
+                        ✓&nbsp;&nbsp;
+                      </span>
+                      18 mins
                     </span>
                   </div>
 

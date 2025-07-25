@@ -624,6 +624,20 @@
     .footer-certifications > div span {
       font-size: 9px !important;
     }
+
+    /* Reset navigation CTA button for desktop and tablet */
+    .responsive-nav-cta {
+      display: block !important;
+    }
+
+    .responsive-nav-button {
+      padding: 10px 20px !important;
+      font-size: 14px !important;
+    }
+
+    .responsive-nav-button span {
+      font-size: 14px !important;
+    }
   }
 
   /* Large desktop screens */

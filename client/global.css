@@ -262,6 +262,29 @@
       margin-bottom: 24px !important;
     }
 
+    /* Secure.com in Action video section responsive styles */
+    .responsive-video-section {
+      padding: 8vh 0 !important;
+      min-height: 100vh !important;
+    }
+
+    .responsive-video-container {
+      padding: 0 16px !important;
+    }
+
+    .responsive-video-player {
+      width: 95vw !important;
+      height: 45vh !important;
+      max-width: 95vw !important;
+      max-height: 45vh !important;
+      border-radius: 12px !important;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .responsive-video-corner {
+      display: none !important;
+    }
+
     /* Mobile outcome/podium section optimization */
     .outcome-grid .text-center {
       margin-bottom: 40px;

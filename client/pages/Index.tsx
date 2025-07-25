@@ -484,7 +484,6 @@ export default function Index() {
           <div
             style={{
               maxWidth: "1200px",
-              width: "1200px",
               margin: "0 auto",
               display: "grid",
               gridTemplateColumns: "repeat(2, minmax(0, 1fr))",

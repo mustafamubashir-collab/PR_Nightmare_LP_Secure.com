@@ -2151,7 +2151,7 @@ export default function Index() {
             >
               Let your Team Focus on Growth
               <br />
-              <span style={{ color: "rgba(2, 243, 255, 1)" }}>not grunt work.</span>
+              <span style={{ color: "rgb(241, 6, 34)" }}>not grunt work.</span>
             </h2>
             <p
               style={{

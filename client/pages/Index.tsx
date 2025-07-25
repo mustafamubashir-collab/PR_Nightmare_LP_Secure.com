@@ -1404,8 +1404,8 @@ export default function Index() {
                 letterSpacing: "-0.025em",
               }}
             >
-              Turn risk into{" "}
-              <span style={{ color: "#3B00C8" }}>resilience</span>.
+              Turn Risk into{" "}
+              <span style={{ color: "#3B00C8" }}>Resilience</span>.
             </h2>
           </div>
 
@@ -1608,8 +1608,8 @@ export default function Index() {
                 lineHeight: "1.3",
               }}
             >
-              Fewer <span style={{ color: "rgb(241, 6, 34)" }}>breaches</span>,
-              more <span style={{ color: "rgb(59, 0, 200)" }}>confidence</span>
+              Fewer <span style={{ color: "rgb(241, 6, 34)" }}>Breaches</span>,
+              More <span style={{ color: "rgb(59, 0, 200)" }}>Confidence</span>
             </p>
           </div>
         </div>
@@ -1769,8 +1769,9 @@ export default function Index() {
                     letterSpacing: "-0.025em",
                   }}
                 >
-                  Peace of mind, in{" "}
-                  <span style={{ color: "#3B00C8" }}>30 minutes</span>.
+                  Peace of mind, <br />
+                  in{" "}
+                  <span style={{ color: "#3B00C8" }}>30 Minutes</span>.
                 </h2>
               </div>
               <div style={{ marginTop: "32px" }}>
@@ -2162,9 +2163,9 @@ export default function Index() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Let your Team Focus on Growth
+              Let Your Team Focus on Growth
               <br />
-              <span style={{ color: "rgb(241, 6, 34)" }}>not grunt work.</span>
+              <span style={{ color: "rgb(241, 6, 34)" }}>Not Grunt Work.</span>
             </h2>
             <p
               style={{

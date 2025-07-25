@@ -133,6 +133,7 @@ export default function Index() {
         <div
           style={{
             maxWidth: "1200px",
+            width: "1200px",
             margin: "0 auto",
             display: "flex",
             alignItems: "center",
@@ -478,11 +479,21 @@ export default function Index() {
 
         {/* Content Grid - Optimized for 15" laptop viewing */}
         <div
-          className="relative w-full grid grid-cols-2"
+          className="relative"
           style={{ zIndex: 10, height: "80vh" }}
         >
-          {/* Left Side - Content Area */}
-          <div className="flex items-center justify-start pl-12 lg:pl-16 xl:pl-24">
+          <div
+            style={{
+              maxWidth: "1200px",
+              width: "1200px",
+              margin: "0 auto",
+              display: "grid",
+              gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+              height: "100%",
+            }}
+          >
+            {/* Left Side - Content Area */}
+            <div className="flex items-center justify-start pl-12">
             <div className="max-w-lg">
               <div
                 className={`transition-all duration-1000 ${
@@ -567,17 +578,18 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Right Side - Animation Area */}
-          <div
-            className="relative flex items-center justify-center"
-            style={{
-              backgroundImage:
-                "url(https://cdn.builder.io/o/assets%2F48c32e83d1314890b4d6a107b41a061a%2F127535bdd5094d29b5accb2e40fb5083?alt=media&token=0e811cdb-964a-4fcd-8025-556937daa9d1&apiKey=48c32e83d1314890b4d6a107b41a061a)",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          ></div>
+            {/* Right Side - Animation Area */}
+            <div
+              className="relative flex items-center justify-center"
+              style={{
+                backgroundImage:
+                  "url(https://cdn.builder.io/o/assets%2F48c32e83d1314890b4d6a107b41a061a%2F127535bdd5094d29b5accb2e40fb5083?alt=media&token=0e811cdb-964a-4fcd-8025-556937daa9d1&apiKey=48c32e83d1314890b4d6a107b41a061a)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
+          </div>
         </div>
 
         {/* Trust Logos at bottom of hero - Cleaned up */}

@@ -1744,7 +1744,7 @@ export default function Index() {
           height: "auto",
           flexGrow: "0",
           display: "flex",
-          alignItems: "center",
+          flexDirection: "column",
         }}
       >
         <div

@@ -2629,20 +2629,10 @@ export default function Index() {
                 fontFamily: "Inter, sans-serif",
               }}
             >
-              Exclusive Beta Access
+              Exclusive Early Access
             </h2>
 
-            <p
-              style={{
-                color: "#666666",
-                fontSize: "16px",
-                marginBottom: "24px",
-                fontFamily: "Inter, sans-serif",
-              }}
-            >
-              Join the first 50 companies to shape the future of AI-native
-              security.
-            </p>
+
 
             <form
               onSubmit={(e) => {
@@ -2754,7 +2744,8 @@ export default function Index() {
                   <option value="1-10">1–10</option>
                   <option value="11-50">11–50</option>
                   <option value="51-200">51–200</option>
-                  <option value="200+">200+</option>
+                  <option value="201-500">201–500</option>
+                  <option value="500+">500+</option>
                 </select>
               </div>
 
@@ -2791,6 +2782,7 @@ export default function Index() {
                   <option value="Healthcare">Healthcare</option>
                   <option value="SaaS">SaaS</option>
                   <option value="Education">Education</option>
+                  <option value="E-Commerce">E-Commerce</option>
                   <option value="Other">Other</option>
                 </select>
               </div>
@@ -2809,10 +2801,12 @@ export default function Index() {
                   Security Challenges (select all that apply)
                 </label>
                 {[
-                  "Compliance",
-                  "Threat Detection",
-                  "Limited Staff",
                   "Alert Fatigue",
+                  "Compliance Management",
+                  "Asset Discovery and Visibility",
+                  "Incident Response Time",
+                  "Talent Shortage",
+                  "Tool Integration",
                   "Other",
                 ].map((challenge) => (
                   <label
@@ -2913,7 +2907,7 @@ export default function Index() {
                     "0 4px 14px rgba(59, 0, 200, 0.25)";
                 }}
               >
-                Join Private Beta
+                Get Secured
               </button>
             </form>
           </div>

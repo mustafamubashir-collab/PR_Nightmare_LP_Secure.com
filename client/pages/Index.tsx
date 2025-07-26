@@ -2711,8 +2711,8 @@ export default function Index() {
 
                   // Since mode is no-cors, we can't read the response
                   // But we assume success if no error is thrown
-                  alert("Thank you! We'll be in touch soon.");
                   setShowBetaModal(false);
+                  setShowSuccessModal(true);
 
                   // Reset form
                   setBetaForm({

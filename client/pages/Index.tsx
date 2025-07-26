@@ -1702,6 +1702,44 @@ export default function Index() {
               <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r-4 border-b-4 border-secure-blue-600 rounded-br-lg responsive-video-corner"></div>
             </div>
           </div>
+
+          {/* CTA Section below video */}
+          <div style={{ textAlign: "center", marginTop: "clamp(32px, 6vw, 48px)" }}>
+            <Button
+              onClick={() => setShowBetaModal(true)}
+              style={{
+                backgroundColor: "#0070F3",
+                color: "#FFFFFF",
+                padding: "16px 32px",
+                fontSize: "18px",
+                fontWeight: "500",
+                borderRadius: "8px",
+                fontFamily: "Inter, sans-serif",
+                border: "none",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                margin: "0 auto",
+                transition: "all 0.3s ease",
+                boxShadow: "0 4px 14px rgba(0, 112, 243, 0.3)",
+              }}
+            >
+              Get Started for Free
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+            <p
+              style={{
+                color: "rgba(255, 255, 255, 0.8)",
+                fontSize: "12px",
+                fontWeight: "400",
+                marginTop: "8px",
+                fontFamily: "Inter, sans-serif",
+                textAlign: "center",
+              }}
+            >
+              *No Credit Card Required
+            </p>
+          </div>
         </div>
       </section>
 

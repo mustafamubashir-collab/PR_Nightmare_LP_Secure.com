@@ -2963,33 +2963,42 @@ export default function Index() {
               {/* Submit Button */}
               <button
                 type="submit"
+                disabled={isSubmitting}
                 style={{
-                  background:
-                    "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
+                  background: isSubmitting
+                    ? "#666666"
+                    : "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
                   color: "#FFFFFF",
                   padding: "16px 32px",
                   fontSize: "18px",
                   fontWeight: "500",
                   borderRadius: "8px",
                   border: "none",
-                  cursor: "pointer",
+                  cursor: isSubmitting ? "not-allowed" : "pointer",
                   marginTop: "8px",
                   fontFamily: "Inter, sans-serif",
                   transition: "all 0.3s ease",
-                  boxShadow: "0 4px 14px rgba(59, 0, 200, 0.25)",
+                  boxShadow: isSubmitting
+                    ? "0 2px 6px rgba(0, 0, 0, 0.15)"
+                    : "0 4px 14px rgba(59, 0, 200, 0.25)",
+                  opacity: isSubmitting ? 0.7 : 1,
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-2px)";
-                  e.currentTarget.style.boxShadow =
-                    "0 6px 20px rgba(59, 0, 200, 0.35)";
+                  if (!isSubmitting) {
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                    e.currentTarget.style.boxShadow =
+                      "0 6px 20px rgba(59, 0, 200, 0.35)";
+                  }
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow =
-                    "0 4px 14px rgba(59, 0, 200, 0.25)";
+                  if (!isSubmitting) {
+                    e.currentTarget.style.transform = "translateY(0)";
+                    e.currentTarget.style.boxShadow =
+                      "0 4px 14px rgba(59, 0, 200, 0.25)";
+                  }
                 }}
               >
-                Get Secured
+                {isSubmitting ? "Submitting..." : "Get Secured"}
               </button>
             </form>
           </div>

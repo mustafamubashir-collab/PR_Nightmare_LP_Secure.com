@@ -1124,7 +1124,7 @@ export default function Index() {
                         }}
                       >
                         <source
-                          src="https://cdn.builder.io/o/assets%2F48c32e83d1314890b4d6a107b41a061a%2F1c5eb9bdf73c4c1ea10a749da2f63ee0?alt=media&token=51566757-5272-41dc-9752-b3c441c00cc3&apiKey=48c32e83d1314890b4d6a107b41a061a"
+                          src="https://d1bip5qfew31oy.cloudfront.net/CaseManagement.mp4"
                           type="video/mp4"
                         />
                       </video>
@@ -1266,7 +1266,7 @@ export default function Index() {
                         }}
                       >
                         <source
-                          src="https://cdn.builder.io/o/assets%2F48c32e83d1314890b4d6a107b41a061a%2Fee9b49eb0ef4497ab51b1bb79e041a34?alt=media&token=6ac4826b-8a79-4011-a1af-a0acb498dfcd&apiKey=48c32e83d1314890b4d6a107b41a061a"
+                          src="https://d1bip5qfew31oy.cloudfront.net/Dashboard.mp4"
                           type="video/mp4"
                         />
                       </video>
@@ -1337,7 +1337,7 @@ export default function Index() {
                         }}
                       >
                         <source
-                          src="https://cdn.builder.io/o/assets%2F48c32e83d1314890b4d6a107b41a061a%2F19022ae6dd554d459d8200dd24d08f1a?alt=media&token=fad09ed5-a3a6-469d-8b1e-9ef0104eb210&apiKey=48c32e83d1314890b4d6a107b41a061a"
+                          src="https://d1bip5qfew31oy.cloudfront.net/AssetRegister.mp4"
                           type="video/mp4"
                         />
                       </video>

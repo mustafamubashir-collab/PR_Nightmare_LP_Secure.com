@@ -3005,6 +3005,127 @@ export default function Index() {
           </div>
         </div>
       )}
+
+      {/* Success Modal */}
+      {showSuccessModal && (
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 1000,
+            padding: "20px",
+          }}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setShowSuccessModal(false);
+          }}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") setShowSuccessModal(false);
+          }}
+        >
+          <div
+            style={{
+              backgroundColor: "#ffffff",
+              borderRadius: "16px",
+              padding: "48px 32px",
+              maxWidth: "500px",
+              width: "100%",
+              position: "relative",
+              boxShadow:
+                "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              textAlign: "center",
+            }}
+          >
+            {/* Success Icon */}
+            <div
+              style={{
+                width: "80px",
+                height: "80px",
+                backgroundColor: "#22c55e",
+                borderRadius: "50%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                margin: "0 auto 24px",
+              }}
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+            </div>
+
+            <h2
+              style={{
+                color: "#0A0A0A",
+                fontSize: "28px",
+                fontWeight: "700",
+                marginBottom: "16px",
+                fontFamily: "Inter, sans-serif",
+                lineHeight: "1.2",
+              }}
+            >
+              Thank You for Submitting the Form
+            </h2>
+
+            <p
+              style={{
+                color: "#666666",
+                fontSize: "18px",
+                marginBottom: "32px",
+                fontFamily: "Inter, sans-serif",
+                lineHeight: "1.5",
+              }}
+            >
+              A Representative from Secure.com will Reach Out Soon!
+            </p>
+
+            <button
+              onClick={() => setShowSuccessModal(false)}
+              style={{
+                background: "linear-gradient(90deg, #24005A 0%, #3B00C8 100%)",
+                color: "#FFFFFF",
+                padding: "16px 32px",
+                fontSize: "18px",
+                fontWeight: "500",
+                borderRadius: "8px",
+                border: "none",
+                cursor: "pointer",
+                fontFamily: "Inter, sans-serif",
+                transition: "all 0.3s ease",
+                boxShadow: "0 4px 14px rgba(59, 0, 200, 0.25)",
+                minWidth: "120px",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "translateY(-2px)";
+                e.currentTarget.style.boxShadow =
+                  "0 6px 20px rgba(59, 0, 200, 0.35)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow =
+                  "0 4px 14px rgba(59, 0, 200, 0.25)";
+              }}
+            >
+              Return
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

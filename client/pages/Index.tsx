@@ -216,11 +216,7 @@ export default function Index() {
               <span style={{ color: "#FFFFFF" }}>Get Started for Free</span>
             </Button>
           </div>
-
-
         </div>
-
-
       </nav>
 
       {/* Hero Section - Optimized for 15" laptop screens (1920x1080) */}
@@ -1744,7 +1740,9 @@ export default function Index() {
           </div>
 
           {/* CTA Section below video */}
-          <div style={{ textAlign: "center", marginTop: "clamp(32px, 6vw, 48px)" }}>
+          <div
+            style={{ textAlign: "center", marginTop: "clamp(32px, 6vw, 48px)" }}
+          >
             <Button
               onClick={() => setShowBetaModal(true)}
               style={{
@@ -2283,7 +2281,6 @@ export default function Index() {
 
             {/* FOMO Messaging */}
 
-
             {/* PureVPN Attribution with Logo */}
             <div
               style={{
@@ -2672,8 +2669,6 @@ export default function Index() {
               Exclusive Early Access
             </h2>
 
-
-
             <form
               onSubmit={async (e) => {
                 e.preventDefault();
@@ -2696,18 +2691,21 @@ export default function Index() {
                     company_size: betaForm.companySize,
                     industry: betaForm.industry,
                     security_challenge: betaForm.securityChallenges.join(", "),
-                    additional_comment: betaForm.additionalComments || ""
+                    additional_comment: betaForm.additionalComments || "",
                   };
 
                   // Submit to Google Sheets
-                  const response = await fetch("https://script.google.com/macros/s/AKfycbzCaPoLQv3tImbSTpLLraJOj-0tX0lLhvBvvyZo-gcee2OkDFVi210ydHkQrz3QwtCkVw/exec", {
-                    method: "POST",
-                    mode: "no-cors",
-                    headers: {
-                      "Content-Type": "application/json",
+                  const response = await fetch(
+                    "https://script.google.com/macros/s/AKfycbzCaPoLQv3tImbSTpLLraJOj-0tX0lLhvBvvyZo-gcee2OkDFVi210ydHkQrz3QwtCkVw/exec",
+                    {
+                      method: "POST",
+                      mode: "no-cors",
+                      headers: {
+                        "Content-Type": "application/json",
+                      },
+                      body: JSON.stringify(formData),
                     },
-                    body: JSON.stringify(formData)
-                  });
+                  );
 
                   // Since mode is no-cors, we can't read the response
                   // But we assume success if no error is thrown
@@ -2723,10 +2721,11 @@ export default function Index() {
                     securityChallenges: [],
                     additionalComments: "",
                   });
-
                 } catch (error) {
                   console.error("Form submission error:", error);
-                  alert("There was an error submitting your form. Please try again.");
+                  alert(
+                    "There was an error submitting your form. Please try again.",
+                  );
                 } finally {
                   setIsSubmitting(false);
                 }

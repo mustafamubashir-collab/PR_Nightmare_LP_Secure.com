@@ -1346,6 +1346,44 @@ export default function Index() {
                 </div>
               )}
             </div>
+
+            {/* CTA Section below video tabs */}
+            <div style={{ textAlign: "center", marginTop: "48px" }}>
+              <Button
+                onClick={() => setShowBetaModal(true)}
+                style={{
+                  backgroundColor: "#0070F3",
+                  color: "#FFFFFF",
+                  padding: "16px 32px",
+                  fontSize: "18px",
+                  fontWeight: "500",
+                  borderRadius: "8px",
+                  fontFamily: "Inter, sans-serif",
+                  border: "none",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  margin: "0 auto",
+                  transition: "all 0.3s ease",
+                  boxShadow: "0 4px 14px rgba(0, 112, 243, 0.3)",
+                }}
+              >
+                Get Started for Free
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+              <p
+                style={{
+                  color: "rgba(255, 255, 255, 0.8)",
+                  fontSize: "12px",
+                  fontWeight: "400",
+                  marginTop: "8px",
+                  fontFamily: "Inter, sans-serif",
+                  textAlign: "center",
+                }}
+              >
+                *No Credit Card Required
+              </p>
+            </div>
           </div>
         </div>
       </section>

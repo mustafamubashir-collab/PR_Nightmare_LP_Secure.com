@@ -2674,18 +2674,61 @@ export default function Index() {
 
 
             <form
-              onSubmit={(e) => {
+              onSubmit={async (e) => {
                 e.preventDefault();
+
                 // Validate email
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailRegex.test(betaForm.workEmail)) {
                   alert("Please enter a valid email address");
                   return;
                 }
-                // Handle form submission here
-                console.log("Beta form submitted:", betaForm);
-                alert("Thank you! We'll be in touch soon.");
-                setShowBetaModal(false);
+
+                setIsSubmitting(true);
+
+                try {
+                  // Prepare data for Google Sheets API
+                  const formData = {
+                    security_key: "Secure_Betalist_2025_XkP9mN2L",
+                    work_email: betaForm.workEmail,
+                    full_name: betaForm.fullName,
+                    company_size: betaForm.companySize,
+                    industry: betaForm.industry,
+                    security_challenge: betaForm.securityChallenges.join(", "),
+                    additional_comment: betaForm.additionalComments || ""
+                  };
+
+                  // Submit to Google Sheets
+                  const response = await fetch("https://script.google.com/macros/s/AKfycbzCaPoLQv3tImbSTpLLraJOj-0tX0lLhvBvvyZo-gcee2OkDFVi210ydHkQrz3QwtCkVw/exec", {
+                    method: "POST",
+                    mode: "no-cors",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData)
+                  });
+
+                  // Since mode is no-cors, we can't read the response
+                  // But we assume success if no error is thrown
+                  alert("Thank you! We'll be in touch soon.");
+                  setShowBetaModal(false);
+
+                  // Reset form
+                  setBetaForm({
+                    fullName: "",
+                    workEmail: "",
+                    companySize: "",
+                    industry: "",
+                    securityChallenges: [],
+                    additionalComments: "",
+                  });
+
+                } catch (error) {
+                  console.error("Form submission error:", error);
+                  alert("There was an error submitting your form. Please try again.");
+                } finally {
+                  setIsSubmitting(false);
+                }
               }}
               style={{ display: "flex", flexDirection: "column", gap: "16px" }}
             >

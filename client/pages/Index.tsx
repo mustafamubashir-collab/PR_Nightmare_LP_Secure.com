@@ -29,6 +29,7 @@ export default function Index() {
   const [showBetaModal, setShowBetaModal] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [betaForm, setBetaForm] = useState({
     fullName: "",
     workEmail: "",
